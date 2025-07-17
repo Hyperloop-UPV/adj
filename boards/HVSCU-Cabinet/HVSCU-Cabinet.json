@@ -1,6 +1,6 @@
 {
     "board_id": 216,
-    "board_ip": "127.0.0.16",
+    "board_ip": "127.0.0.2",
     "packets": [
         "supercaps_data.json",
         "packets.json"
