@@ -196,8 +196,6 @@
         "name": "Run ID",
         "type": "enum",
         "enumValues":[
-            "LIM + Booster",
-            "Booster",
             "LIM",
             "LIM (50KM/H)"
         ]
