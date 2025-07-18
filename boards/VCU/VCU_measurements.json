@@ -249,5 +249,12 @@
         "type": "float32",
         "podUnits": "km/h",
         "displayUnits": "km/h"
+    },
+    {
+        "id": "state",
+        "name": "Recovery State",
+        "type": "uint8",
+        "podUnits": "",
+        "displayUnits": ""
     }
 ]
