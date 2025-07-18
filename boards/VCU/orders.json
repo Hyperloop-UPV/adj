@@ -120,5 +120,10 @@
         "type": "order",
         "name": "Motor Brake",
         "id": 61
+    },
+    {
+        "type": "order",
+        "name": "Recovery",
+        "id": 32
     }
 ]
