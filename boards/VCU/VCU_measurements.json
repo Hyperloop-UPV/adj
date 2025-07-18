@@ -34,7 +34,8 @@
             "END_OF_RUN",
             "ENERGIZED",
             "READY",
-            "DEMONSTRATION"
+            "DEMONSTRATION",
+            "RECOVERY"
         ]
     },
     {
