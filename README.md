@@ -1,6 +1,6 @@
 # ADJ v2 Specification
 
-This document defines the ADJ (Automatic Data Junction) v2 configuration format used by the Hyperloop Control Station. The configuration is organized as a distributed collection of JSON files that define boards, measurements, packets, and general system information.
+This document defines the ADJ v2 configuration format used by the Hyperloop Control Station. The configuration is organized as a distributed collection of JSON files that define boards, measurements, packets, and general system information.
 
 ## File Structure
 
