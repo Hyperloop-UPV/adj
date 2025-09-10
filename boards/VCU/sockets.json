@@ -10,46 +10,8 @@
         "name": "control_station_udp",
         "remote_ip":"192.168.0.9",
         "port": 50400
-    },
-
-    {
-        "type": "Socket",
-        "name": "pcu_tcp",
-        "local_port": 50501,
-        "remote_ip": "192.168.1.5",
-        "remote_port": 50500
-
-        
-    },
-
-    {
-        "type": "DatagramSocket",
-        "name": "pcu_udp",
-        "remote_ip":"192.168.1.5",
-        "port": 50402
-    },
-
-
-    {
-        "type": "Socket",
-        "name": "hvscu_tcp",
-        "local_port": 50502,
-        "remote_ip": "192.168.1.7",
-        "remote_port": 50500
-
-        
-    },
-
-    {
-        "type": "DatagramSocket",
-        "name": "hvscu_udp",
-        "remote_ip":"192.168.1.7",
-        "port": 50403
     }
 
-    
 
-
-    
     
 ]
