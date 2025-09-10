@@ -21,7 +21,7 @@
             "all_reeds"
         ],
         "id": 251,
-        "period_ms_ms": 16.67,
+        "period_ms": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -32,7 +32,7 @@
             "flow2"
         ],
         "id": 250,
-        "period_ms_ms": 16.67,
+        "period_ms": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -43,7 +43,7 @@
             "regulator_2_pressure"
         ],
         "id": 252,
-        "period_ms_ms": 16.67,
+        "period_ms": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -56,7 +56,7 @@
             "pressure_capsule"
         ],
         "id": 253,
-        "period_ms_ms": 16.67,
+        "period_ms": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -67,7 +67,7 @@
             "emergency_tape"
         ],
         "id": 254,
-        "period_ms_ms": 16.67,
+        "period_ms": 16.67,
         "socket": "control_station_udp"
     },
     {
