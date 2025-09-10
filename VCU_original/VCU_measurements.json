@@ -1,14 +1,5 @@
 [
     {
-        "id": "state",
-        "name": "state",
-        "type": "enum",
-        "enumValues": [
-            "ON",
-            "OFF"
-        ]
-    },
-    {
         "id": "duty",
         "name": "Duty",
         "type": "uint32",
