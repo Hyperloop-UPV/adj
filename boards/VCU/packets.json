@@ -7,7 +7,7 @@
             "state"
         ],
         "id": 251,
-        "period_ms_ms": 16.67,
+        "period_ms": 16.67,
         "socket": "control_station_udp"
     }
     
