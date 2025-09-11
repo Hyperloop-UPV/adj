@@ -1,19 +1,10 @@
 [
     {
-        "id": "state",
-        "name": "state",
-        "type": "enum",
-        "enumValues": [
-            "ON",
-            "OFF"
-        ]
-    },
-    {
         "id": "duty",
         "name": "Duty",
         "type": "uint32",
-        "podUnits": "%",
-        "displayUnits": "%"
+        "podUnits": "Percentage",
+        "displayUnits": "Percentage"
     },
     {
         "id": "pump",
@@ -204,7 +195,7 @@
         "id": "run_id",
         "name": "Run ID",
         "type": "enum",
-        "enumValues": [
+        "enumValues":[
             "LIM"
         ]
     },
