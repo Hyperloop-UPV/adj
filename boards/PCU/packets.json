@@ -1,0 +1,117 @@
+[
+  {
+    "type": "data",
+    "name": "pwm_packet",
+    "variables": [
+      "frequency",
+      "modulation_frequency",
+      "duty_u",
+      "duty_v",
+      "duty_w"
+    ],
+    "id": 550
+  },
+  {
+    "type": "data",
+    "name": "Batteries_Voltage",
+    "variables": [
+      "Voltage_Battery_A",
+      "Voltage_Battery_B"
+    ],
+    "id": 551
+  },
+  {
+    "type": "data",
+    "name": "Current_sensors",
+    "variables": [
+      "current_sensor_u_a",
+      "current_sensor_v_a",
+      "current_sensor_w_a",
+      "current_sensor_u_b",
+      "current_sensor_v_b",
+      "current_sensor_w_b",
+      "current_Peak",
+      "Error_PI",
+      "Target_Voltage",
+      "SVPWM_Time",
+      "imod"
+    ],
+    "id": 552
+  },
+  {
+    "type": "data",
+    "name": "StateMachine_states",
+    "variables": [
+      "general_state_machine",
+      "operational_state_machine",
+      "run_state",
+      "space_vector_active",
+      "current_control_active",
+      "speed_control_active"
+    ],
+    "id": 553
+  },
+  {
+    "type": "data",
+    "name": "Encoder_data",
+    "variables": [
+      "encoder_position",
+      "encoder_direction",
+      "encoder_speed",
+      "encoder_speed_km_h",
+      "encoder_acceleration"
+    ],
+    "id": 554
+  },
+  {
+    "type": "data",
+    "name": "Encoder_data",
+    "variables": [
+      "target_speed",
+      "speed_error",
+      "actual_current_ref"
+    ],
+    "id": 555
+  },
+  {
+    "type": "data",
+    "name": "Control_State",
+    "variables": [
+      "Direction_State",
+      "Speed_Control_State"
+    ],
+    "id": 556
+  },
+  {
+    "type": "data",
+    "name": "Reeds_State",
+    "variables": [
+      "reed1",
+      "reed2",
+      "reed3",
+      "reed4"
+    ],
+    "id": 557
+  },
+  {
+    "type": "data",
+    "name": "GateDriverReporting",
+    "variables": [
+      "gd_fault_a",
+      "gd_fault_b",
+      "gd_ready_a",
+      "gd_ready_b"
+    ],
+    "id": 558
+  },
+
+  {
+    "type": "data",
+    "name": "OperationalState",
+    "variables": [
+      "operational_state_machine"
+    ],
+    "id": 64
+  }
+
+]
