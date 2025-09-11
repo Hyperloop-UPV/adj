@@ -4,6 +4,8 @@
         "type": "data",
         "name": "Reeds",
         "variables": [
+            "state",
+            "state",
             "state"
         ],
         "id": 251,
