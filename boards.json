@@ -5,5 +5,5 @@
   "LCU": "boards/LCU/LCU.json",
   "HVSCU": "boards/HVSCU/HVSCU.json",
   "BMSL": "boards/BMSL/BMSL.json",
-  "VCU": "boards/VCU/VCU.json"
+  "VCU" : "boards/VCU/VCU.json"
 }

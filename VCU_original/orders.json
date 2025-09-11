@@ -1,0 +1,129 @@
+[
+    {
+        "type": "order",
+        "name": "Brake",
+        "id": 43
+    },
+    {
+        "type": "order",
+        "name": "Unbrake",
+        "id": 52
+    },
+    {
+        "type": "order",
+        "name": "Potencia Refri",
+        "variables": [
+            "duty",
+            "pump"
+        ],
+        "id": 33
+    },
+    {
+        "type": "order",
+        "name": "Set Regulator",
+        "variables": [
+            "regulator_pressure",
+            "regulator"
+        ],
+        "id": 34
+    },
+    {
+        "type": "order",
+        "name": "Enable Tapes",
+        "id": 35
+    },
+    {
+        "type": "order",
+        "name": "Disbable Tapes",
+        "id": 36
+    },
+    {
+        "type": "order",
+        "name": "Close Contactors",
+        "id": 44
+    },
+    {
+        "type": "order",
+        "name": "Open Contactors",
+        "id": 53
+    },
+    {
+        "type": "order",
+        "name": "Levitation",
+        "variables" : [
+            "levitation_distance"
+        ],
+        "id": 37
+    },
+    {
+        "type": "order",
+        "name": "Stop Levitation",
+        "id": 46
+    },
+    {
+        "type" : "order",
+        "name": "Emergency Stop",
+        "id": 55
+    },
+    {
+        "type": "order",
+        "name": "Propulsion",
+        "variables" : [
+            "run_id"
+        ],
+        "id": 56
+    },
+    {
+        "type": "order",
+        "name": "SVPWM",
+        "variables" : [
+            "modulation_frequency",
+            "commutation_frequency",
+            "max_voltage",
+            "reference_voltage",
+            "motor_direction"
+        ],
+        "id": 57
+    },
+    {
+        "type": "order",
+        "name": "Stop Motor",
+        "id": 58
+    },
+    {
+        "type": "order",
+        "name": "Current Control",
+        "variables" : [
+
+            "modulation_frequency",
+            "commutation_frequency",
+            "reference_current",
+            "max_voltage",
+            "motor_direction"
+
+
+        ],
+        "id": 59
+    },
+    {
+        "type": "order",
+        "name": "Speed Control",
+        "variables" : [
+            "reference_speed",
+            "commutation_frequency",
+            "max_voltage",
+            "motor_direction"
+        ],
+        "id": 60
+    },
+    {
+        "type": "order",
+        "name": "Motor Brake",
+        "id": 61
+    },
+    {
+        "type": "order",
+        "name": "Recovery",
+        "id": 32
+    }
+]

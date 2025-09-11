@@ -2,25 +2,45 @@
   {
     "type": "order",
     "name": "set_LDU_pwm_params",
-    "variables": ["ldu_id", "pwm_duty_cycle", "current_control_frequency"],
+    "variables": [
+      "ldu_id",
+      "pwm_duty_cycle",
+      "current_control_frequency"
+    ],
     "id": 9999
   },
   {
     "type": "order",
+    "name": "send_LDU_en",
+    "variables": [
+      "ldu_buffer_id"
+    ],
+    "id": 9998
+  },
+  {
+    "type": "order",
     "name": "send_LDU_dis",
-    "variables": ["ldu_buffer_id"],
+    "variables": [
+      "ldu_buffer_id"
+    ],
     "id": 9996
   },
   {
     "type": "order",
     "name": "set_current_desired",
-    "variables": ["ldu_id", "lcu_desired_current"],
+    "variables": [
+      "ldu_id",
+      "lcu_desired_current"
+    ],
     "id": 9995
   },
   {
     "type": "order",
     "name": "start_control",
-    "variables": ["ldu_id", "lcu_desired_distance"],
+    "variables": [
+      "ldu_id",
+      "lcu_desired_distance"
+    ],
     "id": 9994
   },
   {
@@ -32,25 +52,33 @@
   {
     "type": "order",
     "name": "stop_pwm",
-    "variables": ["ldu_id"],
+    "variables": [
+      "ldu_id"
+    ],
     "id": 9991
   },
   {
     "type": "order",
     "name": "start_pwm",
-    "variables": ["ldu_id"],
+    "variables": [
+      "ldu_id"
+    ],
     "id": 9992
   },
   {
     "type": "order",
     "name": "set_fixed_vbat",
-    "variables": ["fixed_vbat"],
+    "variables": [
+      "fixed_vbat"
+    ],
     "id": 9990
   },
   {
     "type": "order",
     "name": "start_3dof",
-    "variables": ["lcu_desired_distance"],
+    "variables": [
+      "lcu_desired_distance"
+    ],
     "id": 9989
   },
   {
@@ -74,19 +102,28 @@
   {
     "type": "order",
     "name": "start_5dof",
-    "variables": ["lcu_desired_distance"],
+    "variables": [
+      "lcu_desired_distance"
+    ],
     "id": 9988
   },
   {
     "type": "order",
     "name": "multi_current_order",
-    "variables": ["multi_current_1", "multi_current_2", "multi_current_3", "multi_current_4"],
+    "variables": [
+      "multi_current_1",
+      "multi_current_2",
+      "multi_current_3",
+      "multi_current_4"
+    ],
     "id": 9986
   },
   {
     "type": "order",
     "name": "levitation_vcu",
-    "variables": ["distance"],
-    "id": 9985
+    "variables": [
+      "distance"
+    ],
+    "id": 9998
   }
 ]

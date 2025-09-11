@@ -91,20 +91,4 @@
             ]
         }
     }
-  },
-  {
-    "id": "HVSCU-Cabinet_contactors_state",
-    "name": "Contactors State",
-    "type": "enum",
-    "podUnits": "",
-    "displayUnits": "",
-    "enumValues": ["Open", "Charging", "Charged", "Precharge", "Close"]
-  },
-  {
-    "id": "HVSCU-Cabinet_output_current",
-    "name": "Output Current",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  }
 ]
