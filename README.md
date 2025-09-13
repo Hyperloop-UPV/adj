@@ -272,6 +272,8 @@ Array of socket definitions for network communication.
 
 5. **ID Uniqueness**: Board IDs must be unique across all boards. Packet IDs should be unique within their type category.
 
+6. **Socket Naming**: The The sockets referenced inside the packet definitions must use exact names as defined in `socket.json`.
+
 ## Validation Notes
 
 - All numeric fields use standard JSON number format
