@@ -1,0 +1,34 @@
+[
+    {
+        "id": "HVSCU-Cabinet_target_charge_voltage",
+        "name": "Target Charge Voltage",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V",
+        "above": {
+            "warning": 100.0
+        }
+    },
+    {
+        "id": "HVSCU-Cabinet_imd_bypass",
+        "name": "Bypass IMD?",
+        "type": "enum",
+        "podUnits": "",
+        "displayUnits": "",
+        "enumValues": [
+            "Enable",
+            "Disable"
+        ]
+    },
+    {
+        "id": "HVSCU-Cabinet_sdc_enable",
+        "name": "Enable SDC?",
+        "type": "enum",
+        "podUnits": "",
+        "displayUnits": "",
+        "enumValues": [
+            "Enable",
+            "Disable"
+        ]
+    }
+]
