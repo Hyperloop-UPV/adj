@@ -82,15 +82,13 @@
         }
     },
     {
-        "id": "requested_dc_link_voltage",
-        "name": "Requested DC Link Voltage (V)",
+        "id": "requested_angle_offset",
+        "name": "Requested angle offset (rad)",
         "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V",
-        "below": {
-            "warning": 446.4
-        }
+        "podUnits": "Rad",
+        "displayUnits": "Rad"
     },
+    
     {
         "id": "requested_linear_speed",
         "name": "Target Linear Speed (m/s)",

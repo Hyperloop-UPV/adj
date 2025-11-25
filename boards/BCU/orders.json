@@ -77,5 +77,13 @@
             "requested_speetec_emulation_mode",
             "requested_speetec_emulation_value"
         ]
+    },
+     {
+        "id": 1780,
+        "type": "order",
+        "name": "Change angle offset",
+        "variables": [
+            "requested_angle_offset"
+        ]
     }
 ]
