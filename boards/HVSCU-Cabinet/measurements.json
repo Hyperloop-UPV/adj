@@ -32,7 +32,8 @@
             "Charging",
             "Charged",
             "Precharge",
-            "Close"
+            "Close",
+            "Fault_Holding"
         ]
     },
     {
