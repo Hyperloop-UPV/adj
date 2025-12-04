@@ -85,7 +85,8 @@
             "target_w_voltage",
             "electrical_angle",
             "pi_id_output",
-            "pi_iq_output"
+            "pi_iq_output",
+            "angle_offset"
         ]
     },
     {

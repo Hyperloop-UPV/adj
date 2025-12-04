@@ -463,5 +463,12 @@
         "type": "float32",
         "podUnits": "m/s",
         "displayUnits": "m/s"
+    },
+    {
+        "id": "angle_offset",
+        "name": "Angle offset",
+        "type": "float32",
+        "podUnits": "rad",
+        "displayUnits": "rad"
     }
 ]
