@@ -170,5 +170,19 @@
         "above": {
             "warning": 0.0
         }
+    },
+    {
+        "id": "requested_dc_link_voltage",
+        "name": "Dc link Voltage",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                400.0
+            ]
+        }
     }
+
 ]
