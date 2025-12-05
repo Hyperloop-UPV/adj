@@ -78,6 +78,12 @@
             "requested_speetec_emulation_value"
         ]
     },
+    {
+        "id": 1786,
+        "type": "order",
+        "name": "Stop motor"
+    },
+
      {
         "id": 1780,
         "type": "order",
