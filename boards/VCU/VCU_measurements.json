@@ -195,7 +195,7 @@
         "id": "run_id",
         "name": "Run ID",
         "type": "enum",
-        "enumValues":[
+        "enumValues": [
             "LIM"
         ]
     },
