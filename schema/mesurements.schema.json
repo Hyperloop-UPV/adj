@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Measurements schema",
+    "description": "Array of measurement definitions for data collection and monitoring",
+    "type": "array",
+    "minItems": 1,
+    "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+            "id",
+            "name",
+            "type"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Unique string identifier for the measurement"
+            },
+            "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Human-readable display name"
+            },
+            "type": {
+                "type": "string",
+                "enum": [
+                    "uint8",
+                    "uint16",
+                    "uint32",
+                    "uint64",
+                    "int8",
+                    "int16",
+                    "int32",
+                    "int64",
+                    "float32",
+                    "float64",
+                    "enum",
+                    "bool"
+                ],
+                "description": "Data type of the measurement"
+            },
+            "podUnits": {
+                "type": "string",
+                "description": "Optional pod-side units (references general_info.units)"
+            },
+            "displayUnits": {
+                "type": "string",
+                "description": "Optional display units (references general_info.units)"
+            },
+            "enumValues": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                    "type": "string"
+                },
+                "description": "Enumeration values for discrete measurements"
+            },
+            "safeRange": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                    "type": "number"
+                },
+                "description": "Safe operating range [min, max]"
+            },
+            "warningRange": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                    "type": "number"
+                },
+                "description": "Warning thresholds [min, max]"
+            }
+        }
+    }
+}

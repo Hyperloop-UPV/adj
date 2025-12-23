@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "general_info schema",
+    "type": "object",
+    "required": [
+        "ports",
+        "addresses",
+        "units",
+        "message_ids"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "ports": {
+            "type": "object",
+            "minProperties": 1,
+            "properties": {
+                "TCP_CLIENT": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                },
+                "TCP_SERVER": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                },
+                "UDP": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                },
+                "SNTP": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                },
+                "TFTP": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                }
+            }
+        },
+        "addresses": {
+            "type": "object",
+            "minProperties": 1,
+            "properties": {
+                "backend": {
+                    "type": "string",
+                    "format": "ipv4"
+                }
+            },
+            "required": [
+                "backend"
+            ]
+        },
+        "units": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "string"
+            }
+        },
+        "message_ids": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "integer",
+                "minimum": 0
+            }
+        }
+    }
+}
