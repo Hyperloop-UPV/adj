@@ -3,8 +3,8 @@
         "id": "duty",
         "name": "Duty",
         "type": "uint32",
-        "podUnits": "Percentage",
-        "displayUnits": "Percentage"
+        "podUnits": "%",
+        "displayUnits": "%"
     },
     {
         "id": "pump",
