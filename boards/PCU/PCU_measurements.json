@@ -340,11 +340,16 @@
     "id": "requested_speetec_emulation_mode",
     "name": "Emulation Mode",
     "type": "enum",
-    "enumValues": ["STOP", "position", "speed", "acceleration"]
+    "enumValues": [
+      "STOP",
+      "position",
+      "speed",
+      "acceleration"
+    ]
   },
   {
     "id": "requested_speetec_emulation_value",
-    "name": "Value (m | m/s | m/s^2)",
+    "name": "Value (m | m/s | m/ss)",
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
@@ -353,12 +358,21 @@
     "id": "run_id",
     "name": "Run Mode",
     "type": "enum",
-    "enumValues": ["LIM + Booster", "Booster", "LIM", "LIM (50KM/H)"]
+    "enumValues": [
+      "LIM + Booster",
+      "Booster",
+      "LIM",
+      "LIM (50KM/H)"
+    ]
   },
   {
     "id": "run_state",
     "name": "Run State",
     "type": "enum",
-    "enumValues": ["NOTHING", "MOVING", "BRAKING"]
+    "enumValues": [
+      "NOTHING",
+      "MOVING",
+      "BRAKING"
+    ]
   }
 ]

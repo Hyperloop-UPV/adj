@@ -165,7 +165,7 @@
     },
     {
         "id": "requested_speetec_emulation_value",
-        "name": "Value (m | m/s | m/s^2)",
+        "name": "Value (m | m/s | m/ss)",
         "type": "float32",
         "podUnits": "",
         "displayUnits": "",
