@@ -495,22 +495,22 @@
     "id": "rot_control_x",
     "name": "Rot_Control_x",
     "type": "float32",
-    "podUnits": "degrees",
-    "displayUnits": "degrees"
+    "podUnits": "deg",
+    "displayUnits": "deg"
   },
   {
     "id": "rot_control_y",
     "name": "Rot_Control_y",
     "type": "float32",
-    "podUnits": "degrees",
-    "displayUnits": "degrees"
+    "podUnits": "deg",
+    "displayUnits": "deg"
   },
   {
     "id": "rot_control_z",
     "name": "Rot_Control_z",
     "type": "float32",
-    "podUnits": "degrees",
-    "displayUnits": "degrees"
+    "podUnits": "deg",
+    "displayUnits": "deg"
   },
   {
     "id": "test_gui__1",
