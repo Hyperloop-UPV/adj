@@ -171,7 +171,7 @@ def check_boards_json():
 
 
 def check_general_info_json():
-
+    units = set()
     error_list = []
     is_valid = True
     try:
@@ -211,13 +211,26 @@ def check_general_info_json():
                 )
                 is_valid = False
             ids_seen.add(msg_id)
+
+        # measurement must be unique
+        for measurement, _ in general_info["units"].items():
+            if measurement in units:
+                error_list.append(
+                    logError(
+                        "general_info.json",
+                        f"units.{measurement}",
+                        f"Duplicate measurement {measurement}",
+                    )
+                )
+                is_valid = False
+            units.add(measurement)
     except RuntimeError as e:
         error_list.append(logError("general_info.json", "<load>", str(e)))
         is_valid = False
 
     print_results("general_info.json", is_valid, error_list)
 
-    return is_valid
+    return is_valid, units
 
 
 def check_board_json(path: str):
@@ -281,7 +294,7 @@ def check_board_json(path: str):
         return None
 
 
-def check_measurement_json(path: str, previous_ids=None):
+def check_measurement_json(path: str, previous_ids=None, units=None):
 
     error_list = []
     is_valid = True
@@ -306,6 +319,30 @@ def check_measurement_json(path: str, previous_ids=None):
                         path,
                         "id",
                         f"Duplicate id {mesurament_id} within the measurement",
+                    )
+                )
+                is_valid = False
+
+            # units
+            # Check that the podUnits and DisplayUnits are in units
+            podUnit = measure.get("podUnits", "")
+            if podUnit is not "" and podUnit not in units:
+                error_list.append(
+                    logError(
+                        path,
+                        f"id {mesurament_id}",
+                        f"podUnit '{podUnit}' for id {mesurament_id} is not defined in general_info.json",
+                    )
+                )
+                is_valid = False
+
+            displayUnit = measure.get("displayUnits", "")
+            if displayUnit is not "" and displayUnit not in units:
+                error_list.append(
+                    logError(
+                        path,
+                        f"id {mesurament_id}",
+                        f"displayUnit '{displayUnit}' for id {mesurament_id} is not defined in general_info.json",
                     )
                 )
                 is_valid = False
@@ -360,7 +397,9 @@ def check_measurement_json(path: str, previous_ids=None):
 def main():
     print_header("JSON Validation Script")
 
-    check_general_info_json()
+    valid, units = check_general_info_json()
+
+    print(units)
     boards = check_boards_json()
     if boards is None:
         sys.exit(1)
@@ -375,7 +414,7 @@ def main():
             measurement_ids = set()
             for measurement_path in board.get("measurements", []):
                 check_measurement_json(
-                    f"boards/{board_name}/{measurement_path}", measurement_ids
+                    f"boards/{board_name}/{measurement_path}", measurement_ids, units
                 )
 
     log_message("All JSON files validated successfully", status=1)
