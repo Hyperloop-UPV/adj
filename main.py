@@ -281,25 +281,75 @@ def check_board_json(path: str):
         return None
 
 
-def check_mesurement_json(path: str):
+def check_measurement_json(path: str, previous_ids=None):
 
     error_list = []
     is_valid = True
 
     try:
         measurement = open_json(path)
-        schema = open_schema("mesurements.schema.json")
+        schema = open_schema("measurements.schema.json")
 
         is_valid, schema_errors = validate_with_schema(measurement, schema, path)
         if not is_valid:
             error_list.extend(schema_errors)
 
-        # Additional custom validations can be added here
+        # Check that all mesuraments ids are unique within the measurement and if  type="enum" there is a enumValues field with unique values
+
+        for measure in measurement:
+            mesurament_id = measure["id"]
+            # id
+            if mesurament_id in previous_ids:
+
+                error_list.append(
+                    logError(
+                        path,
+                        "id",
+                        f"Duplicate id {mesurament_id} within the measurement",
+                    )
+                )
+                is_valid = False
+
+            # type enum
+            if measure["type"] == "enum":
+                if "enumValues" not in measure:
+                    error_list.append(
+                        logError(
+                            path,
+                            f"id {mesurament_id}",
+                            f"id {mesurament_id} is of type 'enum' but 'enumValues' field is missing",
+                        )
+                    )
+                    is_valid = False
+                else:
+                    # check unique enum values
+                    enum_values = measure["enumValues"]
+                    if len(enum_values) != len(set(enum_values)):
+                        error_list.append(
+                            logError(
+                                path,
+                                f"id {mesurament_id}",
+                                f"'enumValues' for id {mesurament_id} contains duplicate values",
+                            )
+                        )
+                        is_valid = False
+                # if is not enum type must not have enumValues field
+                if measure["type"] != "enum" and "enumValues" in measure:
+                    error_list.append(
+                        logError(
+                            path,
+                            f"id {mesurament_id}",
+                            f"id {mesurament_id} is of type '{measure['type']}' but has 'enumValues' field",
+                        )
+                    )
+                    is_valid = False
+            else:
+                previous_ids.add(mesurament_id)
 
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
-    print_results(path, is_valid, error_list)
+    print_results("\t" + path, is_valid, error_list)
 
 
 # =========================
@@ -322,8 +372,11 @@ def main():
 
         # if board is not none continue with further processing
         if board is not None:
+            measurement_ids = set()
             for measurement_path in board.get("measurements", []):
-                check_mesurement_json(f"boards/{board_name}/{measurement_path}")
+                check_measurement_json(
+                    f"boards/{board_name}/{measurement_path}", measurement_ids
+                )
 
     log_message("All JSON files validated successfully", status=1)
 

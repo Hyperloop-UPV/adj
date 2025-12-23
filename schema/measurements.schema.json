@@ -56,24 +56,6 @@
                     "type": "string"
                 },
                 "description": "Enumeration values for discrete measurements"
-            },
-            "safeRange": {
-                "type": "array",
-                "minItems": 2,
-                "maxItems": 2,
-                "items": {
-                    "type": "number"
-                },
-                "description": "Safe operating range [min, max]"
-            },
-            "warningRange": {
-                "type": "array",
-                "minItems": 2,
-                "maxItems": 2,
-                "items": {
-                    "type": "number"
-                },
-                "description": "Warning thresholds [min, max]"
             }
         }
     }
