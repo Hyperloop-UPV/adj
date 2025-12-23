@@ -995,32 +995,28 @@
     "name": "multi_current_1",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": "",
-    "enumValues": []
+    "displayUnits": ""
   },
   {
     "id": "multi_current_2",
     "name": "multi_current_2",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": "",
-    "enumValues": []
+    "displayUnits": ""
   },
   {
     "id": "multi_current_3",
     "name": "multi_current_3",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": "",
-    "enumValues": []
+    "displayUnits": ""
   },
   {
     "id": "multi_current_4",
     "name": "multi_current_4",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": "",
-    "enumValues": []
+    "displayUnits": ""
   },
   {
     "id": "dist_error_z",
@@ -1134,5 +1130,4 @@
     "podUnits": "mm",
     "displayUnits": "mm"
   }
-  
 ]
