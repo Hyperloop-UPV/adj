@@ -303,6 +303,7 @@ def check_measurement_json(path: str, previous_ids=None, units=None):
         measurement = open_json(path)
         schema = open_schema("measurements.schema.json")
 
+        # Schema validation
         is_valid, schema_errors = validate_with_schema(measurement, schema, path)
         if not is_valid:
             error_list.extend(schema_errors)
@@ -322,6 +323,8 @@ def check_measurement_json(path: str, previous_ids=None, units=None):
                     )
                 )
                 is_valid = False
+            else:
+                previous_ids.add(mesurament_id)
 
             # units
             # Check that the podUnits and DisplayUnits are in units
@@ -370,18 +373,16 @@ def check_measurement_json(path: str, previous_ids=None, units=None):
                             )
                         )
                         is_valid = False
-                # if is not enum type must not have enumValues field
-                if measure["type"] != "enum" and "enumValues" in measure:
-                    error_list.append(
-                        logError(
-                            path,
-                            f"id {mesurament_id}",
-                            f"id {mesurament_id} is of type '{measure['type']}' but has 'enumValues' field",
-                        )
+            # if is not enum type must not have enumValues field
+            if measure["type"] != "enum" and "enumValues" in measure:
+                error_list.append(
+                    logError(
+                        path,
+                        f"id {mesurament_id}",
+                        f"id {mesurament_id} is of type '{measure['type']}' but has 'enumValues' field",
                     )
-                    is_valid = False
-            else:
-                previous_ids.add(mesurament_id)
+                )
+                is_valid = False
 
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
