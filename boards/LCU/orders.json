@@ -11,14 +11,6 @@
   },
   {
     "type": "order",
-    "name": "send_LDU_en",
-    "variables": [
-      "ldu_buffer_id"
-    ],
-    "id": 9998
-  },
-  {
-    "type": "order",
     "name": "send_LDU_dis",
     "variables": [
       "ldu_buffer_id"
