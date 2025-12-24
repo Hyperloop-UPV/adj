@@ -329,7 +329,7 @@ def check_measurement_json(path: str, previous_ids=None, units=None):
             # units
             # Check that the podUnits and DisplayUnits are in units
             podUnit = measure.get("podUnits", "")
-            if podUnit is not "" and podUnit not in units:
+            if podUnit != "" and podUnit not in units:
                 error_list.append(
                     logError(
                         path,
@@ -340,7 +340,7 @@ def check_measurement_json(path: str, previous_ids=None, units=None):
                 is_valid = False
 
             displayUnit = measure.get("displayUnits", "")
-            if displayUnit is not "" and displayUnit not in units:
+            if displayUnit != "" and displayUnit not in units:
                 error_list.append(
                     logError(
                         path,
@@ -400,7 +400,6 @@ def main():
 
     valid, units = check_general_info_json()
 
-    print(units)
     boards = check_boards_json()
     if boards is None:
         sys.exit(1)
