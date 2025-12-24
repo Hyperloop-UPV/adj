@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import json
 import sys
 import ipaddress
@@ -388,6 +386,55 @@ def check_measurement_json(path: str, previous_ids=None, units=None):
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
     print_results("\t" + path, is_valid, error_list)
+    return is_valid
+
+
+def check_packet_json(path: str, measurement_ids=None, packet_ids=None):
+
+    error_list = []
+    is_valid = True
+
+    try:
+        packet = open_json(path)
+        schema = open_schema("packet.schema.json")
+
+        # Schema validation
+        is_valid, schema_errors = validate_with_schema(packet, schema, path)
+        if not is_valid:
+            error_list.extend(schema_errors)
+
+        # Ensure packet id is unique across all packets
+        for pkt in packet:
+            pkt_id = pkt["id"]
+            if pkt_id in packet_ids and pkt_id != 0:
+                error_list.append(
+                    logError(
+                        path,
+                        "id",
+                        f"Duplicate id {pkt_id} across packets",
+                    )
+                )
+                is_valid = False
+            else:
+                packet_ids.add(pkt_id)
+
+            # Ensure all measurement ids in the packet are defined in the measurements
+            for meas_id in pkt.get("variables", []):
+                if meas_id not in measurement_ids:
+                    error_list.append(
+                        logError(
+                            path,
+                            f"id {pkt_id}",
+                            f"measurement_id {meas_id} in id {pkt_id} is not defined in measurements",
+                        )
+                    )
+                    is_valid = False
+
+    except RuntimeError as e:
+        error_list.append(logError(path, "<load>", str(e)))
+        is_valid = False
+    print_results("\t" + path, is_valid, error_list)
+    return is_valid
 
 
 # =========================
@@ -406,6 +453,8 @@ def main():
 
     print_header("Validating individual board JSON files")
 
+    packet_ids = set()
+
     for board_name, board_path in boards.items():
         board = check_board_json(board_path)
 
@@ -415,6 +464,11 @@ def main():
             for measurement_path in board.get("measurements", []):
                 check_measurement_json(
                     f"boards/{board_name}/{measurement_path}", measurement_ids, units
+                )
+
+            for packets_path in board.get("packets", []):
+                check_packet_json(
+                    f"boards/{board_name}/{packets_path}", measurement_ids, packet_ids
                 )
 
     log_message("All JSON files validated successfully", status=1)
