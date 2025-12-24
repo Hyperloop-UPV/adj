@@ -1,8 +1,23 @@
-import json
+"""Entrypoint script for validating project JSON files against schemas.
+
+This script coordinates several checks over files in the `test/`
+directory using JSON Schema validation and project-specific rules
+(e.g. uniqueness constraints and IPv4 validation).
+"""
+
 import sys
-import ipaddress
 from pathlib import Path
 from jsonschema import Draft7Validator
+
+from utils import (
+    print_header,
+    log_message,
+    load_json,
+    is_valid_ipv4,
+    print_results,
+    logError,
+    validate_with_schema,
+)
 
 
 # =========================
@@ -18,89 +33,30 @@ BASE_DIR_SCHEMA = Path("schema")
 # =========================
 
 
-def print_header(header: str):
-    print("=" * 40)
-    print("· " + header)
-    print("=" * 40)
-
-
-def print_status(message: str, validated: bool = False):
-
-    if not validated:
-        result = "\033[31mFailed\033[0m"
-    elif validated:
-        result = "\033[32mPassed\033[0m"
-
-    print("· " + message + " " + result)
-
-
-def log_message(message: str, status: int = 0):
-    """
-    status:
-      -1 → error (red)
-       0 → normal
-       1 → success (green)
-    """
-    colors = {-1: "\033[31m", 1: "\033[32m"}
-    color = colors.get(status, "")
-    reset = "\033[0m" if color else ""
-    print(f"{color}{message}{reset}")
-
-
-def load_json(path: Path):
-    try:
-        with path.open(encoding="utf-8") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        raise RuntimeError(f"File not found: {path}")
-    except json.JSONDecodeError as e:
-        raise RuntimeError(f"JSON malformed in {path}: {e}")
-
-
-def is_valid_ipv4(address: str) -> bool:
-    try:
-        ipaddress.IPv4Address(address)
-        return True
-    except ipaddress.AddressValueError:
-        return False
-
-
-def print_results(file, is_valid, error_list):
-    print_status(file, is_valid)
-    for error in error_list:
-        print("\t" + error)
-
-
 def open_json(relative_path: str):
+    """Load a JSON file from the `test/` directory.
+
+    Args:
+        relative_path: Path relative to `test/` (e.g. "boards.json").
+
+    Returns:
+        The parsed JSON structure.
+    """
+
     return load_json(BASE_DIR_JSON / relative_path)
 
 
 def open_schema(relative_path: str):
+    """Load a JSON Schema file from the `schema/` directory.
+
+    Args:
+        relative_path: Path relative to `schema/` (e.g. "board.schema.json").
+
+    Returns:
+        The parsed JSON Schema as a dictionary.
+    """
+
     return load_json(BASE_DIR_SCHEMA / relative_path)
-
-
-def logError(label: str, path: str, message: str):
-    return f"\033[31m{label}: {path} → {message}\033[0m"
-
-
-def logSuccess(label: str):
-    log_message(f"{label}: validation passed", status=1)
-
-
-def validate_with_schema(data, schema, label: str) -> bool:
-    validator = Draft7Validator(schema)
-    errors = sorted(validator.iter_errors(data), key=lambda e: e.path)
-    error_list = []
-    if errors:
-
-        error_list = [
-            logError(label, ".".join(map(str, e.path)) or "<root>", e.message)
-            for e in errors
-        ]
-
-        return False, error_list
-
-    return True, []
 
 
 # =========================
@@ -109,6 +65,8 @@ def validate_with_schema(data, schema, label: str) -> bool:
 
 unique_board_ids = set()
 unique_board_ip = set()
+unique_packet_ids = set()
+units = set()
 
 # =========================
 # VALIDATORS
@@ -116,6 +74,13 @@ unique_board_ip = set()
 
 
 def check_boards_json():
+    """Validate the top-level `boards.json` index file.
+
+    Verifies that `boards.json` is a mapping of board name (string) to a
+    relative JSON filename (string ending with .json).
+
+    Returns the parsed boards mapping (dict) on success, otherwise None.
+    """
 
     is_valid = True
     error_list = []
@@ -169,7 +134,14 @@ def check_boards_json():
 
 
 def check_general_info_json():
-    units = set()
+    """Validate `general_info.json` and apply additional project rules.
+
+    Performs schema validation and extra checks such as IPv4 format
+    validation for addresses, uniqueness of message IDs, and
+    accumulation/uniqueness checks for measurement units.
+    Returns True on success, False otherwise.
+    """
+
     error_list = []
     is_valid = True
     try:
@@ -228,10 +200,17 @@ def check_general_info_json():
 
     print_results("general_info.json", is_valid, error_list)
 
-    return is_valid, units
+    return is_valid
 
 
 def check_board_json(path: str):
+    """Validate a single board JSON file.
+
+    Ensures schema conformance and enforces global uniqueness for
+    `board_id` and `board_ip`. Also verifies the IPv4 format of
+    the board IP address.
+    Returns the parsed board dict on success, otherwise None.
+    """
 
     error_list = []
     is_valid = True
@@ -292,7 +271,16 @@ def check_board_json(path: str):
         return None
 
 
-def check_measurement_json(path: str, previous_ids=None, units=None):
+def check_measurement_json(path: str, previous_ids=None):
+    """Validate a measurements JSON file.
+
+    Checks include schema validation, uniqueness of measurement IDs
+    within the current board (`previous_ids`), verification that any
+    referenced units exist in `general_info.json`, and validation of
+    enum-related constraints.
+
+    Returns True if valid, False otherwise.
+    """
 
     error_list = []
     is_valid = True
@@ -389,7 +377,15 @@ def check_measurement_json(path: str, previous_ids=None, units=None):
     return is_valid
 
 
-def check_packet_json(path: str, measurement_ids=None, packet_ids=None):
+def check_packet_json(path: str, measurement_ids=None):
+    """Validate a packet JSON file.
+
+    Ensures schema conformance, global uniqueness of packet IDs
+    (with 0 often allowed as special case) and that referenced
+    measurement IDs exist in `measurement_ids`.
+
+    Returns True if valid, False otherwise.
+    """
 
     error_list = []
     is_valid = True
@@ -406,7 +402,7 @@ def check_packet_json(path: str, measurement_ids=None, packet_ids=None):
         # Ensure packet id is unique across all packets
         for pkt in packet:
             pkt_id = pkt["id"]
-            if pkt_id in packet_ids and pkt_id != 0:
+            if pkt_id in unique_packet_ids and pkt_id != 0:
                 error_list.append(
                     logError(
                         path,
@@ -416,7 +412,7 @@ def check_packet_json(path: str, measurement_ids=None, packet_ids=None):
                 )
                 is_valid = False
             else:
-                packet_ids.add(pkt_id)
+                unique_packet_ids.add(pkt_id)
 
             # Ensure all measurement ids in the packet are defined in the measurements
             for meas_id in pkt.get("variables", []):
@@ -443,35 +439,69 @@ def check_packet_json(path: str, measurement_ids=None, packet_ids=None):
 
 
 def main():
+    """Main orchestration function.
+
+    Performs the full validation flow and exits the process with a
+    non-zero status code if any validation step fails.
+    """
+
+    # App header
     print_header("JSON Validation Script")
 
-    valid, units = check_general_info_json()
+    # Validate general_info.json
+    valid = check_general_info_json()
 
+    # Get boards and validate json
     boards = check_boards_json()
-    if boards is None:
+    if boards is None or not valid:
+        log_message("Aborting due to previous errors", status=-1)
         sys.exit(1)
 
+    # Validate individual board JSON files
     print_header("Validating individual board JSON files")
 
-    packet_ids = set()
-
     for board_name, board_path in boards.items():
+
+        # Validate board JSON, board is an arrya of measurements and packets paths
         board = check_board_json(board_path)
 
         # if board is not none continue with further processing
         if board is not None:
+
+            # measurements are unique within a board
             measurement_ids = set()
+
+            # Validate measurements JSON files
             for measurement_path in board.get("measurements", []):
-                check_measurement_json(
-                    f"boards/{board_name}/{measurement_path}", measurement_ids, units
+                valid = (
+                    check_measurement_json(
+                        f"boards/{board_name}/{measurement_path}",
+                        measurement_ids,
+                    )
+                    and valid
                 )
 
+            # Validate packets JSON files (remember that orders are processed as packets)
             for packets_path in board.get("packets", []):
-                check_packet_json(
-                    f"boards/{board_name}/{packets_path}", measurement_ids, packet_ids
+                valid = (
+                    check_packet_json(
+                        f"boards/{board_name}/{packets_path}",
+                        measurement_ids,
+                    )
+                    and valid
                 )
+        else:
+            log_message(
+                f"Skipping measurements and packets validation for board {board_name} due to previous errors",
+                status=-1,
+            )
+            valid = False
 
-    log_message("All JSON files validated successfully", status=1)
+    if not valid:
+        log_message("Validation completed with errors", status=-1)
+        sys.exit(1)
+    else:
+        log_message("All JSON files validated successfully", status=1)
 
 
 if __name__ == "__main__":
