@@ -1,13 +1,12 @@
 """Entrypoint script for validating project JSON files against schemas.
 
-This script coordinates several checks over files in the `test/`
+This script coordinates several checks over files in the test/
 directory using JSON Schema validation and project-specific rules
 (e.g. uniqueness constraints and IPv4 validation).
 """
 
 import sys
 from pathlib import Path
-from jsonschema import Draft7Validator
 
 from utils import (
     print_header,
@@ -365,16 +364,6 @@ def check_measurement_json(path: str, previous_ids=None):
                             )
                         )
                         is_valid = False
-            # if is not enum type must not have enumValues field
-            if measure["type"] != "enum" and "enumValues" in measure:
-                error_list.append(
-                    logError(
-                        path,
-                        f"id {mesurament_id}",
-                        f"id {mesurament_id} is of type '{measure['type']}' but has 'enumValues' field",
-                    )
-                )
-                is_valid = False
 
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))

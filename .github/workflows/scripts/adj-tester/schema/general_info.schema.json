@@ -1,6 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "general_info schema",
+    "description": "Schema for general information including ports, addresses, units, and message IDs.",
     "type": "object",
     "required": [
         "ports",

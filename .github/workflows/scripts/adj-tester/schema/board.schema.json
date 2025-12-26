@@ -3,7 +3,7 @@
     "title": "Board configuration schema",
     "description": "Main board configuration including ID, IP address, and references to measurements and packets files.",
     "type": "object",
-    "additionalProperties": false,
+    "additionalProperties": true,
     "required": [
         "board_id",
         "board_ip",

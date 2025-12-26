@@ -1,6 +1,6 @@
 """Utility helpers for printing, logging and JSON loading.
 
-This module provides small helper functions used by the test-suite and
+This module providessmall helper functions used by the test-suite and
 CLI utilities, including colored printing for statuses, simple logging,
 JSON loading with clear error messages, and basic IPv4 validation.
 """
@@ -135,8 +135,6 @@ def logError(label: str, path: str, message: str):
 
 
 # Schema validation
-
-
 def validate_with_schema(data, schema, label: str) -> bool:
     validator = Draft7Validator(schema)
     errors = sorted(validator.iter_errors(data), key=lambda e: e.path)
