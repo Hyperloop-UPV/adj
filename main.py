@@ -24,9 +24,15 @@ from utils import (
 # CONFIG
 # =========================
 
-BASE_DIR_JSON = Path("test")
-BASE_DIR_SCHEMA = Path("schema")
+# Comment while development
+SCRIPT_DIR = Path(__file__).resolve().parent
 
+BASE_DIR_JSON = SCRIPT_DIR.parent.parent.parent.parent
+BASE_DIR_SCHEMA = SCRIPT_DIR / "schema"
+
+# comment while production
+# BASE_DIR_JSON =  "test"
+# BASE_DIR_SCHEMA =  "schema"
 
 # =========================
 # UTILS
