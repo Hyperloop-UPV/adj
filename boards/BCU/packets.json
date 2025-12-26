@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1700,
+        "type": "data",
+        "name": "Motor Driver",
+        "variables": [
+            "duty_cycle_u",
+            "duty_cycle_v",
+            "duty_cycle_w",
+            "commutation_frequency_hz",
+            "dead_time_ns"
+        ]
+    },
+    {
+        "id": 1701,
+        "type": "data",
+        "name": "State",
+        "variables": [
+            "bcu_general_state",
+            "bcu_operational_state",
+            "bcu_nested_state",
+            "control_state"
+        ]
+    },
+    {
+        "id": 1702,
+        "type": "data",
+        "name": "Space Vector",
+        "variables": [
+            "space_vector_time",
+            "output_modulation_index",
+            "output_modulation_frequency_hz"
+        ]
+    },
+    {
+        "id": 1703,
+        "type": "data",
+        "name": "DC Link",
+        "variables": [
+            "dc_link_average_voltage",
+            "dc_link_a_voltage",
+            "dc_link_b_voltage"
+        ]
+    },
+    {
+        "id": 1704,
+        "type": "data",
+        "name": "Motor Currents",
+        "variables": [
+            "average_current_u",
+            "average_current_v",
+            "average_current_w",
+            "current_u_motor_a",
+            "current_v_motor_a",
+            "current_w_motor_a",
+            "current_u_motor_b",
+            "current_v_motor_b",
+            "current_w_motor_b"
+        ]
+    },
+    {
+        "id": 1705,
+        "type": "data",
+        "name": "SPEETEC 1",
+        "variables": [
+            "position_speetec_1",
+            "direction_speetec_1",
+            "speed_speetec_1",
+            "acceleration_speetec_1"
+        ]
+    },
+    {
+        "id": 1706,
+        "type": "data",
+        "name": "Current Control",
+        "variables": [
+            "d_current_reference",
+            "measured_d_current",
+            "d_current_error",
+            "q_current_reference",
+            "measured_q_current",
+            "q_current_error",
+            "target_u_voltage",
+            "target_v_voltage",
+            "target_w_voltage",
+            "electrical_angle",
+            "pi_id_output",
+            "pi_iq_output"
+        ]
+    },
+    {
+        "id": 1707,
+        "type": "data",
+        "name": "Speed Control",
+        "variables": [
+            "requested_linear_speed",
+            "speed_speetec_1"
+        ]
+    },
+    {
+        "id": 1790,
+        "type": "data",
+        "name": "Enable DC Poles (BCU)"
+    },
+    {
+        "id": 1789,
+        "type": "data",
+        "name": "Disable DC Poles (BCU)"
+    },
+    {
+        "id": 1692,
+        "type": "data",
+        "name": "BCU Bus Voltage",
+        "variables": [
+            "bcu_bus_voltage"
+        ]
+    }
+]
