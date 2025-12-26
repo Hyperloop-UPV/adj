@@ -1,0 +1,424 @@
+[
+    {
+        "id": 0,
+        "type": "data",
+        "name": "FAULT"
+    },
+    {
+        "id": 910,
+        "type": "data",
+        "name": "battery_1",
+        "variables": [
+            "battery1_SOC",
+            "battery1_cell1",
+            "battery1_cell2",
+            "battery1_cell3",
+            "battery1_cell4",
+            "battery1_cell5",
+            "battery1_cell6",
+            "battery1_temperature1",
+            "battery1_temperature2",
+            "battery1_total_voltage",
+            "battery1_conv_rate"
+        ]
+    },
+    {
+        "id": 911,
+        "type": "data",
+        "name": "battery_2",
+        "variables": [
+            "battery2_SOC",
+            "battery2_cell1",
+            "battery2_cell2",
+            "battery2_cell3",
+            "battery2_cell4",
+            "battery2_cell5",
+            "battery2_cell6",
+            "battery2_temperature1",
+            "battery2_temperature2",
+            "battery2_total_voltage",
+            "battery2_conv_rate"
+        ]
+    },
+    {
+        "id": 912,
+        "type": "data",
+        "name": "battery_3",
+        "variables": [
+            "battery3_SOC",
+            "battery3_cell1",
+            "battery3_cell2",
+            "battery3_cell3",
+            "battery3_cell4",
+            "battery3_cell5",
+            "battery3_cell6",
+            "battery3_temperature1",
+            "battery3_temperature2",
+            "battery3_total_voltage",
+            "battery3_conv_rate"
+        ]
+    },
+    {
+        "id": 913,
+        "type": "data",
+        "name": "battery_4",
+        "variables": [
+            "battery4_SOC",
+            "battery4_cell1",
+            "battery4_cell2",
+            "battery4_cell3",
+            "battery4_cell4",
+            "battery4_cell5",
+            "battery4_cell6",
+            "battery4_temperature1",
+            "battery4_temperature2",
+            "battery4_total_voltage",
+            "battery4_conv_rate"
+        ]
+    },
+    {
+        "id": 914,
+        "type": "data",
+        "name": "battery_5",
+        "variables": [
+            "battery5_SOC",
+            "battery5_cell1",
+            "battery5_cell2",
+            "battery5_cell3",
+            "battery5_cell4",
+            "battery5_cell5",
+            "battery5_cell6",
+            "battery5_temperature1",
+            "battery5_temperature2",
+            "battery5_total_voltage",
+            "battery5_conv_rate"
+        ]
+    },
+    {
+        "id": 915,
+        "type": "data",
+        "name": "battery_6",
+        "variables": [
+            "battery6_SOC",
+            "battery6_cell1",
+            "battery6_cell2",
+            "battery6_cell3",
+            "battery6_cell4",
+            "battery6_cell5",
+            "battery6_cell6",
+            "battery6_temperature1",
+            "battery6_temperature2",
+            "battery6_total_voltage",
+            "battery6_conv_rate"
+        ]
+    },
+    {
+        "id": 916,
+        "type": "data",
+        "name": "battery_7",
+        "variables": [
+            "battery7_SOC",
+            "battery7_cell1",
+            "battery7_cell2",
+            "battery7_cell3",
+            "battery7_cell4",
+            "battery7_cell5",
+            "battery7_cell6",
+            "battery7_temperature1",
+            "battery7_temperature2",
+            "battery7_total_voltage",
+            "battery7_conv_rate"
+        ]
+    },
+    {
+        "id": 917,
+        "type": "data",
+        "name": "battery_8",
+        "variables": [
+            "battery8_SOC",
+            "battery8_cell1",
+            "battery8_cell2",
+            "battery8_cell3",
+            "battery8_cell4",
+            "battery8_cell5",
+            "battery8_cell6",
+            "battery8_temperature1",
+            "battery8_temperature2",
+            "battery8_total_voltage",
+            "battery8_conv_rate"
+        ]
+    },
+    {
+        "id": 918,
+        "type": "data",
+        "name": "battery_9",
+        "variables": [
+            "battery9_SOC",
+            "battery9_cell1",
+            "battery9_cell2",
+            "battery9_cell3",
+            "battery9_cell4",
+            "battery9_cell5",
+            "battery9_cell6",
+            "battery9_temperature1",
+            "battery9_temperature2",
+            "battery9_total_voltage",
+            "battery9_conv_rate"
+        ]
+    },
+    {
+        "id": 919,
+        "type": "data",
+        "name": "battery_10",
+        "variables": [
+            "battery10_SOC",
+            "battery10_cell1",
+            "battery10_cell2",
+            "battery10_cell3",
+            "battery10_cell4",
+            "battery10_cell5",
+            "battery10_cell6",
+            "battery10_temperature1",
+            "battery10_temperature2",
+            "battery10_total_voltage",
+            "battery10_conv_rate"
+        ]
+    },
+    {
+        "id": 920,
+        "type": "data",
+        "name": "battery_11",
+        "variables": [
+            "battery11_SOC",
+            "battery11_cell1",
+            "battery11_cell2",
+            "battery11_cell3",
+            "battery11_cell4",
+            "battery11_cell5",
+            "battery11_cell6",
+            "battery11_temperature1",
+            "battery11_temperature2",
+            "battery11_total_voltage",
+            "battery11_conv_rate"
+        ]
+    },
+    {
+        "id": 921,
+        "type": "data",
+        "name": "battery_12",
+        "variables": [
+            "battery12_SOC",
+            "battery12_cell1",
+            "battery12_cell2",
+            "battery12_cell3",
+            "battery12_cell4",
+            "battery12_cell5",
+            "battery12_cell6",
+            "battery12_temperature1",
+            "battery12_temperature2",
+            "battery12_total_voltage",
+            "battery12_conv_rate"
+        ]
+    },
+    {
+        "id": 922,
+        "type": "data",
+        "name": "battery_13",
+        "variables": [
+            "battery13_SOC",
+            "battery13_cell1",
+            "battery13_cell2",
+            "battery13_cell3",
+            "battery13_cell4",
+            "battery13_cell5",
+            "battery13_cell6",
+            "battery13_temperature1",
+            "battery13_temperature2",
+            "battery13_total_voltage",
+            "battery13_conv_rate"
+        ]
+    },
+    {
+        "id": 923,
+        "type": "data",
+        "name": "battery_14",
+        "variables": [
+            "battery14_SOC",
+            "battery14_cell1",
+            "battery14_cell2",
+            "battery14_cell3",
+            "battery14_cell4",
+            "battery14_cell5",
+            "battery14_cell6",
+            "battery14_temperature1",
+            "battery14_temperature2",
+            "battery14_total_voltage",
+            "battery14_conv_rate"
+        ]
+    },
+    {
+        "id": 924,
+        "type": "data",
+        "name": "battery_15",
+        "variables": [
+            "battery15_SOC",
+            "battery15_cell1",
+            "battery15_cell2",
+            "battery15_cell3",
+            "battery15_cell4",
+            "battery15_cell5",
+            "battery15_cell6",
+            "battery15_temperature1",
+            "battery15_temperature2",
+            "battery15_total_voltage",
+            "battery15_conv_rate"
+        ]
+    },
+    {
+        "id": 925,
+        "type": "data",
+        "name": "battery_16",
+        "variables": [
+            "battery16_SOC",
+            "battery16_cell1",
+            "battery16_cell2",
+            "battery16_cell3",
+            "battery16_cell4",
+            "battery16_cell5",
+            "battery16_cell6",
+            "battery16_temperature1",
+            "battery16_temperature2",
+            "battery16_total_voltage",
+            "battery16_conv_rate"
+        ]
+    },
+    {
+        "id": 926,
+        "type": "data",
+        "name": "battery_17",
+        "variables": [
+            "battery17_SOC",
+            "battery17_cell1",
+            "battery17_cell2",
+            "battery17_cell3",
+            "battery17_cell4",
+            "battery17_cell5",
+            "battery17_cell6",
+            "battery17_temperature1",
+            "battery17_temperature2",
+            "battery17_total_voltage",
+            "battery17_conv_rate"
+        ]
+    },
+    {
+        "id": 927,
+        "type": "data",
+        "name": "battery_18",
+        "variables": [
+            "battery18_SOC",
+            "battery18_cell1",
+            "battery18_cell2",
+            "battery18_cell3",
+            "battery18_cell4",
+            "battery18_cell5",
+            "battery18_cell6",
+            "battery18_temperature1",
+            "battery18_temperature2",
+            "battery18_total_voltage",
+            "battery18_conv_rate"
+        ]
+    },
+    {
+        "id": 928,
+        "type": "data",
+        "name": "batteries_voltage",
+        "variables": [
+            "batteries_voltage_reading"
+        ]
+    },
+    {
+        "id": 930,
+        "type": "data",
+        "name": "voltage_sensor",
+        "variables": [
+            "voltage_reading"
+        ]
+    },
+    {
+        "id": 931,
+        "name": "current_sensor",
+        "type": "data",
+        "variables": [
+            "current_reading"
+        ]
+    },
+    {
+        "id": 940,
+        "name": "general_state_machine",
+        "type": "data",
+        "variables": [
+            "general_state_machine_status"
+        ]
+    },
+    {
+        "id": 941,
+        "name": "operational_state_machine",
+        "type": "data",
+        "variables": [
+            "operational_state_machine_status"
+        ]
+    },
+    {
+        "id": 942,
+        "name": "driver_diagnosis",
+        "type": "data",
+        "variables": [
+            "driver_reading_period"
+        ]
+    },
+    {
+        "id": 943,
+        "name": "imd",
+        "type": "data",
+        "variables": [
+            "imd_status",
+            "imd_resistance",
+            "imd_is_ok"
+        ]
+    },
+    {
+        "id": 944,
+        "name": "sdc",
+        "type": "data",
+        "variables": [
+            "sdc_status"
+        ]
+    },
+    {
+        "id": 945,
+        "name": "minimum_soc",
+        "type": "data",
+        "variables": [
+            "minimum_soc"
+        ]
+    },
+    {
+        "id": 946,
+        "name": "bms",
+        "type": "data",
+        "variables": [
+            "bms_status"
+        ]
+    },
+    {
+        "id": 947,
+        "name": "batteries_data",
+        "type": "data",
+        "variables": [
+            "voltage_min",
+            "voltage_max",
+            "temp_min",
+            "temp_max"
+        ]
+    }
+]

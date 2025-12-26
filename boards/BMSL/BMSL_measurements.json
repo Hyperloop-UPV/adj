@@ -1,0 +1,200 @@
+[
+  {
+    "id": "cell_1",
+    "name": "Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "cell_2",
+    "name": "Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "cell_3",
+    "name": "Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "cell_4",
+    "name": "Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "cell_5",
+    "name": "Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "cell_6",
+    "name": "Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "voltage_min",
+    "name": "Min Cell",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "voltage_max",
+    "name": "Max Cell",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "total_voltage",
+    "name": "Total Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "SOC",
+    "name": "SOC",
+    "type": "float32",
+    "podUnits": "Percentage",
+    "displayUnits": "Percentage"
+  },
+  {
+    "id": "temperature_1",
+    "name": "Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC"
+  },
+  {
+    "id": "temperature_2",
+    "name": "Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC"
+  },
+  {
+    "id": "temperature_3",
+    "name": "Temperature 3",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC"
+  },
+  {
+    "id": "temperature_4",
+    "name": "Temperature 4",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC"
+  },
+  {
+    "id": "temp_min",
+    "name": "Min. Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC"
+  },
+  {
+    "id": "temp_max",
+    "name": "Max. Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC"
+  },
+  {
+    "id": "current",
+    "name": "Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "state",
+    "name": "State",
+    "type": "enum",
+    "enumValues": [
+      "CONNECTING",
+      "OPERATIONAL",
+      "FAULT"
+    ]
+  },
+  {
+    "id": "pfm_state",
+    "name": "PFM State",
+    "type": "enum",
+    "enumValues": [
+      "INACTIVE",
+      "ACTIVE"
+    ]
+  },
+  {
+    "id": "buffer_state",
+    "name": "BUFFER State",
+    "type": "enum",
+    "enumValues": [
+      "HIGH",
+      "LOW"
+    ]
+  },
+  {
+    "id": "reset_state",
+    "name": "RESET State",
+    "type": "enum",
+    "enumValues": [
+      "LOW",
+      "HIGH"
+    ]
+  },
+  {
+    "id": "frequency",
+    "name": "Frequency",
+    "type": "uint32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz"
+  },
+  {
+    "id": "dead_time",
+    "name": "Dead time",
+    "type": "uint32",
+    "podUnits": "ns",
+    "displayUnits": "ns"
+  },
+  {
+    "id": "output_current",
+    "name": "Output Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "input_current",
+    "name": "Input Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "output_voltage",
+    "name": "Output Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "input_voltage",
+    "name": "Input Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  }
+]

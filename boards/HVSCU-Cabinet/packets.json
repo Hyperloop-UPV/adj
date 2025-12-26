@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1607,
+        "type": "data",
+        "name": "SDC State",
+        "variables": [
+            "HVSCU-Cabinet_sdc_good"
+        ]
+    },
+    {
+        "id": 1608,
+        "type": "data",
+        "name": "Contactors State",
+        "variables": [
+            "HVSCU-Cabinet_bus_voltage",
+            "HVSCU-Cabinet_contactors_state"
+        ]
+    },
+    {
+        "id": 1609,
+        "type": "data",
+        "name": "Current Sense",
+        "variables": [
+            "HVSCU-Cabinet_output_current"
+        ]
+    },
+    {
+        "id": 1610,
+        "type": "data",
+        "name": "Cabinet IMD",
+        "variables": [
+            "HVSCU-Cabinet_imd_state",
+            "HVSCU-Cabinet_isolation_resistance",
+            "HVSCU-Cabinet_ok"
+        ]
+    }
+]

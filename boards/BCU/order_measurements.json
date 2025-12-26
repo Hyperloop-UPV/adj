@@ -1,0 +1,176 @@
+[
+    {
+        "id": "duty_cycle_u",
+        "name": "Duty Cycle U (%)",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                100.0
+            ]
+        }
+    },
+    {
+        "id": "duty_cycle_v",
+        "name": "Duty Cycle V (%)",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                100.0
+            ]
+        }
+    },
+    {
+        "id": "duty_cycle_w",
+        "name": "Duty Cycle W (%)",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                100.0
+            ]
+        }
+    },
+    {
+        "id": "commutation_frequency_hz",
+        "name": "Commutation Frequency (Hz)",
+        "type": "uint32",
+        "podUnits": "Hz",
+        "displayUnits": "Hz",
+        "below": {
+            "warning": 30000
+        }
+    },
+    {
+        "id": "dead_time_ns",
+        "name": "Dead Time (ns)",
+        "type": "uint32",
+        "podUnits": "ns",
+        "displayUnits": "ns",
+        "above": {
+            "warning": 100
+        }
+    },
+    {
+        "id": "modulation_index",
+        "name": "Modulation Index",
+        "type": "float32",
+        "podUnits": "",
+        "displayUnits": "",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                1.1547
+            ]
+        }
+    },
+    {
+        "id": "modulation_frequency_hz",
+        "name": "Modulation Frequency (Hz)",
+        "type": "float32",
+        "podUnits": "Hz",
+        "displayUnits": "Hz",
+        "above": {
+            "warning": 0.0
+        }
+    },
+    {
+        "id": "requested_dc_link_voltage",
+        "name": "Requested DC Link Voltage (V)",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V",
+        "below": {
+            "warning": 446.4
+        }
+    },
+    {
+        "id": "requested_linear_speed",
+        "name": "Target Linear Speed (m/s)",
+        "type": "float32",
+        "podUnits": "m/s",
+        "displayUnits": "m/s",
+        "above": {
+            "warning": 0.0
+        }
+    },
+    {
+        "id": "requested_d_current_reference",
+        "name": "D Current Reference (A)",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                80.0
+            ]
+        }
+    },
+    {
+        "id": "requested_q_current_reference",
+        "name": "Q Current Reference (A)",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                80.0
+            ]
+        }
+    },
+    {
+        "id": "requested_d_current_reference_2",
+        "name": "D Current Reference(A)",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                80.0
+            ]
+        }
+    },
+    {
+        "id": "requested_q_current_reference_2",
+        "name": "Q Current Reference (A)",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                80.0
+            ]
+        }
+    },
+    {
+        "id": "requested_speetec_emulation_mode",
+        "name": "Emulation Mode",
+        "type": "enum",
+        "enumValues": [
+            "position",
+            "speed",
+            "acceleration"
+        ]
+    },
+    {
+        "id": "requested_speetec_emulation_value",
+        "name": "Value (m | m/s | m/s^2)",
+        "type": "float32",
+        "podUnits": "",
+        "displayUnits": "",
+        "above": {
+            "warning": 0.0
+        }
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "type": "data",
+        "name": "Current State",
+        "variables": [
+            "general_state",
+            "operational_state"
+        ],
+        "id": 249
+    },
+    {
+        "type": "data",
+        "name": "Reeds",
+        "variables": [
+            "reed1",
+            "reed2",
+            "reed3",
+            "reed4",
+            "all_reeds"
+        ],
+        "id": 251
+    },
+    {
+        "type": "data",
+        "name": "Flow",
+        "variables": [
+            "flow1",
+            "flow2"
+        ],
+        "id": 250
+    },
+    {
+        "type": "data",
+        "name": "Regulator",
+        "variables": [
+            "regulator_1_pressure",
+            "regulator_2_pressure"
+        ],
+        "id": 252
+    },
+    {
+        "type": "data",
+        "name": "Pressure",
+        "variables": [
+            "pressure_high",
+            "pressure_regulator",
+            "pressure_brakes",
+            "pressure_capsule"
+        ],
+        "id": 253
+    },
+    {
+        "type": "data",
+        "name": "tapes",
+        "variables": [
+            "tape_enable_output",
+            "emergency_tape"
+        ],
+        "id": 254
+    },
+    {
+        "type": "data",
+        "name": "sdc",
+        "variables": [
+            "SDC"
+        ],
+        "id": 255
+    },
+    {
+        "type": "data",
+        "name": "recovery_state",
+        "variables": [
+            "state"
+        ],
+        "id": 65
+    }
+]
