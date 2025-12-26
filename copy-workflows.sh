@@ -35,7 +35,6 @@ for branch in $branches; do
   git commit -m "Copy workflows from $SOURCE_BRANCH"
   git push origin "$branch"
 
-  fi
 done
 
 git checkout "$SOURCE_BRANCH"
