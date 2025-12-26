@@ -1,4 +1,4 @@
-name: JSON Validation
+name: ADJ Validator
 
 on:
   push:        
@@ -24,4 +24,4 @@ jobs:
 
       - name: Run JSON validation
         run: |
-          python3 .github/workflows/scripts/validate_json.py
+          python3 .github/workflows/scripts/adj-tester/main.py
