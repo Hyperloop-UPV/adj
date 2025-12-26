@@ -29,15 +29,12 @@ for branch in $branches; do
   echo "Cherry-picking into branch: $branch"
   git checkout "$branch"
 
-  if git cherry-pick "$COMMIT_HASH"; then
-    echo "✔ Cherry-pick successful in $branch"
-  else
-    echo "✖ Conflict in $branch"
-    echo "Resolve conflicts, then run:"
-    echo "  git cherry-pick --continue"
-    echo "or abort with:"
-    echo "  git cherry-pick --abort"
-    exit 1
+  git cherry-pick "$COMMIT_HASH";
+  git cherry_pick --continue;
+  git add .github; 
+  git commit -m "Copy workflows from $SOURCE_BRANCH"
+  git push origin "$branch"
+
   fi
 done
 
