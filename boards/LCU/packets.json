@@ -12,11 +12,7 @@
       "LPU_Voltage",
       "error",
       "integral",
-      "derivative",
-      "kp",
-      "ki",
-      "kd",
-      "filter_order"
+      "derivative"
     ],
     "id": 101
   }
