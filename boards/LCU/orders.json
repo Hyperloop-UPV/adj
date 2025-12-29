@@ -1,129 +1,56 @@
 [
   {
     "type": "order",
-    "name": "set_LDU_pwm_params",
+    "name": "Set Duty Cycle",
     "variables": [
-      "ldu_id",
-      "pwm_duty_cycle",
-      "current_control_frequency"
+      "duty_cycle"
     ],
-    "id": 9999
+    "id": 201
   },
   {
     "type": "order",
-    "name": "send_LDU_en",
+    "name": "Fix LPU Voltage",
     "variables": [
-      "ldu_buffer_id"
+      "LPU_Voltage"
     ],
-    "id": 9998
+    "id": 205
   },
   {
     "type": "order",
-    "name": "send_LDU_dis",
+    "name": "Set Reference Current",
     "variables": [
-      "ldu_buffer_id"
+      "reference_current"
     ],
-    "id": 9996
+    "id": 202
   },
   {
     "type": "order",
-    "name": "set_current_desired",
+    "name": "Start Current Control",
     "variables": [
-      "ldu_id",
-      "lcu_desired_current"
+      "reference_current"
     ],
-    "id": 9995
+    "id": 203
   },
   {
     "type": "order",
-    "name": "start_control",
+    "name": "Set Reference Distance",
     "variables": [
-      "ldu_id",
-      "lcu_desired_distance"
+      "reference_distance"
     ],
-    "id": 9994
+    "id": 302
   },
   {
     "type": "order",
-    "name": "stop_control",
+    "name": "Start Distance Control",
+    "variables": [
+      "reference_distance"
+    ],
+    "id": 303
+  },
+  {
+    "type": "order",
+    "name": "Stop All",
     "variables": [],
-    "id": 9993
-  },
-  {
-    "type": "order",
-    "name": "stop_pwm",
-    "variables": [
-      "ldu_id"
-    ],
-    "id": 9991
-  },
-  {
-    "type": "order",
-    "name": "start_pwm",
-    "variables": [
-      "ldu_id"
-    ],
-    "id": 9992
-  },
-  {
-    "type": "order",
-    "name": "set_fixed_vbat",
-    "variables": [
-      "fixed_vbat"
-    ],
-    "id": 9990
-  },
-  {
-    "type": "order",
-    "name": "start_3dof",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9989
-  },
-  {
-    "type": "order",
-    "name": "start_booster",
-    "variables": [],
-    "id": 1751
-  },
-  {
-    "type": "order",
-    "name": "exit_booster",
-    "variables": [],
-    "id": 1750
-  },
-  {
-    "type": "order",
-    "name": "stick_down",
-    "variables": [],
-    "id": 9987
-  },
-  {
-    "type": "order",
-    "name": "start_5dof",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9988
-  },
-  {
-    "type": "order",
-    "name": "multi_current_order",
-    "variables": [
-      "multi_current_1",
-      "multi_current_2",
-      "multi_current_3",
-      "multi_current_4"
-    ],
-    "id": 9986
-  },
-  {
-    "type": "order",
-    "name": "levitation_vcu",
-    "variables": [
-      "distance"
-    ],
-    "id": 9998
+    "id": 204
   }
 ]
