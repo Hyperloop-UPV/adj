@@ -64,22 +64,36 @@
     "displayUnits": ""
   },
   {
-    "id": "kp",
+    "id": "pid_kp",
     "name": "Kp",
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
   },
   {
-    "id": "ki",
+    "id": "pid_ki",
     "name": "Ki",
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
   },
   {
-    "id": "kd",
+    "id": "pid_kd",
     "name": "Kd",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "pi_kp",
+    "name": "Kp",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "pi_ki",
+    "name": "Ki",
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""

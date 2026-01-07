@@ -15,5 +15,18 @@
       "derivative"
     ],
     "id": 101
+  },
+  {
+    "type": "data",
+    "name": "Datos",
+    "variables": [
+      "pid_kp",
+      "pid_ki",
+      "pid_kd",
+      "pi_ki",
+      "pi_kp",
+      "filter_order"
+    ],
+    "id": 102
   }
 ]
