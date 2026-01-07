@@ -104,6 +104,13 @@
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
+  },
+  {
+    "id": "filter_order_derivative",
+    "name": "Filter Order Derivative",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 
 ]

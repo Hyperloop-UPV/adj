@@ -25,7 +25,8 @@
       "pid_kd",
       "pi_ki",
       "pi_kp",
-      "filter_order"
+      "filter_order_airgap",
+      "filter_order_derivative"
     ],
     "id": 102
   }
