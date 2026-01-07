@@ -99,8 +99,8 @@
     "displayUnits": ""
   },
   {
-    "id": "filter_order",
-    "name": "Filter Order",
+    "id": "filter_order_airgap",
+    "name": "Filter Order Airgap",
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
