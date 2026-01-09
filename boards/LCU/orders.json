@@ -65,6 +65,12 @@
   },
   {
     "type": "order",
+    "name": "Start Min Power Control",
+    "variables": [],
+    "id": 307
+  },
+  {
+    "type": "order",
     "name": "Stop All",
     "variables": [],
     "id": 204
