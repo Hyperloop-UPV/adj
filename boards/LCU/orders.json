@@ -49,6 +49,22 @@
   },
   {
     "type": "order",
+    "name": "Set Reference Distance with Slope",
+    "variables": [
+      "reference_distance"
+    ],
+    "id": 305
+  },
+  {
+    "type": "order",
+    "name": "Start Distance Control with Slope",
+    "variables": [
+      "reference_distance"
+    ],
+    "id": 306
+  },
+  {
+    "type": "order",
     "name": "Stop All",
     "variables": [],
     "id": 204
