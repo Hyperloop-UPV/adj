@@ -12,7 +12,8 @@
       "LPU_Voltage",
       "error",
       "integral",
-      "derivative"
+      "derivative",
+      "control_counter"
     ],
     "id": 101
   },

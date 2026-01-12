@@ -111,6 +111,13 @@
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
+  },
+  {
+    "id": "control_counter",
+    "name": "Control Counter",
+    "type": "uint32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 
 ]
