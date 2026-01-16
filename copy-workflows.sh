@@ -2,7 +2,7 @@
 set +e 
 
 SOURCE_BRANCH="test-adj"
-COMMIT_HASH="10e3d09"
+COMMIT_HASH="103678c"
 
 
 # Safety checks
