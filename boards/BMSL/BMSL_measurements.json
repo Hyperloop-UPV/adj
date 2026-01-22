@@ -66,8 +66,8 @@
     "id": "SOC",
     "name": "SOC",
     "type": "float32",
-    "podUnits": "%",
-    "displayUnits": "%"
+    "podUnits": "Percentage",
+    "displayUnits": "Percentage"
   },
   {
     "id": "temperature_1",

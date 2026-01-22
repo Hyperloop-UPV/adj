@@ -295,8 +295,8 @@
         "id": "acceleration_speetec_1",
         "name": "Acceleration Speetec 1",
         "type": "float64",
-        "podUnits": "m/ss",
-        "displayUnits": "m/ss",
+        "podUnits": "m/s^2",
+        "displayUnits": "m/s^2",
         "below": {
             "safe": 30.0
         }
@@ -324,8 +324,8 @@
         "id": "acceleration_speetec_2",
         "name": "Acceleration Speetec 2",
         "type": "float64",
-        "podUnits": "m/ss",
-        "displayUnits": "m/ss"
+        "podUnits": "m/s^2",
+        "displayUnits": "m/s^2"
     },
     {
         "id": "direction_speetec_2",
@@ -354,8 +354,8 @@
         "id": "acceleration_speetec_3",
         "name": "Acceleration Speetec 3",
         "type": "float64",
-        "podUnits": "m/ss",
-        "displayUnits": "m/ss"
+        "podUnits": "m/s^2",
+        "displayUnits": "m/s^2"
     },
     {
         "id": "direction_speetec_3",
@@ -411,6 +411,13 @@
     {
         "id": "pi_id_output",
         "name": "PI ID Output",
+        "type": "float64",
+        "podUnits": "",
+        "displayUnits": ""
+    },
+    {
+        "id": "pi_iq_output",
+        "name": "PI IQ Output",
         "type": "float64",
         "podUnits": "",
         "displayUnits": ""

@@ -15,7 +15,8 @@ adj/
         ├── {board_name}.json           # Main board configuration
         ├── {board_name}_measurements.json  # Board measurements
         ├── packets.json                # Data packets
-        └── orders.json                 # Order packets
+        ├── orders.json                 # Order packets
+        └── sockets.json                # Board sockets
 ```
 
 ## Data Types
@@ -84,14 +85,15 @@ Mapping of board names to their configuration file paths.
 
 ### Board Configuration (`{board_name}.json`)
 
-Main board configuration including ID, IP address, and references to measurements and packets files.
+Main board configuration including ID, IP address, and references to measurements, packets and sockets files.
 
 ```json
 {
     "board_id": "number",
     "board_ip": "string",
     "measurements": ["string"],
-    "packets": ["string"]
+    "packets": ["string"],
+    "sockets": ["string"]
 }
 ```
 
@@ -107,7 +109,8 @@ Main board configuration including ID, IP address, and references to measurement
     "board_id": 1001,
     "board_ip": "192.168.1.10",
     "measurements": ["brake_board_measurements.json"],
-    "packets": ["packets.json", "orders.json"]
+    "packets": ["packets.json", "orders.json"],
+    "sockets":["sockets.json"]
 }
 ```
 
@@ -173,7 +176,9 @@ Array of packet definitions for network communication. Packets are separated by 
         "id": "number?",
         "type": "string",
         "name": "string",
-        "variables": ["string"]
+        "variables": ["string"],
+        "period_ms": "number?",
+        "socket": "string?"
     }
 ]
 ```
@@ -183,6 +188,8 @@ Array of packet definitions for network communication. Packets are separated by 
 - `type`: Packet type string (e.g., "data", "order", "status")
 - `name`: Human-readable packet name
 - `variables`: Array of variable names/measurement IDs included in this packet
+- `period_ms`: Optional number specifying the transmission period in milliseconds for periodic packets. Can be an integer or floating-point value
+- `socket`: Optinal string that should match the name of the socket you want to transmit this packet trhough
 
 **Example:**
 ```json
@@ -191,12 +198,64 @@ Array of packet definitions for network communication. Packets are separated by 
         "id": 2001,
         "type": "data",
         "name": "Brake Telemetry",
-        "variables": ["brake_pressure", "brake_status", "brake_temperature"]
+        "variables": ["brake_pressure", "brake_status", "brake_temperature"],
+        "period_ms": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "type": "order",
         "name": "Brake Command",
         "variables": ["brake_command", "target_pressure"]
+    }
+]
+```
+
+### Sockets (`sockets.json`)
+
+Array of socket definitions for network communication.
+
+```json
+{
+    "type": "string",
+    "name": "string",
+    "port": "number?",
+    "local_port":"number?",
+    "remote_ip": "string?",
+    "remote_port":"number?"
+    
+}
+```
+
+**Field Descriptions:**
+- `type`: Socket type string(e.g., "ServerSocket","DatagramSocket","Socket")
+- `name`: Socket name
+- `port`: Optional number that describes the port number used for a ServerSocket or a DatagramSocket
+- `local_port`: Optional number that describes the local port number used for a Socket
+- `remote_ip`: Optional string that describes the remote ip you want to connect to in a DatagramSocket or Socket
+- `remote_port`:  Optional number that describes the remote port number used for a Socket
+
+**Example:**
+```json
+[
+    {
+        "type": "ServerSocket",
+        "name": "control_station_tcp",
+        "port": 50500
+    },
+
+    {
+        "type": "DatagramSocket",
+        "name": "control_station_udp",
+        "remote_ip":"192.168.0.9",
+        "port": 50400
+    },
+
+    {
+        "type": "Socket",
+        "name": "pcu_tcp",
+        "local_port": 50501,
+        "remote_ip": "192.168.1.5",
+        "remote_port": 50500  
     }
 ]
 ```
@@ -212,6 +271,8 @@ Array of packet definitions for network communication. Packets are separated by 
 4. **Unit References**: Measurement `podUnits` and `displayUnits` should reference keys defined in `general_info.units`
 
 5. **ID Uniqueness**: Board IDs must be unique across all boards. Packet IDs should be unique within their type category.
+
+6. **Socket Naming**: The sockets referenced inside the packet definitions must use exact names as defined in `socket.json`.
 
 ## Validation Notes
 

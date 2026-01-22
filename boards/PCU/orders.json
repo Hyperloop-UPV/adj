@@ -50,7 +50,8 @@
     "type": "order",
     "name": "Start_Precharge",
     "variables": [
-      "freq_to_send_PWM"
+      "freq_to_send_PWM",
+      "VMaxSVPWM"
     ],
     "id": 512
   },
@@ -79,6 +80,7 @@
     ],
     "id": 515
   },
+
   {
     "type": "order",
     "name": "Start Run",
@@ -87,6 +89,7 @@
     ],
     "id": 516
   },
+
   {
     "type": "order",
     "name": "Emulated Speetec",
@@ -96,4 +99,5 @@
     ],
     "id": 517
   }
+
 ]

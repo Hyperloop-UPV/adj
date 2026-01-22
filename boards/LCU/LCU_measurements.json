@@ -495,22 +495,22 @@
     "id": "rot_control_x",
     "name": "Rot_Control_x",
     "type": "float32",
-    "podUnits": "deg",
-    "displayUnits": "deg"
+    "podUnits": "degrees",
+    "displayUnits": "degrees"
   },
   {
     "id": "rot_control_y",
     "name": "Rot_Control_y",
     "type": "float32",
-    "podUnits": "deg",
-    "displayUnits": "deg"
+    "podUnits": "degrees",
+    "displayUnits": "degrees"
   },
   {
     "id": "rot_control_z",
     "name": "Rot_Control_z",
     "type": "float32",
-    "podUnits": "deg",
-    "displayUnits": "deg"
+    "podUnits": "degrees",
+    "displayUnits": "degrees"
   },
   {
     "id": "test_gui__1",
@@ -995,28 +995,32 @@
     "name": "multi_current_1",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": ""
+    "displayUnits": "",
+    "enumValues": []
   },
   {
     "id": "multi_current_2",
     "name": "multi_current_2",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": ""
+    "displayUnits": "",
+    "enumValues": []
   },
   {
     "id": "multi_current_3",
     "name": "multi_current_3",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": ""
+    "displayUnits": "",
+    "enumValues": []
   },
   {
     "id": "multi_current_4",
     "name": "multi_current_4",
     "type": "float32",
     "podUnits": "",
-    "displayUnits": ""
+    "displayUnits": "",
+    "enumValues": []
   },
   {
     "id": "dist_error_z",
@@ -1130,4 +1134,5 @@
     "podUnits": "mm",
     "displayUnits": "mm"
   }
+  
 ]
