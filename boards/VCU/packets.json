@@ -7,7 +7,8 @@
             "operational_state"
         ],
         "id": 249,
-        "period_ms": 16.67,
+        "period_type": "ms",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -21,7 +22,8 @@
             "all_reeds"
         ],
         "id": 251,
-        "period_ms": 16.67,
+        "period_type": "us",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -32,7 +34,8 @@
             "flow2"
         ],
         "id": 250,
-        "period_ms": 16.67,
+        "period_type": "ms",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -43,7 +46,8 @@
             "regulator_2_pressure"
         ],
         "id": 252,
-        "period_ms": 16.67,
+        "period_type": "us",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -56,7 +60,8 @@
             "pressure_capsule"
         ],
         "id": 253,
-        "period_ms": 16.67,
+        "period_type": "ms",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -67,7 +72,8 @@
             "emergency_tape"
         ],
         "id": 254,
-        "period_ms": 16.67,
+        "period_type": "ms",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -77,7 +83,8 @@
             "SDC"
         ],
         "id": 255,
-        "period_ms": 16.67,
+        "period_type": "ms",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
@@ -87,7 +94,8 @@
             "state"
         ],
         "id": 65,
-        "period_ms": 16.67,
+        "period_type": "ms",
+        "period": 16.67,
         "socket": "pcu_udp"
     }
 ]

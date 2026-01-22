@@ -177,7 +177,8 @@ Array of packet definitions for network communication. Packets are separated by 
         "type": "string",
         "name": "string",
         "variables": ["string"],
-        "period_ms": "number?",
+        "period_type": "us/ms?",
+        "period": "number?",
         "socket": "string?"
     }
 ]
@@ -188,7 +189,9 @@ Array of packet definitions for network communication. Packets are separated by 
 - `type`: Packet type string (e.g., "data", "order", "status")
 - `name`: Human-readable packet name
 - `variables`: Array of variable names/measurement IDs included in this packet
-- `period_ms`: Optional number specifying the transmission period in milliseconds for periodic packets. Can be an integer or floating-point value
+- `period_type`: Optional string specifying the type of measurement for period, either microseconds
+or milliseconds
+- `period`: Optional number specifying the transmission period in milliseconds or microseconds for periodic packets. Can be an integer or floating-point value
 - `socket`: Optinal string that should match the name of the socket you want to transmit this packet trhough
 
 **Example:**
