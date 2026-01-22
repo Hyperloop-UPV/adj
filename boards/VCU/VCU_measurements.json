@@ -3,8 +3,8 @@
         "id": "duty",
         "name": "Duty",
         "type": "uint32",
-        "podUnits": "Percentage",
-        "displayUnits": "Percentage"
+        "podUnits": "%",
+        "displayUnits": "%"
     },
     {
         "id": "pump",
@@ -195,7 +195,7 @@
         "id": "run_id",
         "name": "Run ID",
         "type": "enum",
-        "enumValues":[
+        "enumValues": [
             "LIM"
         ]
     },
