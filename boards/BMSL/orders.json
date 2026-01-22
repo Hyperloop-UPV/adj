@@ -1,0 +1,30 @@
+[
+  {
+    "type": "order",
+    "name": "Turn on PFM",
+    "variables": [],
+    "id": 502
+  },
+  {
+    "type": "order",
+    "name": "Turn off PFM",
+    "variables": [],
+    "id": 503
+  },
+  {
+    "type": "order",
+    "name": "Set PFM Frequency",
+    "variables": [
+      "frequency"
+    ],
+    "id": 504
+  },
+  {
+    "type": "order",
+    "name": "Set PFM Dead Time",
+    "variables": [
+      "dead_time"
+    ],
+    "id": 505
+  }
+]
