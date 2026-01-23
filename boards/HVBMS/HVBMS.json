@@ -1,0 +1,6 @@
+{
+    "board_id": 60,
+    "board_ip": "string",
+    "measurements": ["HVBMS_measurments.json"],
+    "packets": ["packets.json", "orders.json"]
+}   
