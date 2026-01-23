@@ -8,7 +8,6 @@
     ],
     "measurements": [
         "supercaps_measurements.json",
-        "order_measurements.json",
         "measurements.json"
     ]
 }
