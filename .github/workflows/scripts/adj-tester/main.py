@@ -1,4 +1,12 @@
-"""Entrypoint script for validating project JSON files against schemas.
+"""
+
+ADJ Validator
+
+Version: 1.1.0
+
+JavierRibaldelRio
+
+Entrypoint script for validating project JSON files against schemas.
 
 This script coordinates several checks over files in the test/
 directory using JSON Schema validation and project-specific rules
@@ -15,6 +23,7 @@ from utils import (
     is_valid_ipv4,
     print_results,
     logError,
+    info_message,
     validate_with_schema,
 )
 
@@ -268,7 +277,7 @@ def check_board_json(path: str):
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
-    print_results(path, is_valid, error_list)
+    print_results(path, is_valid, error_list, type="(Board)")
 
     if is_valid:
         return board
@@ -368,11 +377,11 @@ def check_measurement_json(path: str, previous_ids=None):
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
-    print_results("\t" + path, is_valid, error_list)
+    print_results(path, is_valid, error_list, type="(Measurements)", prefix="\t")
     return is_valid
 
 
-def check_packet_json(path: str, measurement_ids=None):
+def check_packet_json(path: str, sockets: set, measurement_ids=None):
     """Validate a packet JSON file.
 
     Ensures schema conformance, global uniqueness of packet IDs
@@ -421,10 +430,127 @@ def check_packet_json(path: str, measurement_ids=None):
                     )
                     is_valid = False
 
+            # Ensure that socket is defined in the sockets
+            socket_name = pkt.get("socket", "")
+            if socket_name != "" and socket_name not in sockets:
+                error_list.append(
+                    logError(
+                        path,
+                        f"id {pkt_id}",
+                        f"socket '{socket_name}' in id {pkt_id} is not defined in sockets",
+                    )
+                )
+                is_valid = False
+
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
-    print_results("\t" + path, is_valid, error_list)
+    print_results(path, is_valid, error_list, type="(Packets/Orders)", prefix="\t")
+    return is_valid
+
+
+def check_socket_json(path: str, sockets_name: set):
+
+    error_list = []
+    is_valid = True
+    try:
+        # Open json and Schema
+        sockets = open_json(path)
+        schema = open_schema("socket.schema.json")
+
+        # Schema validation
+        is_valid, schema_errors = validate_with_schema(sockets, schema, path)
+        if not is_valid:
+            error_list.extend(schema_errors)
+
+        for socket in sockets:
+            # ensure socket name is unique across all sockets
+            socket_name = socket["name"]
+            if socket_name in sockets_name:
+                error_list.append(
+                    logError(
+                        path,
+                        "name",
+                        f"Duplicate socket name '{socket_name}' across sockets",
+                    )
+                )
+                is_valid = False
+            else:
+                sockets_name.add(socket_name)
+
+            # check that remote_ip is valid (remote_ip is optional) and it is defined only for type=="DatagramSocket" || type=="Socket"
+            if (
+                socket["type"] not in ["DatagramSocket", "Socket"]
+                and "remote_ip" in socket
+            ):
+                error_list.append(
+                    logError(
+                        path,
+                        f"name {socket_name}",
+                        f"remote_ip is only allowed for type 'DatagramSocket' or 'Socket', but socket '{socket_name}' has type '{socket['type']}'",
+                    )
+                )
+                is_valid = False
+
+            else:
+                socket_ip = socket.get("remote_ip", "")
+                if socket_ip != "" and not is_valid_ipv4(socket_ip):
+                    error_list.append(
+                        logError(
+                            path,
+                            f"name {socket_name}",
+                            f"Invalid IPv4 address: {socket_ip}",
+                        )
+                    )
+                    is_valid = False
+
+            # check that port is only definied if type=="ServerSocket" || type=="DatagramSocket"
+
+            if socket.get("port", None) is not None and socket["type"] not in [
+                "ServerSocket",
+                "DatagramSocket",
+            ]:
+                error_list.append(
+                    logError(
+                        path,
+                        f"name {socket_name}",
+                        f"Port is only allowed for type 'ServerSocket' or 'DatagramSocket', but socket '{socket_name}' has type '{socket['type']}'",
+                    )
+                )
+                is_valid = False
+
+            # check that local_port is only used for type=="Socket"
+            if (
+                socket.get("local_port", None) is not None
+                and socket["type"] != "Socket"
+            ):
+                error_list.append(
+                    logError(
+                        path,
+                        f"name {socket_name}",
+                        f"local_port is only allowed for type 'Socket', but socket '{socket_name}' has type '{socket['type']}'",
+                    )
+                )
+                is_valid = False
+
+            # checck thath remote_port is only used for type=="Socket"
+            if (
+                socket.get("remote_port", None) is not None
+                and socket["type"] != "Socket"
+            ):
+                error_list.append(
+                    logError(
+                        path,
+                        f"name {socket_name}",
+                        f"remote_port is only allowed for type 'Socket', but socket '{socket_name}' has type '{socket['type']}'",
+                    )
+                )
+                is_valid = False
+
+    except RuntimeError as e:
+        error_list.append(logError(path, "<load>", str(e)))
+        is_valid = False
+    print_results(path, is_valid, error_list, type="(Socket)", prefix="\t")
     return is_valid
 
 
@@ -466,6 +592,18 @@ def main():
             # measurements are unique within a board
             measurement_ids = set()
 
+            # sockets are unique
+            sockets_name = set()
+
+            # Validate socket JSON files
+            for socket_path in board.get("sockets", []):
+                valid = (
+                    check_socket_json(
+                        f"boards/{board_name}/{socket_path}", sockets_name
+                    )
+                    and valid
+                )
+
             # Validate measurements JSON files
             for measurement_path in board.get("measurements", []):
                 valid = (
@@ -481,6 +619,7 @@ def main():
                 valid = (
                     check_packet_json(
                         f"boards/{board_name}/{packets_path}",
+                        sockets_name,
                         measurement_ids,
                     )
                     and valid
