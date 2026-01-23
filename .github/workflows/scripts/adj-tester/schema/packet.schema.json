@@ -36,6 +36,17 @@
                     "minLength": 1
                 },
                 "description": "Measurement IDs included in this packet"
+            },
+            "period_ms": {
+                "type": [
+                    "integer",
+                    "number"
+                ],
+                "description": "Packet transmission period in milliseconds"
+            },
+            "socket": {
+                "type": "string",
+                "description": "Name of the socket used for this packet"
             }
         }
     }

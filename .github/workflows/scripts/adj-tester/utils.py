@@ -27,7 +27,7 @@ def print_header(header: str):
     print("=" * header_len)
 
 
-def print_status(message: str, validated: bool = False):
+def format_status(message: str, validated: bool = False):
     """Print a single-line status message.
 
     The `validated` flag controls whether the status is shown as
@@ -45,7 +45,13 @@ def print_status(message: str, validated: bool = False):
     elif validated:
         result = "\033[32mPassed\033[0m"  # green
 
-    print(f"{message} {result}")
+    return f"{message} {result}"
+
+
+def info_message(message: str):
+    """format to blue color and return the message string."""
+
+    return f"\033[34m{message}\033[0m"
 
 
 def log_message(message: str, status: int = 0):
@@ -106,7 +112,7 @@ def is_valid_ipv4(address: str) -> bool:
         return False
 
 
-def print_results(file, is_valid, error_list):
+def print_results(file, is_valid, error_list, type=None, prefix=""):
     """Print validation results for a file.
 
     The function prints an overall status line and then any detailed
@@ -118,7 +124,13 @@ def print_results(file, is_valid, error_list):
         error_list: Iterable of error message strings.
     """
 
-    print_status(file, is_valid)
+    out = format_status(file, is_valid)
+
+    if type != None:
+        out = f"{out} {info_message(type)}"
+
+    print(prefix + out)
+
     for error in error_list:
         # Indent errors for readability in CLI output
         print("\t|\t" + error)
