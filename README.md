@@ -202,7 +202,8 @@ or milliseconds
         "type": "data",
         "name": "Brake Telemetry",
         "variables": ["brake_pressure", "brake_status", "brake_temperature"],
-        "period_ms": 16.67,
+        "period_type":"ms",
+        "period": 16.67,
         "socket": "control_station_udp"
     },
     {
