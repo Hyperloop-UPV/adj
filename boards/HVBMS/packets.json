@@ -1,0 +1,13 @@
+[
+  {
+    "type": "data",
+    "name": "INFO",
+    "variables": [
+      "930",
+      "931"
+    ],
+    "id": 904,
+    "period_ms": 10.0,
+    "socket": "Control Station"
+  }
+]
