@@ -4,7 +4,7 @@
     "name": "Control Station",
     "port": 50500,
     "local_port": 50400,
-    "remote_ip": "192.168.1.7",
+    "remote_ip": "192.168.0.7",
     "remote_port": 50400
   }
 ]
