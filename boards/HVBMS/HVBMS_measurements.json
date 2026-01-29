@@ -16,7 +16,7 @@
   {
     "id": "999",
     "name": "Constante",
-    "type": "uint32",
+    "type": "bool",
     "podUnits": "V",
     "displayUnits": "V"
   }

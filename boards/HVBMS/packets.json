@@ -9,13 +9,5 @@
     "id": 904,
     "period_ms": 10.0,
     "socket": "Control Station"
-  },
-  {
-    "type": "data",
-    "name": "Prueba",
-    "variables": [
-      "999"
-    ],
-    "id": 999
   }
 ]
