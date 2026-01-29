@@ -12,5 +12,12 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
+  },
+  {
+    "id": "999",
+    "name": "Constante",
+    "type": "uint32",
+    "podUnits": "V",
+    "displayUnits": "V"
   }
 ]

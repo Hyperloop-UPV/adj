@@ -7,8 +7,5 @@
   "packets": [
     "packets.json",
     "orders.json"
-  ],
-  "sockets": [
-    "sockets.json"
   ]
 }
