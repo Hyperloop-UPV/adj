@@ -1,12 +1,10 @@
 [
   {
     "type": "data",
-    "name": "INFO",
+    "name": "General State Machine Status",
     "variables": [
       "998"
     ],
-    "id": 904,
-    "period_ms": 10.0,
-    "socket": "Control Station"
+    "id": 940
   }
 ]

@@ -1,26 +1,5 @@
 [
   {
-    "id": "930",
-    "name": "DC Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "931",
-    "name": "DC Current",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "999",
-    "name": "Constante",
-    "type": "bool",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
     "id": "998",
     "name": "GSMState",
     "type": "enum",
