@@ -10,5 +10,12 @@
       "OPERATIONAL",
       "FAULT"
     ]
+  },
+  {
+    "id": "910",
+    "name": "Prueba2",
+    "type": "uint32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 ]
