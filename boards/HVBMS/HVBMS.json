@@ -5,7 +5,7 @@
     "HVBMS_measurements.json"
   ],
   "packets": [
-    "packets.json", 
+    "packets.json",
     "orders.json"
   ],
   "sockets": [
