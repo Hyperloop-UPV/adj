@@ -1,10 +1,14 @@
 [
-  {
-    "type": "DatagramSocket",
-    "name": "Control Station",
-    "port": 50500,
-    "local_port": 50400,
-    "remote_ip": "192.168.0.9",
-    "remote_port": 50400
-  }
+    {
+        "type": "ServerSocket",
+        "name": "control_station_tcp",
+        "port": 50500
+    },
+
+    {
+        "type": "DatagramSocket",
+        "name": "control_station_udp",
+        "remote_ip":"192.168.0.9",
+        "port": 50400
+    }
 ]
