@@ -1,42 +1,42 @@
 {
   "ports": {
-    "TFTP": 69,
-    "TCP_SERVER": 50500,
     "UDP": 50400,
-    "TCP_CLIENT": 50401,
-    "SNTP": 123
+    "TCP_SERVER": 50500,
+    "SNTP": 123,
+    "TFTP": 69,
+    "TCP_CLIENT": 50401
   },
   "addresses": {
     "backend": "192.168.0.9"
   },
   "units": {
-    "A": "*1",
-    "Ohm": "*1",
-    "bar": "*1",
-    "ns": "*1",
-    "ºC": "+273.15",
-    "MOhm": "*1000000",
-    "rad": "*1",
-    "km/h": "*3.6",
+    "G": "*9.8",
     "KOhm": "*1000",
+    "m": "*1",
+    "A": "*1",
     "m/ss": "*1",
+    "ns": "*1",
+    "mm": "/1000",
+    "Ohm": "*1",
+    "mrad": "/1000",
     "Hz": "*1",
+    "bar": "*1",
+    "m/s": "*1",
     "V": "*1",
     "%": "/100",
-    "mm": "/1000",
+    "rad": "*1",
+    "ºC": "+273.15",
     "deg": "/57.2957",
-    "mrad": "/1000",
-    "G": "*9.8",
-    "m": "*1",
-    "m/s": "*1"
+    "km/h": "*3.6",
+    "MOhm": "*1000000"
   },
   "message_ids": {
-    "add_state_order": 5,
-    "fault": 2,
-    "blcu_ack": 4,
     "remove_state_order": 6,
+    "blcu_ack": 4,
     "warning": 3,
+    "fault": 2,
     "state_space": 7,
+    "add_state_order": 5,
     "info": 1
   }
 }

@@ -19,5 +19,17 @@
     "type": "bool",
     "podUnits": "V",
     "displayUnits": "V"
+  },
+  {
+    "id": "998",
+    "name": "GSMState",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": [
+      "CONNECTING",
+      "OPERATIONAL",
+      "FAULT"
+    ]
   }
 ]

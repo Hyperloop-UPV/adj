@@ -3,19 +3,10 @@
     "type": "data",
     "name": "INFO",
     "variables": [
-      "930",
-      "931"
+      "998"
     ],
     "id": 904,
     "period_ms": 10.0,
     "socket": "Control Station"
-  },    
-    {
-    "type": "data",
-    "name": "Constante",
-    "variables": [
-      "999"
-    ],
-    "id": 999
   }
 ]
