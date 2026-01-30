@@ -17,5 +17,16 @@
     "type": "uint32",
     "podUnits": "",
     "displayUnits": ""
+  },
+  {
+    "id": "800",
+    "name": "Estado de prueba",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": [
+      "CERO",
+      "UNO"
+    ]
   }
 ]

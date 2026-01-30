@@ -14,5 +14,13 @@
       "931"
     ],
     "id": 931
+  },
+  {
+    "type": "data",
+    "name": "PRUEBA ESTADOS",
+    "variables": [
+      "800"
+    ],
+    "id": 900
   }
 ]
