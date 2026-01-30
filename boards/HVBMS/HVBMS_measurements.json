@@ -2,27 +2,8 @@
   {
     "id": "998",
     "name": "GSMState",
-    "type": "enum",
-    "enumValues": [
-      "CONNECTING",
-      "OPERATIONAL",
-      "FAULT"
-    ]
-  },
-  {
-    "id": "931",
-    "name": "PRUEBA",
     "type": "uint32",
-    "podUnits": "",
+        "podUnits": "",
     "displayUnits": ""
-  },
-  {
-    "id": "800",
-    "name": "Estado de prueba",
-    "type": "enum",
-    "enumValues": [
-      "CERO",
-      "UNO"
-    ]
   }
 ]
