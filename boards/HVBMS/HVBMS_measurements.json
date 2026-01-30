@@ -3,8 +3,6 @@
     "id": "998",
     "name": "GSMState",
     "type": "enum",
-    "podUnits": "",
-    "displayUnits": "",
     "enumValues": [
       "CONNECTING",
       "OPERATIONAL",
@@ -22,8 +20,6 @@
     "id": "800",
     "name": "Estado de prueba",
     "type": "enum",
-    "podUnits": "",
-    "displayUnits": "",
     "enumValues": [
       "CERO",
       "UNO"
