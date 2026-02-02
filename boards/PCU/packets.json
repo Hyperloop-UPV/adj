@@ -56,6 +56,7 @@
     "variables": [
       "general_state_machine",
       "operational_state_machine",
+      "run_state",
       "space_vector_active",
       "current_control_active",
       "speed_control_active"
@@ -91,6 +92,19 @@
       "actual_current_ref"
     ],
     "id": 555,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
+  },
+
+  {
+    "type": "data",
+    "name": "Control_State",
+    "variables": [
+      "Direction_State",
+      "Speed_Control_State"
+    ],
+    "id": 556,
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
