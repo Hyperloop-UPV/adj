@@ -56,7 +56,6 @@
     "variables": [
       "general_state_machine",
       "operational_state_machine",
-      "run_state",
       "space_vector_active",
       "current_control_active",
       "speed_control_active"
