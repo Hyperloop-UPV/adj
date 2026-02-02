@@ -21,7 +21,10 @@
       "temp_max",
       "current"
     ],
-    "id": 777
+    "id": 777,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -29,7 +32,10 @@
     "variables": [
       "state"
     ],
-    "id": 778
+    "id": 778,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -45,6 +51,9 @@
       "output_voltage",
       "input_voltage"
     ],
-    "id": 779
+    "id": 779,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   }
 ]
