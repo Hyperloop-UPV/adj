@@ -6,8 +6,7 @@
       "frequency_to_send_svpwm",
       "frequency_to_send_PWM",
       "V_Ref",
-      "VMax",
-      "Direction_State"
+      "VMax"
     ],
     "id": 507
   },
@@ -24,8 +23,7 @@
       "freq_to_send_svpwm",
       "freq_to_send_PWM",
       "Current_Ref",
-      "VMax",
-      "Direction_State"
+      "VMax"
     ],
     "id": 509
   },
@@ -41,8 +39,7 @@
     "variables": [
       "Speed_Ref",
       "freq_to_send_PWM",
-      "VMax",
-      "Direction_State"
+      "VMax"
     ],
     "id": 511
   },
