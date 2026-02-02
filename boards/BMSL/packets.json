@@ -30,7 +30,7 @@
     "type": "data",
     "name": "Current State",
     "variables": [
-      "state"
+      "State"
     ],
     "id": 778,
     "period_type": "ms",
@@ -41,9 +41,9 @@
     "type": "data",
     "name": "DCLV Data",
     "variables": [
-      "pfm_state",
-      "buffer_state",
-      "reset_state",
+      "PFMState",
+      "BufferState",
+      "ResetState",
       "frequency",
       "dead_time",
       "output_current",

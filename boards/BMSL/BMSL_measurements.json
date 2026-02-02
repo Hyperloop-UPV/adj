@@ -119,7 +119,7 @@
     "displayUnits": "A"
   },
   {
-    "id": "state",
+    "id": "State",
     "name": "State",
     "type": "enum",
     "enumValues": [
@@ -129,7 +129,7 @@
     ]
   },
   {
-    "id": "pfm_state",
+    "id": "PFMState",
     "name": "PFM State",
     "type": "enum",
     "enumValues": [
@@ -138,7 +138,7 @@
     ]
   },
   {
-    "id": "buffer_state",
+    "id": "BufferState",
     "name": "BUFFER State",
     "type": "enum",
     "enumValues": [
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "id": "reset_state",
+    "id": "ResetState",
     "name": "RESET State",
     "type": "enum",
     "enumValues": [
