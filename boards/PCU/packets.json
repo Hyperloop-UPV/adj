@@ -123,18 +123,6 @@
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
-  },
-
-  {
-    "type": "data",
-    "name": "OperationalState",
-    "variables": [
-      "operational_state_machine"
-    ],
-    "id": 64,
-    "period_type": "ms",
-    "period": 16.67,
-    "socket": "control_station_udp"
   }
 
 ]
