@@ -279,42 +279,7 @@
     "name": "modulation_index",
     "type": "float32"
   },
-  {
-    "id": "reed1",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
-  },
-  {
-    "id": "reed2",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "UNDEPLOYED",
-      "DEPLOYED"
-    ]
-  },
-  {
-    "id": "reed3",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
-  },
-  {
-    "id": "reed4",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
-  },
+  
   {
     "id": "space_vector_active",
     "name": "Space Vector",

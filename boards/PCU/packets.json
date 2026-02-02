@@ -9,8 +9,12 @@
       "duty_v",
       "duty_w"
     ],
-    "id": 550
+    "id": 550,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
+
   {
     "type": "data",
     "name": "Batteries_Voltage",
@@ -18,8 +22,12 @@
       "Voltage_Battery_A",
       "Voltage_Battery_B"
     ],
-    "id": 551
+    "id": 551,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"    
   },
+
   {
     "type": "data",
     "name": "Current_sensors",
@@ -36,8 +44,12 @@
       "SVPWM_Time",
       "imod"
     ],
-    "id": 552
+    "id": 552,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
+
   {
     "type": "data",
     "name": "StateMachine_states",
@@ -49,11 +61,15 @@
       "current_control_active",
       "speed_control_active"
     ],
-    "id": 553
+    "id": 553,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
+
   {
     "type": "data",
-    "name": "Encoder_data",
+    "name": "Speetec_data",
     "variables": [
       "encoder_position",
       "encoder_direction",
@@ -61,18 +77,26 @@
       "encoder_speed_km_h",
       "encoder_acceleration"
     ],
-    "id": 554
+    "id": 554,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
+
   {
     "type": "data",
-    "name": "Encoder_data",
+    "name": "Speed_data",
     "variables": [
       "target_speed",
       "speed_error",
       "actual_current_ref"
     ],
-    "id": 555
+    "id": 555,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
+
   {
     "type": "data",
     "name": "Control_State",
@@ -80,19 +104,12 @@
       "Direction_State",
       "Speed_Control_State"
     ],
-    "id": 556
+    "id": 556,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
-  {
-    "type": "data",
-    "name": "Reeds_State",
-    "variables": [
-      "reed1",
-      "reed2",
-      "reed3",
-      "reed4"
-    ],
-    "id": 557
-  },
+
   {
     "type": "data",
     "name": "GateDriverReporting",
@@ -102,7 +119,10 @@
       "gd_ready_a",
       "gd_ready_b"
     ],
-    "id": 558
+    "id": 558,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   },
 
   {
@@ -111,7 +131,10 @@
     "variables": [
       "operational_state_machine"
     ],
-    "id": 64
+    "id": 64,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
   }
 
 ]
