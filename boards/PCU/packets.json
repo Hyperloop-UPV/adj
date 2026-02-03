@@ -96,18 +96,6 @@
     "socket": "control_station_udp"
   },
 
-  {
-    "type": "data",
-    "name": "Control_State",
-    "variables": [
-      "Direction_State",
-      "Speed_Control_State"
-    ],
-    "id": 556,
-    "period_type": "ms",
-    "period": 16.67,
-    "socket": "control_station_udp"
-  },
 
   {
     "type": "data",

@@ -248,33 +248,6 @@
     "displayUnits": "A"
   },
   {
-    "id": "Current_Control_State",
-    "name": "Current Control State",
-    "type": "enum",
-    "enumValues": [
-      "Cruise_Mode",
-      "Regenerate_Mode"
-    ]
-  },
-  {
-    "id": "Speed_Control_State",
-    "name": "Control Current ref",
-    "type": "enum",
-    "enumValues": [
-      "Cruise_Mode",
-      "Regenerate_Mode"
-    ]
-  },
-  {
-    "id": "Direction_State",
-    "name": "Direction Motor",
-    "type": "enum",
-    "enumValues": [
-      "Forward",
-      "Backward"
-    ]
-  },
-  {
     "id": "imod",
     "name": "modulation_index",
     "type": "float32"
@@ -367,43 +340,12 @@
       100.0
     ]
   },
+
   {
-    "id": "requested_speetec_emulation_mode",
-    "name": "Emulation Mode",
-    "type": "enum",
-    "enumValues": [
-      "STOP",
-      "position",
-      "speed",
-      "acceleration"
-    ]
-  },
-  {
-    "id": "requested_speetec_emulation_value",
-    "name": "Value (m | m/s | m/ss)",
-    "type": "float32",
+    "id": "reset_bypass",
+    "name": "Reset Bypass",
+    "type": "bool",
     "podUnits": "",
     "displayUnits": ""
-  },
-  {
-    "id": "run_id",
-    "name": "Run Mode",
-    "type": "enum",
-    "enumValues": [
-      "LIM + Booster",
-      "Booster",
-      "LIM",
-      "LIM (50KM/H)"
-    ]
-  },
-  {
-    "id": "run_state",
-    "name": "Run State",
-    "type": "enum",
-    "enumValues": [
-      "NOTHING",
-      "MOVING",
-      "BRAKING"
-    ]
   }
 ]
