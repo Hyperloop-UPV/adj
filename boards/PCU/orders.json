@@ -51,13 +51,5 @@
       "VMax"
     ],
     "id": 511
-  },
-  {
-    "type": "order",
-    "name": "Start_Precharge",
-    "variables": [
-      "freq_to_send_PWM"
-    ],
-    "id": 512
   }
 ]
