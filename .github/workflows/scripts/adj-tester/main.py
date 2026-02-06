@@ -14,6 +14,7 @@ directory using JSON Schema validation and project-specific rules
 """
 
 import sys
+import io
 from pathlib import Path
 
 from utils import (
@@ -27,6 +28,8 @@ from utils import (
     validate_with_schema,
 )
 
+# Force the stdout encoding to UTF-8
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 # =========================
 # CONFIG

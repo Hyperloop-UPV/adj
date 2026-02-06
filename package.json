@@ -1,0 +1,29 @@
+{
+  "name": "adj",
+  "version": "1.0.0",
+  "description": "This document defines the ADJ (Automatic Data Junction) v2 configuration format used by the Hyperloop Control Station. The configuration is organized as a distributed collection of JSON files that define boards, measurements, packets, and general system information.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write '**/*.{json,jsonc}'",
+    "format:check": "prettier --check '**/*.{json,jsonc}'",
+    "prepare": "husky",
+    "test": "cd .github/workflows/scripts/adj-tester && uv run main.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyperloop-UPV/adj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hyperloop-UPV/adj/issues"
+  },
+  "homepage": "https://github.com/Hyperloop-UPV/adj#readme",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1"
+  }
+}
