@@ -98,14 +98,14 @@
     "displayUnits": "ºC"
   },
   {
-    "id": "temp_min",
+    "id": "temperature_min",
     "name": "Min. Temperature",
     "type": "float32",
     "podUnits": "ºC",
     "displayUnits": "ºC"
   },
   {
-    "id": "temp_max",
+    "id": "temperature_max",
     "name": "Max. Temperature",
     "type": "float32",
     "podUnits": "ºC",

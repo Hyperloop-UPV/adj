@@ -1,7 +1,7 @@
 [
   {
     "type": "data",
-    "name": "Battery Data",
+    "name": "Battery Voltages",
     "variables": [
       "cell_1",
       "cell_2",
@@ -11,17 +11,47 @@
       "cell_6",
       "voltage_min",
       "voltage_max",
-      "total_voltage",
-      "SOC",
+      "total_voltage"
+    ],
+    "id": 777,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Battery Temperatures",
+    "variables": [
       "temperature_1",
       "temperature_2",
       "temperature_3",
       "temperature_4",
-      "temp_min",
-      "temp_max",
+      "temperature_min",
+      "temperature_max"
+    ],
+    "id": 778,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "State of Charge",
+    "variables": [
+      "SOC"
+    ],
+    "id": 779,
+    "period_type": "ms",
+    "period": 16.67,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Battery Current",
+    "variables": [
       "current"
     ],
-    "id": 777,
+    "id": 780,
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
@@ -32,7 +62,7 @@
     "variables": [
       "State"
     ],
-    "id": 778,
+    "id": 781,
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
@@ -51,7 +81,7 @@
       "output_voltage",
       "input_voltage"
     ],
-    "id": 779,
+    "id": 782,
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
