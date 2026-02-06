@@ -26,9 +26,7 @@
   {
     "type": "data",
     "name": "Current State",
-    "variables": [
-      "state"
-    ],
+    "variables": ["state"],
     "id": 778
   },
   {

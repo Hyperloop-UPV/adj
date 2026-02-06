@@ -104,10 +104,7 @@
   {
     "type": "data",
     "name": "OperationalState",
-    "variables": [
-      "vertical_state",
-      "horizontal_state"
-    ],
+    "variables": ["vertical_state", "horizontal_state"],
     "id": 63
   }
 ]

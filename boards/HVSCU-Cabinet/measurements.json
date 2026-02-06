@@ -1,45 +1,36 @@
 [
-    {
-        "id": "HVSCU-Cabinet_sdc_good",
-        "name": "SDC Good",
-        "type": "enum",
-        "podUnits": "",
-        "displayUnits": "",
-        "enumValues": [
-            "False",
-            "True"
-        ]
-    },
-    {
-        "id": "HVSCU-Cabinet_bus_voltage",
-        "name": "Bus Voltage",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V",
-        "below": {
-            "safe": 400.0,
-            "warning": 450.0
-        }
-    },
-    {
-        "id": "HVSCU-Cabinet_contactors_state",
-        "name": "Contactors State",
-        "type": "enum",
-        "podUnits": "",
-        "displayUnits": "",
-        "enumValues": [
-            "Open",
-            "Charging",
-            "Charged",
-            "Precharge",
-            "Close"
-        ]
-    },
-    {
-        "id": "HVSCU-Cabinet_output_current",
-        "name": "Output Current",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A"
+  {
+    "id": "HVSCU-Cabinet_sdc_good",
+    "name": "SDC Good",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": ["False", "True"]
+  },
+  {
+    "id": "HVSCU-Cabinet_bus_voltage",
+    "name": "Bus Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 400.0,
+      "warning": 450.0
     }
+  },
+  {
+    "id": "HVSCU-Cabinet_contactors_state",
+    "name": "Contactors State",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": ["Open", "Charging", "Charged", "Precharge", "Close"]
+  },
+  {
+    "id": "HVSCU-Cabinet_output_current",
+    "name": "Output Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  }
 ]

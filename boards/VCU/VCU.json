@@ -1,11 +1,6 @@
 {
   "board_id": 11,
   "board_ip": "127.0.0.3",
-  "measurements": [
-    "VCU_measurements.json"
-  ],
-  "packets": [
-    "orders.json",
-    "packets.json"
-  ]
+  "measurements": ["VCU_measurements.json"],
+  "packets": ["orders.json", "packets.json"]
 }

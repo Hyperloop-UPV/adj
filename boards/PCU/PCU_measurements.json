@@ -109,22 +109,13 @@
     "id": "general_state_machine",
     "name": "General State Machine",
     "type": "enum",
-    "enumValues": [
-      "Connecting",
-      "Operational",
-      "Fault"
-    ]
+    "enumValues": ["Connecting", "Operational", "Fault"]
   },
   {
     "id": "operational_state_machine",
     "name": "Operational state machine",
     "type": "enum",
-    "enumValues": [
-      "IDLE",
-      "Braking",
-      "Accelerating",
-      "Regenerative"
-    ]
+    "enumValues": ["IDLE", "Braking", "Accelerating", "Regenerative"]
   },
   {
     "id": "Current_Ref",
@@ -200,10 +191,7 @@
     "id": "encoder_direction",
     "name": "Direction Encoder",
     "type": "enum",
-    "enumValues": [
-      "Forward",
-      "Backward"
-    ]
+    "enumValues": ["Forward", "Backward"]
   },
   {
     "id": "encoder_speed",
@@ -251,28 +239,19 @@
     "id": "Current_Control_State",
     "name": "Current Control State",
     "type": "enum",
-    "enumValues": [
-      "Cruise_Mode",
-      "Regenerate_Mode"
-    ]
+    "enumValues": ["Cruise_Mode", "Regenerate_Mode"]
   },
   {
     "id": "Speed_Control_State",
     "name": "Control Current ref",
     "type": "enum",
-    "enumValues": [
-      "Cruise_Mode",
-      "Regenerate_Mode"
-    ]
+    "enumValues": ["Cruise_Mode", "Regenerate_Mode"]
   },
   {
     "id": "Direction_State",
     "name": "Direction Motor",
     "type": "enum",
-    "enumValues": [
-      "Forward",
-      "Backward"
-    ]
+    "enumValues": ["Forward", "Backward"]
   },
   {
     "id": "imod",
@@ -283,64 +262,43 @@
     "id": "reed1",
     "name": "reed_state",
     "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
+    "enumValues": ["Not_Braking", "Braking"]
   },
   {
     "id": "reed2",
     "name": "reed_state",
     "type": "enum",
-    "enumValues": [
-      "UNDEPLOYED",
-      "DEPLOYED"
-    ]
+    "enumValues": ["UNDEPLOYED", "DEPLOYED"]
   },
   {
     "id": "reed3",
     "name": "reed_state",
     "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
+    "enumValues": ["Not_Braking", "Braking"]
   },
   {
     "id": "reed4",
     "name": "reed_state",
     "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
+    "enumValues": ["Not_Braking", "Braking"]
   },
   {
     "id": "space_vector_active",
     "name": "Space Vector",
     "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
+    "enumValues": ["DISABLE", "ACTIVE"]
   },
   {
     "id": "current_control_active",
     "name": "Current Control",
     "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
+    "enumValues": ["DISABLE", "ACTIVE"]
   },
   {
     "id": "speed_control_active",
     "name": "Speed Control",
     "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
+    "enumValues": ["DISABLE", "ACTIVE"]
   },
   {
     "id": "gd_fault_a",
@@ -348,14 +306,8 @@
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
-    "safeRange": [
-      -2.0,
-      100.0
-    ],
-    "warningRange": [
-      0.0,
-      100.0
-    ]
+    "safeRange": [-2.0, 100.0],
+    "warningRange": [0.0, 100.0]
   },
   {
     "id": "gd_fault_b",
@@ -363,14 +315,8 @@
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
-    "safeRange": [
-      0.0,
-      100.0
-    ],
-    "warningRange": [
-      0.0,
-      100.0
-    ]
+    "safeRange": [0.0, 100.0],
+    "warningRange": [0.0, 100.0]
   },
   {
     "id": "gd_ready_a",
@@ -378,14 +324,8 @@
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
-    "safeRange": [
-      0.0,
-      100.0
-    ],
-    "warningRange": [
-      0.0,
-      100.0
-    ]
+    "safeRange": [0.0, 100.0],
+    "warningRange": [0.0, 100.0]
   },
   {
     "id": "gd_ready_b",
@@ -393,25 +333,14 @@
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
-    "safeRange": [
-      0.0,
-      100.0
-    ],
-    "warningRange": [
-      0.0,
-      100.0
-    ]
+    "safeRange": [0.0, 100.0],
+    "warningRange": [0.0, 100.0]
   },
   {
     "id": "requested_speetec_emulation_mode",
     "name": "Emulation Mode",
     "type": "enum",
-    "enumValues": [
-        "STOP",
-        "position",
-        "speed",
-        "acceleration"
-    ]
+    "enumValues": ["STOP", "position", "speed", "acceleration"]
   },
   {
     "id": "requested_speetec_emulation_value",
@@ -424,23 +353,12 @@
     "id": "run_id",
     "name": "Run Mode",
     "type": "enum",
-    "enumValues": [
-        "LIM + Booster",
-        "Booster",
-        "LIM",
-        "LIM (50KM/H)"
-
-    ]
+    "enumValues": ["LIM + Booster", "Booster", "LIM", "LIM (50KM/H)"]
   },
   {
     "id": "run_state",
     "name": "Run State",
     "type": "enum",
-    "enumValues": [
-        "NOTHING",
-        "MOVING",
-        "BRAKING"
-
-    ]
+    "enumValues": ["NOTHING", "MOVING", "BRAKING"]
   }
 ]

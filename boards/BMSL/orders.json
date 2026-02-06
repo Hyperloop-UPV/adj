@@ -14,17 +14,13 @@
   {
     "type": "order",
     "name": "Set PFM Frequency",
-    "variables": [
-      "frequency"
-    ],
+    "variables": ["frequency"],
     "id": 504
   },
   {
     "type": "order",
     "name": "Set PFM Dead Time",
-    "variables": [
-      "dead_time"
-    ],
+    "variables": ["dead_time"],
     "id": 505
   }
 ]

@@ -10,14 +10,8 @@
     "type": "float32",
     "podUnits": "%",
     "displayUnits": "%",
-    "safeRange": [
-      0.0,
-      100.0
-    ],
-    "warningRange": [
-      0.0,
-      100.0
-    ]
+    "safeRange": [0.0, 100.0],
+    "warningRange": [0.0, 100.0]
   },
   {
     "id": "lcu_battery_voltage",
@@ -32,14 +26,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -40.0,
-      40.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-40.0, 40.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "ldu_buffer_id",
@@ -192,14 +180,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_2",
@@ -207,14 +189,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_3",
@@ -222,14 +198,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_4",
@@ -237,14 +207,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_5",
@@ -252,14 +216,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_6",
@@ -267,14 +225,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_7",
@@ -282,14 +234,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_8",
@@ -297,14 +243,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_9",
@@ -312,14 +252,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "lcu_coil_current_10",
@@ -327,14 +261,8 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
+    "safeRange": [-55.0, 55.0],
+    "warningRange": [-40.0, 40.0]
   },
   {
     "id": "fixed_vbat",
@@ -342,14 +270,8 @@
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V",
-    "safeRange": [
-      250.0,
-      450.0
-    ],
-    "warningRange": [
-      300.0,
-      450.0
-    ]
+    "safeRange": [250.0, 450.0],
+    "warningRange": [300.0, 450.0]
   },
   {
     "id": "lcu_vbat_1",
@@ -698,33 +620,19 @@
     "id": "general_state",
     "name": "master state",
     "type": "enum",
-    "enumValues": [
-      "DEFINING",
-      "CONNECTING",
-      "OPERATIONAL",
-      "FAULT"
-    ]
+    "enumValues": ["DEFINING", "CONNECTING", "OPERATIONAL", "FAULT"]
   },
   {
     "id": "vertical_state",
     "name": "vertical state",
     "type": "enum",
-    "enumValues": [
-      "IDLE",
-      "CONTROL_CURRENT",
-      "CONTROL_1DOF",
-      "CONTROL_3DOF",
-      "STICK_DOWN"
-    ]
+    "enumValues": ["IDLE", "CONTROL_CURRENT", "CONTROL_1DOF", "CONTROL_3DOF", "STICK_DOWN"]
   },
   {
     "id": "horizontal_state",
     "name": "horizontal state",
     "type": "enum",
-    "enumValues": [
-      "NORMAL",
-      "BOOSTER"
-    ]
+    "enumValues": ["NORMAL", "BOOSTER"]
   },
   {
     "id": "lcu_coil_current_ref_1",
@@ -1134,5 +1042,4 @@
     "podUnits": "mm",
     "displayUnits": "mm"
   }
-  
 ]
