@@ -18,7 +18,7 @@
         "displayUnits": "V",
         "below": {
             "safe": 400.0,
-            "warning": 446.4
+            "warning": 450.0
         }
     },
     {
@@ -40,55 +40,6 @@
         "name": "Output Current",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A",
-        "out_of_range": {
-            "safe": [
-                -10.0,
-                70.0
-            ],
-            "warning": [
-                -20.0,
-                100.0
-            ]
-        }
-    },
-    {
-        "id": "HVSCU-Cabinet_imd_state",
-        "name": "IMD State",
-        "type": "enum",
-        "enumValues": [
-            "SHORT CIRCUIT",
-            "OK",
-            "UNDERVOLTAGE",
-            "FAST START",
-            "EQUIPMENT FAULT",
-            "GROUNDING FAULT",
-            "UNKNOWN"
-        ]
-    },
-    {
-        "id": "HVSCU-Cabinet_isolation_resistance",
-        "name": "IMD Isolation Resistance",
-        "type": "float32",
-        "below": {
-            "warning": 100000,
-            "safe": 200000
-        }
-    },
-    {
-        "id": "HVSCU-Cabinet_ok",
-        "name": "IMD OK",
-        "type": "bool"
-    },
-    {
-        "id": "HVSCU-Cabinet_soc",
-        "name": "Supercaps SoC",
-        "type": "float32",
-        "out_of_range": {
-            "warning": [
-                0.0,
-                100.0
-            ]
-        }
+        "displayUnits": "A"
     }
 ]

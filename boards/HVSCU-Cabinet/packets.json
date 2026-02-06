@@ -23,15 +23,5 @@
         "variables": [
             "HVSCU-Cabinet_output_current"
         ]
-    },
-    {
-        "id": 1610,
-        "type": "data",
-        "name": "Cabinet IMD",
-        "variables": [
-            "HVSCU-Cabinet_imd_state",
-            "HVSCU-Cabinet_isolation_resistance",
-            "HVSCU-Cabinet_ok"
-        ]
     }
 ]

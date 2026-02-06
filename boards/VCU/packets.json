@@ -6,10 +6,7 @@
             "general_state",
             "operational_state"
         ],
-        "id": 249,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
+        "id": 249
     },
     {
         "type": "data",
@@ -21,10 +18,7 @@
             "reed4",
             "all_reeds"
         ],
-        "id": 251,
-        "period_type": "us",
-        "period": 16.67,
-        "socket": "control_station_udp"
+        "id": 251
     },
     {
         "type": "data",
@@ -33,10 +27,7 @@
             "flow1",
             "flow2"
         ],
-        "id": 250,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
+        "id": 250
     },
     {
         "type": "data",
@@ -45,10 +36,7 @@
             "regulator_1_pressure",
             "regulator_2_pressure"
         ],
-        "id": 252,
-        "period_type": "us",
-        "period": 16.67,
-        "socket": "control_station_udp"
+        "id": 252
     },
     {
         "type": "data",
@@ -59,10 +47,7 @@
             "pressure_brakes",
             "pressure_capsule"
         ],
-        "id": 253,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
+        "id": 253
     },
     {
         "type": "data",
@@ -71,10 +56,7 @@
             "tape_enable_output",
             "emergency_tape"
         ],
-        "id": 254,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
+        "id": 254
     },
     {
         "type": "data",
@@ -82,20 +64,6 @@
         "variables": [
             "SDC"
         ],
-        "id": 255,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "recovery_state",
-        "variables": [
-            "state"
-        ],
-        "id": 65,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "pcu_udp"
+        "id": 255
     }
 ]

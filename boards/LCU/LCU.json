@@ -1,11 +1,6 @@
 {
   "board_id": 4,
-  "board_ip": "192.168.1.4",
-  "measurements": [
-    "LCU_measurements.json"
-  ],
-  "packets": [
-    "packets.json",
-    "orders.json"
-  ]
+  "board_ip": "127.0.0.4",
+  "measurements": ["LCU_measurements.json"],
+  "packets": ["packets.json", "orders.json"]
 }

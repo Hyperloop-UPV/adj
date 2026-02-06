@@ -2,22 +2,13 @@
   {
     "type": "data",
     "name": "pwm_packet",
-    "variables": [
-      "frequency",
-      "modulation_frequency",
-      "duty_u",
-      "duty_v",
-      "duty_w"
-    ],
+    "variables": ["frequency", "modulation_frequency", "duty_u", "duty_v", "duty_w"],
     "id": 550
   },
   {
     "type": "data",
     "name": "Batteries_Voltage",
-    "variables": [
-      "Voltage_Battery_A",
-      "Voltage_Battery_B"
-    ],
+    "variables": ["Voltage_Battery_A", "Voltage_Battery_B"],
     "id": 551
   },
   {
@@ -66,52 +57,32 @@
   {
     "type": "data",
     "name": "Encoder_data",
-    "variables": [
-      "target_speed",
-      "speed_error",
-      "actual_current_ref"
-    ],
+    "variables": ["target_speed", "speed_error", "actual_current_ref"],
     "id": 555
   },
   {
     "type": "data",
     "name": "Control_State",
-    "variables": [
-      "Direction_State",
-      "Speed_Control_State"
-    ],
+    "variables": ["Direction_State", "Speed_Control_State"],
     "id": 556
   },
   {
     "type": "data",
     "name": "Reeds_State",
-    "variables": [
-      "reed1",
-      "reed2",
-      "reed3",
-      "reed4"
-    ],
+    "variables": ["reed1", "reed2", "reed3", "reed4"],
     "id": 557
   },
   {
     "type": "data",
     "name": "GateDriverReporting",
-    "variables": [
-      "gd_fault_a",
-      "gd_fault_b",
-      "gd_ready_a",
-      "gd_ready_b"
-    ],
+    "variables": ["gd_fault_a", "gd_fault_b", "gd_ready_a", "gd_ready_b"],
     "id": 558
   },
 
   {
     "type": "data",
     "name": "OperationalState",
-    "variables": [
-      "operational_state_machine"
-    ],
+    "variables": ["operational_state_machine"],
     "id": 64
   }
-
 ]

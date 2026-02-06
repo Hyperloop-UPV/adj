@@ -122,38 +122,25 @@
     "id": "state",
     "name": "State",
     "type": "enum",
-    "enumValues": [
-      "CONNECTING",
-      "OPERATIONAL",
-      "FAULT"
-    ]
+    "enumValues": ["CONNECTING", "OPERATIONAL", "FAULT"]
   },
   {
     "id": "pfm_state",
     "name": "PFM State",
     "type": "enum",
-    "enumValues": [
-      "INACTIVE",
-      "ACTIVE"
-    ]
+    "enumValues": ["INACTIVE", "ACTIVE"]
   },
   {
     "id": "buffer_state",
     "name": "BUFFER State",
     "type": "enum",
-    "enumValues": [
-      "HIGH",
-      "LOW"
-    ]
+    "enumValues": ["HIGH", "LOW"]
   },
   {
     "id": "reset_state",
     "name": "RESET State",
     "type": "enum",
-    "enumValues": [
-      "LOW",
-      "HIGH"
-    ]
+    "enumValues": ["LOW", "HIGH"]
   },
   {
     "id": "frequency",

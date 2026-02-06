@@ -3,6 +3,7 @@
     "board_ip": "127.0.0.2",
     "packets": [
         "supercaps_data.json",
+        "orders.json",
         "packets.json"
     ],
     "measurements": [
