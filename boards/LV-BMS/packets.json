@@ -66,24 +66,5 @@
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
-    "name": "DCLV Data",
-    "variables": [
-      "PFMState",
-      "BufferState",
-      "ResetState",
-      "frequency",
-      "dead_time",
-      "output_current",
-      "input_current",
-      "output_voltage",
-      "input_voltage"
-    ],
-    "id": 782,
-    "period_type": "ms",
-    "period": 16.67,
-    "socket": "control_station_udp"
   }
 ]
