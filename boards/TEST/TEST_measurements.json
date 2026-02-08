@@ -1,0 +1,16 @@
+[
+  {
+    "id": "slope",
+    "name": "Slope",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "offset",
+    "name": "Offset",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": ""
+  }
+]

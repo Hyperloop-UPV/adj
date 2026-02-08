@@ -1,0 +1,13 @@
+[
+  {
+    "type": "ServerSocket",
+    "name": "server_socket",
+    "port": 50500
+  },
+  {
+    "type": "DatagramSocket",
+    "name": "packets_socket",
+    "port": 50400,
+    "remote_ip": "192.168.0.9"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "data",
+    "name": "characterization",
+    "variables": [
+      "slope",
+      "offset"
+    ],
+    "id": 1,
+    "socket": "packets_socket"
+  }
+]
