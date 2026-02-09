@@ -2,7 +2,9 @@
   {
     "type": "order",
     "name": "characterize",
-    "variables": [],
+    "variables": [
+      "real_raw_value"
+    ],
     "id": 2,
     "socket": "server_socket"
   }

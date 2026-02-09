@@ -8,5 +8,16 @@
     ],
     "id": 1,
     "socket": "packets_socket"
+  },
+  {
+    "type": "data",
+    "name": "value",
+    "variables": [
+      "raw_value",
+      "value"
+    ],
+    "id": 3,
+    "period_ms": 1.0,
+    "socket": "packets_socket"
   }
 ]

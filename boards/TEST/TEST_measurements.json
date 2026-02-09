@@ -12,5 +12,26 @@
     "type": "float64",
     "podUnits": "",
     "displayUnits": ""
+  },
+  {
+    "id": "real_raw_value",
+    "name": "Real raw value",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "raw_value",
+    "name": "Raw value",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "value",
+    "name": "Value",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": ""
   }
 ]
