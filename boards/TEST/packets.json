@@ -11,7 +11,7 @@
   },
   {
     "type": "data",
-    "name": "value",
+    "name": "Value",
     "variables": [
       "raw_value",
       "value"
