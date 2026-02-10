@@ -1,7 +1,7 @@
 [
   {
-    "id": "ldu_id",
-    "name": "LDU Id",
+    "id": "lpu_id",
+    "name": "LPU Id",
     "type": "uint8"
   },
   {
@@ -1129,5 +1129,12 @@
     "type": "float32",
     "podUnits": "mm",
     "displayUnits": "mm"
+  },
+  {
+    "id": "pwm_frequency",
+    "name": "pwm frequency",
+    "type": "uint32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz"
   }
 ]
