@@ -1397,7 +1397,7 @@
         ]
     },
     {
-        "id": "general_state_machine_status",
+        "id": "gsm_status",
         "name": "General State Machine status",
         "type": "enum",
         "enumValues": [
@@ -1409,7 +1409,7 @@
     {
         "id": "driver_reading_period",
         "name": "BMS reading period",
-        "type": "int32"
+        "type": "uint32"
     },
     {
         "id": "sdc_status",

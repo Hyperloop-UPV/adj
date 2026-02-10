@@ -1,10 +1,5 @@
 [
     {
-        "id": 0,
-        "type": "data",
-        "name": "FAULT"
-    },
-    {
         "id": 910,
         "type": "data",
         "name": "battery_1",
@@ -20,7 +15,10 @@
             "battery1_temperature2",
             "battery1_total_voltage",
             "battery1_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 911,
@@ -38,7 +36,10 @@
             "battery2_temperature2",
             "battery2_total_voltage",
             "battery2_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 912,
@@ -56,7 +57,10 @@
             "battery3_temperature2",
             "battery3_total_voltage",
             "battery3_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 913,
@@ -74,7 +78,10 @@
             "battery4_temperature2",
             "battery4_total_voltage",
             "battery4_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 914,
@@ -92,7 +99,10 @@
             "battery5_temperature2",
             "battery5_total_voltage",
             "battery5_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 915,
@@ -110,7 +120,10 @@
             "battery6_temperature2",
             "battery6_total_voltage",
             "battery6_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 916,
@@ -128,7 +141,10 @@
             "battery7_temperature2",
             "battery7_total_voltage",
             "battery7_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 917,
@@ -146,7 +162,10 @@
             "battery8_temperature2",
             "battery8_total_voltage",
             "battery8_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 918,
@@ -164,7 +183,10 @@
             "battery9_temperature2",
             "battery9_total_voltage",
             "battery9_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 919,
@@ -182,7 +204,10 @@
             "battery10_temperature2",
             "battery10_total_voltage",
             "battery10_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 920,
@@ -200,7 +225,10 @@
             "battery11_temperature2",
             "battery11_total_voltage",
             "battery11_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 921,
@@ -218,7 +246,10 @@
             "battery12_temperature2",
             "battery12_total_voltage",
             "battery12_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 922,
@@ -236,7 +267,10 @@
             "battery13_temperature2",
             "battery13_total_voltage",
             "battery13_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 923,
@@ -254,7 +288,10 @@
             "battery14_temperature2",
             "battery14_total_voltage",
             "battery14_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 924,
@@ -272,7 +309,10 @@
             "battery15_temperature2",
             "battery15_total_voltage",
             "battery15_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 925,
@@ -290,7 +330,10 @@
             "battery16_temperature2",
             "battery16_total_voltage",
             "battery16_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 926,
@@ -308,7 +351,10 @@
             "battery17_temperature2",
             "battery17_total_voltage",
             "battery17_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 927,
@@ -326,7 +372,10 @@
             "battery18_temperature2",
             "battery18_total_voltage",
             "battery18_conv_rate"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 928,
@@ -334,7 +383,10 @@
         "name": "batteries_voltage",
         "variables": [
             "batteries_voltage_reading"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 930,
@@ -342,7 +394,10 @@
         "name": "voltage_sensor",
         "variables": [
             "voltage_reading"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 931,
@@ -350,15 +405,21 @@
         "type": "data",
         "variables": [
             "current_reading"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 940,
         "name": "general_state_machine",
         "type": "data",
         "variables": [
-            "general_state_machine_status"
-        ]
+            "gsm_status"
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 942,
@@ -366,7 +427,10 @@
         "type": "data",
         "variables": [
             "driver_reading_period"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 944,
@@ -374,7 +438,10 @@
         "type": "data",
         "variables": [
             "sdc_status"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 945,
@@ -382,7 +449,10 @@
         "type": "data",
         "variables": [
             "minimum_soc"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 946,
@@ -390,7 +460,10 @@
         "type": "data",
         "variables": [
             "bms_status"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     },
     {
         "id": 947,
@@ -401,6 +474,9 @@
             "voltage_max",
             "temp_min",
             "temp_max"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
     }
 ]
