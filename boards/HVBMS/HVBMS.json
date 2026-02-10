@@ -1,6 +1,11 @@
 {
-    "board_id": 60,
-    "board_ip": "string",
-    "measurements": ["HVBMS_measurments.json"],
-    "packets": ["packets.json", "orders.json"]
-}   
+  "board_id": 218,
+  "board_ip": "192.168.1.7",
+  "measurements": [
+    "HVBMS_measurements.json"
+  ],
+  "packets": [
+    "packets.json",
+    "orders.json"
+  ]
+}

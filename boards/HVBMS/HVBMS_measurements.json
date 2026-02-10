@@ -1382,7 +1382,7 @@
         "displayUnits": "V",
         "safeRange": [
             0.0,
-            430.0
+            410.0
         ]
     },
     {
@@ -1393,11 +1393,11 @@
         "displayUnits": "A",
         "safeRange": [
             -15.0,
-            85.0
+            120.0
         ]
     },
     {
-        "id": "general_state_machine_status",
+        "id": "gsm_status",
         "name": "General State Machine status",
         "type": "enum",
         "enumValues": [
@@ -1407,49 +1407,9 @@
         ]
     },
     {
-        "id": "operational_state_machine_status",
-        "name": "Operational State Machine status",
-        "type": "enum",
-        "enumValues": [
-            "HV OPEN",
-            "PRECHARGE",
-            "HV CLOSED",
-            "CHARGING"
-        ]
-    },
-    {
         "id": "driver_reading_period",
         "name": "BMS reading period",
-        "type": "int32"
-    },
-    {
-        "id": "imd_status",
-        "name": "IMD Status",
-        "type": "enum",
-        "enumValues": [
-            "SHORTCIRCUIT",
-            "NORMAL",
-            "UNDERVOLTAGE",
-            "FAST_EVAL",
-            "EQUIPMENT_FAULT",
-            "GROUNDING_FAULT"
-        ]
-    },
-    {
-        "id": "imd_resistance",
-        "name": "IMD Resistance",
-        "type": "float32",
-        "podUnits": "Ohm",
-        "displayUnits": "MOhm",
-        "warningRange": [
-            0.0,
-            0.1
-        ]
-    },
-    {
-        "id": "imd_is_ok",
-        "name": "IMD OK",
-        "type": "bool"
+        "type": "uint32"
     },
     {
         "id": "sdc_status",
