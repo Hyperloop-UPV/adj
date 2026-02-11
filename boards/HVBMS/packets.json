@@ -14,9 +14,8 @@
       "battery1_conv_rate"
     ],
     "id": 910,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -33,9 +32,8 @@
       "battery2_conv_rate"
     ],
     "id": 911,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -52,9 +50,8 @@
       "battery3_conv_rate"
     ],
     "id": 912,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -71,9 +68,8 @@
       "battery4_conv_rate"
     ],
     "id": 913,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -90,9 +86,8 @@
       "battery5_conv_rate"
     ],
     "id": 914,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -109,9 +104,8 @@
       "battery6_conv_rate"
     ],
     "id": 915,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -128,9 +122,8 @@
       "battery7_conv_rate"
     ],
     "id": 916,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -147,9 +140,8 @@
       "battery8_conv_rate"
     ],
     "id": 917,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -166,9 +158,8 @@
       "battery9_conv_rate"
     ],
     "id": 918,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -185,9 +176,8 @@
       "battery10_conv_rate"
     ],
     "id": 919,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -204,9 +194,8 @@
       "battery11_conv_rate"
     ],
     "id": 920,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -223,9 +212,8 @@
       "battery12_conv_rate"
     ],
     "id": 921,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -242,9 +230,8 @@
       "battery13_conv_rate"
     ],
     "id": 922,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -261,9 +248,8 @@
       "battery14_conv_rate"
     ],
     "id": 923,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -280,9 +266,8 @@
       "battery15_conv_rate"
     ],
     "id": 924,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -299,9 +284,8 @@
       "battery16_conv_rate"
     ],
     "id": 925,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -318,9 +302,8 @@
       "battery17_conv_rate"
     ],
     "id": 926,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -337,9 +320,8 @@
       "battery18_conv_rate"
     ],
     "id": 927,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -348,9 +330,8 @@
       "batteries_voltage_reading"
     ],
     "id": 928,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -359,9 +340,8 @@
       "voltage_reading"
     ],
     "id": 930,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -370,9 +350,8 @@
       "current_reading"
     ],
     "id": 931,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -381,9 +360,8 @@
       "gsm_status"
     ],
     "id": 940,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -392,9 +370,8 @@
       "driver_reading_period"
     ],
     "id": 942,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -403,9 +380,8 @@
       "sdc_status"
     ],
     "id": 944,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -414,9 +390,8 @@
       "minimum_soc"
     ],
     "id": 945,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -425,9 +400,8 @@
       "bms_status"
     ],
     "id": 946,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   },
   {
     "type": "data",
@@ -439,8 +413,7 @@
       "temp_max"
     ],
     "id": 947,
-    "socket": "control_station_udp",
-    "period_type": "ms",
-    "period": "10"  
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
   }
 ]
