@@ -5,7 +5,8 @@
     "LV-BMS_measurements.json"
   ],
   "packets": [
-    "packets.json"
+    "packets.json",
+    "orders.json"
   ],
   "sockets":[
     "sockets.json"
