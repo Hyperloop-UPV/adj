@@ -375,6 +375,16 @@
   },
   {
     "type": "data",
+    "name": "sdc",
+    "variables": [
+      "sdc_status"
+    ],
+    "id": 944,
+    "period_ms": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
     "name": "minimum_soc",
     "variables": [
       "minimum_soc"
