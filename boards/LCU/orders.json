@@ -10,6 +10,15 @@
 
   {
     "type": "order",
+    "name": "stop_levitate",
+    "variables": [
+      "lcu_desired_distance"
+    ],
+    "id": 9001
+  },
+
+  {
+    "type": "order",
     "name": "current_control",
     "variables": [
       "lpu_id",
