@@ -47,6 +47,19 @@
     "period_type": "ms",
     "period": 1,
     "socket": "control_station_udp"
+  },
+
+  {
+    "type": "data",
+    "name": "state_machine",
+    "variables": [
+      "general_state_machine",
+      "operational_state_machine"
+    ],
+    "id": 9502,
+    "period_type": "ms",
+    "period": 1,
+    "socket": "control_station_udp"
   }
 
 ]

@@ -5,6 +5,25 @@
     "type": "uint8"
   },
   {
+  "id": "general_state_machine",
+    "name": "General State Machine",
+    "type": "enum",
+    "enumValues": [
+      "Connecting",
+      "Operational",
+      "Fault"
+    ]
+  },
+  {
+    "id": "operational_state_machine",
+    "name": "Operational state machine",
+    "type": "enum",
+    "enumValues": [
+      "Idle",
+      "Levitating"
+    ]
+  },
+  {
     "id": "pwm_duty_cycle",
     "name": "Duty Cycle",
     "type": "float32",
