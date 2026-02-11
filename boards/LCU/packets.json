@@ -1,6 +1,6 @@
 [
   {
-    "type": "packet",
+    "type": "data",
     "name": "lpu_currents",
     "variables": [
       "lcu_vbat_1",
@@ -31,7 +31,7 @@
   },
 
   {
-    "type": "packet",
+    "type": "data",
     "name": "airgap_measurements",
     "variables": [
       "lcu_airgap_1",
