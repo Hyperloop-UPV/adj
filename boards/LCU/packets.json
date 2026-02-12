@@ -4,25 +4,7 @@
     "name": "lpu_currents",
     "variables": [
       "lcu_vbat_1",
-      "lcu_vbat_2",
-      "lcu_vbat_3",
-      "lcu_vbat_4",
-      "lcu_vbat_5",
-      "lcu_vbat_6",
-      "lcu_vbat_7",
-      "lcu_vbat_8",
-      "lcu_vbat_9",
-      "lcu_vbat_10",
-      "lcu_coil_current_1",
-      "lcu_coil_current_2",
-      "lcu_coil_current_3",
-      "lcu_coil_current_4",
-      "lcu_coil_current_5",
-      "lcu_coil_current_6",
-      "lcu_coil_current_7",
-      "lcu_coil_current_8",
-      "lcu_coil_current_9",
-      "lcu_coil_current_10"
+      "lcu_coil_current_1"
     ],
     "id": 9500,
     "period_type": "ms",
@@ -34,14 +16,7 @@
     "type": "data",
     "name": "airgap_measurements",
     "variables": [
-      "lcu_airgap_1",
-      "lcu_airgap_2",
-      "lcu_airgap_3",
-      "lcu_airgap_4",
-      "lcu_airgap_5",
-      "lcu_airgap_6",
-      "lcu_airgap_7",
-      "lcu_airgap_8"
+      "lcu_airgap_1"
      ],
     "id": 9501,
     "period_type": "ms",

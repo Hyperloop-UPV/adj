@@ -12,7 +12,6 @@
     "type": "order",
     "name": "stop_levitate",
     "variables": [
-      "lcu_desired_distance"
     ],
     "id": 9001
   },
@@ -21,7 +20,6 @@
     "type": "order",
     "name": "current_control",
     "variables": [
-      "lpu_id",
       "lcu_desired_current"
     ],
     "id": 9100
@@ -31,7 +29,6 @@
     "type": "order",
     "name": "start_pwm",
     "variables": [
-      "lpu_id",
       "pwm_frequency",
       "pwm_duty_cycle"
      ],
@@ -42,7 +39,6 @@
     "type": "order",
     "name": "stop_pwm",
     "variables": [
-      "lpu_id"
      ],
      "id": 9102
   }
