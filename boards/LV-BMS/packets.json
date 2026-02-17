@@ -64,7 +64,7 @@
     ],
     "id": 781,
     "period_type": "ms",
-    "period": 16.67,
+    "period": 100.0,
     "socket": "control_station_udp"
   }
 ]
