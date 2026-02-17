@@ -31,15 +31,81 @@
     "variables": [
       "pwm_frequency",
       "pwm_duty_cycle"
-     ],
-     "id": 9101
+    ],
+    "id": 9101
   },
 
   {
     "type": "order",
     "name": "stop_pwm",
     "variables": [
-     ],
-     "id": 9102
+    ],
+    "id": 9102
+  },
+
+  {
+    "type": "order",
+    "name": "start_control_loop",
+    "variables": [
+    ],
+    "id": 9103
+  },
+
+  {
+    "type": "order",
+    "name": "stop_control_loop",
+    "variables": [
+    ],
+    "id": 9104
+  },
+
+  {
+    "type": "order",
+    "name": "set_fixed_vbat",
+    "variables": [
+      "fixed_vbat"
+    ],
+    "id": 9105
+  },
+
+  {
+    "type": "order",
+    "name": "unset_fixed_vbat",
+    "variables": [
+    ],
+    "id": 9106
+  },
+
+  {
+    "type": "order",
+    "name": "set_control_params",
+    "variables": [
+
+    ],
+    "id": 9107
+  },
+
+  {
+    "type": "order",
+    "name": "reset_slave",
+    "variables": [
+    ],
+    "id": 9200
+  },
+
+  {
+    "type": "order",
+    "name": "reset_master",
+    "variables": [
+    ],
+    "id": 9200
+  },
+
+  {
+    "type": "order",
+    "name": "reset",
+    "variables": [
+    ],
+    "id": 9200
   }
 ]
