@@ -7,8 +7,7 @@
       "lcu_coil_current_1"
     ],
     "id": 9500,
-    "period_type": "ms",
-    "period": 1,
+    "period_ms": 1.0,
     "socket": "control_station_udp"
   },
 
@@ -19,8 +18,7 @@
       "lcu_airgap_1"
      ],
     "id": 9501,
-    "period_type": "ms",
-    "period": 1,
+    "period_ms": 1.0,
     "socket": "control_station_udp"
   },
 
@@ -32,8 +30,7 @@
       "operational_state_machine"
     ],
     "id": 9502,
-    "period_type": "ms",
-    "period": 1,
+    "period_ms": 1.0,
     "socket": "control_station_udp"
   }
 
