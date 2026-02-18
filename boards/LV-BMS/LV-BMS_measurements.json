@@ -98,14 +98,14 @@
     "displayUnits": "ºC"
   },
   {
-    "id": "temp_min",
+    "id": "temperature_min",
     "name": "Min. Temperature",
     "type": "float32",
     "podUnits": "ºC",
     "displayUnits": "ºC"
   },
   {
-    "id": "temp_max",
+    "id": "temperature_max",
     "name": "Max. Temperature",
     "type": "float32",
     "podUnits": "ºC",
@@ -119,7 +119,7 @@
     "displayUnits": "A"
   },
   {
-    "id": "state",
+    "id": "State",
     "name": "State",
     "type": "enum",
     "enumValues": [
@@ -127,74 +127,5 @@
       "OPERATIONAL",
       "FAULT"
     ]
-  },
-  {
-    "id": "pfm_state",
-    "name": "PFM State",
-    "type": "enum",
-    "enumValues": [
-      "INACTIVE",
-      "ACTIVE"
-    ]
-  },
-  {
-    "id": "buffer_state",
-    "name": "BUFFER State",
-    "type": "enum",
-    "enumValues": [
-      "HIGH",
-      "LOW"
-    ]
-  },
-  {
-    "id": "reset_state",
-    "name": "RESET State",
-    "type": "enum",
-    "enumValues": [
-      "LOW",
-      "HIGH"
-    ]
-  },
-  {
-    "id": "frequency",
-    "name": "Frequency",
-    "type": "uint32",
-    "podUnits": "Hz",
-    "displayUnits": "Hz"
-  },
-  {
-    "id": "dead_time",
-    "name": "Dead time",
-    "type": "uint32",
-    "podUnits": "ns",
-    "displayUnits": "ns"
-  },
-  {
-    "id": "output_current",
-    "name": "Output Current",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "input_current",
-    "name": "Input Current",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "output_voltage",
-    "name": "Output Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "input_voltage",
-    "name": "Input Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
   }
 ]
