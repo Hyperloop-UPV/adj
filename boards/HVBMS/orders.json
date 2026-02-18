@@ -23,16 +23,10 @@
     "variables": [],
     "id": 902
   },
-  {
+    {
     "type": "order",
-    "name": "imd_bypass",
+    "name": "start_precharge",
     "variables": [],
     "id": 903
-  },
-  {
-    "type": "order",
-    "name": "zeroing",
-    "variables": [],
-    "id": 904
   }
 ]
