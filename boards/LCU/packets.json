@@ -17,6 +17,21 @@
     "id": 101,
     "period_ms": 50.0,
     "socket": "control_station_udp"
+  },
+
+  {
+    "type": "data",
+    "name": "control_params",
+    "variables": [
+      "pid_kp_value",
+      "pid_kd_value",
+      "pid_ki_value",
+      "pi_kp_value",
+      "pi_ki_value"
+    ],
+    "id": 102,
+    "period_ms": 100.0,
+    "socket": "control_station_udp"
   }
 
 ]

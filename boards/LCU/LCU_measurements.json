@@ -1155,5 +1155,40 @@
     "type": "uint32",
     "podUnits": "Hz",
     "displayUnits": "Hz"
+  },
+  {
+    "id": "pid_kp_value",
+    "name": "PID Kp value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "pid_ki_value",
+    "name": "PID Ki value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "pid_kd_value",
+    "name": "PID Kd value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "pi_kp_value",
+    "name": "PI Kp value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "pi_ki_value",
+    "name": "PI Ki value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 ]
