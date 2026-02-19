@@ -30,9 +30,9 @@
     "mm": "/1000",
     "G": "*9.8",
     "bar": "*1",
-    "s": "*1"
-    "Hz" : "Hz",
-    "m/ss" : "m/s2"
+    "s": "*1",
+    "Hz" : "*1",
+    "m/ss" : "*1"
   },
   "message_ids": {
     "remove_state_order": 6,
