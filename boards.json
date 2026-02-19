@@ -1,3 +1,4 @@
 {
-  "HVBMS": "boards/HVBMS/HVBMS.json"
+  "HVBMS": "boards/HVBMS/HVBMS.json",
+  "LV-BMS": "boards/LV-BMS/LV-BMS.json"
 }
