@@ -236,7 +236,7 @@
   {
     "type": "data",
     "name": "battery_14",
-    "variables": [c
+    "variables": [
       "battery14_SOC",
       "battery14_cell1",
       "battery14_cell2",
