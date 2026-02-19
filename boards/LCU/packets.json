@@ -12,7 +12,7 @@
       "fixed_vbat",
       "dist_error_y",
       "dist_integral_error_y",
-      "dist_derivative_error_y"
+      "dist_derivate_error_y"
     ],
     "id": 101,
     "period_ms": 50.0,
