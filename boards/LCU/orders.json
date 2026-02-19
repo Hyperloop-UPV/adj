@@ -1,62 +1,37 @@
 [
   {
     "type": "order",
-    "name": "levitate",
+    "name": "set_duty_cycle",
     "variables": [
-      "lcu_desired_distance"
+      "pwm_duty_cycle"
     ],
-    "id": 9000
+    "id": 201
   },
 
   {
     "type": "order",
-    "name": "stop_levitate",
-    "variables": [
-    ],
-    "id": 9001
-  },
-
-  {
-    "type": "order",
-    "name": "current_control",
+    "name": "set_reference_current",
     "variables": [
       "lcu_desired_current"
     ],
-    "id": 9100
+    "id": 202
+  },
+  
+  {
+    "type": "order",
+    "name": "start_current_control",
+    "variables": [
+      "lcu_desired_current"
+    ],
+    "id": 203
   },
 
   {
     "type": "order",
-    "name": "start_pwm",
-    "variables": [
-      "pwm_frequency",
-      "pwm_duty_cycle"
-    ],
-    "id": 9101
-  },
-
-  {
-    "type": "order",
-    "name": "stop_pwm",
+    "name": "stop_all_orders",
     "variables": [
     ],
-    "id": 9102
-  },
-
-  {
-    "type": "order",
-    "name": "start_control_loop",
-    "variables": [
-    ],
-    "id": 9103
-  },
-
-  {
-    "type": "order",
-    "name": "stop_control_loop",
-    "variables": [
-    ],
-    "id": 9104
+    "id": 204
   },
 
   {
@@ -65,47 +40,32 @@
     "variables": [
       "fixed_vbat"
     ],
-    "id": 9105
+    "id": 205
   },
 
   {
     "type": "order",
-    "name": "unset_fixed_vbat",
+    "name": "set_reference_distance",
     "variables": [
+      "lcu_desired_distance"
     ],
-    "id": 9106
+    "id": 302
   },
 
   {
     "type": "order",
-    "name": "set_control_params",
+    "name": "start_distance_control",
     "variables": [
-
+      "lcu_desired_distance"
     ],
-    "id": 9107
+    "id": 303
   },
 
   {
     "type": "order",
-    "name": "reset_slave",
+    "name": "stop_distance_control",
     "variables": [
     ],
-    "id": 9200
-  },
-
-  {
-    "type": "order",
-    "name": "reset_master",
-    "variables": [
-    ],
-    "id": 9200
-  },
-
-  {
-    "type": "order",
-    "name": "reset",
-    "variables": [
-    ],
-    "id": 9200
+    "id": 304
   }
 ]

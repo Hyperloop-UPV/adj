@@ -1,35 +1,20 @@
 [
   {
     "type": "data",
-    "name": "lpu_currents",
+    "name": "data",
     "variables": [
       "lcu_vbat_1",
-      "lcu_coil_current_1"
+      "lcu_coil_current_1",
+      "lcu_airgap_1",
+      "lcu_desired_current",
+      "lcu_desired_distance",
+      "pwm_duty_cycle",
+      "fixed_vbat",
+      "dist_error_y",
+      "dist_integral_error_y",
+      "dist_derivative_error_y"
     ],
-    "id": 9500,
-    "period_ms": 50.0,
-    "socket": "control_station_udp"
-  },
-
-  {
-    "type": "data",
-    "name": "airgap_measurements",
-    "variables": [
-      "lcu_airgap_1"
-     ],
-    "id": 9501,
-    "period_ms": 50.0,
-    "socket": "control_station_udp"
-  },
-
-  {
-    "type": "data",
-    "name": "state_machine",
-    "variables": [
-      "general_state_machine",
-      "operational_state_machine"
-    ],
-    "id": 9502,
+    "id": 101,
     "period_ms": 50.0,
     "socket": "control_station_udp"
   }
