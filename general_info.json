@@ -31,6 +31,8 @@
     "G": "*9.8",
     "bar": "*1",
     "s": "*1"
+    "Hz" : "Hz",
+    "m/ss" : "m/s2"
   },
   "message_ids": {
     "remove_state_order": 6,
