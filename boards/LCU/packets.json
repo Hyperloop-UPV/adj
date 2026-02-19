@@ -27,7 +27,9 @@
       "pid_kd_value",
       "pid_ki_value",
       "pi_kp_value",
-      "pi_ki_value"
+      "pi_ki_value",
+      "filter_order_airgap",
+      "filter_order_derivative",
     ],
     "id": 102,
     "period_ms": 100.0,

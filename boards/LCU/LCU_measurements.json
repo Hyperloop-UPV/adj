@@ -1190,5 +1190,19 @@
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
+  },
+  {
+    "id": "filter_order_airgap",
+    "name": "Filter order airgap",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "filter_order_derivative",
+    "name": "Filter order derivative",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 ]
