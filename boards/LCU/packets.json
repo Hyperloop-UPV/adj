@@ -11,9 +11,9 @@
       "pwm_duty_cycle",
       "fixed_vbat",
       "dist_error_y",
-      "z1_value",
-      "z2_value",
-      "z3_value"
+      "z1",
+      "z2",
+      "z3"
     ],
     "id": 101,
     "period_ms": 50.0,
