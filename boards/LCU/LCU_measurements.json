@@ -1225,5 +1225,26 @@
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
+  },
+  {
+    "id": "distance_kp_value",
+    "name": "Distance Kp value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "distance_kd_value",
+    "name": "Distance Kd value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "distance_b0_value",
+    "name": "Distance b0 value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 ]

@@ -25,7 +25,12 @@
     "name": "control_params",
     "variables": [
       "filter_order_airgap",
-      "filter_order_derivative"
+      "filter_order_derivative",
+      "distance_kp_value",
+      "distance_kd_value",
+      "distance_b0_value",
+      "pi_kp_value",
+      "pi_ki_value"
     ],
     "id": 102,
     "period_ms": 100.0,
