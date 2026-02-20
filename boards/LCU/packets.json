@@ -11,8 +11,9 @@
       "pwm_duty_cycle",
       "fixed_vbat",
       "dist_error_y",
-      "dist_integral_error_y",
-      "dist_derivate_error_y"
+      "z1_value",
+      "z2_value",
+      "z3_value"
     ],
     "id": 101,
     "period_ms": 50.0,
@@ -23,11 +24,6 @@
     "type": "data",
     "name": "control_params",
     "variables": [
-      "pid_kp_value",
-      "pid_kd_value",
-      "pid_ki_value",
-      "pi_kp_value",
-      "pi_ki_value",
       "filter_order_airgap",
       "filter_order_derivative"
     ],

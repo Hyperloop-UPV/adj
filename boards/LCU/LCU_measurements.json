@@ -1204,5 +1204,26 @@
     "type": "float32",
     "podUnits": "",
     "displayUnits": ""
+  },
+  {
+    "id": "z1",
+    "name": "Z1 value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "z2",
+    "name": "Z2 value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
+  },
+  {
+    "id": "z3",
+    "name": "Z3 value",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 ]
