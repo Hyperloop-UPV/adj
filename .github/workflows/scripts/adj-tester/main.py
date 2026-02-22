@@ -2,7 +2,11 @@
 
 ADJ Validator
 
+<<<<<<< HEAD
 Version: 1.1.0
+=======
+Version: 11.1.2
+>>>>>>> ba6ae0c (feat(ADJ-validator): allow remote_ip="backend" & fix minor bugs)
 
 JavierRibaldelRio
 
@@ -494,7 +498,13 @@ def check_socket_json(path: str, sockets_name: set):
 
             else:
                 socket_ip = socket.get("remote_ip", "")
-                if socket_ip != "" and not is_valid_ipv4(socket_ip):
+
+                # Remote ip might also be backend
+                if (
+                    socket_ip != ""
+                    and not is_valid_ipv4(socket_ip)
+                    and socket_ip.lower() != "backend"
+                ):
                     error_list.append(
                         logError(
                             path,
