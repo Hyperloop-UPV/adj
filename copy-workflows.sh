@@ -23,7 +23,7 @@ branches=$(git branch -r| grep -v "^${SOURCE_BRANCH}$" | grep -v "origin/HEAD" |
 for branch in $branches; do
 
 git checkout "$branch" > /dev/null  2> /dev/null ;
-git cherry-pick  -n "$COMMIT_HASH" > /dev/null  2> /dev/null ;
+git cherry-pick -X theirs -n "$COMMIT_HASH" > /dev/null  2> /dev/null ;
 
 git add .github;
 
