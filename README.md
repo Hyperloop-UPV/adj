@@ -250,7 +250,7 @@ Array of socket definitions for network communication.
     {
         "type": "DatagramSocket",
         "name": "control_station_udp",
-        "remote_ip":"192.168.0.9",
+        "remote_ip":"backend",
         "port": 50400
     },
 
@@ -260,6 +260,12 @@ Array of socket definitions for network communication.
         "local_port": 50501,
         "remote_ip": "192.168.1.5",
         "remote_port": 50500  
+    },
+    {
+        "type": "DatagramSocket",
+        "name": "pcu_udp",
+        "remote_ip":"192.168.1.5",
+        "port": 50402
     }
 ]
 ```
