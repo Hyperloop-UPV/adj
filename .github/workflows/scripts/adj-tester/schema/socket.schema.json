@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Socket configuration schema",
+    "description": "Array of socket definitions for network communication",
+    "type": "array",
+    "minItems": 1,
+    "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+            "type",
+            "name"
+        ],
+        "properties": {
+            "type": {
+                "type": "string",
+                "enum": [
+                    "ServerSocket",
+                    "DatagramSocket",
+                    "Socket"
+                ],
+                "description": "Socket type"
+            },
+            "name": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Socket name"
+            },
+            "port": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 65535,
+                "description": "Port number for ServerSocket or DatagramSocket"
+            },
+            "local_port": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 65535,
+                "description": "Local port number for Socket"
+            },
+            "remote_ip": {
+                "type": "string",
+                "format": "ipv4",
+                "description": "Remote IPv4 address"
+            },
+            "remote_port": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 65535,
+                "description": "Remote port number for Socket"
+            }
+        }
+    }
+}
