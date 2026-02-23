@@ -2,7 +2,7 @@
 
 ADJ Validator
 
-Version: 1.1.0
+Version: 11.1.2
 
 JavierRibaldelRio
 
@@ -381,7 +381,9 @@ def check_measurement_json(path: str, previous_ids=None):
     return is_valid
 
 
-def check_packet_json(path: str, sockets: set, measurement_ids=None):
+def check_packet_json(
+    path: str, sockets: set, measurement_ids=None, used_measurement_ids=None
+):
     """Validate a packet JSON file.
 
     Ensures schema conformance, global uniqueness of packet IDs
@@ -429,6 +431,10 @@ def check_packet_json(path: str, sockets: set, measurement_ids=None):
                         )
                     )
                     is_valid = False
+                else:
+                    # Track that this measurement is being used
+                    if used_measurement_ids is not None:
+                        used_measurement_ids.add(meas_id)
 
             # Ensure that socket is defined in the sockets
             socket_name = pkt.get("socket", "")
@@ -494,7 +500,13 @@ def check_socket_json(path: str, sockets_name: set):
 
             else:
                 socket_ip = socket.get("remote_ip", "")
-                if socket_ip != "" and not is_valid_ipv4(socket_ip):
+
+                # Remote ip might also be backend
+                if (
+                    socket_ip != ""
+                    and not is_valid_ipv4(socket_ip)
+                    and socket_ip.lower() != "backend"
+                ):
                     error_list.append(
                         logError(
                             path,
@@ -591,6 +603,7 @@ def main():
 
             # measurements are unique within a board
             measurement_ids = set()
+            used_measurement_ids = set()
 
             # sockets are unique
             sockets_name = set()
@@ -621,8 +634,32 @@ def main():
                         f"boards/{board_name}/{packets_path}",
                         sockets_name,
                         measurement_ids,
+                        used_measurement_ids,
                     )
                     and valid
+                )
+
+            # Check for measurements that are defined but not used
+            unused_measurements = measurement_ids - used_measurement_ids
+            unused_error_list = []
+            if unused_measurements:
+                for measurement_id in sorted(unused_measurements):
+                    unused_error_list.append(
+                        logError(
+                            f"{board_name} - GENERAL INFO",
+                            f"measurement id '{measurement_id}'",
+                            f"Measurement id '{measurement_id}' is defined but never used in any packet or order",
+                        )
+                    )
+                valid = False
+
+            if unused_error_list:
+                print_results(
+                    f"boards/{board_name}",
+                    False,
+                    unused_error_list,
+                    type="(Unused Measurements)",
+                    prefix="\t",
                 )
         else:
             log_message(
