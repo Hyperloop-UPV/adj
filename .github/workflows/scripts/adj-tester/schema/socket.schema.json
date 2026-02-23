@@ -40,7 +40,6 @@
             },
             "remote_ip": {
                 "type": "string",
-                "format": "ipv4",
                 "description": "Remote IPv4 address"
             },
             "remote_port": {
