@@ -37,12 +37,20 @@
                 },
                 "description": "Measurement IDs included in this packet"
             },
-            "period_ms": {
+            "period": {
                 "type": [
                     "integer",
                     "number"
                 ],
                 "description": "Packet transmission period in milliseconds"
+            },
+            "period_type": {
+                "type": "string",
+                "enum": [
+                    "us",
+                    "ms"
+                ],
+                "description": "Unit type for period (microseconds or milliseconds)"
             },
             "socket": {
                 "type": "string",
