@@ -1,5 +1,6 @@
 {
   "PCU": "boards/PCU/PCU.json",
   "HVBMS": "boards/HVBMS/HVBMS.json",
-  "LV-BMS": "boards/LV-BMS/LV-BMS.json"
+  "LV-BMS": "boards/LV-BMS/LV-BMS.json",
+  "VCU" : "boards/VCU/VCU.json"
 }

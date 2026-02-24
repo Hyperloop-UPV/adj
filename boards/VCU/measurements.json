@@ -1,0 +1,21 @@
+[
+    {
+        "id": "general_state",
+        "name": "General State",
+        "type": "enum",
+        "enumValues": [
+            "CONNECTING",
+            "OPERATIONAL",
+            "FAULT"
+        ]
+    },
+    {
+        "id": "operational_state",
+        "name": "Operational State",
+        "type": "enum",
+        "enumValues": [
+            "BRAKED",
+            "UNBRAKED"
+        ]
+    }
+]
