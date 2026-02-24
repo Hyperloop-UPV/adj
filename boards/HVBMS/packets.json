@@ -287,6 +287,44 @@
     "period_ms": 50.0,
     "socket": "control_station_udp"
   },
+   {
+    "type": "data",
+    "name": "battery_17",
+    "variables": [
+      "battery17_SOC",
+      "battery17_cell1",
+      "battery17_cell2",
+      "battery17_cell3",
+      "battery17_cell4",
+      "battery17_cell5",
+      "battery17_cell6",
+      "battery17_total_voltage",
+      "battery17_conv_rate"
+    ],
+    "id": 926,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "battery_18",
+    "variables": [
+      "battery18_SOC",
+      "battery18_cell1",
+      "battery18_cell2",
+      "battery18_cell3",
+      "battery18_cell4",
+      "battery18_cell5",
+      "battery18_cell6",
+      "battery18_total_voltage",
+      "battery18_conv_rate"
+    ],
+    "id": 927,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
   {
     "type": "data",
     "name": "batteries_voltage",
