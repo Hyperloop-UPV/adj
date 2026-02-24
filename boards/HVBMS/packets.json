@@ -420,17 +420,6 @@
   },
   {
     "type": "data",
-    "name": "bms",
-    "variables": [
-      "bms_status"
-    ],
-    "id": 946,
-    "period": 15,
-    "period_type": "ms",
-    "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
     "name": "batteries_data",
     "variables": [
       "voltage_min",
