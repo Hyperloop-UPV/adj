@@ -67,5 +67,23 @@
     "variables": [
     ],
     "id": 304
+  },
+
+  {
+    "type": "order",
+    "name": "start_distance_control_ramp",
+    "variables": [
+      "lcu_desired_distance"
+    ],
+    "id": 305
+  },
+
+  {
+    "type": "order",
+    "name": "set_reference_distance_ramp",
+    "variables": [
+      "lcu_desired_distance"
+    ],
+    "id": 306
   }
 ]

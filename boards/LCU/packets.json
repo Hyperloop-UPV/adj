@@ -19,7 +19,7 @@
     ],
     "id": 101,
     "period_ms": 50.0,
-    "socket": "control_station_udp"
+    "socket": "hyper_visor_udp"
   },
   {
     "type": "data",
@@ -35,6 +35,6 @@
     ],
     "id": 102,
     "period_ms": 100.0,
-    "socket": "control_station_udp"
+    "socket": "hyper_visor_udp"
   }
 ]

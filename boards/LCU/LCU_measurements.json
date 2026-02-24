@@ -70,8 +70,8 @@
     "id": "lcu_airgap_1",
     "name": "Airgap 1",
     "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "m"
+    "podUnits": "mm",
+    "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_std",
@@ -82,10 +82,10 @@
   },
   {
     "id": "lcu_desired_distance",
-    "name": "desired distance (m)",
+    "name": "desired distance (mm)",
     "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "m"
+    "podUnits": "mm",
+    "displayUnits": "mm"
   },
   {
     "id": "dist_error_y",
