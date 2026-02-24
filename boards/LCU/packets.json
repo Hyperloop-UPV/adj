@@ -6,6 +6,7 @@
       "lcu_coil_current_1",
       "lcu_vbat_1",
       "lcu_airgap_1",
+      "lcu_power",
       "lcu_desired_current",
       "lcu_desired_distance",
       "pwm_duty_cycle",
@@ -19,7 +20,6 @@
     "period_ms": 50.0,
     "socket": "control_station_udp"
   },
-
   {
     "type": "data",
     "name": "control_params",
@@ -36,5 +36,4 @@
     "period_ms": 100.0,
     "socket": "control_station_udp"
   }
-
 ]
