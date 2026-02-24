@@ -1,3 +1,4 @@
 {
-  "LCU": "boards/LCU/LCU.json"
+  "LCU": "boards/LCU/LCU.json",
+  "HVBMS": "boards/HVBMS/HVBMS.json"
 }
