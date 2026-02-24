@@ -7,7 +7,8 @@
     "TFTP": 69
   },
   "addresses": {
-    "backend": "192.168.0.10"
+    "backend": "192.168.0.9",
+    "hypervisor": "192.168.0.23"
   },
   "units": {
     "m/ss": "*1",
