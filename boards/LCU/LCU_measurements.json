@@ -20,13 +20,6 @@
     ]
   },
   {
-    "id": "lcu_battery_voltage",
-    "name": "Battery Voltage to set",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
     "id": "lcu_desired_current",
     "name": "Desired current to set",
     "type": "float32",
@@ -45,146 +38,6 @@
     "id": "ldu_buffer_id",
     "name": "LDU Buffer ID",
     "type": "uint8"
-  },
-  {
-    "id": "lcu_coil_temp_1",
-    "name": "Temperature on LDU 1 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_2",
-    "name": "Temperature on LDU 2 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_3",
-    "name": "Temperature on LDU 3 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_4",
-    "name": "Temperature on LDU 4 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_5",
-    "name": "Temperature on LDU 5 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_6",
-    "name": "Temperature on LDU 6 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_7",
-    "name": "Temperature on LDU 7 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_8",
-    "name": "Temperature on LDU 8 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_9",
-    "name": "Temperature on LDU 9 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_coil_temp_10",
-    "name": "Temperature on LDU 10 coil",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_1",
-    "name": "Temperature on LPU 1",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_2",
-    "name": "Temperature on LPU 2",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_3",
-    "name": "Temperature on LPU 3",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_4",
-    "name": "Temperature on LPU 4",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_5",
-    "name": "Temperature on LPU 5",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_6",
-    "name": "Temperature on LPU 6",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_7",
-    "name": "Temperature on LPU 7",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_8",
-    "name": "Temperature on LPU 8",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_9",
-    "name": "Temperature on LPU 9",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "lcu_driver_temp_10",
-    "name": "Temperature on LPU 10",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
   },
   {
     "id": "lcu_coil_current_1",
@@ -513,62 +366,6 @@
     "displayUnits": "deg"
   },
   {
-    "id": "test_gui__1",
-    "name": "Airgap BUENO 1",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "test_gui__2",
-    "name": "Airgap BUENO 2",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "test_gui_3_",
-    "name": "Airgap BUENO 3",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "test_gui_4_",
-    "name": "Airgap BUENO 4",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "test_gui_5_",
-    "name": "Airgap BUENO 5",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "test_gui_6_",
-    "name": "Airgap BUENO 6",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "test_gui_7_",
-    "name": "Airgap BUENO 7",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "test_gui_8_",
-    "name": "Airgap BUENO 8",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
     "id": "lcu_desired_distance",
     "name": "desired distance (mm)",
     "type": "float32",
@@ -576,120 +373,8 @@
     "displayUnits": "mm"
   },
   {
-    "id": "pos_y",
-    "name": "Y pos meters",
-    "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "pos_z",
-    "name": "Z pos meters",
-    "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "pos_rot_x",
-    "name": "X rotation radians",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_rot_y",
-    "name": "Y rotation radians",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_rot_z",
-    "name": "Z rotation radians",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_y_d",
-    "name": "Y pos derivative",
-    "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "pos_z_d",
-    "name": "Z pos derivative",
-    "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "pos_rot_x_d",
-    "name": "X rotation derivative",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_rot_y_d",
-    "name": "Y rotation derivative",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_rot_z_d",
-    "name": "Z rotation derivative",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_y_i",
-    "name": "Y pos integral",
-    "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "pos_z_i",
-    "name": "Z pos integral",
-    "type": "float32",
-    "podUnits": "m",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "pos_rot_x_i",
-    "name": "X rotation integral",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_rot_y_i",
-    "name": "Y rotation integral",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
-    "id": "pos_rot_z_i",
-    "name": "Z rotation integral",
-    "type": "float32",
-    "podUnits": "rad",
-    "displayUnits": "mrad"
-  },
-  {
     "id": "current_control_frequency",
     "name": "current control frequency",
-    "type": "uint32",
-    "podUnits": "Hz",
-    "displayUnits": "Hz"
-  },
-  {
-    "id": "levitation_control_frequency",
-    "name": "levitation control frequency",
     "type": "uint32",
     "podUnits": "Hz",
     "displayUnits": "Hz"
@@ -867,11 +552,6 @@
     "displayUnits": "A"
   },
   {
-    "id": "output_voltage",
-    "name": "output_voltage",
-    "type": "uint16"
-  },
-  {
     "id": "lcu_dis_pos_ref_1",
     "name": "Ref Dis 1",
     "type": "float32",
@@ -982,13 +662,6 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
-  },
-  {
-    "id": "noise_for_hems",
-    "name": "noise for hems",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
   },
   {
     "id": "multi_current_1",
