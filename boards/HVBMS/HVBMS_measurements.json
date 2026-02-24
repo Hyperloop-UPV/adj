@@ -916,20 +916,6 @@
     "displayUnits": "V"
   },
   {
-    "id": "battery15_temperature1",
-    "name": "Battery 15 Temperature 1",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
-    "id": "battery15_temperature2",
-    "name": "Battery 15 Temperature 2",
-    "type": "float32",
-    "podUnits": "ºC",
-    "displayUnits": "ºC"
-  },
-  {
     "id": "battery15_total_voltage",
     "name": "Battery 15 Voltage",
     "type": "float32",
