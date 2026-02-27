@@ -26,23 +26,50 @@ jobs:
         id: adj_validation
         run: |
           set +e
-          python3 .github/workflows/scripts/adj-tester/main.py 2> error.log
+          python3 .github/workflows/scripts/adj-tester/main.py > output.log 2>&1
           EXIT_CODE=$?
           echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
           exit $EXIT_CODE
 
-      - name: Send Slack notification if failed
+      - name: Notify Slack on failure
         if: failure()
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          ERROR_MESSAGE=$(cat error.log)
+          ERROR_MESSAGE=$(cat output.log | sed 's/"/\\"/g')
 
-          curl -X POST -H 'Content-type: application/json' \
-          --data "{
-            \"text\": \"❌ *ADJ Validator Failed* \n
-            Repository: ${{ github.repository }} \n
-            Branch: ${{ github.ref_name }} \n
-            Actor: ${{ github.actor }} \n
-            Commit: ${{ github.sha }} \n
-            Error:\n\`\`\`$ERROR_MESSAGE\`\`\`\"
-          }" \
-          ${{ secrets.SLACK_WEBHOOK_URL }}
+          payload=$(cat <<EOF
+          {
+            "text": "<!subteam^S04ABCDE1> ❌ *ADJ Validator Failed*",
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "<!subteam^S04ABCDE1> ❌ *ADJ Validator Failed*"
+                }
+              },
+              {
+                "type": "section",
+                "fields": [
+                  { "type": "mrkdwn", "text": "*Repository:*\n${{ github.repository }}" },
+                  { "type": "mrkdwn", "text": "*Branch:*\n${{ github.ref_name }}" },
+                  { "type": "mrkdwn", "text": "*Actor:*\n${{ github.actor }}" },
+                  { "type": "mrkdwn", "text": "*Commit:*\n${{ github.sha }}" }
+                ]
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "*Error:*\n\`\`\`${ERROR_MESSAGE}\`\`\`"
+                }
+              }
+            ]
+          }
+          EOF
+          )
+
+          curl -X POST -H "Content-type: application/json" \
+          --data "$payload" \
+          $SLACK_WEBHOOK
