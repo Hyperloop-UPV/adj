@@ -31,39 +31,53 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          ERROR_MESSAGE=$(sed 's/"/\\"/g' output.log | tail -n 40)
+          ERROR_MESSAGE=$(tail -n 40 output.log)
 
-          payload=$(cat <<EOF
-          {
-            "text": "<!subteam^S04ABCDE1> ❌ ADJ Validator Failed",
-            "blocks": [
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "<!subteam^S04ABCDE1> ❌ *ADJ Validator Failed*"
+          jq -n \
+            --arg repo "${{ github.repository }}" \
+            --arg branch "${{ github.ref_name }}" \
+            --arg actor "${{ github.actor }}" \
+            --arg run_url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --arg error "$ERROR_MESSAGE" \
+            '{
+              text: "❌ ADJ Validator Failed",
+              blocks: [
+                {
+                  type: "section",
+                  text: {
+                    type: "mrkdwn",
+                    text: "❌ *ADJ Validator Failed*"
+                  }
+                },
+                {
+                  type: "section",
+                  fields: [
+                    { type: "mrkdwn", text: "*Repository:*\n\($repo)" },
+                    { type: "mrkdwn", text: "*Branch:*\n\($branch)" },
+                    { type: "mrkdwn", text: "*Actor:*\n\($actor)" }
+                  ]
+                },
+                {
+                  type: "section",
+                  text: {
+                    type: "mrkdwn",
+                    text: "*Last 40 lines of error:*\n``` \($error) ```"
+                  }
+                },
+                {
+                  type: "actions",
+                  elements: [
+                    {
+                      type: "button",
+                      text: {
+                        type: "plain_text",
+                        text: "View Workflow Run"
+                      },
+                      url: $run_url
+                    }
+                  ]
                 }
-              },
-              {
-                "type": "section",
-                "fields": [
-                  { "type": "mrkdwn", "text": "*Repository:*\n${{ github.repository }}" },
-                  { "type": "mrkdwn", "text": "*Branch:*\n${{ github.ref_name }}" },
-                  { "type": "mrkdwn", "text": "*Actor:*\n${{ github.actor }}" }
-                ]
-              },
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "*Last 40 lines of error:*\n\`\`\`${ERROR_MESSAGE}\`\`\`"
-                }
-              }
-            ]
-          }
-          EOF
-          )
-
-          curl -X POST -H "Content-type: application/json" \
-            --data "$payload" \
-            $SLACK_WEBHOOK
+              ]
+            }' | curl -X POST -H "Content-type: application/json" \
+                 --data @- \
+                 $SLACK_WEBHOOK
