@@ -1,7 +1,7 @@
 name: ADJ Validator
 
 on:
-  push:        
+  push:
   pull_request:
 
 jobs:
@@ -23,5 +23,26 @@ jobs:
           pip install jsonschema
 
       - name: Run ADJ validation
+        id: adj_validation
         run: |
-          python3 .github/workflows/scripts/adj-tester/main.py
+          set +e
+          python3 .github/workflows/scripts/adj-tester/main.py 2> error.log
+          EXIT_CODE=$?
+          echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
+          exit $EXIT_CODE
+
+      - name: Send Slack notification if failed
+        if: failure()
+        run: |
+          ERROR_MESSAGE=$(cat error.log)
+
+          curl -X POST -H 'Content-type: application/json' \
+          --data "{
+            \"text\": \"❌ *ADJ Validator Failed* \n
+            Repository: ${{ github.repository }} \n
+            Branch: ${{ github.ref_name }} \n
+            Actor: ${{ github.actor }} \n
+            Commit: ${{ github.sha }} \n
+            Error:\n\`\`\`$ERROR_MESSAGE\`\`\`\"
+          }" \
+          ${{ secrets.SLACK_WEBHOOK_URL }}
