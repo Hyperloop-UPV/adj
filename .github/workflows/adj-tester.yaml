@@ -45,7 +45,7 @@ jobs:
             --arg run_url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
             --arg error "$ERROR_MESSAGE" \
             '{
-              text: "❌ ADJ Validator Failed\n\nRepository: \($repo)\nBranch: \($branch)\nActor: \($actor)\n\nLast 40 lines of error:\n\($error)\n\nWorkflow run:\n\($run_url)"
+              text: "❌ ADJ Validator Failed\n\n@firmware\n\nRepository: \($repo)\nBranch: \($branch)\nActor: \($actor)\n\nLast 40 lines of error:\n```\($error)```\n\nWorkflow run:\n\($run_url)"
             }' | curl -X POST -H "Content-type: application/json" \
                  --data @- \
                  $SLACK_WEBHOOK
