@@ -24,23 +24,22 @@ jobs:
 
       - name: Run ADJ validation
         id: adj_validation
+        continue-on-error: true
         run: |
-          set +e
           python3 .github/workflows/scripts/adj-tester/main.py > output.log 2>&1
-          EXIT_CODE=$?
-          echo "exit_code=$EXIT_CODE" >> $GITHUB_OUTPUT
-          exit $EXIT_CODE
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
 
       - name: Notify Slack on failure
-        if: failure()
+        if: steps.adj_validation.outputs.exit_code != '0'
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          ERROR_MESSAGE=$(cat output.log | sed 's/"/\\"/g')
+          ERROR_MESSAGE=$(sed 's/"/\\"/g' output.log)
+          ERROR_MESSAGE=$(echo "$ERROR_MESSAGE" | tail -n 40)
 
           payload=$(cat <<EOF
           {
-            "text": "<!subteam^S04ABCDE1> ❌ *ADJ Validator Failed*",
+            "text": "<!subteam^S04ABCDE1> ❌ ADJ Validator Failed",
             "blocks": [
               {
                 "type": "section",
@@ -54,16 +53,28 @@ jobs:
                 "fields": [
                   { "type": "mrkdwn", "text": "*Repository:*\n${{ github.repository }}" },
                   { "type": "mrkdwn", "text": "*Branch:*\n${{ github.ref_name }}" },
-                  { "type": "mrkdwn", "text": "*Actor:*\n${{ github.actor }}" },
-                  { "type": "mrkdwn", "text": "*Commit:*\n${{ github.sha }}" }
+                  { "type": "mrkdwn", "text": "*Actor:*\n${{ github.actor }}" }
                 ]
               },
               {
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "*Error:*\n\`\`\`${ERROR_MESSAGE}\`\`\`"
+                  "text": "*Last 40 lines of error:*\n\`\`\`${ERROR_MESSAGE}\`\`\`"
                 }
+              },
+              {
+                "type": "actions",
+                "elements": [
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "View Workflow Run"
+                    },
+                    "url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }
+                ]
               }
             ]
           }
@@ -71,5 +82,9 @@ jobs:
           )
 
           curl -X POST -H "Content-type: application/json" \
-          --data "$payload" \
-          $SLACK_WEBHOOK
+            --data "$payload" \
+            $SLACK_WEBHOOK
+
+      - name: Fail job if validation failed
+        if: steps.adj_validation.outputs.exit_code != '0'
+        run: exit 1
