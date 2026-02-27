@@ -24,7 +24,12 @@ jobs:
 
       - name: Run ADJ validation
         run: |
-          python3 .github/workflows/scripts/adj-tester/main.py > output.log 2>&1
+          python3 .github/workflows/scripts/adj-tester/main.py > raw_output.log 2>&1
+
+      - name: Clean ANSI colors
+        if: failure()
+        run: |
+          sed -r "s/\x1B\[[0-9;]*[mK]//g" raw_output.log > output.log
 
       - name: Notify Slack on failure
         if: failure()
