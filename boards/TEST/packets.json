@@ -1,0 +1,89 @@
+[
+  {
+    "type": "data",
+    "name": "order_mirror",
+    "variables": [
+      "tcp_order_count",
+      "last_order_code",
+      "enable_flag",
+      "small_counter",
+      "offset_value",
+      "mirror_mode"
+    ],
+    "id": 20737,
+    "socket": "telemetry_udp",
+    "period": 50,
+    "period_type": "ms"
+  },
+  {
+    "type": "data",
+    "name": "numeric_mirror",
+    "variables": [
+      "window_size",
+      "magic_value",
+      "position_value",
+      "ratio_value",
+      "precise_value"
+    ],
+    "id": 20738,
+    "socket": "telemetry_udp",
+    "period": 50,
+    "period_type": "ms"
+  },
+  {
+    "type": "data",
+    "name": "extremes_mirror",
+    "variables": [
+      "trim_value",
+      "energy_value",
+      "big_counter",
+      "mirror_state"
+    ],
+    "id": 20739,
+    "socket": "telemetry_udp",
+    "period": 50,
+    "period_type": "ms"
+  },
+  {
+    "type": "data",
+    "name": "udp_probe",
+    "variables": [
+      "probe_seq",
+      "probe_toggle",
+      "probe_window",
+      "probe_ratio",
+      "probe_mode"
+    ],
+    "id": 20740
+  },
+  {
+    "type": "data",
+    "name": "udp_probe_echo",
+    "variables": [
+      "udp_parse_count",
+      "probe_seq",
+      "probe_toggle",
+      "probe_window",
+      "probe_ratio",
+      "probe_mode"
+    ],
+    "id": 20741,
+    "socket": "telemetry_udp",
+    "period": 50,
+    "period_type": "ms"
+  },
+  {
+    "type": "data",
+    "name": "heartbeat_snapshot",
+    "variables": [
+      "heartbeat_ticks",
+      "tcp_order_count",
+      "udp_parse_count",
+      "mirror_state"
+    ],
+    "id": 20742,
+    "socket": "telemetry_udp",
+    "period": 250,
+    "period_type": "ms"
+  }
+]
