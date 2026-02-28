@@ -8,13 +8,13 @@
     "type": "Socket",
     "name": "control_test_client",
     "local_port": 41002,
-    "remote_ip": "192.168.200.9",
+    "remote_ip": "192.168.1.9",
     "remote_port": 41003
   },
   {
     "type": "DatagramSocket",
     "name": "telemetry_udp",
     "port": 41001,
-    "remote_ip": "192.168.200.9"
+    "remote_ip": "192.168.1.9"
   }
 ]
