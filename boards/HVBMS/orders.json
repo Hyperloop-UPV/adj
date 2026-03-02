@@ -7,21 +7,9 @@
   },
   {
     "type": "order",
-    "name": "close_contactors",
-    "variables": [],
-    "id": 900
-  },
-  {
-    "type": "order",
     "name": "open_contactors",
     "variables": [],
     "id": 901
-  },
-  {
-    "type": "order",
-    "name": "sdc_obccu",
-    "variables": [],
-    "id": 902
   },
     {
     "type": "order",
