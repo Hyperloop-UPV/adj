@@ -24,4 +24,20 @@ jobs:
 
       - name: Run ADJ validation
         run: |
-          python3 .github/workflows/scripts/adj-tester/main.py
+          python3 .github/workflows/scripts/adj-tester/main.py > /dev/null 2>&1
+
+      - name: Notify Slack on failure
+        if: failure()
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          jq -n \
+            --arg repo "${{ github.repository }}" \
+            --arg branch "${{ github.ref_name }}" \
+            --arg actor "${{ github.actor }}" \
+            --arg run_url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            '{
+              text: "<!channel> ❌ ADJ Validator Failed\n\nRepository: \($repo)\nBranch: \($branch)\nActor: \($actor)\n\nWorkflow run:\n\($run_url)"
+            }' | curl -X POST -H "Content-type: application/json" \
+                 --data @- \
+                 $SLACK_WEBHOOK
