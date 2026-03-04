@@ -24,27 +24,20 @@ jobs:
 
       - name: Run ADJ validation
         run: |
-          python3 .github/workflows/scripts/adj-tester/main.py > raw_output.log 2>&1
+          python3 .github/workflows/scripts/adj-tester/main.py > /dev/null 2>&1
 
       - name: Notify Slack on failure
         if: failure()
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          # Remove ANSI color codes
-          sed -r "s/\x1B\[[0-9;]*[mK]//g" raw_output.log > clean_output.log
-
-          # Take last 40 lines
-          ERROR_MESSAGE=$(tail -n 40 clean_output.log)
-
           jq -n \
             --arg repo "${{ github.repository }}" \
             --arg branch "${{ github.ref_name }}" \
             --arg actor "${{ github.actor }}" \
             --arg run_url "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
-            --arg error "$ERROR_MESSAGE" \
             '{
-              text: "❌ ADJ Validator Failed\n\nRepository: \($repo)\nBranch: \($branch)\nActor: \($actor)\n\nLast 40 lines of error:\n```\n\($error)\n```\n\nWorkflow run:\n\($run_url)"
+              text: "<!channel> ❌ ADJ Validator Failed\n\nRepository: \($repo)\nBranch: \($branch)\nActor: \($actor)\n\nWorkflow run:\n\($run_url)"
             }' | curl -X POST -H "Content-type: application/json" \
                  --data @- \
                  $SLACK_WEBHOOK
