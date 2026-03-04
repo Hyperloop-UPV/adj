@@ -451,6 +451,26 @@ def check_packet_json(
                 )
                 is_valid = False
 
+            # Ensure that if one of period_type, period, socket is present, all must be present
+            has_period_type = "period_type" in pkt
+            has_period = "period" in pkt
+            has_socket = "socket" in pkt
+            
+            # Count how many of the three fields are present
+            fields_present = sum([has_period_type, has_period, has_socket])
+            
+            # If any field is present, all three must be present
+            if fields_present > 0 and fields_present < 3:
+                error_list.append(
+                    logError(
+                        path,
+                        f"id {pkt_id}",
+                        f"Fields 'period_type', 'period', and 'socket' must all be present together or all be absent. "
+                        f"Found: period_type={has_period_type}, period={has_period}, socket={has_socket}",
+                    )
+                )
+                is_valid = False
+
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
