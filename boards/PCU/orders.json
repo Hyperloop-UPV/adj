@@ -23,7 +23,8 @@
       "freq_to_send_svpwm",
       "freq_to_send_PWM",
       "Current_Ref",
-      "VMax"
+      "VMax",
+      "VF control"
     ],
     "id": 509
   },

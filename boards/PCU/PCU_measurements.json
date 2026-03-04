@@ -261,6 +261,11 @@
     ]
   },
   {
+    "id": "VF control",
+    "name": "Variable frecuency control",
+    "type": "bool"
+  },
+  {
     "id": "current_control_active",
     "name": "Current Control",
     "type": "enum",
