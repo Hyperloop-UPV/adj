@@ -1,6 +1,50 @@
 [
   {
     "type": "data",
+    "name": "batteries_voltage",
+    "variables": [
+      "batteries_voltage_reading"
+    ],
+    "id": 928,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "voltage_sensor",
+    "variables": [
+      "voltage_reading"
+    ],
+    "id": 930,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "current_sensor",
+    "variables": [
+      "current_reading"
+    ],
+    "id": 931,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "sdc",
+    "variables": [
+      "sdc_status"
+    ],
+    "id": 944,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
     "name": "battery_1",
     "variables": [
       "battery1_SOC",
@@ -343,39 +387,6 @@
   },
   {
     "type": "data",
-    "name": "batteries_voltage",
-    "variables": [
-      "batteries_voltage_reading"
-    ],
-    "id": 928,
-    "period": 15,
-    "period_type": "ms",
-    "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
-    "name": "voltage_sensor",
-    "variables": [
-      "voltage_reading"
-    ],
-    "id": 930,
-    "period": 15,
-    "period_type": "ms",
-    "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
-    "name": "current_sensor",
-    "variables": [
-      "current_reading"
-    ],
-    "id": 931,
-    "period": 15,
-    "period_type": "ms",
-    "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
     "name": "general_state_machine",
     "variables": [
       "gsm_status"
@@ -392,17 +403,6 @@
       "driver_reading_period"
     ],
     "id": 942,
-    "period": 15,
-    "period_type": "ms",
-    "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
-    "name": "sdc",
-    "variables": [
-      "sdc_status"
-    ],
-    "id": 944,
     "period": 15,
     "period_type": "ms",
     "socket": "control_station_udp"
