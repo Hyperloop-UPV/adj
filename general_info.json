@@ -1,7 +1,7 @@
 {
   "ports": {
     "TCP_CLIENT": 50401,
-    "TCP_SERVER": 50500,
+    "TCP_SERVER": 56000,
     "UDP": 50400,
     "SNTP": 123,
     "TFTP": 69
