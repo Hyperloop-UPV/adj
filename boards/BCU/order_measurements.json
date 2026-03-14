@@ -81,20 +81,6 @@
         "displayUnits": "m/s"
     },
     {
-        "id": "requested_d_current_reference",
-        "name": "D Current Reference (A)",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A"
-    },
-    {
-        "id": "requested_q_current_reference",
-        "name": "Q Current Reference (A)",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A"
-    },
-    {
         "id": "requested_d_current_reference_2",
         "name": "D Current Reference(A)",
         "type": "float32",
