@@ -45,16 +45,18 @@
 
   {
     "type": "order",
-    "name": "start_control_loop",
+    "name": "enable_buffer",
     "variables": [
+      "buffer_id"
     ],
     "id": 9103
   },
 
   {
     "type": "order",
-    "name": "stop_control_loop",
+    "name": "disable_buffer",
     "variables": [
+      "buffer_id"
     ],
     "id": 9104
   },

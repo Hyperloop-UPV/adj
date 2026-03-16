@@ -105,5 +105,10 @@
     "type": "uint32",
     "podUnits": "Hz",
     "displayUnits": "Hz"
+  },
+  {
+    "id": "buffer_id",
+    "name": "buffer id",
+    "type": "uint32"
   }
 ]
