@@ -28,8 +28,7 @@
     "type": "data",
     "name": "state_machine",
     "variables": [
-      "general_state_machine",
-      "operational_state_machine"
+      "general_state_machine"
     ],
     "id": 9502,
     "period_type": "ms",
