@@ -1199,5 +1199,30 @@
     "type": "float32",
     "podUnits": "ºC",
     "displayUnits": "ºC"
+  },
+  {
+    "id": "imd_status",
+    "name": "IMD Status",
+    "type": "enum",
+    "enumValues":[
+        "SHORTCIRCUIT",
+        "NORMAL",
+        "UNDERVOLTAGE",
+        "FAST_EVAL",
+        "EQUIPMENT_FAULT",
+        "GROUNDING_FAULT"
+    ]
+  },
+  {
+    "id": "imd_resistance",
+    "name": "IMD Resistance",
+    "type": "float32",
+    "podUnits": "Ohm",
+    "displayUnits": "MOhm"
+  },
+  {
+    "id": "imd_is_ok",
+    "name": "IMD OK",
+    "type": "bool"
   }
 ]

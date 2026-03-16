@@ -409,6 +409,19 @@
   },
   {
     "type": "data",
+    "name": "imd",
+    "variables": [
+        "imd_status",
+        "imd_resistance",
+        "imd_is_ok"
+    ],
+    "id": 943,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
     "name": "minimum_soc",
     "variables": [
       "minimum_soc"
