@@ -1,10 +1,11 @@
 [
   {
     "type": "data",
-    "name": "lpu_currents",
+    "name": "LPU 1 measurements",
     "variables": [
-      "lcu_vbat_1",
-      "lcu_coil_current_1"
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
     ],
     "id": 9500,
     "period_type": "ms",
@@ -14,9 +15,9 @@
 
   {
     "type": "data",
-    "name": "airgap_measurements",
+    "name": "Airgap 1 measurements",
     "variables": [
-      "lcu_airgap_1"
+      "lcu_airgap"
      ],
     "id": 9501,
     "period_type": "ms",
@@ -26,12 +27,24 @@
 
   {
     "type": "data",
-    "name": "state_machine",
+    "name": "State Machine",
     "variables": [
       "general_state_machine",
       "operational_state_machine"
     ],
     "id": 9502,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+
+  {
+    "type": "data",
+    "name": "General State",
+    "variables": [
+      "lcu_desired_distance"
+    ],
+    "id": 9503,
     "period_type": "ms",
     "period": 50.0,
     "socket": "control_station_udp"
