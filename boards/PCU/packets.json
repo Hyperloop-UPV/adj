@@ -110,5 +110,17 @@
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
+  },
+  
+  {
+    "type": "data",
+    "name": "schedGlobalTick",
+    "variables": [
+      "ticks"
+    ],
+    "id": 559,
+    "period_type": "ms",
+    "period": 10,
+    "socket": "control_station_udp"
   }
 ]

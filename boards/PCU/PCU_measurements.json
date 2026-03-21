@@ -350,5 +350,13 @@
     "type": "bool",
     "podUnits": "",
     "displayUnits": ""
+  },
+
+  {
+    "id": "ticks",
+    "name": "Ticks",
+    "type": "uint32",
+    "podUnits": "",
+    "displayUnits": "us"
   }
 ]
