@@ -355,8 +355,8 @@
   {
     "id": "ticks",
     "name": "Ticks",
-    "type": "uint32",
+    "type": "uint64",
     "podUnits": "",
-    "displayUnits": "us"
+    "displayUnits": ""
   }
 ]
