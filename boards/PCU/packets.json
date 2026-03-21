@@ -118,7 +118,6 @@
     "variables": [
       "ready_bitmap_"
     ],
-    "id": 900,
-    "socket": "control_station_udp"
+    "id": 900
   }
 ]
