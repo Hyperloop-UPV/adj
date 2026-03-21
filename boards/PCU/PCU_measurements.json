@@ -350,5 +350,13 @@
     "type": "bool",
     "podUnits": "",
     "displayUnits": ""
+  },
+
+  {
+    "id": "ready_bitmap_",
+    "name": "Ready bmp",
+    "type": "uint32",
+    "podUnits": "",
+    "displayUnits": ""
   }
 ]
