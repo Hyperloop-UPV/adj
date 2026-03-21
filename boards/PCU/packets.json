@@ -110,14 +110,5 @@
     "period_type": "ms",
     "period": 16.67,
     "socket": "control_station_udp"
-  },
-
-  {
-    "type": "data",
-    "name": "schedInfo",
-    "variables": [
-      "ready_bitmap_"
-    ],
-    "id": 900
   }
 ]
