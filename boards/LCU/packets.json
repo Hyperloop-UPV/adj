@@ -12,19 +12,211 @@
     "period": 50.0,
     "socket": "control_station_udp"
   },
-
+  {
+    "type": "data",
+    "name": "LPU 2 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9501,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 3 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9502,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 4 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9503,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 5 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9504,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 6 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9505,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 7 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9506,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 8 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9507,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 9 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9508,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "LPU 10 measurements",
+    "variables": [
+      "lcu_vbat",
+      "lcu_coil_current",
+      "pwm_duty_cycle"
+    ],
+    "id": 9509,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
   {
     "type": "data",
     "name": "Airgap 1 measurements",
     "variables": [
       "lcu_airgap"
      ],
-    "id": 9501,
+    "id": 9510,
     "period_type": "ms",
     "period": 50.0,
     "socket": "control_station_udp"
   },
-
+  {
+    "type": "data",
+    "name": "Airgap 2 measurements",
+    "variables": [
+      "lcu_airgap"
+     ],
+    "id": 9511,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Airgap 3 measurements",
+    "variables": [
+      "lcu_airgap"
+     ],
+    "id": 9512,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Airgap 4 measurements",
+    "variables": [
+      "lcu_airgap"
+     ],
+    "id": 9513,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Airgap 5 measurements",
+    "variables": [
+      "lcu_airgap"
+     ],
+    "id": 9514,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Airgap 6 measurements",
+    "variables": [
+      "lcu_airgap"
+     ],
+    "id": 9515,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Airgap 7 measurements",
+    "variables": [
+      "lcu_airgap"
+     ],
+    "id": 9516,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Airgap 8 measurements",
+    "variables": [
+      "lcu_airgap"
+     ],
+    "id": 9517,
+    "period_type": "ms",
+    "period": 50.0,
+    "socket": "control_station_udp"
+  },
   {
     "type": "data",
     "name": "State Machine",
@@ -32,22 +224,20 @@
       "general_state_machine",
       "operational_state_machine"
     ],
-    "id": 9502,
+    "id": 9520,
     "period_type": "ms",
     "period": 50.0,
     "socket": "control_station_udp"
   },
-
   {
     "type": "data",
     "name": "General State",
     "variables": [
       "lcu_desired_distance"
     ],
-    "id": 9503,
+    "id": 9521,
     "period_type": "ms",
     "period": 50.0,
     "socket": "control_station_udp"
   }
-
 ]

@@ -27,7 +27,8 @@
     "type": "order",
     "name": "Current Control",
     "variables": [
-      "lcu_desired_current"
+      "lcu_desired_current",
+      "lpu_id"
     ],
     "id": 9100
   },
@@ -36,7 +37,8 @@
     "type": "order",
     "name": "Start PWM",
     "variables": [
-      "pwm_duty_cycle"
+      "pwm_duty_cycle",
+      "lpu_id"
     ],
     "id": 9101
   },
@@ -45,6 +47,7 @@
     "type": "order",
     "name": "Stop PWM",
     "variables": [
+      "lpu_id"
     ],
     "id": 9102
   },
@@ -53,6 +56,7 @@
     "type": "order",
     "name": "Enable Buffer",
     "variables": [
+      "lpu_id"
     ],
     "id": 9103
   },
@@ -61,6 +65,7 @@
     "type": "order",
     "name": "Disable Buffer",
     "variables": [
+      "lpu_id"
     ],
     "id": 9104
   },
@@ -86,7 +91,6 @@
     "type": "order",
     "name": "Set Control Params",
     "variables": [
-
     ],
     "id": 9107
   },

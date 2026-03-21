@@ -98,5 +98,10 @@
     "type": "float32",
     "podUnits": "mm",
     "displayUnits": "mm"
+  },
+  {
+    "id": "lpu_id",
+    "name": "LPU ID",
+    "type": "uint32"
   }
 ]
