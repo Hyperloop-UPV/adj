@@ -10,6 +10,22 @@ import ipaddress
 from pathlib import Path
 from jsonschema import Draft7Validator
 
+# Global switch to control whether ANSI colors are used in output.
+# This is controlled from CLI via the `--no-color` flag.
+ENABLE_COLOR = True
+
+
+def set_color_enabled(enabled: bool):
+    """Enable or disable ANSI color output.
+
+    Args:
+        enabled: If False, all helper output functions will omit ANSI
+                 escape sequences.
+    """
+
+    global ENABLE_COLOR
+    ENABLE_COLOR = enabled
+
 
 def print_header(header: str):
     """Print a simple boxed header to stdout.
@@ -39,10 +55,14 @@ def format_status(message: str, validated: bool = False):
                    red "Failed".
     """
 
+    if not ENABLE_COLOR:
+        result = "Passed" if validated else "Failed"
+        return f"{message} {result}"
+
     # ANSI color codes used for terminal output
     if not validated:
         result = "\033[31mFailed\033[0m"  # red
-    elif validated:
+    else:
         result = "\033[32mPassed\033[0m"  # green
 
     return f"{message} {result}"
@@ -50,6 +70,9 @@ def format_status(message: str, validated: bool = False):
 
 def info_message(message: str):
     """format to blue color and return the message string."""
+
+    if not ENABLE_COLOR:
+        return message
 
     return f"\033[34m{message}\033[0m"
 
@@ -68,6 +91,10 @@ def log_message(message: str, status: int = 0):
         status: Controls color: -1 -> red (error), 0 -> normal, 1 -> green
                 (success).
     """
+
+    if not ENABLE_COLOR:
+        print(message)
+        return
 
     colors = {-1: "\033[31m", 1: "\033[32m"}
     color = colors.get(status, "")
@@ -142,6 +169,9 @@ def logError(label: str, path: str, message: str):
     This helper is handy for tests or logging in contexts that prefer a
     single formatted string instead of printing directly.
     """
+
+    if not ENABLE_COLOR:
+        return f"{label}: {path} → {message}"
 
     return f"\033[31m{label}: {path} → {message}\033[0m"
 
