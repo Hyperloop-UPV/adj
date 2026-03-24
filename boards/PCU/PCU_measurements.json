@@ -355,13 +355,5 @@
     "type": "bool",
     "podUnits": "",
     "displayUnits": ""
-  },
-
-  {
-    "id": "ticks",
-    "name": "Ticks",
-    "type": "uint64",
-    "podUnits": "",
-    "displayUnits": ""
   }
 ]
