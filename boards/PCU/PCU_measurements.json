@@ -125,6 +125,11 @@
     ]
   },
   {
+    "id": "Reverse",
+    "name": "Reverse mode",
+    "type": "bool"
+  },
+  {
     "id": "Current_Ref",
     "name": "Current Ref",
     "type": "float32",
