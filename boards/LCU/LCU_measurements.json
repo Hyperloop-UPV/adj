@@ -6,8 +6,16 @@
     "enumValues": [
       "Connecting",
       "Operational",
-      "Levitating",
       "Fault"
+    ]
+  },
+  {
+    "id": "operational_state_machine",
+    "name": "Operational state machine",
+    "type": "enum",
+    "enumValues": [
+      "Idle",
+      "Levitating"
     ]
   },
   {
