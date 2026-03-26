@@ -165,6 +165,13 @@
     "displayUnits": "A"
   },
   {
+    "id": "slip_motor",
+    "name": "Slip Motor",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
     "id": "Target_Voltage",
     "name": "Target Voltage",
     "type": "float32",
