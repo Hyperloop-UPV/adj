@@ -27,7 +27,7 @@
   },
   {
     "id": "lcu_desired_current",
-    "name": "Desired current to set",
+    "name": "Desired current",
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
@@ -41,8 +41,8 @@
     ]
   },
   {
-    "id": "lcu_coil_current_1",
-    "name": "Current on LDU 1 coil",
+    "id": "lcu_coil_current",
+    "name": "Current on LCU",
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
@@ -57,7 +57,7 @@
   },
   {
     "id": "fixed_vbat",
-    "name": "fixed_vbat_0",
+    "name": "Fixed VBAT",
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V",
@@ -71,31 +71,24 @@
     ]
   },
   {
-    "id": "lcu_vbat_1",
-    "name": "LPU 1 Voltage",
+    "id": "lcu_vbat",
+    "name": "LPU Voltage",
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },
   {
-    "id": "lcu_airgap_1",
-    "name": "Airgap 1",
+    "id": "lcu_airgap",
+    "name": "Airgap",
     "type": "float32",
     "podUnits": "mm",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_desired_distance",
-    "name": "desired distance (mm)",
+    "name": "Desired Distance (mm)",
     "type": "float32",
     "podUnits": "mm",
     "displayUnits": "mm"
-  },
-  {
-    "id": "pwm_frequency",
-    "name": "pwm frequency",
-    "type": "uint32",
-    "podUnits": "Hz",
-    "displayUnits": "Hz"
   }
 ]
