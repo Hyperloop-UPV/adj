@@ -89,7 +89,8 @@
       "target_speed",
       "speed_error",
       "actual_current_ref",
-      "slip_motor"
+      "slip_motor",
+      "cnt_encoder"
     ],
     "id": 555,
     "period_type": "ms",

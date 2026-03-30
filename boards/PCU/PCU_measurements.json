@@ -172,6 +172,13 @@
     "displayUnits": "%"
   },
   {
+    "id": "cnt_encoder",
+    "name": "Counter Encoder",
+    "type": "uint32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
     "id": "Target_Voltage",
     "name": "Target Voltage",
     "type": "float32",
