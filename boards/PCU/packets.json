@@ -90,7 +90,8 @@
       "speed_error",
       "actual_current_ref",
       "slip_motor",
-      "cnt_encoder"
+      "cnt_encoder",
+      "speed_km_h_IMU"
     ],
     "id": 555,
     "period_type": "ms",

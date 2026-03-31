@@ -172,6 +172,13 @@
     "displayUnits": "%"
   },
   {
+    "id": "speed_km_h_IMU",
+    "name": "Speed km/h IMU",
+    "type": "float64",
+    "podUnits": "km/h",
+    "displayUnits": "km/h"
+  },
+  {
     "id": "cnt_encoder",
     "name": "Counter Encoder",
     "type": "uint32",
