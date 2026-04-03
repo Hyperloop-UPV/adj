@@ -9,7 +9,7 @@
     ],
     "id": 9500,
     "period_type": "ms",
-    "period": 50.0,
+    "period": 1.0,
     "socket": "control_station_udp"
   },
 
@@ -21,7 +21,7 @@
      ],
     "id": 9501,
     "period_type": "ms",
-    "period": 50.0,
+    "period": 1.0,
     "socket": "control_station_udp"
   },
 
@@ -34,7 +34,7 @@
     ],
     "id": 9502,
     "period_type": "ms",
-    "period": 50.0,
+    "period": 1.0,
     "socket": "control_station_udp"
   },
 
@@ -46,7 +46,7 @@
     ],
     "id": 9503,
     "period_type": "ms",
-    "period": 50.0,
+    "period": 1.0,
     "socket": "control_station_udp"
   }
 
