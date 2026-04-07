@@ -181,7 +181,7 @@
   {
     "id": "IMU_position_m",
     "name": "IMU Position m",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "m",
     "displayUnits": "m"
   },
