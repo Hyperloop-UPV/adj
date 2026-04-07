@@ -179,6 +179,14 @@
     "displayUnits": "km/h"
   },
   {
+    "id": "IMU_position_m",
+    "name": "IMU Position m",
+    "type": "float64",
+    "podUnits": "m",
+    "displayUnits": "m"
+  },
+  
+  {
     "id": "cnt_encoder",
     "name": "Counter Encoder",
     "type": "uint32",

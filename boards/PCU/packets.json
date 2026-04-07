@@ -91,7 +91,8 @@
       "actual_current_ref",
       "slip_motor",
       "cnt_encoder",
-      "speed_km_h_IMU"
+      "speed_km_h_IMU",
+      "IMU_position_m"
     ],
     "id": 555,
     "period_type": "ms",
