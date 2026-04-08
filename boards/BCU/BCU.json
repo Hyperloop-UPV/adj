@@ -6,7 +6,7 @@
         "packets.json"
     ],
     "measurements": [
-        "BCU_measurements.json"
+        "measurements.json"
         
     ],
     "sockets": [
