@@ -27,7 +27,7 @@
         "name": "Space Vector",
         "variables": [
             "modulation_frequency_hz",
-            "Conmutation_frequency_hz",
+            "commutation_frequency_hz",
             "voltage_reference",
             "voltage_max",
             "conmutation_index"     
@@ -51,12 +51,12 @@
             "average_current_u",
             "average_current_v",
             "average_current_w",
-            "current_u_motor_a",
-            "current_v_motor_a",
-            "current_w_motor_a",
-            "current_u_motor_b",
-            "current_v_motor_b",
-            "current_w_motor_b"
+            "current_u_inverter_a",
+            "current_v_inverter_a",
+            "current_w_inverter_a",
+            "current_u_inverter_b",
+            "current_v_inverter_b",
+            "current_w_inverter_b"
         ]
     },
     {
