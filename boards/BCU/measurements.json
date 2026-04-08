@@ -47,34 +47,6 @@
         ]
     },
     {
-        "id": "bcu_operational_state",
-        "name": "Operational State",
-        "type": "enum",
-        "podUnits": "",
-        "displayUnits": "",
-        "enumValues": [
-            "Idle",
-            "Charging",
-            "Charged",
-            "Precharge",
-            "Engaged"
-        ]
-    },
-    {
-        "id": "bcu_nested_state",
-        "name": "Nested State",
-        "type": "enum",
-        "podUnits": "",
-        "displayUnits": "",
-        "enumValues": [
-            "Idle",
-            "Testing",
-            "Ready",
-            "Boosting",
-            "Precharging"
-        ]
-    },
-    {
         "id": "control_state",
         "name": "Control State",
         "type": "enum",
@@ -82,7 +54,7 @@
         "displayUnits": "",
         "enumValues": [
             "Idle",
-            "Test PWM",
+            "Test_PWM",
             "Space Vector",
             "Current Control",
             "Speed Control"
@@ -330,36 +302,6 @@
     {
         "id": "direction_speetec_2",
         "name": "Direction Speetec 2",
-        "type": "enum",
-        "enumValues": [
-            "Forward",
-            "Backward"
-        ]
-    },
-    {
-        "id": "position_speetec_3",
-        "name": "Position Speetec 3",
-        "type": "float64",
-        "podUnits": "m",
-        "displayUnits": "m"
-    },
-    {
-        "id": "speed_speetec_3",
-        "name": "Speed Speetec 3",
-        "type": "float64",
-        "podUnits": "m/s",
-        "displayUnits": "m/s"
-    },
-    {
-        "id": "acceleration_speetec_3",
-        "name": "Acceleration Speetec 3",
-        "type": "float64",
-        "podUnits": "m/s^2",
-        "displayUnits": "m/s^2"
-    },
-    {
-        "id": "direction_speetec_3",
-        "name": "Direction Speetec 3",
         "type": "enum",
         "enumValues": [
             "Forward",
