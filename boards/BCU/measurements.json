@@ -1,7 +1,7 @@
 [
     {
-        "id": "duty_cycle_U",
-        "name": "Duty Cycle u (%)",
+        "id": "duty_cycle_u",
+        "name": "Duty Cycle U (%)",
         "type": "float32",
         "podUnits": "%",
         "displayUnits": "%",
@@ -97,13 +97,6 @@
             "Current_Control",
             "Speed_Control"
         ]
-    },
-    {
-        "id": "space_vector_time",
-        "name": "Space Vector Time",
-        "type": "float32",
-        "podUnits": "s",
-        "displayUnits": "s"
     },
     {
         "id": "conmutation_index",
@@ -393,21 +386,21 @@
     },
     {
         "id": "target_u_voltage",
-        "name": "Target Voltage",
+        "name": "Target U Voltage",
         "type": "float32",
         "podUnits": "V",
         "displayUnits": "V"
     }, 
     {
-        "id": "target_u_voltage",
-        "name": "Target Voltage",
+        "id": "target_v_voltage",
+        "name": "Target V Voltage",
         "type": "float32",
         "podUnits": "V",
         "displayUnits": "V"
     }, 
     {
         "id": "target_w_voltage",
-        "name": "Target Voltage",
+        "name": "Target W Voltage",
         "type": "float32",
         "podUnits": "V",
         "displayUnits": "V"
