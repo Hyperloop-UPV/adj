@@ -1,7 +1,7 @@
 [
     {
-        "id": "duty_cycle_u",
-        "name": "Duty Cycle U (%)",
+        "id": "duty_cycle_U",
+        "name": "Duty Cycle u (%)",
         "type": "float32",
         "podUnits": "%",
         "displayUnits": "%",
@@ -214,8 +214,8 @@
         }
     },
     {
-        "id": "current_u_motor_a",
-        "name": "Current U Motor A",
+        "id": "current_u_inverter_a",
+        "name": "Current U Inverter A",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A",
@@ -227,8 +227,8 @@
         }
     },
     {
-        "id": "current_v_motor_a",
-        "name": "Current V Motor A",
+        "id": "current_v_inverter_a",
+        "name": "Current V Inverter A",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A",
@@ -240,8 +240,8 @@
         }
     },
     {
-        "id": "current_w_motor_a",
-        "name": "Current W Motor A",
+        "id": "current_w_inverter_a",
+        "name": "Current W Inverter A",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A",
@@ -253,8 +253,8 @@
         }
     },
     {
-        "id": "current_u_motor_b",
-        "name": "Current U Motor B",
+        "id": "current_u_inverter_b",
+        "name": "Current U Inverter B",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A",
@@ -266,8 +266,8 @@
         }
     },
     {
-        "id": "current_v_motor_b",
-        "name": "Current V Motor B",
+        "id": "current_v_inverter_b",
+        "name": "Current V Inverter B",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A",
@@ -279,8 +279,8 @@
         }
     },
     {
-        "id": "current_w_motor_b",
-        "name": "Current W Motor B",
+        "id": "current_w_inverter_b",
+        "name": "Current W Inverter B",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A",
@@ -385,15 +385,37 @@
         "displayUnits": ""
     },
     {
-        "id": "angle_offset",
-        "name": "Angle offset",
+        "id": "electrical_angle",
+        "name": "Electrical Angle",
         "type": "float32",
         "podUnits": "rad",
         "displayUnits": "rad"
     },
     {
-        "id": "electrical_angle",
-        "name": "Electrical Angle",
+        "id": "target_u_voltage",
+        "name": "Target Voltage",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V"
+    }, 
+    {
+        "id": "target_u_voltage",
+        "name": "Target Voltage",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V"
+    }, 
+    {
+        "id": "target_w_voltage",
+        "name": "Target Voltage",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V"
+    }, 
+
+    {
+        "id": "angle_offset",
+        "name": "Angle offset",
         "type": "float32",
         "podUnits": "rad",
         "displayUnits": "rad"

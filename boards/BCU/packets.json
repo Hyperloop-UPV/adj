@@ -81,13 +81,13 @@
             "q_current_reference",
             "measured_q_current",
             "q_current_error",
-            "target_u_voltage",
-            "target_v_voltage",
-            "target_w_voltage",
             "electrical_angle",
             "pi_id_output",
             "pi_iq_output",
-            "angle_offset"
+            "angle_offset",
+            "target_u_voltage",
+            "target_v_voltage",
+            "target_w_voltage"
         ]
     },
     {
@@ -95,7 +95,7 @@
         "type": "data",
         "name": "Speed Control",
         "variables": [
-            "requested_linear_speed",
+            "target_linear_speed",
             "speed_speetec_1"
         ]
     }
