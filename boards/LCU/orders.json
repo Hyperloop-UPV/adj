@@ -54,24 +54,6 @@
 
   {
     "type": "order",
-    "name": "Enable Buffer",
-    "variables": [
-      "lpu_id"
-    ],
-    "id": 9103
-  },
-
-  {
-    "type": "order",
-    "name": "Disable Buffer",
-    "variables": [
-      "lpu_id"
-    ],
-    "id": 9104
-  },
-
-  {
-    "type": "order",
     "name": "Set Fixed VBAT",
     "variables": [
       "fixed_vbat"

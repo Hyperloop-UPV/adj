@@ -15,7 +15,9 @@
     "type": "enum",
     "enumValues": [
       "Idle",
-      "Levitating"
+      "Levitating",
+      "Current Control",
+      "Debug"
     ]
   },
   {
