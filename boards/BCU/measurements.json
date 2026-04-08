@@ -1,41 +1,79 @@
 [
     {
-        "id": "output_duty_cycle_u",
-        "name": "Duty Cycle U",
+        "id": "duty_cycle_u",
+        "name": "Duty Cycle U (%)",
         "type": "float32",
         "podUnits": "%",
-        "displayUnits": "%"
+        "displayUnits": "%",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                100.0
+            ]
+        }
     },
     {
-        "id": "output_duty_cycle_v",
-        "name": "Duty Cycle V",
+        "id": "duty_cycle_v",
+        "name": "Duty Cycle V (%)",
         "type": "float32",
         "podUnits": "%",
-        "displayUnits": "%"
+        "displayUnits": "%",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                100.0
+            ]
+        }
     },
     {
-        "id": "output_duty_cycle_w",
-        "name": "Duty Cycle W",
+        "id": "duty_cycle_w",
+        "name": "Duty Cycle W (%)",
         "type": "float32",
         "podUnits": "%",
-        "displayUnits": "%"
+        "displayUnits": "%",
+        "out_of_range": {
+            "warning": [
+                0.0,
+                100.0
+            ]
+        }
     },
     {
-        "id": "output_commutation_frequency_hz",
-        "name": "Commutation Frequency",
+        "id": "modulation_frequency_hz",
+        "name": "Modulation Frequency (Hz)",
         "type": "uint32",
         "podUnits": "Hz",
-        "displayUnits": "Hz"
+        "displayUnits": "Hz",
+        "below": {
+            "warning": 10000
+        }
     },
     {
-        "id": "output_dead_time_ns",
+        "id": "dead_time_ns",
         "name": "Dead Time",
         "type": "uint32",
         "podUnits": "ns",
-        "displayUnits": "ns"
+        "displayUnits": "ns",
+        "out_of_range":{
+            "warning": [
+                0,
+                100
+            ]
+        }
     },
     {
-        "id": "bcu_general_state",
+        "id": "Motor_State",
+        "name": "Motor State",
+        "type": "enum",
+        "podUnits": "",
+        "displayUnits": "",
+        "enumValues": [
+            "INACTIVE",
+            "ACTIVE"
+        ]
+    },
+    {
+        "id": "Bcu_general_state",
         "name": "General State",
         "type": "enum",
         "podUnits": "",
@@ -47,7 +85,7 @@
         ]
     },
     {
-        "id": "control_state",
+        "id": "Bcu_control_state",
         "name": "Control State",
         "type": "enum",
         "podUnits": "",
@@ -55,9 +93,9 @@
         "enumValues": [
             "Idle",
             "Test_PWM",
-            "Space Vector",
-            "Current Control",
-            "Speed Control"
+            "Space_Vector",
+            "Current_Control",
+            "Speed_Control"
         ]
     },
     {
@@ -68,18 +106,40 @@
         "displayUnits": "s"
     },
     {
-        "id": "output_modulation_index",
-        "name": "Output Modulation Index",
+        "id": "conmutation_index",
+        "name": "Conmutation Index",
         "type": "float32",
         "podUnits": "",
         "displayUnits": ""
     },
     {
-        "id": "output_modulation_frequency_hz",
-        "name": "Output Modulation Frequency",
+        "id": "commutation_frequency_hz",
+        "name": "Commutation Modulation Frequency",
         "type": "float32",
         "podUnits": "Hz",
         "displayUnits": "Hz"
+    },
+    {
+        "id": "voltage_reference",
+        "name": "Reference Voltage",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V",
+        "below": {
+            "safe": 400.0,
+            "warning": 446.4
+        }
+    },
+     {
+        "id": "voltage_max",
+        "name": "Max Voltage",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V",
+        "below": {
+            "safe": 400.0,
+            "warning": 446.4
+        }
     },
     {
         "id": "dc_link_average_voltage",
@@ -92,18 +152,7 @@
             "warning": 446.4
         }
     },
-    {
-        "id": "bcu_bus_voltage",
-        "name": "Bus Voltage",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V",
-        "below": {
-            "safe": 400.0,
-            "warning": 446.4
-        }
-    },
-    {
+     {
         "id": "dc_link_a_voltage",
         "name": "DC Link A Voltage",
         "type": "float32",
@@ -247,106 +296,70 @@
         "name": "Position Speetec 1",
         "type": "float64",
         "podUnits": "m",
-        "displayUnits": "m",
-        "below": {
-            "safe": 3.0,
-            "warning": 4.0
-        }
+        "displayUnits": "m"
     },
     {
         "id": "speed_speetec_1",
         "name": "Speed Speetec 1",
         "type": "float64",
         "podUnits": "m/s",
-        "displayUnits": "m/s",
-        "below": {
-            "safe": 10.0
-        }
+        "displayUnits": "m/s"
     },
     {
         "id": "acceleration_speetec_1",
         "name": "Acceleration Speetec 1",
         "type": "float64",
-        "podUnits": "m/s^2",
-        "displayUnits": "m/s^2",
-        "below": {
-            "safe": 30.0
-        }
+        "podUnits": "m/ss",
+        "displayUnits": "m/ss"
     },
     {
         "id": "direction_speetec_1",
         "name": "Direction Speetec 1",
-        "type": "bool"
-    },
-    {
-        "id": "position_speetec_2",
-        "name": "Position Speetec 2",
-        "type": "float64",
-        "podUnits": "m",
-        "displayUnits": "m"
-    },
-    {
-        "id": "speed_speetec_2",
-        "name": "Speed Speetec 2",
-        "type": "float64",
-        "podUnits": "m/s",
-        "displayUnits": "m/s"
-    },
-    {
-        "id": "acceleration_speetec_2",
-        "name": "Acceleration Speetec 2",
-        "type": "float64",
-        "podUnits": "m/s^2",
-        "displayUnits": "m/s^2"
-    },
-    {
-        "id": "direction_speetec_2",
-        "name": "Direction Speetec 2",
         "type": "enum",
-        "enumValues": [
-            "Forward",
-            "Backward"
+        "enumValues":[
+            "BACKWARD",
+            "FORWARD"
         ]
     },
     {
         "id": "d_current_reference",
         "name": "D Current Reference",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "A",
         "displayUnits": "A"
     },
     {
         "id": "measured_d_current",
         "name": "Measured D Current",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "A",
         "displayUnits": "A"
     },
     {
         "id": "d_current_error",
         "name": "D Current Error",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "A",
         "displayUnits": "A"
     },
     {
         "id": "q_current_reference",
         "name": "Q Current Reference",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "A",
         "displayUnits": "A"
     },
     {
         "id": "measured_q_current",
         "name": "Measured Q Current",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "A",
         "displayUnits": "A"
     },
     {
         "id": "q_current_error",
         "name": "Q Current Error",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "",
         "displayUnits": ""
     },
@@ -372,30 +385,16 @@
         "displayUnits": ""
     },
     {
-        "id": "target_u_voltage",
-        "name": "Target U Voltage",
-        "type": "float64",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "target_v_voltage",
-        "name": "Target V Voltage",
-        "type": "float64",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "target_w_voltage",
-        "name": "Target W Voltage",
-        "type": "float64",
-        "podUnits": "V",
-        "displayUnits": "V"
+        "id": "angle_offset",
+        "name": "Angle offset",
+        "type": "float32",
+        "podUnits": "rad",
+        "displayUnits": "rad"
     },
     {
         "id": "electrical_angle",
         "name": "Electrical Angle",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "rad",
         "displayUnits": "rad"
     },
@@ -405,12 +404,5 @@
         "type": "float32",
         "podUnits": "m/s",
         "displayUnits": "m/s"
-    },
-    {
-        "id": "angle_offset",
-        "name": "Angle offset",
-        "type": "float32",
-        "podUnits": "rad",
-        "displayUnits": "rad"
     }
 ]

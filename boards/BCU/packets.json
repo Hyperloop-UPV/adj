@@ -2,13 +2,14 @@
     {
         "id": 1700,
         "type": "data",
-        "name": "Motor Driver",
+        "name": "Motor Info",
         "variables": [
             "duty_cycle_u",
             "duty_cycle_v",
             "duty_cycle_w",
-            "commutation_frequency_hz",
-            "dead_time_ns"
+            "modulation_frequency_hz",
+            "dead_time_ns",
+            "Motor_State"
         ]
     },
     {
@@ -16,10 +17,8 @@
         "type": "data",
         "name": "State",
         "variables": [
-            "bcu_general_state",
-            "bcu_operational_state",
-            "bcu_nested_state",
-            "control_state"
+            "Bcu_general_state",
+            "Bcu_control_state"
         ]
     },
     {
@@ -27,9 +26,11 @@
         "type": "data",
         "name": "Space Vector",
         "variables": [
-            "space_vector_time",
-            "output_modulation_index",
-            "output_modulation_frequency_hz"
+            "modulation_frequency_hz",
+            "Conmutation_frequency_hz",
+            "voltage_reference",
+            "voltage_max",
+            "conmutation_index"     
         ]
     },
     {
@@ -96,24 +97,6 @@
         "variables": [
             "requested_linear_speed",
             "speed_speetec_1"
-        ]
-    },
-    {
-        "id": 1790,
-        "type": "data",
-        "name": "Enable DC Poles (BCU)"
-    },
-    {
-        "id": 1789,
-        "type": "data",
-        "name": "Disable DC Poles (BCU)"
-    },
-    {
-        "id": 1692,
-        "type": "data",
-        "name": "BCU Bus Voltage",
-        "variables": [
-            "bcu_bus_voltage"
         ]
     }
 ]

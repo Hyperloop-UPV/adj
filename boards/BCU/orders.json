@@ -18,9 +18,9 @@
     {
         "id": 1797,
         "type": "order",
-        "name": "Configure Commutation Parameters",
+        "name": "Configure Modulation Parameters",
         "variables": [
-            "commutation_frequency_hz",
+            "modulation_frequency_hz",
             "dead_time_ns"
         ]
     },
@@ -29,31 +29,19 @@
         "type": "order",
         "name": "Start Space Vector",
         "variables": [
-            "modulation_index",
-            "modulation_frequency_hz"
+            "modulation_frequency_hz",
+            "conmutation_frequency_hz",
+            "voltage_reference",
+            "voltage_max"
         ]
-    },
-    {
-        "id": 1795,
-        "type": "order",
-        "name": "Fix DC Link Voltage",
-        "variables": [
-            "requested_dc_link_voltage"
-        ]
-    },
-    {
-        "id": 1794,
-        "type": "order",
-        "name": "Unfix DC Link Voltage",
-        "variables": []
     },
     {
         "id": 1792,
         "type": "order",
         "name": "Start Current Control",
         "variables": [
-            "requested_d_current_reference_2",
-            "requested_q_current_reference_2"
+            "d_current_reference",
+            "q_current_reference"
         ]
     },
     {
@@ -65,25 +53,11 @@
         ]
     },
     {
-        "id": 1788,
-        "type": "order",
-        "name": "DC Poles Ready (BCU)"
-    },
-    {
-        "id": 1787,
-        "type": "order",
-        "name": "Start Speetec emulation",
-        "variables": [
-            "requested_speetec_emulation_mode",
-            "requested_speetec_emulation_value"
-        ]
-    },
-     {
         "id": 1780,
         "type": "order",
         "name": "Change angle offset",
         "variables": [
-            "requested_angle_offset"
+            "angle_offset"
         ]
     }
 ]
