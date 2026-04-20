@@ -125,6 +125,11 @@
     ]
   },
   {
+    "id": "Reverse",
+    "name": "Reverse mode",
+    "type": "bool"
+  },
+  {
     "id": "Current_Ref",
     "name": "Current Ref",
     "type": "float32",
@@ -148,21 +153,50 @@
   {
     "id": "current_Peak",
     "name": "Max Current Peak",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
   },
   {
     "id": "Error_PI",
     "name": "Actual Current Error",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
   },
   {
+    "id": "slip_motor",
+    "name": "Slip Motor",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "speed_km_h_IMU",
+    "name": "Speed km/h IMU",
+    "type": "float64",
+    "podUnits": "km/h",
+    "displayUnits": "km/h"
+  },
+  {
+    "id": "IMU_position_m",
+    "name": "IMU Position m",
+    "type": "float32",
+    "podUnits": "m",
+    "displayUnits": "m"
+  },
+  
+  {
+    "id": "cnt_encoder",
+    "name": "Counter Encoder",
+    "type": "uint32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
     "id": "Target_Voltage",
     "name": "Target Voltage",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },

@@ -88,7 +88,11 @@
     "variables": [
       "target_speed",
       "speed_error",
-      "actual_current_ref"
+      "actual_current_ref",
+      "slip_motor",
+      "cnt_encoder",
+      "speed_km_h_IMU",
+      "IMU_position_m"
     ],
     "id": 555,
     "period_type": "ms",
@@ -111,5 +115,4 @@
     "period": 16.67,
     "socket": "control_station_udp"
   }
-
 ]

@@ -24,7 +24,8 @@
       "freq_to_send_PWM",
       "Current_Ref",
       "VMax",
-      "VF control"
+      "VF control",
+      "Reverse"
     ],
     "id": 509
   },
@@ -49,7 +50,8 @@
     "variables": [
       "Speed_Ref",
       "freq_to_send_PWM",
-      "VMax"
+      "VMax",
+      "Reverse"
     ],
     "id": 511
   }
