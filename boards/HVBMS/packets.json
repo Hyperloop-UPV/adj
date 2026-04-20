@@ -431,5 +431,16 @@
     "period": 15,
     "period_type": "ms",
     "socket": "control_station_udp"
-  }
+  },
+  {
+    "type": "data",
+    "name": "imd_status",
+    "variables":[
+        "imd_status"
+    ],
+    "id": 953,
+    "period": 15,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  } 
 ]

@@ -1169,6 +1169,19 @@
     ]
   },
   {
+    "id": "imd_status",
+    "name": "IMD Status",
+    "type": "enum",
+    "enumValues": [
+        "SHORTCIRCUIT",
+        "NORMAL",
+        "UNDERVOLTAGE",
+        "FAST_EVAL",
+        "EQUIPMENT_FAULT",
+        "GROUNDING_FAULT"
+    ]
+  },
+  {
     "id": "minimum_soc",
     "name": "Minimum SOC",
     "type": "float32",
