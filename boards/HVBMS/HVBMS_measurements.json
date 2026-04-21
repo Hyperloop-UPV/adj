@@ -1224,5 +1224,25 @@
     "id": "imd_is_ok",
     "name": "IMD OK",
     "type": "bool"
+  },
+  {
+    "id": "contactor_precharge",
+    "name": "Contactor Precharge",
+    "type": "bool"
+  },
+    {
+    "id": "contactor_discharge",
+    "name": "Contactor Precharge",
+    "type": "bool"
+  },
+    {
+    "id": "contactor_high",
+    "name": "Contactor Precharge",
+    "type": "bool"
+  },
+    {
+    "id": "contactor_low",
+    "name": "Contactor Precharge",
+    "type": "bool"
   }
 ]
