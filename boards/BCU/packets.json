@@ -7,10 +7,13 @@
             "duty_cycle_u",
             "duty_cycle_v",
             "duty_cycle_w",
-            "modulation_frequency_hz",
+            "commutation_frequency_hz",
             "dead_time_ns",
             "Motor_State"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 1,
+        "socket":"control_station_udp"
     },
     {
         "id": 1701,
@@ -18,8 +21,11 @@
         "name": "State",
         "variables": [
             "Bcu_general_state",
-            "Bcu_control_state"
-        ]
+            "Bcu_operational_state"
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket":"control_station_udp"
     },
     {
         "id": 1702,
@@ -27,51 +33,70 @@
         "name": "Space Vector",
         "variables": [
             "modulation_frequency_hz",
-            "commutation_frequency_hz",
-            "voltage_reference",
-            "voltage_max",
-            "conmutation_index"     
-        ]
+            "modulation_index"     
+        ],
+        "period_type": "ms",
+        "period": 1,
+        "socket":"control_station_udp"
     },
     {
         "id": 1703,
         "type": "data",
         "name": "DC Link",
         "variables": [
-            "dc_link_average_voltage",
             "dc_link_a_voltage",
             "dc_link_b_voltage"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 1,
+        "socket":"control_station_udp"
     },
     {
         "id": 1704,
         "type": "data",
         "name": "Motor Currents",
         "variables": [
-            "average_current_u",
-            "average_current_v",
-            "average_current_w",
             "current_u_inverter_a",
             "current_v_inverter_a",
             "current_w_inverter_a",
             "current_u_inverter_b",
             "current_v_inverter_b",
             "current_w_inverter_b"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 1,
+        "socket":"control_station_udp"
     },
     {
         "id": 1705,
         "type": "data",
         "name": "SPEETEC 1",
         "variables": [
-            "position_speetec_1",
-            "direction_speetec_1",
-            "speed_speetec_1",
-            "acceleration_speetec_1"
-        ]
+            "position_speetec",
+            "direction_speetec",
+            "speed_speetec",
+            "acceleration_speetec"
+        ],
+        "period_type": "ms",
+        "period": 1,
+        "socket":"control_station_udp"
     },
     {
         "id": 1706,
+        "type": "data",
+        "name": "SPEETEC 2",
+        "variables": [
+            "position_speetec",
+            "direction_speetec",
+            "speed_speetec",
+            "acceleration_speetec"
+        ],
+        "period_type": "ms",
+        "period": 1,
+        "socket":"control_station_udp"
+    },
+    {
+        "id": 1707,
         "type": "data",
         "name": "Current Control",
         "variables": [
@@ -88,15 +113,22 @@
             "target_u_voltage",
             "target_v_voltage",
             "target_w_voltage"
-        ]
+        ],
+        "period_type": "ms",
+        "period": 1,
+        "socket":"control_station_udp"
     },
     {
-        "id": 1707,
+        "id": 1708,
         "type": "data",
         "name": "Speed Control",
         "variables": [
             "target_linear_speed",
-            "speed_speetec_1"
-        ]
+            "output_iq_ref",
+            "linear_speed_error"
+        ],
+        "period_type": "ms",
+        "period": 16.67,
+        "socket":"control_station_udp"
     }
 ]
