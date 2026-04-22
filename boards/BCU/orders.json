@@ -10,6 +10,7 @@
         "type": "order",
         "name": "Start Test PWM",
         "variables": [
+            "commutation_frequency_hz",
             "duty_cycle_u",
             "duty_cycle_v",
             "duty_cycle_w"
@@ -18,9 +19,9 @@
     {
         "id": 1797,
         "type": "order",
-        "name": "Configure Modulation Parameters",
+        "name": "Configure Commutation Parameters",
         "variables": [
-            "modulation_frequency_hz",
+            "commutation_frequency_hz",
             "dead_time_ns"
         ]
     },
@@ -29,8 +30,8 @@
         "type": "order",
         "name": "Start Space Vector",
         "variables": [
-            "modulation_frequency_hz",
             "commutation_frequency_hz",
+            "modulation_frequency_hz",
             "voltage_reference",
             "voltage_max"
         ]
@@ -40,6 +41,7 @@
         "type": "order",
         "name": "Start Current Control",
         "variables": [
+            "commutation_frequency_hz",
             "d_current_reference",
             "q_current_reference"
         ]

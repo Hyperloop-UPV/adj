@@ -39,8 +39,8 @@
         }
     },
     {
-        "id": "modulation_frequency_hz",
-        "name": "Modulation Frequency (Hz)",
+        "id": "commutation_frequency_hz",
+        "name": "Commutation Frequency (Hz)",
         "type": "uint32",
         "podUnits": "Hz",
         "displayUnits": "Hz",
@@ -85,8 +85,8 @@
         ]
     },
     {
-        "id": "Bcu_control_state",
-        "name": "Control State",
+        "id": "Bcu_operational_state",
+        "name": "Operational State",
         "type": "enum",
         "podUnits": "",
         "displayUnits": "",
@@ -99,16 +99,16 @@
         ]
     },
     {
-        "id": "conmutation_index",
-        "name": "Conmutation Index",
+        "id": "modulation_index",
+        "name": "modulation Index",
         "type": "float32",
         "podUnits": "",
         "displayUnits": ""
     },
     {
-        "id": "commutation_frequency_hz",
-        "name": "Commutation Modulation Frequency",
-        "type": "float32",
+        "id": "modulation_frequency_hz",
+        "name": "Modulation Modulation Frequency",
+        "type": "uint32",
         "podUnits": "Hz",
         "displayUnits": "Hz"
     },
@@ -126,17 +126,6 @@
      {
         "id": "voltage_max",
         "name": "Max Voltage",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V",
-        "below": {
-            "safe": 400.0,
-            "warning": 446.4
-        }
-    },
-    {
-        "id": "dc_link_average_voltage",
-        "name": "DC Link Average Voltage",
         "type": "float32",
         "podUnits": "V",
         "displayUnits": "V",
@@ -165,45 +154,6 @@
         "below": {
             "safe": 400.0,
             "warning": 446.4
-        }
-    },
-    {
-        "id": "average_current_u",
-        "name": "Average Current U",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A",
-        "out_of_range": {
-            "warning": [
-                -100.0,
-                100.0
-            ]
-        }
-    },
-    {
-        "id": "average_current_v",
-        "name": "Average Current V",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A",
-        "out_of_range": {
-            "warning": [
-                -100.0,
-                100.0
-            ]
-        }
-    },
-    {
-        "id": "average_current_w",
-        "name": "Average Current W",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A",
-        "out_of_range": {
-            "warning": [
-                -100.0,
-                100.0
-            ]
         }
     },
     {
@@ -285,29 +235,29 @@
         }
     },
     {
-        "id": "position_speetec_1",
-        "name": "Position Speetec 1",
+        "id": "position_speetec",
+        "name": "Position Speetec",
         "type": "float64",
         "podUnits": "m",
         "displayUnits": "m"
     },
     {
-        "id": "speed_speetec_1",
-        "name": "Speed Speetec 1",
+        "id": "speed_speetec",
+        "name": "Speed Speetec",
         "type": "float64",
         "podUnits": "m/s",
         "displayUnits": "m/s"
     },
     {
-        "id": "acceleration_speetec_1",
-        "name": "Acceleration Speetec 1",
+        "id": "acceleration_speetec",
+        "name": "Acceleration Speetec",
         "type": "float64",
         "podUnits": "m/ss",
         "displayUnits": "m/ss"
     },
     {
-        "id": "direction_speetec_1",
-        "name": "Direction Speetec 1",
+        "id": "direction_speetec",
+        "name": "Direction Speetec",
         "type": "enum",
         "enumValues":[
             "BACKWARD",
@@ -359,14 +309,14 @@
     {
         "id": "pi_id_output",
         "name": "PI ID Output",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "",
         "displayUnits": ""
     },
     {
         "id": "pi_iq_output",
         "name": "PI IQ Output",
-        "type": "float64",
+        "type": "float32",
         "podUnits": "",
         "displayUnits": ""
     },
@@ -409,6 +359,20 @@
     {
         "id": "target_linear_speed",
         "name": "Target Linear Speed (m/s)",
+        "type": "float32",
+        "podUnits": "m/s",
+        "displayUnits": "m/s"
+    },
+     {
+        "id": "output_iq_ref",
+        "name": "Output iq Ref",
+        "type": "float32",
+        "podUnits": "",
+        "displayUnits": ""
+    },
+    {
+        "id": "linear_speed_error",
+        "name": "Linear Speed error",
         "type": "float32",
         "podUnits": "m/s",
         "displayUnits": "m/s"
