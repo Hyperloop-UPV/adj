@@ -12,7 +12,7 @@
             "Motor_State"
         ],
         "period_type": "ms",
-        "period": 1,
+        "period": 10,
         "socket":"control_station_udp"
     },
     {
@@ -36,7 +36,7 @@
             "modulation_index"     
         ],
         "period_type": "ms",
-        "period": 1,
+        "period": 10,
         "socket":"control_station_udp"
     },
     {
@@ -48,7 +48,7 @@
             "dc_link_b_voltage"
         ],
         "period_type": "ms",
-        "period": 1,
+        "period": 10,
         "socket":"control_station_udp"
     },
     {
@@ -64,7 +64,7 @@
             "current_w_inverter_b"
         ],
         "period_type": "ms",
-        "period": 1,
+        "period": 10,
         "socket":"control_station_udp"
     },
     {
@@ -78,7 +78,7 @@
             "acceleration_speetec"
         ],
         "period_type": "ms",
-        "period": 1,
+        "period": 10,
         "socket":"control_station_udp"
     },
     {
@@ -92,7 +92,7 @@
             "acceleration_speetec"
         ],
         "period_type": "ms",
-        "period": 1,
+        "period": 10,
         "socket":"control_station_udp"
     },
     {
@@ -115,7 +115,7 @@
             "target_w_voltage"
         ],
         "period_type": "ms",
-        "period": 1,
+        "period": 10,
         "socket":"control_station_udp"
     },
     {
