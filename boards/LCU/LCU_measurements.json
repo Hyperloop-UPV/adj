@@ -19,21 +19,6 @@
     ]
   },
   {
-    "id": "pwm_duty_cycle",
-    "name": "Duty Cycle",
-    "type": "float32",
-    "podUnits": "%",
-    "displayUnits": "%",
-    "safeRange": [
-      0.0,
-      100.0
-    ],
-    "warningRange": [
-      0.0,
-      100.0
-    ]
-  },
-  {
     "id": "lcu_desired_current",
     "name": "Desired current",
     "type": "float32",
@@ -42,21 +27,6 @@
     "safeRange": [
       -40.0,
       40.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current",
-    "name": "Current on LCU",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
     ],
     "warningRange": [
       -40.0,
@@ -79,20 +49,6 @@
     ]
   },
   {
-    "id": "lcu_vbat",
-    "name": "LPU Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_airgap",
-    "name": "Airgap",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
     "id": "lcu_desired_distance",
     "name": "Desired Distance (mm)",
     "type": "float32",
@@ -103,5 +59,286 @@
     "id": "lpu_id",
     "name": "LPU ID",
     "type": "uint32"
+  },
+  {
+    "id": "buffer_id",
+    "name": "Buffer ID",
+    "type": "uint32"
+  },
+  {
+    "id": "fixed_pwm_duty_cycle",
+    "name": "Fixed PWM Duty Cycle",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_1",
+    "name": "Duty Cycle 1",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_2",
+    "name": "Duty Cycle 2",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_3",
+    "name": "Duty Cycle 3",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_4",
+    "name": "Duty Cycle 4",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_5",
+    "name": "Duty Cycle 5",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_6",
+    "name": "Duty Cycle 6",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_7",
+    "name": "Duty Cycle 7",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_8",
+    "name": "Duty Cycle 8",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_9",
+    "name": "Duty Cycle 9",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "pwm_duty_cycle_10",
+    "name": "Duty Cycle 10",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+
+  {
+    "id": "lcu_coil_current_1",
+    "name": "Coil Current 1",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_2",
+    "name": "Coil Current 2",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_3",
+    "name": "Coil Current 3",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_4",
+    "name": "Coil Current 4",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_5",
+    "name": "Coil Current 5",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_6",
+    "name": "Coil Current 6",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_7",
+    "name": "Coil Current 7",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_8",
+    "name": "Coil Current 8",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_9",
+    "name": "Coil Current 9",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_coil_current_10",
+    "name": "Coil Current 10",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+
+  {
+    "id": "lcu_vbat_1",
+    "name": "LPU Voltage 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_2",
+    "name": "LPU Voltage 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_3",
+    "name": "LPU Voltage 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_4",
+    "name": "LPU Voltage 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_5",
+    "name": "LPU Voltage 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_6",
+    "name": "LPU Voltage 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_7",
+    "name": "LPU Voltage 7",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_8",
+    "name": "LPU Voltage 8",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_9",
+    "name": "LPU Voltage 9",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
+    "id": "lcu_vbat_10",
+    "name": "LPU Voltage 10",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+
+  {
+    "id": "lcu_airgap_1",
+    "name": "Airgap 1",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_airgap_2",
+    "name": "Airgap 2",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_airgap_3",
+    "name": "Airgap 3",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_airgap_4",
+    "name": "Airgap 4",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_airgap_5",
+    "name": "Airgap 5",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_airgap_6",
+    "name": "Airgap 6",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_airgap_7",
+    "name": "Airgap 7",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_airgap_8",
+    "name": "Airgap 8",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm"
   }
 ]
