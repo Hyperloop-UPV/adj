@@ -1237,7 +1237,7 @@
   {
     "id": "imd_freq",
     "name": "IMD Frequency",
-    "type": "int32"
+    "type": "float32"
   },
   {
     "id": "contactor_precharge",
