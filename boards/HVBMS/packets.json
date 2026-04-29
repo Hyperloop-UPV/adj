@@ -413,7 +413,9 @@
     "variables": [
         "imd_status",
         "imd_resistance",
-        "imd_is_ok"
+        "imd_is_ok",
+        "imd_duty",
+        "imd_freq"
     ],
     "id": 943,
     "period": 50,
