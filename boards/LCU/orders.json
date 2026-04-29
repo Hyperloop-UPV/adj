@@ -25,6 +25,41 @@
 
   {
     "type": "order",
+    "name": "Set Desired Distance",
+    "variables": [
+      "lcu_desired_distance"
+    ],
+    "id": 9003
+  },
+
+  {
+    "type": "order",
+    "name": "Levitate Ramp",
+    "variables": [
+      "lcu_desired_distance"
+    ],
+    "id": 9011
+  },
+
+  {
+    "type": "order",
+    "name": "Stop Ramp",
+    "variables": [
+    ],
+    "id": 9012
+  },
+
+  {
+    "type": "order",
+    "name": "Set Desired Distance Ramp",
+    "variables": [
+      "lcu_desired_distance"
+    ],
+    "id": 9013
+  },
+
+  {
+    "type": "order",
     "name": "Current Control",
     "variables": [
       "lcu_desired_current",
