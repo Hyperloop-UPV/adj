@@ -444,19 +444,5 @@
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
-    "name": "contactor_status",
-    "variables": [
-      "contactor_discharge",
-      "contactor_precharge",
-      "contactor_low",
-      "contactor_high"
-    ],
-    "id": 956,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "control_station_udp"
   }
 ]
