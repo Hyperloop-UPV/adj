@@ -1218,11 +1218,25 @@
     "name": "IMD Resistance",
     "type": "float32",
     "podUnits": "Ohm",
-    "displayUnits": "MOhm"
+    "displayUnits": "MOhm",
+    "safeRange": [
+      30,
+      70
+    ]
   },
   {
     "id": "imd_is_ok",
     "name": "IMD OK",
     "type": "bool"
+  },
+    {
+    "id": "imd_duty",
+    "name": "IMD Duty",
+    "type": "float32"
+  },
+  {
+    "id": "imd_freq",
+    "name": "IMD Frequency",
+    "type": "float32"
   }
 ]
