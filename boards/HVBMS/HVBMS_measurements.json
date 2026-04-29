@@ -1232,7 +1232,7 @@
   {
     "id": "imd_duty",
     "name": "IMD Duty",
-    "type": "float"
+    "type": "float32"
   },
   {
     "id": "imd_freq",
