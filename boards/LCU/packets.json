@@ -15,8 +15,8 @@
       "pwm_duty_cycle_10"
     ],
     "id": 9500,
-    "period_type": "ms",
-    "period": 50.0,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "control_station_udp"
   },
   {
@@ -35,8 +35,8 @@
       "lcu_coil_current_10"
     ],
     "id": 9501,
-    "period_type": "ms",
-    "period": 50.0,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "control_station_udp"
   },
   {
@@ -55,8 +55,8 @@
       "lcu_vbat_10"
     ],
     "id": 9502,
-    "period_type": "ms",
-    "period": 50.0,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "control_station_udp"
   },
   {
@@ -73,8 +73,8 @@
       "lcu_airgap_8"
     ],
     "id": 9503,
-    "period_type": "ms",
-    "period": 50.0,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "control_station_udp"
   },
   {
@@ -85,8 +85,8 @@
       "operational_state_machine"
     ],
     "id": 9520,
-    "period_type": "ms",
-    "period": 50.0,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "control_station_udp"
   },
   {
@@ -96,8 +96,8 @@
       "lcu_desired_distance"
     ],
     "id": 9521,
-    "period_type": "ms",
-    "period": 50.0,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "control_station_udp"
   }
 ]
