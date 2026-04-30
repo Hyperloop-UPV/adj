@@ -1,0 +1,26 @@
+[
+  {
+    "type": "order",
+    "name": "FAULT",
+    "variables": [],
+    "id": 0
+  },
+  {
+    "type": "order",
+    "name": "open_contactors",
+    "variables": [],
+    "id": 901
+  },
+    {
+    "type": "order",
+    "name": "start_precharge",
+    "variables": [],
+    "id": 903
+  },
+  {
+    "type": "order",
+    "name": "bypass_imd",
+    "variables": [],
+    "id": 904
+  }
+]
