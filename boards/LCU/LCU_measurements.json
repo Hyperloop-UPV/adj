@@ -340,5 +340,33 @@
     "type": "float32",
     "podUnits": "mm",
     "displayUnits": "mm"
+  },
+  {
+    "id": "lcu_desired_current_1",
+    "name": "Desired Current 1",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_desired_current_2",
+    "name": "Desired Current 2",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_desired_current_3",
+    "name": "Desired Current 3",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "lcu_desired_current_4",
+    "name": "Desired Current 4",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
   }
 ]
