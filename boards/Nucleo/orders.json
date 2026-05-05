@@ -1,0 +1,26 @@
+[
+    {
+        "id": 101,
+        "type": "order",
+        "name": "Panic",
+        "variables": []
+    },
+    {
+        "id": 102,
+        "type": "order",
+        "name": "Fault",
+        "variables": []
+    },
+    {
+        "id": 103,
+        "type": "order",
+        "name": "Warning",
+        "variables": []
+    },
+    {
+        "id": 104,
+        "type": "order",
+        "name": "Info",
+        "variables": []
+    }
+]
