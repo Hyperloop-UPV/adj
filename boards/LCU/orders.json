@@ -132,6 +132,14 @@
 
   {
     "type": "order",
+    "name": "All Current Control and enable buffers",
+    "variables": [
+    ],
+    "id": 9108
+  },
+
+  {
+    "type": "order",
     "name": "Reset Slave",
     "variables": [
     ],
