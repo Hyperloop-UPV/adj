@@ -1,0 +1,11 @@
+[
+  {
+    "type": "data",
+    "name": "Stupid",
+    "variables": [
+        "var1"
+    ],
+    "id": 9500,
+    "socket": "control_station_udp"
+  }
+]

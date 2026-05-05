@@ -1,0 +1,12 @@
+{
+  {
+    "id": "var1",
+    "name": "Stupid",
+    "type": "enum",
+    "enumValues": [
+      "Stupid1",
+      "Stupid2",
+      "Stupid3"
+    ]
+  }
+}
