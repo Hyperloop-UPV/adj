@@ -134,6 +134,7 @@
     "type": "order",
     "name": "All Current Control and enable buffers",
     "variables": [
+      "lcu_desired_current"
     ],
     "id": 9108
   },
