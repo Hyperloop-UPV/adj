@@ -82,7 +82,8 @@
     "name": "State Machine",
     "variables": [
       "general_state_machine",
-      "operational_state_machine"
+      "operational_state_machine",
+      "slave_state_machine"
     ],
     "id": 9520,
     "period_type": "us",
@@ -97,7 +98,12 @@
       "lcu_desired_current_1",
       "lcu_desired_current_2",
       "lcu_desired_current_3",
-      "lcu_desired_current_4"
+      "lcu_desired_current_4",
+      "lcu_state_0",
+      "lcu_state_1",
+      "lcu_state_2",
+      "lcu_state_3",
+      "lcu_state_4"
     ],
     "id": 9521,
     "period_type": "us",

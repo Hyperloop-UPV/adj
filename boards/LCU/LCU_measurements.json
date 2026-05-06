@@ -19,6 +19,18 @@
     ]
   },
   {
+    "id": "slave_state_machine",
+    "name": "Slave State Machine",
+    "type": "enum",
+    "enumValues": [
+      "SPI Connecting",
+      "Idle",
+      "Levitating",
+      "Fault",
+      "Current Control"
+    ]
+  },
+  {
     "id": "lcu_desired_current",
     "name": "Desired current",
     "type": "float32",
@@ -289,56 +301,56 @@
     "id": "lcu_airgap_1",
     "name": "Airgap 1",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_2",
     "name": "Airgap 2",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_3",
     "name": "Airgap 3",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_4",
     "name": "Airgap 4",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_5",
     "name": "Airgap 5",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_6",
     "name": "Airgap 6",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_7",
     "name": "Airgap 7",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
     "id": "lcu_airgap_8",
     "name": "Airgap 8",
     "type": "float32",
-    "podUnits": "mm",
+    "podUnits": "m",
     "displayUnits": "mm"
   },
   {
@@ -368,5 +380,30 @@
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
+  },
+  {
+    "id": "lcu_state_0",
+    "name": "State 0",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_state_1",
+    "name": "State 1",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_state_2",
+    "name": "State 2",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_state_3",
+    "name": "State 3",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_state_4",
+    "name": "State 4",
+    "type": "float32"
   }
 ]
