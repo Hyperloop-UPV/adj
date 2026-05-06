@@ -10,10 +10,7 @@
       "offset_value",
       "mirror_mode"
     ],
-    "id": 20737,
-    "socket": "telemetry_udp",
-    "period": 50,
-    "period_type": "ms"
+    "id": 20737
   },
   {
     "type": "data",
@@ -25,10 +22,7 @@
       "ratio_value",
       "precise_value"
     ],
-    "id": 20738,
-    "socket": "telemetry_udp",
-    "period": 50,
-    "period_type": "ms"
+    "id": 20738
   },
   {
     "type": "data",
@@ -39,10 +33,7 @@
       "big_counter",
       "mirror_state"
     ],
-    "id": 20739,
-    "socket": "telemetry_udp",
-    "period": 50,
-    "period_type": "ms"
+    "id": 20739
   },
   {
     "type": "data",
@@ -67,10 +58,7 @@
       "probe_ratio",
       "probe_mode"
     ],
-    "id": 20741,
-    "socket": "telemetry_udp",
-    "period": 50,
-    "period_type": "ms"
+    "id": 20741
   },
   {
     "type": "data",
@@ -81,9 +69,6 @@
       "udp_parse_count",
       "mirror_state"
     ],
-    "id": 20742,
-    "socket": "telemetry_udp",
-    "period": 250,
-    "period_type": "ms"
+    "id": 20742
   }
 ]
