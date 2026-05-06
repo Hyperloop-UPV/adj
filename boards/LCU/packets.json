@@ -103,7 +103,11 @@
       "lcu_state_1",
       "lcu_state_2",
       "lcu_state_3",
-      "lcu_state_4"
+      "lcu_state_4",
+      "lcu_local_airgap_1",
+      "lcu_local_airgap_2",
+      "lcu_local_airgap_3",
+      "lcu_local_airgap_4"
     ],
     "id": 9521,
     "period_type": "us",
