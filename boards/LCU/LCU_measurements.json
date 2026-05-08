@@ -570,5 +570,80 @@
     "id": "lcu_Fe_L_2",
     "name": "Fe_L 2",
     "type": "float32"
+  },
+  {
+    "id": "lcu_A_0",
+    "name": "A 0",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_A_1",
+    "name": "A 1",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_A_2",
+    "name": "A 2",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_A_3",
+    "name": "A 3",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_A_4",
+    "name": "A 4",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_A_5",
+    "name": "A 5",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_A_6",
+    "name": "A 6",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_A_7",
+    "name": "A 7",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_Ak_0",
+    "name": "Ak 0",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_Ak_1",
+    "name": "Ak 1",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_Ak_2",
+    "name": "Ak 2",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_Ak_3",
+    "name": "Ak 3",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_Bk_0",
+    "name": "Bk 0",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_Bk_1",
+    "name": "Bk 1",
+    "type": "float32"
+  },
+  {
+    "id": "lcu_Bk_2",
+    "name": "Bk 2",
+    "type": "float32"
   }
 ]
