@@ -124,7 +124,7 @@
 
   {
     "type": "order",
-    "name": "Set Control Params",
+    "name": "Enable All Buffers",
     "variables": [
     ],
     "id": 9107
@@ -141,7 +141,7 @@
 
   {
     "type": "order",
-    "name": "Reset Slave",
+    "name": "Reset All",
     "variables": [
     ],
     "id": 9200
@@ -149,17 +149,9 @@
 
   {
     "type": "order",
-    "name": "Reset Master",
+    "name": "Reset Slave",
     "variables": [
     ],
     "id": 9201
-  },
-
-  {
-    "type": "order",
-    "name": "Reset All",
-    "variables": [
-    ],
-    "id": 9202
   }
 ]
