@@ -13,25 +13,10 @@
     },
     {
         "type": "data",
-        "name": "Reeds",
-        "variables": [
-            "reed1",
-            "reed2",
-            "reed3",
-            "reed4",
-            "all_reeds"
-        ],
-        "id": 251,
-        "period_type": "us",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
         "name": "Flow",
         "variables": [
-            "flow1",
-            "flow2"
+            "flow_1",
+            "flow_2"
         ],
         "id": 250,
         "period_type": "ms",
@@ -40,24 +25,36 @@
     },
     {
         "type": "data",
-        "name": "Regulator",
+        "name": "Temperatures",
         "variables": [
-            "regulator_1_pressure",
-            "regulator_2_pressure"
+            "ntc_temperature_1",
+            "ntc_temperature_2"
         ],
-        "id": 252,
-        "period_type": "us",
+        "id": 251,
+        "period_type": "ms",
         "period": 16.67,
         "socket": "control_station_udp"
     },
     {
         "type": "data",
-        "name": "Pressure",
+        "name": "Pressures",
         "variables": [
-            "pressure_high",
-            "pressure_regulator",
-            "pressure_brakes",
-            "pressure_capsule"
+            "high_pressure",
+            "low_pressure",
+            "pressure_regulator_feedback"
+        ],
+        "id": 252,
+        "period_type": "ms",
+        "period": 16.67,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "Pressure Regulator",
+        "variables": [
+            "pressure_command",
+            "pressure_regulator_duty",
+            "pressure_regulator_feedback"
         ],
         "id": 253,
         "period_type": "ms",
@@ -66,10 +63,10 @@
     },
     {
         "type": "data",
-        "name": "tapes",
+        "name": "Safety Inputs",
         "variables": [
-            "tape_enable_output",
-            "emergency_tape"
+            "sdc_closed",
+            "brake_fault"
         ],
         "id": 254,
         "period_type": "ms",
@@ -78,24 +75,14 @@
     },
     {
         "type": "data",
-        "name": "sdc",
+        "name": "Storage",
         "variables": [
-            "SDC"
+            "sdmmc_card_detect",
+            "sdmmc_write_protect"
         ],
         "id": 255,
         "period_type": "ms",
         "period": 16.67,
         "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "recovery_state",
-        "variables": [
-            "state"
-        ],
-        "id": 65,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "pcu_udp"
     }
 ]

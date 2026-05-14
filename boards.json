@@ -1,3 +1,4 @@
 {
-  "TEST": "boards/TEST/TEST.json"
+  "TEST": "boards/TEST/TEST.json",
+  "VCU": "boards/VCU/VCU.json"
 }
