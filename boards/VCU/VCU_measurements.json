@@ -62,15 +62,15 @@
         "id": "ntc_temperature_1",
         "name": "NTC Temperature 1",
         "type": "float32",
-        "podUnits": "degC",
-        "displayUnits": "degC"
+        "podUnits": "ºC",
+        "displayUnits": "ºC"
     },
     {
         "id": "ntc_temperature_2",
         "name": "NTC Temperature 2",
         "type": "float32",
-        "podUnits": "degC",
-        "displayUnits": "degC"
+        "podUnits": "ºC",
+        "displayUnits": "ºC"
     },
     {
         "id": "high_pressure",
