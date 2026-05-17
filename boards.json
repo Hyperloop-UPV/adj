@@ -1,3 +1,9 @@
 {
-  "HVSCU": "boards/HVSCU/HVSCU.json"
+  "HVSCU": "boards/HVSCU/HVSCU.json",
+  "LCU": "boards/LCU/LCU.json",
+  "BCU": "boards/BCU/BCU.json",
+  "BMSL": "boards/BMSL/BMSL.json",
+  "PCU": "boards/PCU/PCU.json",
+  "VCU": "boards/VCU/VCU.json",
+  "HVSCU-Cabinet": "boards/HVSCU-Cabinet/HVSCU-Cabinet.json"
 }

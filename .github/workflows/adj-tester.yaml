@@ -41,3 +41,43 @@ jobs:
             }' | curl -X POST -H "Content-type: application/json" \
                  --data @- \
                  $SLACK_WEBHOOK
+
+  publish-compact-adj:
+    needs: validate-adj
+    runs-on: ubuntu-latest
+    env:
+      TARGET_REPO: Hyperloop-UPV/ADJ-Archive
+      TARGET_BRANCH: main
+      TARGET_PATH: commit-${{ github.sha }}.json
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+
+      - name: Compact ADJ
+        run: |
+          chmod +x .github/workflows/scripts/adj-compact/compact.sh
+          .github/workflows/scripts/adj-compact/compact.sh "${{ runner.temp }}/adj.json"
+
+      - name: Checkout destination repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.TARGET_REPO }}
+          token: ${{ secrets.TARGET_REPO_TOKEN }}
+          ref: ${{ env.TARGET_BRANCH }}
+          path: target-repo
+
+      - name: Copy and push if changed
+        working-directory: target-repo
+        run: |
+          mkdir -p "$(dirname "$TARGET_PATH")"
+          cp "${{ runner.temp }}/adj.json" "$TARGET_PATH"
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET_PATH"
+          git commit -m "chore: update compacted ADJ from ${{ github.repository }}@${{ github.sha }}"
+          git push origin "$TARGET_BRANCH"
