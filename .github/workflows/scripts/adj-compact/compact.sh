@@ -5,6 +5,7 @@ set -euo pipefail
 # ADJ Compact: Merge all JSON files into a single `adj.json` for easier consumption by clients that prefer a single file.
 # Usage: `./compact.sh [output-file]`
 # Version: v11.0.0 (2026-05-18)
+#
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT="$(git -C "$SCRIPT_DIR" rev-parse --show-toplevel 2>/dev/null || (cd "$SCRIPT_DIR/../../../.." && pwd))"
