@@ -1,4 +1,4 @@
-name: ADJ Validator
+name: ADJ Validator (and Compact)
 
 on:
   push:        
