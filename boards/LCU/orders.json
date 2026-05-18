@@ -1,108 +1,10 @@
 [
   {
     "type": "order",
-    "name": "Stop All",
+    "name": "Stop",
     "variables": [
     ],
     "id": 9000
-  },
-  {
-    "type": "order",
-    "name": "Levitate",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9001
-  },
-
-  {
-    "type": "order",
-    "name": "Stop Levitate",
-    "variables": [
-    ],
-    "id": 9002
-  },
-
-  {
-    "type": "order",
-    "name": "Set Desired Distance",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9003
-  },
-
-  {
-    "type": "order",
-    "name": "Levitate Ramp",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9011
-  },
-
-  {
-    "type": "order",
-    "name": "Stop Ramp",
-    "variables": [
-    ],
-    "id": 9012
-  },
-
-  {
-    "type": "order",
-    "name": "Set Desired Distance Ramp",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9013
-  },
-
-  {
-    "type": "order",
-    "name": "Current Control",
-    "variables": [
-      "lcu_desired_current",
-      "lpu_id"
-    ],
-    "id": 9100
-  },
-
-  {
-    "type": "order",
-    "name": "Start PWM",
-    "variables": [
-      "fixed_pwm_duty_cycle",
-      "lpu_id"
-    ],
-    "id": 9101
-  },
-
-  {
-    "type": "order",
-    "name": "Stop PWM",
-    "variables": [
-      "lpu_id"
-    ],
-    "id": 9102
-  },
-
-  {
-    "type": "order",
-    "name": "Enable Buffer",
-    "variables": [
-      "buffer_id"
-    ],
-    "id": 9103
-  },
-
-  {
-    "type": "order",
-    "name": "Disable Buffer",
-    "variables": [
-      "buffer_id"
-    ],
-    "id": 9104
   },
 
   {
@@ -111,7 +13,7 @@
     "variables": [
       "fixed_vbat"
     ],
-    "id": 9105
+    "id": 9001
   },
 
   {
@@ -119,24 +21,107 @@
     "name": "Unset Fixed VBAT",
     "variables": [
     ],
-    "id": 9106
+    "id": 9002
   },
 
   {
     "type": "order",
-    "name": "Enable All Buffers",
+    "name": "Levitate",
     "variables": [
+      "desired_distance"
     ],
-    "id": 9107
+    "id": 9010
   },
 
   {
     "type": "order",
-    "name": "All Current Control and enable buffers",
+    "name": "Levitate Ramp",
     "variables": [
-      "lcu_desired_current"
+      "desired_distance"
     ],
-    "id": 9108
+    "id": 9011
+  },
+
+  {
+    "type": "order",
+    "name": "Set Desired Distance",
+    "variables": [
+      "desired_distance"
+    ],
+    "id": 9012
+  },
+
+  {
+    "type": "order",
+    "name": "Set Desired Distance Ramp",
+    "variables": [
+      "desired_distance"
+    ],
+    "id": 9013
+  },
+
+  {
+    "type": "order",
+    "name": "Stop Ramp",
+    "variables": [
+    ],
+    "id": 9014
+  },
+
+  {
+    "type": "order",
+    "name": "Current Control",
+    "variables": [
+      "lpu_id",
+      "desired_current"
+    ],
+    "id": 9020
+  },
+
+  {
+    "type": "order",
+    "name": "All Current Control",
+    "variables": [
+      "desired_current"
+    ],
+    "id": 9021
+  },
+
+  {
+    "type": "order",
+    "name": "Stop Current Control",
+    "variables": [
+      "lpu_id"
+    ],
+    "id": 9022
+  },
+
+  {
+    "type": "order",
+    "name": "PWM",
+    "variables": [
+      "lpu_id",
+      "fixed_pwm_duty_cycle"
+    ],
+    "id": 9030
+  },
+
+  {
+    "type": "order",
+    "name": "All PWM",
+    "variables": [
+      "fixed_pwm_duty_cycle"
+    ],
+    "id": 9031
+  },
+
+  {
+    "type": "order",
+    "name": "Stop PWM",
+    "variables": [
+      "lpu_id"
+    ],
+    "id": 9032
   },
 
   {
@@ -144,7 +129,7 @@
     "name": "Reset All",
     "variables": [
     ],
-    "id": 9200
+    "id": 9100
   },
 
   {
@@ -152,6 +137,6 @@
     "name": "Reset Slave",
     "variables": [
     ],
-    "id": 9201
+    "id": 9101
   }
 ]
