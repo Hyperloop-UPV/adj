@@ -7,6 +7,8 @@
       "offset"
     ],
     "id": 1,
+    "period_type": "ms",
+    "period": 0,
     "socket": "packets_socket"
   },
   {
@@ -17,7 +19,8 @@
       "value"
     ],
     "id": 3,
-    "period_ms": 1.0,
+    "period_type": "ms",
+    "period": 1.0,
     "socket": "packets_socket"
   }
 ]

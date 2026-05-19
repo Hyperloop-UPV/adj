@@ -6,6 +6,8 @@
       "real_raw_value"
     ],
     "id": 2,
+    "period_type": "ms",
+    "period": 0,
     "socket": "server_socket"
   }
 ]
