@@ -1,7 +1,7 @@
 [
     {
-        "type": "order",
-        "name": "Fault",
-        "id": 2
+        "id": 0,
+        "name": "FAULT",
+        "type": "order"
     }
 ]
