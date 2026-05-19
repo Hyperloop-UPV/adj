@@ -6,10 +6,7 @@
       "slope",
       "offset"
     ],
-    "id": 1,
-    "period_type": "ms",
-    "period": 0,
-    "socket": "packets_socket"
+    "id": 1
   },
   {
     "type": "data",
