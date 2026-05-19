@@ -1,50 +1,5 @@
 [
     {
-        "id": "duty",
-        "name": "Duty",
-        "type": "uint32",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
-        "id": "cooling_pump",
-        "name": "Cooling Pump",
-        "type": "enum",
-        "enumValues": [
-            "PUMP_1",
-            "PUMP_2"
-        ]
-    },
-    {
-        "id": "general_state",
-        "name": "General State",
-        "type": "enum",
-        "enumValues": [
-            "CONNECTING",
-            "OPERATIONAL"
-        ]
-    },
-    {
-        "id": "operational_state",
-        "name": "Operational State",
-        "type": "enum",
-        "enumValues": [
-            "IDLE",
-            "END_OF_RUN",
-            "ENERGIZED",
-            "READY",
-            "DEMONSTRATION",
-            "RECOVERY"
-        ]
-    },
-    {
-        "id": "pressure_command",
-        "name": "Pressure Command",
-        "type": "float32",
-        "podUnits": "bar",
-        "displayUnits": "bar"
-    },
-    {
         "id": "flow_1",
         "name": "Flow 1",
         "type": "float32",
@@ -92,40 +47,5 @@
         "type": "float32",
         "podUnits": "bar",
         "displayUnits": "bar"
-    },
-    {
-        "id": "pressure_regulator_duty",
-        "name": "Pressure Regulator Duty",
-        "type": "float32",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
-        "id": "sdc_closed",
-        "name": "SDC Closed",
-        "type": "bool",
-        "podUnits": "",
-        "displayUnits": ""
-    },
-    {
-        "id": "brake_fault",
-        "name": "Brake Fault",
-        "type": "bool",
-        "podUnits": "",
-        "displayUnits": ""
-    },
-    {
-        "id": "sdmmc_card_detect",
-        "name": "SDMMC Card Detect",
-        "type": "bool",
-        "podUnits": "",
-        "displayUnits": ""
-    },
-    {
-        "id": "sdmmc_write_protect",
-        "name": "SDMMC Write Protect",
-        "type": "bool",
-        "podUnits": "",
-        "displayUnits": ""
     }
 ]

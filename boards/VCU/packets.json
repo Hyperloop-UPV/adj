@@ -1,18 +1,6 @@
 [
     {
         "type": "data",
-        "name": "Current State",
-        "variables": [
-            "general_state",
-            "operational_state"
-        ],
-        "id": 249,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
         "name": "Flow",
         "variables": [
             "flow_1",
@@ -44,43 +32,6 @@
             "pressure_regulator_feedback"
         ],
         "id": 252,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "Pressure Regulator",
-        "variables": [
-            "pressure_command",
-            "pressure_regulator_duty",
-            "pressure_regulator_feedback"
-        ],
-        "id": 253,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "Safety Inputs",
-        "variables": [
-            "sdc_closed",
-            "brake_fault"
-        ],
-        "id": 254,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "Storage",
-        "variables": [
-            "sdmmc_card_detect",
-            "sdmmc_write_protect"
-        ],
-        "id": 255,
         "period_type": "ms",
         "period": 16.67,
         "socket": "control_station_udp"
