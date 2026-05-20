@@ -68,7 +68,13 @@ jobs:
             --arg message "chore: add compacted ADJ from ${{ github.repository }}@${{ github.sha }}" \
             --rawfile content "${{ runner.temp }}/adj.b64" \
             --arg branch  "$TARGET_BRANCH" \
-            '{message: $message, content: $content, branch: $branch}' \
+            '{
+              message: $message,
+              content: $content,
+              branch: $branch,
+              committer: {name: "github-actions[bot]", email: "41898282+github-actions[bot]@users.noreply.github.com"},
+              author:    {name: "github-actions[bot]", email: "41898282+github-actions[bot]@users.noreply.github.com"}
+            }' \
             > "${{ runner.temp }}/body.json"
           curl --fail-with-body -sS -X PUT \
               -H "Authorization: Bearer $GH_TOKEN" \
