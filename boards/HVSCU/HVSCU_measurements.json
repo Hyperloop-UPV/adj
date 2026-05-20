@@ -1452,6 +1452,15 @@
         "type": "bool"
     },
     {
+        "id": "bms_status",
+        "name": "BMS Status",
+        "type": "enum",
+        "enumValues": [
+            "OK",
+            "FAULT"
+        ]
+    },
+    {
         "id": "sdc_status",
         "name": "SDC Status",
         "type": "enum",
@@ -1465,15 +1474,6 @@
         "name": "Minimum SOC",
         "type": "float32",
         "displayUnits": "%"
-    },
-    {
-        "id": "bms_status",
-        "name": "BMS Status",
-        "type": "enum",
-        "enumValues": [
-            "OK",
-            "FAULT"
-        ]
     },
     {
         "id": "voltage_min",
