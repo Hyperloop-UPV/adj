@@ -632,5 +632,10 @@
     "id": "Bk_2",
     "name": "Bk 2",
     "type": "float32"
+  },
+  {
+    "id": "cinema_current",
+    "name": "Cinema Current",
+    "type": "float32"
   }
 ]

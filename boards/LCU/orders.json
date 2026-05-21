@@ -138,5 +138,22 @@
     "variables": [
     ],
     "id": 9101
+  },
+
+  {
+    "type": "order",
+    "name": "Cinema",
+    "variables": [
+      "cinema_current"
+    ],
+    "id": 9200
+  },
+
+  {
+    "type": "order",
+    "name": "Stop Cinema",
+    "variables": [
+    ],
+    "id": 9201
   }
 ]
