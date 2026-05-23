@@ -1,6 +1,20 @@
 [
     {
         "type": "data",
+        "name": "VCU State",
+        "variables": [
+            "general_state",
+            "operational_state",
+            "recovery_status",
+            "demonstration_bitfield"
+        ],
+        "id": 249,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
         "name": "Flow",
         "variables": [
             "flow_1",
@@ -35,5 +49,96 @@
         "period_type": "ms",
         "period": 16.67,
         "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "Brake Status",
+        "variables": [
+            "active_brakes",
+            "brake_fault_detected"
+        ],
+        "id": 253,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "Outputs",
+        "variables": [
+            "cooling_pump_1_command",
+            "cooling_pump_2_command",
+            "electrovalve_enabled"
+        ],
+        "id": 254,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "Safety",
+        "variables": [
+            "sdc_closed",
+            "contactors_closed",
+            "control_station_connected",
+            "hvscu_connected",
+            "pcu_connected",
+            "required_peers_connected"
+        ],
+        "id": 255,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "HVSCU State",
+        "variables": [
+            "hvscu_state"
+        ],
+        "id": 941
+    },
+    {
+        "type": "data",
+        "name": "LCU State",
+        "variables": [
+            "lcu_vertical_state",
+            "lcu_horizontal_state"
+        ],
+        "id": 63
+    },
+    {
+        "type": "data",
+        "name": "PCU State",
+        "variables": [
+            "pcu_state"
+        ],
+        "id": 64
+    },
+    {
+        "type": "data",
+        "name": "Remote States",
+        "variables": [
+            "hvscu_state",
+            "pcu_state",
+            "lcu_vertical_state",
+            "lcu_horizontal_state"
+        ],
+        "id": 65,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "VCU State For PCU",
+        "variables": [
+            "recovery_status"
+        ],
+        "id": 66,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "pcu_udp"
     }
 ]
