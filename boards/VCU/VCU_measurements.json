@@ -113,8 +113,8 @@
         "type": "bool"
     },
     {
-        "id": "hvscu_connected",
-        "name": "HVSCU Connected",
+        "id": "hvbms_connected",
+        "name": "HVBMS Connected",
         "type": "bool"
     },
     {
@@ -123,13 +123,18 @@
         "type": "bool"
     },
     {
+        "id": "lcu_connected",
+        "name": "LCU Connected",
+        "type": "bool"
+    },
+    {
         "id": "required_peers_connected",
         "name": "Required Peers Connected",
         "type": "bool"
     },
     {
-        "id": "hvscu_state",
-        "name": "HVSCU State",
+        "id": "hvbms_state",
+        "name": "HVBMS State",
         "type": "uint8"
     },
     {

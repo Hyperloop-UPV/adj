@@ -82,8 +82,9 @@
             "sdc_closed",
             "contactors_closed",
             "control_station_connected",
-            "hvscu_connected",
+            "hvbms_connected",
             "pcu_connected",
+            "lcu_connected",
             "required_peers_connected"
         ],
         "id": 255,
@@ -93,9 +94,9 @@
     },
     {
         "type": "data",
-        "name": "HVSCU State",
+        "name": "HVBMS State",
         "variables": [
-            "hvscu_state"
+            "hvbms_state"
         ],
         "id": 941
     },
@@ -120,7 +121,7 @@
         "type": "data",
         "name": "Remote States",
         "variables": [
-            "hvscu_state",
+            "hvbms_state",
             "pcu_state",
             "lcu_vertical_state",
             "lcu_horizontal_state"

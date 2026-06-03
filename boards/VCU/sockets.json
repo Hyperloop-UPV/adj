@@ -26,7 +26,7 @@
     },
     {
         "type": "DatagramSocket",
-        "name": "hvscu_udp",
+        "name": "hvbms_udp",
         "remote_ip": "192.168.1.7",
         "port": 50403
     },
@@ -38,7 +38,7 @@
     },
     {
         "type": "Socket",
-        "name": "hvscu_tcp",
+        "name": "hvbms_tcp",
         "local_port": 50502,
         "remote_ip": "192.168.1.7",
         "remote_port": 50500

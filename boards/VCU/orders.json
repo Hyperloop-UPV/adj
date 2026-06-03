@@ -19,6 +19,36 @@
         ]
     },
     {
+        "id": 34,
+        "name": "MANTEINANCE",
+        "type": "order"
+    },
+    {
+        "id": 35,
+        "name": "Precharge",
+        "type": "order"
+    },
+    {
+        "id": 36,
+        "name": "Stop",
+        "type": "order"
+    },
+    {
+        "id": 38,
+        "name": "Propulsion",
+        "type": "order"
+    },
+    {
+        "id": 39,
+        "name": "Static levitation",
+        "type": "order"
+    },
+    {
+        "id": 40,
+        "name": "Dynamic levitation",
+        "type": "order"
+    },
+    {
         "id": 43,
         "name": "Brake",
         "type": "order"
@@ -127,6 +157,11 @@
     {
         "id": 901,
         "name": "Remote open contactors",
+        "type": "order"
+    },
+    {
+        "id": 902,
+        "name": "Remote precharge",
         "type": "order"
     },
     {
