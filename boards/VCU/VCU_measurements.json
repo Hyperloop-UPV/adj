@@ -103,6 +103,11 @@
         "type": "bool"
     },
     {
+        "id": "tapes_reached",
+        "name": "Tapes Reached",
+        "type": "bool"
+    },
+    {
         "id": "contactors_closed",
         "name": "Contactors Closed",
         "type": "bool"

@@ -80,6 +80,7 @@
         "name": "Safety",
         "variables": [
             "sdc_closed",
+            "tapes_reached",
             "contactors_closed",
             "control_station_connected",
             "hvbms_connected",
