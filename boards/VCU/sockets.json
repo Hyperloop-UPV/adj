@@ -4,57 +4,10 @@
         "name": "control_station_tcp",
         "port": 50500
     },
-
     {
         "type": "DatagramSocket",
         "name": "control_station_udp",
-        "remote_ip":"192.168.0.9",
+        "remote_ip": "192.168.0.9",
         "port": 50400
-    },
-    {
-        "type": "Socket",
-        "name": "pcu_tcp",
-        "local_port": 50501,
-        "remote_ip": "192.168.1.5",
-        "remote_port": 50500
-    },
-    {
-        "type": "DatagramSocket",
-        "name": "pcu_udp",
-        "remote_ip": "192.168.1.5",
-        "port": 50402
-    },
-    {
-        "type": "DatagramSocket",
-        "name": "hvbms_udp",
-        "remote_ip": "192.168.1.7",
-        "port": 50403
-    },
-    {
-        "type": "DatagramSocket",
-        "name": "lcu_udp",
-        "remote_ip": "192.168.1.4",
-        "port": 50405
-    },
-    {
-        "type": "Socket",
-        "name": "hvbms_tcp",
-        "local_port": 50502,
-        "remote_ip": "192.168.1.7",
-        "remote_port": 50500
-    },
-    {
-        "type": "Socket",
-        "name": "lcu_tcp",
-        "local_port": 50504,
-        "remote_ip": "192.168.1.4",
-        "remote_port": 50500
-    },
-    {
-        "type": "Socket",
-        "name": "bcu_tcp",
-        "local_port": 50505,
-        "remote_ip": "192.168.2.17",
-        "remote_port": 50500
-    }    
+    }
 ]

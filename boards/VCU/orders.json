@@ -5,11 +5,6 @@
         "type": "order"
     },
     {
-        "id": 32,
-        "name": "Recovery",
-        "type": "order"
-    },
-    {
         "id": 33,
         "name": "Cooling pump power",
         "type": "order",
@@ -54,195 +49,13 @@
         "type": "order"
     },
     {
-        "id": 44,
-        "name": "Close contactors",
-        "type": "order"
-    },
-    {
         "id": 52,
         "name": "Unbrake",
         "type": "order"
     },
     {
-        "id": 53,
-        "name": "Open contactors",
-        "type": "order"
-    },
-    {
         "id": 55,
         "name": "Emergency stop",
-        "type": "order"
-    },
-    {
-        "id": 56,
-        "name": "Runs",
-        "type": "order",
-        "variables": [
-            "run_id"
-        ]
-    },
-    {
-        "id": 57,
-        "name": "SVPWM",
-        "type": "order",
-        "variables": [
-            "modulation_frequency_1",
-            "commutation_frequency_1",
-            "reference_voltage_1",
-            "max_voltage_1",
-            "motor_direction_1"
-        ]
-    },
-    {
-        "id": 58,
-        "name": "Stop motor",
-        "type": "order"
-    },
-    {
-        "id": 59,
-        "name": "Current control",
-        "type": "order",
-        "variables": [
-            "modulation_frequency_2",
-            "commutation_frequency_2",
-            "reference_current_2",
-            "max_voltage_2",
-            "motor_direction_2"
-        ]
-    },
-    {
-        "id": 60,
-        "name": "Speed control",
-        "type": "order",
-        "variables": [
-            "reference_speed_3",
-            "commutation_frequency_3",
-            "max_voltage_3",
-            "motor_direction_3"
-        ]
-    },
-    {
-        "id": 61,
-        "name": "Motor brake",
-        "type": "order"
-    },
-    {
-        "id": 37,
-        "name": "Levitation",
-        "type": "order",
-        "variables": [
-            "levitation_distance"
-        ]
-    },
-    {
-        "id": 46,
-        "name": "Stop levitation",
-        "type": "order"
-    },
-    {
-        "id": 42,
-        "name": "Booster",
-        "type": "order"
-    },
-    {
-        "id": 51,
-        "name": "Stop booster",
-        "type": "order"
-    },
-    {
-        "id": 900,
-        "name": "Remote close contactors",
-        "type": "order"
-    },
-    {
-        "id": 901,
-        "name": "Remote open contactors",
-        "type": "order"
-    },
-    {
-        "id": 902,
-        "name": "Remote precharge",
-        "type": "order"
-    },
-    {
-        "id": 1000,
-        "name": "Remote runs",
-        "type": "order",
-        "variables": [
-            "run_id"
-        ]
-    },
-    {
-        "id": 1001,
-        "name": "Remote SVPWM",
-        "type": "order",
-        "variables": [
-            "modulation_frequency_1",
-            "commutation_frequency_1",
-            "reference_voltage_1",
-            "max_voltage_1",
-            "motor_direction_1"
-        ]
-    },
-    {
-        "id": 1002,
-        "name": "Remote stop motor",
-        "type": "order"
-    },
-    {
-        "id": 1003,
-        "name": "Remote current control",
-        "type": "order",
-        "variables": [
-            "modulation_frequency_2",
-            "commutation_frequency_2",
-            "reference_current_2",
-            "max_voltage_2",
-            "motor_direction_2"
-        ]
-    },
-    {
-        "id": 1004,
-        "name": "Remote speed control",
-        "type": "order",
-        "variables": [
-            "reference_speed_3",
-            "commutation_frequency_3",
-            "max_voltage_3",
-            "motor_direction_3"
-        ]
-    },
-    {
-        "id": 1005,
-        "name": "Remote motor brake",
-        "type": "order"
-    },
-    {
-        "id": 9989,
-        "name": "Remote levitation",
-        "type": "order",
-        "variables": [
-            "levitation_distance"
-        ]
-    },
-    {
-        "id": 9993,
-        "name": "Remote stop levitation",
-        "type": "order"
-    },
-    {
-        "id": 1790,
-        "name": "Remote booster",
-        "type": "order"
-    },
-    {
-        "id": 1789,
-        "name": "Remote stop booster",
-        "type": "order"
-    },
-    {
-        "id": 1788,
-        "name": "Forward booster",
         "type": "order"
     }
 ]
