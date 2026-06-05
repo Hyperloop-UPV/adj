@@ -22,12 +22,7 @@
     "type": "data",
     "name": "Battery Temperatures",
     "variables": [
-      "temperature_1",
-      "temperature_2",
-      "temperature_3",
-      "temperature_4",
-      "temperature_min",
-      "temperature_max"
+      "temperature_1"
     ],
     "id": 778,
     "period_type": "ms",
