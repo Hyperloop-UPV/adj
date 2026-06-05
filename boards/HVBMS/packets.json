@@ -296,7 +296,8 @@
       "contactor_discharge",
       "contactor_precharge",
       "contactor_low",
-      "contactor_high"
+      "contactor_high",
+      "contactor_common_high"
     ],
     "id": 956,
     "period": 50,
