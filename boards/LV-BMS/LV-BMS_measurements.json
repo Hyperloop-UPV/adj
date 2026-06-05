@@ -65,21 +65,21 @@
   {
     "id": "SOC",
     "name": "SOC",
-    "type": "uint32",
+    "type": "float32",
     "podUnits": "%",
     "displayUnits": "%"
   },
   {
     "id": "temperature_1",
     "name": "Temperature 1",
-    "type": "uint32",
+    "type": "float32",
     "podUnits": "ºC",
     "displayUnits": "ºC"
   },
   {
     "id": "current",
     "name": "Current",
-    "type": "uint32",
+    "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
   },
