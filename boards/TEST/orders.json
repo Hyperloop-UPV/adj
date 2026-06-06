@@ -1,9 +1,8 @@
 [
   {
     "type": "order",
-    "name": "Enable LED",
+    "name": "CloseContactors",
     "variables": [
-      "enable_led"
     ],
     "id": 1000
   }

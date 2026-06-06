@@ -1,10 +1,12 @@
 [
   {
     "type": "data",
-    "name": "dummy",
+    "name": "StateMachineState",
     "variables": [
     ],
     "id": 1500,
-    "socket": "telemetry_udp"
+    "socket": "telemetry_udp",
+    "period_type": "ms",
+    "period": 100
   }
 ]

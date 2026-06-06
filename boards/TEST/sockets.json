@@ -1,15 +1,8 @@
 [
   {
     "type": "ServerSocket",
-    "name": "control_test_tcp",
-    "port": 41000
-  },
-  {
-    "type": "Socket",
-    "name": "control_test_client",
-    "local_port": 41002,
-    "remote_ip": "192.168.1.9",
-    "remote_port": 41003
+    "name": "ControlStation",
+    "port": 50500
   },
   {
     "type": "DatagramSocket",
