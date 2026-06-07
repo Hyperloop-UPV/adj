@@ -3,6 +3,7 @@
     "type": "data",
     "name": "StateMachineState",
     "variables": [
+      "state_machine_state"
     ],
     "id": 1500,
     "socket": "telemetry_udp",

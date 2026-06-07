@@ -5,14 +5,5 @@
     "variables": [
     ],
     "id": 1000
-  },
-
-  {
-    "type": "order",
-    "name": "dummy",
-    "variables": [
-      "enable_led"
-    ],
-    "id": 1001
   }
 ]

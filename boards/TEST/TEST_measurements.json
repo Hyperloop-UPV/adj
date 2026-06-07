@@ -1,7 +1,7 @@
 [
   {
-    "id": "enable_led",
-    "name": "Enable LED",
-    "type": "bool"
+    "id": "state_machine_state",
+    "name": "State Machine State",
+    "type": "uint16_t"
   }
 ]
