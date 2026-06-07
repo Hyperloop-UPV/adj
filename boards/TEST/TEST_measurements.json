@@ -2,6 +2,7 @@
   {
     "id": "state_machine_state",
     "name": "State Machine State",
-    "type": "uint16_t"
+    "type": "enum",
+    "enumValues":["CONNECTING", "CONNECTED","FAULT","HV_ENGAGED"]
   }
 ]
