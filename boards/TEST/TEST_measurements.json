@@ -1,10 +1,2 @@
 [
-  {
-    "id": "enable_led",
-    "name": "Enable LED",
-    "type": "bool",
-  },
-  {
-    
-  }
 ]
