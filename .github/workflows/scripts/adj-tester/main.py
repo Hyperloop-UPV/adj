@@ -2,7 +2,7 @@
 
 ADJ Validator
 
-Version: 11.1.2
+Version: 11.1.3
 
 JavierRibaldelRio
 
@@ -13,6 +13,7 @@ directory using JSON Schema validation and project-specific rules
 (e.g. uniqueness constraints and IPv4 validation).
 """
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -23,7 +24,7 @@ from utils import (
     is_valid_ipv4,
     print_results,
     logError,
-    info_message,
+    set_color_enabled,
     validate_with_schema,
 )
 
@@ -448,6 +449,26 @@ def check_packet_json(
                 )
                 is_valid = False
 
+            # Ensure that if one of period_type, period, socket is present, all must be present
+            has_period_type = "period_type" in pkt
+            has_period = "period" in pkt
+            has_socket = "socket" in pkt
+
+            # Count how many of the three fields are present
+            fields_present = sum([has_period_type, has_period, has_socket])
+
+            # If any field is present, all three must be present
+            if fields_present > 0 and fields_present < 3:
+                error_list.append(
+                    logError(
+                        path,
+                        f"id {pkt_id}",
+                        f"Fields 'period_type', 'period', and 'socket' must all be present together or all be absent. "
+                        f"Found: period_type={has_period_type}, period={has_period}, socket={has_socket}",
+                    )
+                )
+                is_valid = False
+
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
@@ -577,6 +598,16 @@ def main():
     Performs the full validation flow and exits the process with a
     non-zero status code if any validation step fails.
     """
+
+    parser = argparse.ArgumentParser(description="Validate ADJ JSON schemas")
+    parser.add_argument(
+        "--no-color",
+        action="store_true",
+        help="Disable ANSI color codes in output",
+    )
+    args = parser.parse_args()
+
+    set_color_enabled(not args.no_color)
 
     # App header
     print_header("JSON Validation Script")
