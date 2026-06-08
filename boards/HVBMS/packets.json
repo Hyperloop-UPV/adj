@@ -59,7 +59,9 @@
       "battery1_cell10",
       "battery1_cell11",
       "battery1_cell12",
-      "battery1_total_voltage"
+      "battery1_total_voltage",
+      "battery1_max_temp",
+      "battery1_min_temp"
     ],
     "id": 910,
     "period": 50,
@@ -82,7 +84,9 @@
       "battery2_cell10",
       "battery2_cell11",
       "battery2_cell12",
-      "battery2_total_voltage"
+      "battery2_total_voltage",
+      "battery2_max_temp",
+      "battery2_min_temp"
     ],
     "id": 911,
     "period": 50,
@@ -105,7 +109,9 @@
       "battery3_cell10",
       "battery3_cell11",
       "battery3_cell12",
-      "battery3_total_voltage"
+      "battery3_total_voltage",
+      "battery3_max_temp",
+      "battery3_min_temp"
     ],
     "id": 912,
     "period": 50,
@@ -128,7 +134,9 @@
       "battery4_cell10",
       "battery4_cell11",
       "battery4_cell12",
-      "battery4_total_voltage"
+      "battery4_total_voltage",
+      "battery4_max_temp",
+      "battery4_min_temp"
     ],
     "id": 913,
     "period": 50,
@@ -151,7 +159,9 @@
       "battery5_cell10",
       "battery5_cell11",
       "battery5_cell12",
-      "battery5_total_voltage"
+      "battery5_total_voltage",
+      "battery5_max_temp",
+      "battery5_min_temp"
     ],
     "id": 914,
     "period": 50,
@@ -174,7 +184,9 @@
       "battery6_cell10",
       "battery6_cell11",
       "battery6_cell12",
-      "battery6_total_voltage"
+      "battery6_total_voltage",
+      "battery6_max_temp",
+      "battery6_min_temp"
     ],
     "id": 915,
     "period": 50,
@@ -197,7 +209,9 @@
       "battery7_cell10",
       "battery7_cell11",
       "battery7_cell12",
-      "battery7_total_voltage"
+      "battery7_total_voltage",
+      "battery7_max_temp",
+      "battery7_min_temp"
     ],
     "id": 916,
     "period": 50,
@@ -220,7 +234,9 @@
       "battery8_cell10",
       "battery8_cell11",
       "battery8_cell12",
-      "battery8_total_voltage"
+      "battery8_total_voltage",
+      "battery8_max_temp",
+      "battery8_min_temp"
     ],
     "id": 917,
     "period": 50,
