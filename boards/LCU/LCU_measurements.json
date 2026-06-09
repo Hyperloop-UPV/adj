@@ -152,6 +152,7 @@
     "podUnits": "m",
     "displayUnits": "mm"
   },
+
   {
     "id": "local_airgap_3",
     "name": "Airgap 3",
@@ -159,6 +160,7 @@
     "podUnits": "m",
     "displayUnits": "mm"
   },
+
   {
     "id": "local_airgap_4",
     "name": "Airgap 4",
@@ -201,6 +203,7 @@
     "name": "Fe 0",
     "type": "float32"
   },
+
   {
     "id": "Fe_1",
     "name": "Fe 1",
@@ -291,6 +294,7 @@
     "name": "Zz 1",
     "type": "float32"
   },
+
   {
     "id": "Zz_2",
     "name": "Zz 2",
@@ -333,6 +337,7 @@
     "name": "A 3",
     "type": "float32"
   },
+
   {
     "id": "A_4",
     "name": "A 4",
@@ -398,6 +403,86 @@
   {
     "id": "random_period_ms",
     "name": "Random Period (ms)",
+    "type": "uint32"
+  },
+  {
+    "id": "loop_total_us",
+    "name": "Loop Total (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "loop_total_max_us",
+    "name": "Loop Total Max (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "communications_us",
+    "name": "Communications Update (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "fault_check_us",
+    "name": "Fault Check (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "state_machine_us",
+    "name": "State Machine Update (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "scheduler_us",
+    "name": "Scheduler Update (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "mdma_us",
+    "name": "MDMA Update (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "protections_us",
+    "name": "Protections Evaluate (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "diagnostics_us",
+    "name": "Diagnostics Flush (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "sensor_update_us",
+    "name": "Sensor Update (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "dpc_period_us",
+    "name": "DPC Period (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "dpc_period_max_us",
+    "name": "DPC Period Max (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "dpc_total_us",
+    "name": "DPC Total (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "dpc_total_max_us",
+    "name": "DPC Total Max (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "dpc_inference_us",
+    "name": "DPC Inference (us)",
+    "type": "uint32"
+  },
+  {
+    "id": "dpc_inference_max_us",
+    "name": "DPC Inference Max (us)",
     "type": "uint32"
   }
 ]

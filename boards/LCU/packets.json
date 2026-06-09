@@ -119,5 +119,31 @@
     "period_type": "us",
     "period": 500.0,
     "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "Timing Metrics",
+    "variables": [
+      "loop_total_us",
+      "loop_total_max_us",
+      "communications_us",
+      "fault_check_us",
+      "state_machine_us",
+      "scheduler_us",
+      "mdma_us",
+      "protections_us",
+      "diagnostics_us",
+      "sensor_update_us",
+      "dpc_period_us",
+      "dpc_period_max_us",
+      "dpc_total_us",
+      "dpc_total_max_us",
+      "dpc_inference_us",
+      "dpc_inference_max_us"
+    ],
+    "id": 9522,
+    "period_type": "us",
+    "period": 500.0,
+    "socket": "control_station_udp"
   }
 ]
