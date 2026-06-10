@@ -1,6 +1,7 @@
 name: ADJ Escalafón
 
 on:
+  push:
   schedule:
     # Days 1 and 15 of every month at 11:05 (UTC).
     - cron: "5 11 1,15 * *"
