@@ -43,10 +43,20 @@
                 "description": "Remote IPv4 address"
             },
             "remote_port": {
-                "type": "integer",
-                "minimum": 1,
-                "maximum": 65535,
-                "description": "Remote port number for Socket"
+                "oneOf": [
+                    {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 65535
+                    },
+                    {
+                        "type": "string",
+                        "enum": [
+                            "backend"
+                        ]
+                    }
+                ],
+                "description": "Remote port number for Socket or the string \"backend\""
             }
         }
     }
