@@ -6,9 +6,7 @@
     "additionalProperties": true,
     "required": [
         "board_id",
-        "board_ip",
-        "measurements",
-        "packets"
+        "board_ip"
     ],
     "properties": {
         "board_id": {
