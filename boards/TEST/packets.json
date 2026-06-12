@@ -5,6 +5,9 @@
     "variables": [
       "random"
     ],
-    "id": 5050
+    "id": 5050,
+    "period_type": "us",
+    "period": 500,
+    "socket": "telemetry_udp"
   }
 ]
