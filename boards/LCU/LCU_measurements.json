@@ -1,7 +1,7 @@
 [
     {
         "id": "master_state_machine",
-        "name": "Master State Machine",
+        "name": "Master SM",
         "type": "enum",
         "enumValues": [
             "Connecting",
@@ -12,7 +12,7 @@
     },
     {
         "id": "slave_state_machine",
-        "name": "Slave State Machine",
+        "name": "Slave SM",
         "type": "enum",
         "enumValues": [
             "SPI Connecting",
