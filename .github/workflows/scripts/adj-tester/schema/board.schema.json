@@ -6,7 +6,9 @@
     "additionalProperties": true,
     "required": [
         "board_id",
-        "board_ip"
+        "board_ip",
+        "measurements",
+        "packets"
     ],
     "properties": {
         "board_id": {
@@ -39,5 +41,4 @@
             "description": "Array of packet file paths relative to board directory"
         }
     }
-  }
 }
