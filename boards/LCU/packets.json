@@ -145,5 +145,27 @@
     "period_type": "us",
     "period": 500.0,
     "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "SysID State",
+    "variables": [
+      "sysid_active",
+      "sysid_mode",
+      "sysid_phase",
+      "sysid_profile",
+      "sysid_segment_index",
+      "sysid_sample_index",
+      "sysid_safety_code",
+      "sysid_commanded_current_a",
+      "sysid_raw_current_a",
+      "sysid_commanded_duty_percent",
+      "sysid_anchor_distance",
+      "sysid_elapsed_ms"
+    ],
+    "id": 9523,
+    "period_type": "us",
+    "period": 500.0,
+    "socket": "control_station_udp"
   }
 ]

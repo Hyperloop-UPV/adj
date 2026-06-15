@@ -174,5 +174,28 @@
     "variables": [
     ],
     "id": 9035
+  },
+  {
+    "type": "order",
+    "name": "SysID Run",
+    "variables": [
+      "sysid_mode",
+      "sysid_anchor_distance",
+      "sysid_profile",
+      "sysid_bias_current_a",
+      "sysid_amplitude_current_a",
+      "sysid_max_current_a",
+      "sysid_slew_a_per_s",
+      "sysid_duration_ms",
+      "sysid_seed"
+    ],
+    "id": 9040
+  },
+  {
+    "type": "order",
+    "name": "Stop SysID",
+    "variables": [
+    ],
+    "id": 9041
   }
 ]

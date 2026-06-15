@@ -406,6 +406,112 @@
     "type": "uint32"
   },
   {
+    "id": "sysid_mode",
+    "name": "SysID Mode",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_anchor_distance",
+    "name": "SysID Anchor Distance (mm)",
+    "type": "float32",
+    "podUnits": "m",
+    "displayUnits": "mm"
+  },
+  {
+    "id": "sysid_profile",
+    "name": "SysID Profile",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_bias_current_a",
+    "name": "SysID Bias Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "sysid_amplitude_current_a",
+    "name": "SysID Amplitude Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "sysid_max_current_a",
+    "name": "SysID Max Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "sysid_slew_a_per_s",
+    "name": "SysID Current Slew",
+    "type": "float32",
+    "podUnits": "A/s",
+    "displayUnits": "A/s"
+  },
+  {
+    "id": "sysid_duration_ms",
+    "name": "SysID Duration (ms)",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_seed",
+    "name": "SysID Seed",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_active",
+    "name": "SysID Active",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_phase",
+    "name": "SysID Phase",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_segment_index",
+    "name": "SysID Segment Index",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_sample_index",
+    "name": "SysID Sample Index",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_safety_code",
+    "name": "SysID Safety Code",
+    "type": "uint32"
+  },
+  {
+    "id": "sysid_commanded_current_a",
+    "name": "SysID Commanded Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "sysid_raw_current_a",
+    "name": "SysID Raw Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A"
+  },
+  {
+    "id": "sysid_commanded_duty_percent",
+    "name": "SysID Commanded Duty",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "sysid_elapsed_ms",
+    "name": "SysID Elapsed (ms)",
+    "type": "uint32"
+  },
+  {
     "id": "loop_total_us",
     "name": "Loop Total (us)",
     "type": "uint32"
