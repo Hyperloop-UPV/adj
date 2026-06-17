@@ -4,7 +4,9 @@
         "TCP_SERVER": 50500,
         "UDP": 50400,
         "SNTP": 123,
-        "TFTP": 69
+        "TFTP": 69,
+	"BLCU_UDP": 50420,
+	"BLCU_TCP_CLIENT": 50421
     },
     "addresses": {
         "backend": "192.168.0.9"

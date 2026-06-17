@@ -9,6 +9,6 @@
         "type": "DatagramSocket",
         "name": "control_station_udp",
         "remote_ip":"backend",
-        "port": 50400
+        "port": 50420
     }
 ]
