@@ -11,17 +11,14 @@
     },
 
     {
-        "id": 1,
+        "id": 134,
         "type": "packet",
         "name": "state_machine_state",
         "variables":
         [
             "general_state_machine",
             "operational_state_machine"
-        ],
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
+        ]
 
     }
 
