@@ -5,11 +5,11 @@
         "UDP": 50400,
         "SNTP": 123,
         "TFTP": 69,
-	"BLCU_UDP": 50420,
-	"BLCU_TCP_CLIENT": 50421
+        "BLCU_UDP": 50420,
+        "BLCU_TCP_CLIENT": 50421
     },
     "addresses": {
-        "backend": "192.168.0.9"
+        "backend": "127.0.0.9"
     },
     "units": {
         "V": "*1",
@@ -37,4 +37,3 @@
         "state_space": 7
     }
 }
-
