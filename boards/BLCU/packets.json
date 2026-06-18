@@ -1,8 +1,8 @@
-
+[
 
     {
         "id": 134,
-        "type": "packet",
+        "type": "data",
         "name": "state_machine_state",
         "variables":
         [
@@ -12,3 +12,4 @@
 
     }
 
+]
