@@ -380,211 +380,151 @@
     {
         "id": "start_current",
         "name": "Start Current Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "end_current",
         "name": "End Current Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "min_current",
         "name": "Min Current Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "max_current",
         "name": "Max Current Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "mean_current",
         "name": "Mean Current Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "start_speed",
         "name": "Start Speed Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "end_speed",
         "name": "End Speed Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "min_speed",
         "name": "Min Speed Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "max_speed",
         "name": "Max Speed Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "mean_speed",
         "name": "Mean Speed Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "start_telemetry_aux",
         "name": "Start Telemetry Aux Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "end_telemetry_aux",
         "name": "End Telemetry Aux Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "min_telemetry_aux",
         "name": "Min Telemetry Aux Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "max_telemetry_aux",
         "name": "Max Telemetry Aux Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "mean_telemetry_aux",
         "name": "Mean Telemetry Aux Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "start_telemetry",
         "name": "Start Telemetry Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "end_telemetry",
         "name": "End Telemetry Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "min_telemetry",
         "name": "Min Telemetry Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "max_telemetry",
         "name": "Max Telemetry Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "mean_telemetry",
         "name": "Mean Telemetry Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "start_encoder",
         "name": "Start Encoder Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "end_encoder",
         "name": "End Encoder Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "min_encoder",
         "name": "Min Encoder Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "max_encoder",
         "name": "Max Encoder Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "mean_encoder",
         "name": "Mean Encoder Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "start_udp_message",
         "name": "Start UDP Message Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "end_udp_message",
         "name": "End UDP Message Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "min_udp_message",
         "name": "Min UDP Message Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "max_udp_message",
         "name": "Max UDP Message Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     },
     {
         "id": "mean_udp_message",
         "name": "Mean UDP Message Benchmark",
-        "type": "uint32",
-        "podUnits": "us",
-        "displayUnits": "us"
+        "type": "uint32"
     }
 ]
