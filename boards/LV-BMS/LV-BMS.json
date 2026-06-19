@@ -1,5 +1,5 @@
 {
-  "board_id": 2,
+  "board_id": 11,
   "board_ip": "192.168.1.11",
   "measurements": [
     "LV-BMS_measurements.json"
