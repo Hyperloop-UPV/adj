@@ -1,8 +1,8 @@
 {
-  "board_id": 12,
-  "board_ip": "192.168.1.7",
+  "board_id": 13,
+  "board_ip": "192.168.1.4",
   "measurements": [
-    "HVBMS-MOCK_measurements.json"
+    "LCUMOCK_measurements.json"
   ],
   "packets": [
     "packets.json"
