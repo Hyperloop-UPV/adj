@@ -2,12 +2,29 @@
     {
         "id": "general_state",
         "name": "General State",
-        "type": "uint8"
+        "type": "uint8",
+        "enumValues": [
+            "Connecting",
+            "Operational",
+            "Fault"
+        ]
     },
     {
         "id": "operational_state",
         "name": "Operational State",
-        "type": "uint8"
+        "type": "uint8",
+        "enumValues": [
+            "Idle",
+            "Connected",
+            "Manteinance",
+            "Precharging",
+            "HVActive",
+            "Ready",
+            "Propulsion",
+            "StaticLevitation",
+            "DynamicLevitation",
+            "Fault"
+        ]
     },
     {
         "id": "recovery_status",
@@ -136,26 +153,6 @@
         "id": "required_peers_connected",
         "name": "Required Peers Connected",
         "type": "bool"
-    },
-    {
-        "id": "hvbms_state",
-        "name": "HVBMS State",
-        "type": "uint8"
-    },
-    {
-        "id": "pcu_state",
-        "name": "PCU State",
-        "type": "uint8"
-    },
-    {
-        "id": "lcu_vertical_state",
-        "name": "LCU Vertical State",
-        "type": "uint8"
-    },
-    {
-        "id": "lcu_horizontal_state",
-        "name": "LCU Horizontal State",
-        "type": "uint8"
     },
     {
         "id": "cooling_pump_duty",
