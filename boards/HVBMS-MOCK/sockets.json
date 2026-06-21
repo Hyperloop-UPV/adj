@@ -6,7 +6,7 @@
   },
   {
     "type": "DatagramSocket",
-    "name": "control_station_udp",
+    "name": "hvbms_mock_control_station_udp",
     "remote_ip": "192.168.0.9",
     "port": 50400
   }

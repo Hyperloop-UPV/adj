@@ -1,13 +1,13 @@
 [
   {
     "type": "data",
-    "name": "Mock Connection Status",
+    "name": "HVBMS Mock Connection Status",
     "variables": [
       "connected_to_master"
     ],
     "id": 1101,
     "period_type": "ms",
     "period": 100,
-    "socket": "control_station_udp"
+    "socket": "hvbms_mock_control_station_udp"
   }
 ]
