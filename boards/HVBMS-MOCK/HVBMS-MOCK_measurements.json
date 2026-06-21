@@ -1,0 +1,7 @@
+[
+  {
+    "id": "connected_to_master",
+    "name": "Connected To Master",
+    "type": "bool"
+  }
+]

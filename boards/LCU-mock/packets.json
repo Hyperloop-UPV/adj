@@ -1,0 +1,11 @@
+[
+  {
+    "type": "data",
+    "name": "Mock Connection Status",
+    "variables": [
+      "connected_to_master"
+    ],
+    "id": 1102,
+    "socket": "vcu_tcp"
+  }
+]

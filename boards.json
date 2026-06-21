@@ -1,3 +1,5 @@
 {
-  "VCU": "boards/VCU/VCU.json"
+  "VCU": "boards/VCU/VCU.json",
+  "HVBMS-MOCK": "boards/HVBMS-MOCK/HVBMS-MOCK.json",
+  "LCU-mock": "boards/LCU-mock/LCU-mock.json"
 }

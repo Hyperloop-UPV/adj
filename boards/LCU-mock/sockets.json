@@ -1,0 +1,7 @@
+[
+  {
+    "type": "ServerSocket",
+    "name": "vcu_tcp",
+    "port": 50500
+  }
+]
