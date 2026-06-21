@@ -6,6 +6,6 @@
       "connected_to_master"
     ],
     "id": 1102,
-    "socket": "vcu_tcp"
+    "socket": "control_station_udp"
   }
 ]
