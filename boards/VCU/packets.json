@@ -92,16 +92,5 @@
         "period_type": "ms",
         "period": 100,
         "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "VCU State For PCU",
-        "variables": [
-            "recovery_status"
-        ],
-        "id": 66,
-        "period_type": "ms",
-        "period": 100,
-        "socket": "pcu_udp"
     }
 ]
