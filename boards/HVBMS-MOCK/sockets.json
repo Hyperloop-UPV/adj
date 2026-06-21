@@ -1,10 +1,5 @@
 [
   {
-    "type": "ServerSocket",
-    "name": "vcu_tcp",
-    "port": 50500
-  },
-  {
     "type": "DatagramSocket",
     "name": "hvbms_mock_control_station_udp",
     "remote_ip": "192.168.0.9",
