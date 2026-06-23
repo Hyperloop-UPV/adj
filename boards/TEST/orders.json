@@ -1,9 +1,9 @@
 [
   {
     "type": "order",
-    "name": "set_freq",
+    "name": "set_period",
     "variables": [
-      "frequency"
+      "period"
     ],
     "id": 50001
   },

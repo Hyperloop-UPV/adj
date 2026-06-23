@@ -1,7 +1,7 @@
 [
   {
-    "id": "frequency",
-    "name": "Message Frequency",
-    "type": "uint32"
+    "id": "period",
+    "name": "Message Period",
+    "type": "float64"
   }
 ]
