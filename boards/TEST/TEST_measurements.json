@@ -1,10 +1,5 @@
 [
   {
-    "id": "toggle_fault",
-    "name": "Toggle Fault Message",
-    "type": "bool"
-  },
-  {
     "id": "frequency",
     "name": "Message Frequency",
     "type": "uint32"
