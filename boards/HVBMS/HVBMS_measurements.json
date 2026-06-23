@@ -276,5 +276,10 @@
     "id": "contactor_common_high",
     "name": "Contactor Common High",
     "type": "bool"
+  },
+  {
+    "id": "soc",
+    "name": "SOC",
+    "type": "float32"
   }
 ]

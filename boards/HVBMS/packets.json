@@ -319,5 +319,14 @@
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "SOC",
+    "variables": ["soc"],
+    "id": 990,
+    "period": 50,
+    "period_type": "ms",
+    "socket": "control_station_udp"
   }
 ]
