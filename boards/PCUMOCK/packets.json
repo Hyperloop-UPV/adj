@@ -1,24 +1,24 @@
 [
   {
     "type": "data",
-    "name": "HVBMS Mock Connection Status",
+    "name": "PCU Mock Connection Status",
     "variables": [
       "connected_to_master"
     ],
-    "id": 1101,
+    "id": 1103,
     "period_type": "ms",
     "period": 100,
-    "socket": "hvbms_mock_control_station_udp"
+    "socket": "pcu_mock_control_station_udp"
   },
   {
     "type": "data",
-    "name": "HVBMS State",
+    "name": "PCU State",
     "variables": [
-      "hvbms_state"
+      "pcu_state"
     ],
-    "id": 941,
+    "id": 64,
     "period_type": "ms",
     "period": 1,
-    "socket": "hvbms_state_udp"
+    "socket": "pcu_state_udp"
   }
 ]
