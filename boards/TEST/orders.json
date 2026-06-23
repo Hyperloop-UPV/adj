@@ -1,48 +1,15 @@
 [
   {
     "type": "order",
-    "name": "set_small_profile",
+    "name": "set_freq",
     "variables": [
-      "enable_flag",
-      "small_counter",
-      "offset_value",
-      "order_mode"
+      "frequency"
     ],
-    "id": 20481
+    "id": 50001
   },
   {
     "type": "order",
-    "name": "set_large_profile",
-    "variables": [
-      "window_size",
-      "magic_value",
-      "position_value",
-      "ratio_value",
-      "precise_value"
-    ],
-    "id": 20482
-  },
-  {
-    "type": "order",
-    "name": "set_extremes",
-    "variables": [
-      "trim_value",
-      "energy_value",
-      "big_counter"
-    ],
-    "id": 20483
-  },
-  {
-    "type": "order",
-    "name": "bump_state",
-    "id": 20484
-  },
-  {
-    "type": "order",
-    "name": "set_state_code",
-    "variables": [
-      "order_state"
-    ],
-    "id": 20485
+    "name": "toggle_fault_msg",
+    "id": 50002
   }
 ]
