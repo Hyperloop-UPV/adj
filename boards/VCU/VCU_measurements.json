@@ -2,7 +2,7 @@
     {
         "id": "general_state",
         "name": "General State",
-        "type": "uint8",
+        "type": "enum",
         "enumValues": [
             "Connecting",
             "Operational",
@@ -12,7 +12,7 @@
     {
         "id": "operational_state",
         "name": "Operational State",
-        "type": "uint8",
+        "type": "enum",
         "enumValues": [
             "Idle",
             "Connected",
