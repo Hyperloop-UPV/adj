@@ -95,31 +95,6 @@
     },
     {
         "type": "data",
-        "name": "HVBMS State",
-        "variables": [
-            "hvbms_state"
-        ],
-        "id": 941
-    },
-    {
-        "type": "data",
-        "name": "LCU State",
-        "variables": [
-            "lcu_vertical_state",
-            "lcu_horizontal_state"
-        ],
-        "id": 63
-    },
-    {
-        "type": "data",
-        "name": "PCU State",
-        "variables": [
-            "pcu_state"
-        ],
-        "id": 64
-    },
-    {
-        "type": "data",
         "name": "Remote States",
         "variables": [
             "hvbms_state",
