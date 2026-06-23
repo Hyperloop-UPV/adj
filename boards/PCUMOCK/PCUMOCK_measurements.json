@@ -7,6 +7,11 @@
   {
     "id": "pcu_state",
     "name": "PCU State",
-    "type": "uint8"
+    "type": "uint8",
+    "enumValues": [
+      "Stopped",
+      "\u2014",
+      "Propulsion"
+    ]
   }
 ]

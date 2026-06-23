@@ -7,6 +7,11 @@
   {
     "id": "hvbms_state",
     "name": "HVBMS State",
-    "type": "uint8"
+    "type": "uint8",
+    "enumValues": [
+      "Opened",
+      "\u2014",
+      "Closed"
+    ]
   }
 ]
