@@ -7,18 +7,18 @@
   {
     "id": "lcu_vertical_state",
     "name": "LCU Vertical State",
-    "type": "uint8",
+    "type": "enum",
     "enumValues": [
       "Stopped",
-      "\u2014",
-      "\u2014",
+      "gap_1",
+      "gap_2",
       "Levitation"
     ]
   },
   {
     "id": "lcu_horizontal_state",
     "name": "LCU Horizontal State",
-    "type": "uint8",
+    "type": "enum",
     "enumValues": [
       "Disabled",
       "Enabled"
