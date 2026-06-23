@@ -92,5 +92,55 @@
         "period_type": "ms",
         "period": 100,
         "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "HVBMS State",
+        "variables": [
+            "hvbms_state"
+        ],
+        "id": 941
+    },
+    {
+        "type": "data",
+        "name": "LCU State",
+        "variables": [
+            "lcu_vertical_state",
+            "lcu_horizontal_state"
+        ],
+        "id": 63
+    },
+    {
+        "type": "data",
+        "name": "PCU State",
+        "variables": [
+            "pcu_state"
+        ],
+        "id": 64
+    },
+    {
+        "type": "data",
+        "name": "Remote States",
+        "variables": [
+            "hvbms_state",
+            "pcu_state",
+            "lcu_vertical_state",
+            "lcu_horizontal_state"
+        ],
+        "id": 65,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
+        "name": "VCU State For PCU",
+        "variables": [
+            "recovery_status"
+        ],
+        "id": 66,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "pcu_udp"
     }
 ]

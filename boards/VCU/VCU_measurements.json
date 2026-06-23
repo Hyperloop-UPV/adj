@@ -269,5 +269,25 @@
         "type": "float32",
         "podUnits": "mm",
         "displayUnits": "mm"
+    },
+    {
+        "id": "hvbms_state",
+        "name": "HVBMS State",
+        "type": "uint8"
+    },
+    {
+        "id": "pcu_state",
+        "name": "PCU State",
+        "type": "uint8"
+    },
+    {
+        "id": "lcu_vertical_state",
+        "name": "LCU Vertical State",
+        "type": "uint8"
+    },
+    {
+        "id": "lcu_horizontal_state",
+        "name": "LCU Horizontal State",
+        "type": "uint8"
     }
 ]
