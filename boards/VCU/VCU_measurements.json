@@ -273,41 +273,21 @@
     {
         "id": "hvbms_state",
         "name": "HVBMS State",
-        "type": "uint8",
-        "enumValues": [
-            "Opened",
-            "\u2014",
-            "Closed"
-        ]
+        "type": "uint8"
     },
     {
         "id": "pcu_state",
         "name": "PCU State",
-        "type": "uint8",
-        "enumValues": [
-            "Stopped",
-            "\u2014",
-            "Propulsion"
-        ]
+        "type": "uint8"
     },
     {
         "id": "lcu_vertical_state",
         "name": "LCU Vertical State",
-        "type": "uint8",
-        "enumValues": [
-            "Stopped",
-            "\u2014",
-            "\u2014",
-            "Levitation"
-        ]
+        "type": "uint8"
     },
     {
         "id": "lcu_horizontal_state",
         "name": "LCU Horizontal State",
-        "type": "uint8",
-        "enumValues": [
-            "Disabled",
-            "Enabled"
-        ]
+        "type": "uint8"
     }
 ]
