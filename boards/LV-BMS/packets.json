@@ -11,7 +11,8 @@
       "cell_6",
       "voltage_min",
       "voltage_max",
-      "total_voltage"
+      "total_voltage",
+      "average_voltage"
     ],
     "id": 777,
     "period_type": "ms",

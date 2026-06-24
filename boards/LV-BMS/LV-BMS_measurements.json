@@ -63,6 +63,13 @@
     "displayUnits": "V"
   },
   {
+    "id": "average_voltage",
+    "name": "Avg Cell",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
+  },
+  {
     "id": "SOC",
     "name": "SOC",
     "type": "float32",
