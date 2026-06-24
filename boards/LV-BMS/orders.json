@@ -1,7 +1,10 @@
 [
-    {
-        "type": "order",
-        "name": "Brake",
-        "id": 43
-    }
+  {
+    "type": "order",
+    "name": "Averaging",
+    "id": 33772,
+    "variables": [
+      "measurement_averaging"
+    ]
+  }
 ]

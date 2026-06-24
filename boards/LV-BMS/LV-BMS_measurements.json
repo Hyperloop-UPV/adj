@@ -99,5 +99,21 @@
       "OPERATIONAL",
       "FAULT"
     ]
+  },
+  {
+    "id": "measurement_averaging",
+    "name": "Count Measurement Average",
+    "type": "enum",
+    "enumValues": [
+      "AVG_1",
+      "AVG_2",
+      "AVG_4",
+      "AVG_8",
+      "AVG_16",
+      "AVG_32",
+      "AVG_64",
+      "AVG_128",
+      "AVG_256"
+    ]
   }
 ]
