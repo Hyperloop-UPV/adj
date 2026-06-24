@@ -2,65 +2,65 @@
   {
     "id": "cell_1",
     "name": "Cell 1",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "cell_2",
     "name": "Cell 2",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "cell_3",
     "name": "Cell 3",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "cell_4",
     "name": "Cell 4",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "cell_5",
     "name": "Cell 5",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "cell_6",
     "name": "Cell 6",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "voltage_min",
     "name": "Min Cell",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "voltage_max",
     "name": "Max Cell",
-    "type": "uint32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "total_voltage",
     "name": "Total Voltage",
     "type": "float32",
-    "podUnits": "uV",
-    "displayUnits": "uV"
+    "podUnits": "V",
+    "displayUnits": "V"
   },
   {
     "id": "SOC",
