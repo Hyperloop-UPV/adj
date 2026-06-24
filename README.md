@@ -185,7 +185,7 @@ Array of packet definitions for network communication. Packets are separated by 
 ```
 
 **Field Descriptions:**
-- `id`: Optional 32-bit unsigned integer packet identifier
+- `id`: Optional 16-bit unsigned integer packet identifier. **MUST BE DIFFERENT TO 1 & 700** (BLCU uses)
 - `type`: Packet type string (e.g., "data", "order", "status")
 - `name`: Human-readable packet name
 - `variables`: Array of variable names/measurement IDs included in this packet
