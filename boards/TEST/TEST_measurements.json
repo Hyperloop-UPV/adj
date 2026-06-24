@@ -3,5 +3,19 @@
     "id": "period",
     "name": "Message Period",
     "type": "float64"
+  },
+  {
+    "id": "period_udp",
+    "name": "Period Udp",
+    "type": "float64"
+  },
+  {
+    "id": "state",
+    "name": "State",
+    "type": "enum",
+    "enumValues": [
+      "connecting",
+      "connected"
+    ]
   }
 ]

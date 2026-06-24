@@ -5,7 +5,8 @@
     "TEST_measurements.json"
   ],
   "packets": [
-    "orders.json"
+    "orders.json",
+    "packets.json"
   ],
   "sockets": [
     "sockets.json"

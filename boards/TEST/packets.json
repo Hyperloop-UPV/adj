@@ -1,18 +1,14 @@
 [
   {
     "type": "data",
-    "name": "order_mirror",
+    "name": "packet_udp",
     "variables": [
-      "tcp_order_count",
-      "last_order_code",
-      "enable_flag",
-      "small_counter",
-      "offset_value",
-      "mirror_mode"
+      "period_udp",
+      "state"
     ],
-    "id": 20737,
-    "socket": "telemetry_udp",
+    "id": 21737,
+    "period_type": "ms",
     "period": 50,
-    "period_type": "ms"
+    "socket": "telemetry_udp"
   }
 ]
