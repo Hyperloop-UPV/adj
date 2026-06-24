@@ -9,6 +9,6 @@
     "id": 21737,
     "period_type": "ms",
     "period": 50,
-    "socket": "telemetry_udp"
+    "socket": "control_station_udp"
   }
 ]

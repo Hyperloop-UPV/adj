@@ -11,5 +11,10 @@
     "type": "order",
     "name": "toggle_fault_msg",
     "id": 50002
+  },
+  {
+    "type": "order",
+    "name": "toggle_protection_fault_msg",
+    "id": 50003
   }
 ]
