@@ -1,0 +1,55 @@
+[
+  {
+    "type": "order",
+    "name": "Start_SVPWM",
+    "variables": [
+      "frequency_to_send_svpwm",
+      "frequency_to_send_PWM",
+      "V_Ref",
+      "VMax"
+    ],
+    "id": 507
+  },
+  {
+    "type": "order",
+    "name": "Stop_Motor",
+    "variables": [],
+    "id": 508
+  },
+  {
+    "type": "order",
+    "name": "Send_Reference_Current",
+    "variables": [
+      "freq_to_send_svpwm",
+      "freq_to_send_PWM",
+      "Current_Ref",
+      "VMax"
+    ],
+    "id": 509
+  },
+  {
+    "type": "order",
+    "name": "Zeroing",
+    "variables": [],
+    "id": 510
+  },
+
+  {
+    "type":"order",
+    "name": "Reset_Bypass",
+    "variables": [
+      "reset_bypass"
+    ],
+    "id": 513
+  },
+  {
+    "type": "order",
+    "name": "Send_Reference_Speed",
+    "variables": [
+      "Speed_Ref",
+      "freq_to_send_PWM",
+      "VMax"
+    ],
+    "id": 511
+  }
+]

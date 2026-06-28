@@ -1,5 +1,6 @@
 {
   "VCU": "boards/VCU/VCU.json",
   "BLCU": "boards/BLCU/BLCU.json",
-  "LCU": "boards/LCU/LCU.json"
+  "LCU": "boards/LCU/LCU.json",
+  "PCU": "boards/PCU/PCU.json"
 }
