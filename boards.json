@@ -3,5 +3,6 @@
   "BLCU": "boards/BLCU/BLCU.json",
   "LCU": "boards/LCU/LCU.json",
   "PCU": "boards/PCU/PCU.json",
-  "HVBMS": "boards/HVBMS/HVBMS.json"
+  "HVBMS": "boards/HVBMS/HVBMS.json",
+  "LVBMS": "boards/LVBMS/LVBMS.json"
 }

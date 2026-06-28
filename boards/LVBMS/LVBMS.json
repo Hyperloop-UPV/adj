@@ -1,0 +1,14 @@
+{
+  "board_id": 11,
+  "board_ip": "192.168.1.11",
+  "measurements": [
+    "LVBMS_measurements.json"
+  ],
+  "packets": [
+    "packets.json",
+    "orders.json"
+  ],
+  "sockets":[
+    "sockets.json"
+  ]
+}

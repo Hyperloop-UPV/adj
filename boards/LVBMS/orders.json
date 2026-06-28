@@ -1,0 +1,10 @@
+[
+  {
+    "type": "order",
+    "name": "Averaging",
+    "id": 33772,
+    "variables": [
+      "measurement_averaging"
+    ]
+  }
+]
