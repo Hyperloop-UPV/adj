@@ -1,6 +1,3 @@
 {
-  "VCU": "boards/VCU/VCU.json",
-  "HVBMSMOCK": "boards/HVBMSMOCK/HVBMSMOCK.json",
-  "LCUMOCK": "boards/LCUMOCK/LCUMOCK.json",
-  "PCUMOCK": "boards/PCUMOCK/PCUMOCK.json"
+  "VCU": "boards/VCU/VCU.json"
 }
