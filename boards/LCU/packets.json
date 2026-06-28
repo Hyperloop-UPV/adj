@@ -6,7 +6,7 @@
         "id": 9500,
         "period_type": "us",
         "period": 500.0,
-        "socket": "control_station_udp"
+        "socket": "vcu_udp"
     },
     {
         "type": "data",
@@ -15,7 +15,7 @@
         "id": 9501,
         "period_type": "us",
         "period": 500.0,
-        "socket": "control_station_udp"
+        "socket": "vcu_udp"
     },
     {
         "type": "data",
@@ -24,7 +24,7 @@
         "id": 9502,
         "period_type": "us",
         "period": 500.0,
-        "socket": "control_station_udp"
+        "socket": "vcu_udp"
     },
     {
         "type": "data",
@@ -33,7 +33,7 @@
         "id": 9503,
         "period_type": "us",
         "period": 500.0,
-        "socket": "control_station_udp"
+        "socket": "vcu_udp"
     },
     {
         "type": "data",
@@ -45,7 +45,7 @@
         "id": 9520,
         "period_type": "us",
         "period": 500.0,
-        "socket": "control_station_udp"
+        "socket": "vcu_udp"
     },
     {
         "type": "data",
@@ -110,6 +110,6 @@
         "id": 9521,
         "period_type": "us",
         "period": 500.0,
-        "socket": "control_station_udp"
+        "socket": "vcu_udp"
     }
 ]
