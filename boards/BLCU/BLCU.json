@@ -1,5 +1,5 @@
 {
-    "board_id": 17,
+    "board_id": 27,
     "board_ip": "192.168.0.27",
     "measurements": ["BLCU_measurements.json"],
     "packets": [
