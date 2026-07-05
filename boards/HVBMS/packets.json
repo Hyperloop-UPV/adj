@@ -328,5 +328,16 @@
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
+  },
+    {
+    "type": "data",
+    "name": "nested_state_machine",
+    "variables": [
+      "nested_sm_status"
+    ],
+    "id": 960,
+    "period": 50,
+    "period_type": "ms",
+    "socket": "control_station_udp"
   }
 ]
