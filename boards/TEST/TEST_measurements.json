@@ -25,7 +25,8 @@
     "type": "enum",
     "enumValues": [
       "connecting",
-      "connected"
+      "connected",
+      "fault"
     ]
   },
   {
