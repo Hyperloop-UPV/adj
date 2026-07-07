@@ -26,7 +26,7 @@
     "variables": [
       "value_uint"
     ],
-    "id": 21738
+    "id": 21739
   },
   {
     "type": "data",
@@ -34,7 +34,7 @@
     "variables": [
       "value_bool"
     ],
-    "id": 21738
+    "id": 21740
   },
   {
     "type": "data",
@@ -42,7 +42,7 @@
     "variables": [
       "value_float"
     ],
-    "id": 21738
+    "id": 21741
   },
   {
     "type": "data",
@@ -50,6 +50,6 @@
     "variables": [
       "value_enum"
     ],
-    "id": 21738
+    "id": 21742
   }
 ]
