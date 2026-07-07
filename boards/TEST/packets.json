@@ -4,11 +4,52 @@
     "name": "packet_udp",
     "variables": [
       "period_udp",
+      "period_values",
       "state"
     ],
     "id": 21737,
     "period_type": "ms",
     "period": 50,
     "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "packet_udp_int",
+    "variables": [
+      "value_int"
+    ],
+    "id": 21738
+  },
+  {
+    "type": "data",
+    "name": "packet_udp_uint",
+    "variables": [
+      "value_uint"
+    ],
+    "id": 21738
+  },
+  {
+    "type": "data",
+    "name": "packet_udp_bool",
+    "variables": [
+      "value_bool"
+    ],
+    "id": 21738
+  },
+  {
+    "type": "data",
+    "name": "packet_udp_float",
+    "variables": [
+      "value_float"
+    ],
+    "id": 21738
+  },
+  {
+    "type": "data",
+    "name": "packet_udp_enum",
+    "variables": [
+      "value_enum"
+    ],
+    "id": 21738
   }
 ]

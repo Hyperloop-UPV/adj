@@ -9,12 +9,30 @@
   },
   {
     "type": "order",
-    "name": "toggle_fault_msg",
+    "name": "set_period_values",
+    "variables": [
+      "period_values_order"
+    ],
     "id": 50002
   },
   {
     "type": "order",
-    "name": "toggle_protection_fault_msg",
+    "name": "toggle_fault_msg",
     "id": 50003
+  },
+  {
+    "type": "order",
+    "name": "toggle_protection_fault_msg",
+    "id": 50004
+  },
+  {
+    "type": "order",
+    "name": "toggle_all_messages",
+    "id": 50005
+  },
+  {
+    "type": "order",
+    "name": "toggle_sample_packets",
+    "id": 50006
   }
 ]

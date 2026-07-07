@@ -5,8 +5,18 @@
     "type": "float64"
   },
   {
+    "id": "period_values_order",
+    "name": "Period for Values order",
+    "type": "float64"
+  },
+  {
     "id": "period_udp",
     "name": "Period Udp",
+    "type": "float64"
+  },
+  {
+    "id": "period_values",
+    "name": "Period for Values",
     "type": "float64"
   },
   {
@@ -16,6 +26,42 @@
     "enumValues": [
       "connecting",
       "connected"
+    ]
+  },
+  {
+    "id": "value_int",
+    "name": "Val int",
+    "type": "int32"
+  },
+  {
+    "id": "value_uint",
+    "name": "Val uint",
+    "type": "uint32"
+  },
+  {
+    "id": "value_bool",
+    "name": "Val bool",
+    "type": "bool"
+  },
+  {
+    "id": "value_float",
+    "name": "Val float",
+    "type": "float32"
+  },
+  {
+    "id": "value_enum",
+    "name": "Val enum",
+    "type": "enum",
+    "enumValues": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I"
     ]
   }
 ]
