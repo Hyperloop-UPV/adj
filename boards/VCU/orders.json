@@ -5,153 +5,53 @@
         "type": "order"
     },
     {
-        "id": 32,
-        "name": "Recovery",
-        "type": "order"
-    },
-    {
-        "id": 33,
-        "name": "Cooling pump power",
-        "type": "order",
-        "variables": [
-            "cooling_pump_duty",
-            "cooling_pump_selection"
-        ]
-    },
-    {
-        "id": 34,
-        "name": "MANTEINANCE",
-        "type": "order"
-    },
-    {
-        "id": 35,
-        "name": "Precharge",
-        "type": "order"
-    },
-    {
-        "id": 36,
+        "id": 30,
         "name": "Stop",
         "type": "order"
     },
     {
-        "id": 38,
-        "name": "Propulsion",
-        "type": "order"
-    },
-    {
-        "id": 39,
-        "name": "Static levitation",
+        "id": 31,
+        "name": "Recovery",
         "type": "order"
     },
     {
         "id": 40,
-        "name": "Dynamic levitation",
+        "name": "Maintenance",
         "type": "order"
     },
     {
-        "id": 43,
-        "name": "Brake",
-        "type": "order"
-    },
-    {
-        "id": 44,
-        "name": "Close contactors",
-        "type": "order"
-    },
-    {
-        "id": 52,
-        "name": "Unbrake",
-        "type": "order"
-    },
-    {
-        "id": 53,
-        "name": "Open contactors",
-        "type": "order"
-    },
-    {
-        "id": 55,
-        "name": "Emergency stop",
-        "type": "order"
-    },
-    {
-        "id": 56,
-        "name": "Runs",
-        "type": "order",
-        "variables": [
-            "run_id"
-        ]
-    },
-    {
-        "id": 57,
-        "name": "SVPWM",
-        "type": "order",
-        "variables": [
-            "modulation_frequency_1",
-            "commutation_frequency_1",
-            "reference_voltage_1",
-            "max_voltage_1",
-            "motor_direction_1"
-        ]
-    },
-    {
-        "id": 58,
-        "name": "Stop motor",
-        "type": "order"
-    },
-    {
-        "id": 59,
-        "name": "Current control",
-        "type": "order",
-        "variables": [
-            "modulation_frequency_2",
-            "commutation_frequency_2",
-            "reference_current_2",
-            "max_voltage_2",
-            "motor_direction_2"
-        ]
-    },
-    {
-        "id": 60,
-        "name": "Speed control",
-        "type": "order",
-        "variables": [
-            "reference_speed_3",
-            "commutation_frequency_3",
-            "max_voltage_3",
-            "motor_direction_3"
-        ]
-    },
-    {
-        "id": 61,
-        "name": "Motor brake",
-        "type": "order"
-    },
-    {
-        "id": 37,
-        "name": "Levitation",
-        "type": "order",
-        "variables": [
-            "levitation_distance"
-        ]
-    },
-    {
-        "id": 46,
-        "name": "Stop levitation",
+        "id": 41,
+        "name": "Precharge",
         "type": "order"
     },
     {
         "id": 42,
-        "name": "Booster",
+        "name": "Open contactors",
+        "type": "order"
+    },
+    {
+        "id": 50,
+        "name": "Unbrake",
         "type": "order"
     },
     {
         "id": 51,
-        "name": "Stop booster",
+        "name": "Brake",
         "type": "order"
     },
     {
-        "id": 1788,
-        "name": "Forward booster",
+        "id": 60,
+        "name": "Static levitation",
+        "type": "order"
+    },
+    {
+        "id": 61,
+        "name": "Propulsion",
+        "type": "order"
+    },
+    {
+        "id": 62,
+        "name": "Dynamic levitation",
         "type": "order"
     }
 ]

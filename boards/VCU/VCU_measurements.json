@@ -155,35 +155,9 @@
         "type": "bool"
     },
     {
-        "id": "cooling_pump_duty",
-        "name": "Cooling Pump Duty",
-        "type": "uint8",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
-        "id": "cooling_pump_selection",
-        "name": "Cooling Pump Selection",
-        "type": "uint8"
-    },
-    {
         "id": "run_id",
         "name": "Run ID",
         "type": "uint8"
-    },
-    {
-        "id": "modulation_frequency_1",
-        "name": "Modulation Frequency 1",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "commutation_frequency_1",
-        "name": "Commutation Frequency 1",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
     },
     {
         "id": "reference_voltage_1",
@@ -193,82 +167,11 @@
         "displayUnits": "V"
     },
     {
-        "id": "max_voltage_1",
-        "name": "Max Voltage 1",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "motor_direction_1",
-        "name": "Motor Direction 1",
-        "type": "uint8"
-    },
-    {
-        "id": "modulation_frequency_2",
-        "name": "Modulation Frequency 2",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "commutation_frequency_2",
-        "name": "Commutation Frequency 2",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "reference_current_2",
-        "name": "Reference Current 2",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A"
-    },
-    {
-        "id": "max_voltage_2",
-        "name": "Max Voltage 2",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "motor_direction_2",
-        "name": "Motor Direction 2",
-        "type": "uint8"
-    },
-    {
         "id": "reference_speed_3",
         "name": "Reference Speed 3",
         "type": "float32",
         "podUnits": "m/s",
         "displayUnits": "m/s"
-    },
-    {
-        "id": "commutation_frequency_3",
-        "name": "Commutation Frequency 3",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "max_voltage_3",
-        "name": "Max Voltage 3",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "motor_direction_3",
-        "name": "Motor Direction 3",
-        "type": "uint8"
-    },
-    {
-        "id": "levitation_distance",
-        "name": "Levitation Distance",
-        "type": "float32",
-        "podUnits": "mm",
-        "displayUnits": "mm"
     },
     {
         "id": "hvbms_state",
