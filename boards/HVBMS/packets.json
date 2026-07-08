@@ -282,6 +282,31 @@
   },
   {
     "type": "data",
+    "name": "minimum_soc",
+    "variables": [
+      "minimum_soc"
+    ],
+    "id": 945,  
+    "period": 50,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
+    "name": "batteries_data",
+    "variables": [
+      "voltage_min",
+      "voltage_max",
+      "temp_min",
+      "temp_max"
+    ],
+    "id": 947,
+    "period": 50,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+  {
+    "type": "data",
     "name": "contactor_status",
     "variables": [
       "contactor_discharge",
@@ -300,6 +325,17 @@
     "name": "SOC",
     "variables": ["soc"],
     "id": 990,
+    "period": 50,
+    "period_type": "ms",
+    "socket": "control_station_udp"
+  },
+    {
+    "type": "data",
+    "name": "high-voltage status",
+    "variables": [
+      "nested_sm_status"
+    ],
+    "id": 960,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
