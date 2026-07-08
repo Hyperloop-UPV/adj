@@ -10,7 +10,7 @@
         ],
         "id": 249,
         "period_type": "ms",
-        "period": 100,
+        "period": 20,
         "socket": "control_station_udp"
     },
     {
@@ -59,7 +59,7 @@
         ],
         "id": 253,
         "period_type": "ms",
-        "period": 100,
+        "period": 20,
         "socket": "control_station_udp"
     },
     {
@@ -72,7 +72,7 @@
         ],
         "id": 254,
         "period_type": "ms",
-        "period": 100,
+        "period": 20,
         "socket": "control_station_udp"
     },
     {
@@ -90,7 +90,7 @@
         ],
         "id": 255,
         "period_type": "ms",
-        "period": 100,
+        "period": 20,
         "socket": "control_station_udp"
     },
     {
@@ -104,7 +104,7 @@
         ],
         "id": 65,
         "period_type": "ms",
-        "period": 100,
+        "period": 20,
         "socket": "control_station_udp"
     },
     {
@@ -115,7 +115,7 @@
         ],
         "id": 66,
         "period_type": "ms",
-        "period": 100,
+        "period": 20,
         "socket": "pcu_udp"
     }
 ]

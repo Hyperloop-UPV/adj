@@ -7,7 +7,7 @@
     ],
     "id": 1103,
     "period_type": "ms",
-    "period": 100,
+    "period": 20,
     "socket": "pcu_mock_control_station_udp"
   },
   {
