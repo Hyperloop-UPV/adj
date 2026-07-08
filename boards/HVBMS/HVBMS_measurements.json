@@ -287,8 +287,10 @@
     "name": "Nested State Machine status",
     "type": "enum",
     "enumValues": [
+      "IDLE",
       "PRECHARGE",
-      "OPERATIONAL"
+      "OPERATIONAL",
+      "FAULT"
     ]
   }
 ]
