@@ -6,7 +6,9 @@
         "enumValues": [
             "Connecting",
             "Idle",
-            "Operational",
+            "Levitating",
+            "Current Control",
+            "Debug",
             "Fault"
         ]
     },
