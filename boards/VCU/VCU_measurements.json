@@ -155,25 +155,6 @@
         "type": "bool"
     },
     {
-        "id": "run_id",
-        "name": "Run ID",
-        "type": "uint8"
-    },
-    {
-        "id": "reference_voltage_1",
-        "name": "Reference Voltage 1",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "reference_speed_3",
-        "name": "Reference Speed 3",
-        "type": "float32",
-        "podUnits": "m/s",
-        "displayUnits": "m/s"
-    },
-    {
         "id": "hvbms_state",
         "name": "HVBMS State",
         "type": "enum",
