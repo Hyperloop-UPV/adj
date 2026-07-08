@@ -4,7 +4,6 @@
         "name": "State",
         "type": "enum",
         "enumValues": [
-            "Connecting",
             "Idle",
             "Connected",
             "Maintenance",
