@@ -281,5 +281,16 @@
     "id": "soc",
     "name": "SOC",
     "type": "float32"
+  },
+    {
+    "id": "nested_sm_status",
+    "name": "Nested State Machine status",
+    "type": "enum",
+    "enumValues": [
+      "IDLE",
+      "PRECHARGE",
+      "OPERATIONAL",
+      "FAULT"
+    ]
   }
 ]
