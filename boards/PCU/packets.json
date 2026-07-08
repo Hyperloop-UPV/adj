@@ -54,29 +54,9 @@
     "type": "data",
     "name": "StateMachine_states",
     "variables": [
-      "general_state_machine",
-      "operational_state_machine",
-      "space_vector_active",
-      "current_control_active",
-      "speed_control_active"
+      "state"
     ],
     "id": 553,
-    "period_type": "ms",
-    "period": 16.67,
-    "socket": "vcu_udp"
-  },
-
-  {
-    "type": "data",
-    "name": "Speetec_data",
-    "variables": [
-      "encoder_position",
-      "encoder_direction",
-      "encoder_speed",
-      "encoder_speed_km_h",
-      "encoder_acceleration"
-    ],
-    "id": 554,
     "period_type": "ms",
     "period": 16.67,
     "socket": "vcu_udp"

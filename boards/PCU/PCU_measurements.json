@@ -106,22 +106,14 @@
     "displayUnits": "A"
   },
   {
-    "id": "general_state_machine",
-    "name": "General State Machine",
+    "id": "state",
+    "name": "State",
     "type": "enum",
     "enumValues": [
       "Connecting",
-      "Operational",
-      "Fault"
-    ]
-  },
-  {
-    "id": "operational_state_machine",
-    "name": "Operational state machine",
-    "type": "enum",
-    "enumValues": [
       "IDLE",
-      "Accelerating"
+      "Accelerating",
+      "Fault"
     ]
   },
   {
@@ -188,43 +180,6 @@
     "displayUnits": "s"
   },
   {
-    "id": "encoder_position",
-    "name": "Position Encoder",
-    "type": "float64",
-    "podUnits": "m",
-    "displayUnits": "m"
-  },
-  {
-    "id": "encoder_direction",
-    "name": "Direction Encoder",
-    "type": "enum",
-    "enumValues": [
-      "Forward",
-      "Backward"
-    ]
-  },
-  {
-    "id": "encoder_speed",
-    "name": "Speed Encoder",
-    "type": "float64",
-    "podUnits": "m/s",
-    "displayUnits": "m/s"
-  },
-  {
-    "id": "encoder_speed_km_h",
-    "name": "Speed km/h",
-    "type": "float64",
-    "podUnits": "km/h",
-    "displayUnits": "km/h"
-  },
-  {
-    "id": "encoder_acceleration",
-    "name": "Acceleration Encoder",
-    "type": "float64",
-    "podUnits": "m/ss",
-    "displayUnits": "m/ss"
-  },
-  {
     "id": "target_speed",
     "name": "Target Speed KM/H",
     "type": "float32",
@@ -251,33 +206,6 @@
     "type": "float32"
   },
   
-  {
-    "id": "space_vector_active",
-    "name": "Space Vector",
-    "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
-  },
-  {
-    "id": "current_control_active",
-    "name": "Current Control",
-    "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
-  },
-  {
-    "id": "speed_control_active",
-    "name": "Speed Control",
-    "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
-  },
   {
     "id": "gd_fault_a",
     "name": "GateDriver_A_Fault",
