@@ -1,22 +1,13 @@
 [
     {
-        "id": "general_state",
-        "name": "General State",
+        "id": "state",
+        "name": "State",
         "type": "enum",
         "enumValues": [
             "Connecting",
-            "Operational",
-            "Fault"
-        ]
-    },
-    {
-        "id": "operational_state",
-        "name": "Operational State",
-        "type": "enum",
-        "enumValues": [
             "Idle",
             "Connected",
-            "Manteinance",
+            "Maintenance",
             "Precharging",
             "HVActive",
             "Ready",
@@ -27,42 +18,9 @@
         ]
     },
     {
-        "id": "recovery_status",
-        "name": "Recovery Status",
-        "type": "uint8"
-    },
-    {
-        "id": "demonstration_bitfield",
-        "name": "Demonstration Bitfield",
-        "type": "uint32"
-    },
-    {
-        "id": "flow_1",
-        "name": "Flow 1",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "flow_2",
-        "name": "Flow 2",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "ntc_temperature_1",
-        "name": "NTC Temperature 1",
-        "type": "float32",
-        "podUnits": "ºC",
-        "displayUnits": "ºC"
-    },
-    {
-        "id": "ntc_temperature_2",
-        "name": "NTC Temperature 2",
-        "type": "float32",
-        "podUnits": "ºC",
-        "displayUnits": "ºC"
+        "id": "sdc_closed",
+        "name": "SDC Closed",
+        "type": "bool"
     },
     {
         "id": "high_pressure",
@@ -96,42 +54,8 @@
         "type": "bool"
     },
     {
-        "id": "cooling_pump_1_command",
-        "name": "Cooling Pump 1 Command",
-        "type": "uint8",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
-        "id": "cooling_pump_2_command",
-        "name": "Cooling Pump 2 Command",
-        "type": "uint8",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
         "id": "electrovalve_enabled",
         "name": "Electrovalve Enabled",
-        "type": "bool"
-    },
-    {
-        "id": "sdc_closed",
-        "name": "SDC Closed",
-        "type": "bool"
-    },
-    {
-        "id": "tapes_reached",
-        "name": "Tapes Reached",
-        "type": "bool"
-    },
-    {
-        "id": "contactors_closed",
-        "name": "Contactors Closed",
-        "type": "bool"
-    },
-    {
-        "id": "control_station_connected",
-        "name": "Control Station Connected",
         "type": "bool"
     },
     {
@@ -148,50 +72,5 @@
         "id": "lcu_connected",
         "name": "LCU Connected",
         "type": "bool"
-    },
-    {
-        "id": "required_peers_connected",
-        "name": "Required Peers Connected",
-        "type": "bool"
-    },
-    {
-        "id": "hvbms_state",
-        "name": "HVBMS State",
-        "type": "enum",
-        "enumValues": [
-            "Opened",
-            "gap_1",
-            "Closed"
-        ]
-    },
-    {
-        "id": "pcu_state",
-        "name": "PCU State",
-        "type": "enum",
-        "enumValues": [
-            "Stopped",
-            "gap_1",
-            "Propulsion"
-        ]
-    },
-    {
-        "id": "lcu_vertical_state",
-        "name": "LCU Vertical State",
-        "type": "enum",
-        "enumValues": [
-            "Stopped",
-            "gap_1",
-            "gap_2",
-            "Levitation"
-        ]
-    },
-    {
-        "id": "lcu_horizontal_state",
-        "name": "LCU Horizontal State",
-        "type": "enum",
-        "enumValues": [
-            "Disabled",
-            "Enabled"
-        ]
     }
 ]
