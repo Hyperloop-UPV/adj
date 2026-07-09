@@ -1,12 +1,12 @@
 [
   {
     "type": "ServerSocket",
-    "name": "control_station_tcp",
+    "name": "vcu_tcp",
     "port": 50500
   },
   {
     "type": "DatagramSocket",
-    "name": "control_station_udp",
+    "name": "vcu_udp",
     "port": 50400,
     "remote_ip": "192.168.0.9"
   }
