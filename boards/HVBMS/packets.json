@@ -12,7 +12,7 @@
       "batteries_voltage_reading",
       "nested_sm_status"
     ],
-    "id": 900, 
+    "id": 950, 
     "period": 10,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -21,7 +21,7 @@
     "type": "data",
     "name": "SOC",
     "variables": ["soc"],
-    "id": 901,
+    "id": 951,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -32,7 +32,7 @@
     "variables": [
       "sdc_status"
     ],
-    "id": 902,
+    "id": 952,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -162,7 +162,7 @@
       "battery8_max_temp",
       "battery8_min_temp"
     ],
-    "id": 903,
+    "id": 953,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -173,7 +173,7 @@
     "variables": [
       "gsm_status"
     ],
-    "id": 904,
+    "id": 954,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -188,7 +188,7 @@
         "imd_duty",
         "imd_freq"
     ],
-    "id": 905,
+    "id": 955,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -203,7 +203,7 @@
       "contactor_high",
       "contactor_common_high"
     ],
-    "id": 906,
+    "id": 956,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
