@@ -140,16 +140,26 @@
   {
     "id": "current_Peak",
     "name": "Max Current Peak",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
   },
   {
     "id": "error_pi",
     "name": "Actual Current Error",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
+  },
+  {
+    "id": "vf_control",
+    "name": "Variable frecuency control",
+    "type": "bool"
+  },
+  {
+    "id": "reverse",
+    "name": "Reverse mode",
+    "type": "bool"
   },
   {
     "id": "slip_motor",
@@ -175,7 +185,7 @@
   {
     "id": "target_voltage",
     "name": "Target Voltage",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },
