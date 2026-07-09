@@ -1,51 +1,45 @@
 [
   {
     "type": "data",
-    "name": "batteries_voltage",
+    "name": "High Voltage System",
     "variables": [
-      "batteries_voltage_reading"
+      "voltage_min",
+      "voltage_max",
+      "temp_min",
+      "temp_max",
+      "current_reading",
+      "voltage_reading",
+      "batteries_voltage_reading",
+      "sm_status"
     ],
-    "id": 928,
+    "id": 950, 
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "SOC",
+    "variables": ["soc"],
+    "id": 951,
     "period": 50,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
   {
     "type": "data",
-    "name": "voltage_sensor",
-    "variables": [
-      "voltage_reading"
-    ],
-    "id": 930,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "current_sensor",
-    "variables": [
-      "current_reading"
-    ],
-    "id": 931,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "sdc",
+    "name": "SDC",
     "variables": [
       "sdc_status"
     ],
-    "id": 944,
+    "id": 952,
     "period": 50,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
   {
     "type": "data",
-    "name": "battery_1",
+    "name": "High Voltage Batteries",
     "variables": [
       "battery1_cell1",
       "battery1_cell2",
@@ -61,17 +55,7 @@
       "battery1_cell12",
       "battery1_total_voltage",
       "battery1_max_temp",
-      "battery1_min_temp"
-    ],
-    "id": 910,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "battery_2",
-    "variables": [
+      "battery1_min_temp",
       "battery2_cell1",
       "battery2_cell2",
       "battery2_cell3",
@@ -86,17 +70,7 @@
       "battery2_cell12",
       "battery2_total_voltage",
       "battery2_max_temp",
-      "battery2_min_temp"
-    ],
-    "id": 911,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "battery_3",
-    "variables": [
+      "battery2_min_temp",
       "battery3_cell1",
       "battery3_cell2",
       "battery3_cell3",
@@ -111,17 +85,7 @@
       "battery3_cell12",
       "battery3_total_voltage",
       "battery3_max_temp",
-      "battery3_min_temp"
-    ],
-    "id": 912,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "battery_4",
-    "variables": [
+      "battery3_min_temp",
       "battery4_cell1",
       "battery4_cell2",
       "battery4_cell3",
@@ -136,17 +100,7 @@
       "battery4_cell12",
       "battery4_total_voltage",
       "battery4_max_temp",
-      "battery4_min_temp"
-    ],
-    "id": 913,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "battery_5",
-    "variables": [
+      "battery4_min_temp",
       "battery5_cell1",
       "battery5_cell2",
       "battery5_cell3",
@@ -161,17 +115,7 @@
       "battery5_cell12",
       "battery5_total_voltage",
       "battery5_max_temp",
-      "battery5_min_temp"
-    ],
-    "id": 914,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "battery_6",
-    "variables": [
+      "battery5_min_temp",
       "battery6_cell1",
       "battery6_cell2",
       "battery6_cell3",
@@ -186,17 +130,7 @@
       "battery6_cell12",
       "battery6_total_voltage",
       "battery6_max_temp",
-      "battery6_min_temp"
-    ],
-    "id": 915,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "battery_7",
-    "variables": [
+      "battery6_min_temp",
       "battery7_cell1",
       "battery7_cell2",
       "battery7_cell3",
@@ -211,17 +145,7 @@
       "battery7_cell12",
       "battery7_total_voltage",
       "battery7_max_temp",
-      "battery7_min_temp"
-    ],
-    "id": 916,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "battery_8",
-    "variables": [
+      "battery7_min_temp",
       "battery8_cell1",
       "battery8_cell2",
       "battery8_cell3",
@@ -238,36 +162,14 @@
       "battery8_max_temp",
       "battery8_min_temp"
     ],
-    "id": 917,
+    "id": 953,
     "period": 50,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
   {
     "type": "data",
-    "name": "general_state_machine",
-    "variables": [
-      "gsm_status"
-    ],
-    "id": 940,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "driver_diagnosis",
-    "variables": [
-      "driver_reading_period"
-    ],
-    "id": 942,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "imd",
+    "name": "IMD",
     "variables": [
         "imd_status",
         "imd_resistance",
@@ -275,39 +177,14 @@
         "imd_duty",
         "imd_freq"
     ],
-    "id": 943,
+    "id": 954,
     "period": 50,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
   {
     "type": "data",
-    "name": "minimum_soc",
-    "variables": [
-      "minimum_soc"
-    ],
-    "id": 945,  
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "batteries_data",
-    "variables": [
-      "voltage_min",
-      "voltage_max",
-      "temp_min",
-      "temp_max"
-    ],
-    "id": 947,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "contactor_status",
+    "name": "Contactor Status",
     "variables": [
       "contactor_discharge",
       "contactor_precharge",
@@ -315,45 +192,7 @@
       "contactor_high",
       "contactor_common_high"
     ],
-    "id": 956,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "SOC",
-    "variables": ["soc"],
-    "id": 990,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-    {
-    "type": "data",
-    "name": "high-voltage status",
-    "variables": [
-      "nested_sm_status"
-    ],
-    "id": 960,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "vcu_udp"
-  },
-  {
-    "type": "data",
-    "name": "high-voltage system",
-    "variables": [
-      "voltage_min",
-      "voltage_max",
-      "temp_min",
-      "temp_max",
-      "current_reading",
-      "batteries_voltage_reading",
-      "voltage_reading",
-      "nested_sm_status"
-    ],
-    "id": 999, 
+    "id": 955,
     "period": 50,
     "period_type": "ms",
     "socket": "vcu_udp"

@@ -129,14 +129,14 @@
 
   {
     "id": "batteries_voltage_reading",
-    "name": "Batteries voltage",
+    "name": "Batteries Voltage",
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },
   {
     "id": "voltage_reading",
-    "name": "Voltage sensor",
+    "name": "Voltage Sensor",
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V",
@@ -147,7 +147,7 @@
   },
   {
     "id": "current_reading",
-    "name": "Current sensor",
+    "name": "Current Sensor",
     "type": "float32",
     "podUnits": "A",
     "displayUnits": "A",
@@ -155,20 +155,6 @@
       -15.0,
       120.0
     ]
-  },
-  {
-    "id": "gsm_status",
-    "name": "General State Machine status",
-    "type": "enum",
-    "enumValues": [
-      "CONNECTING",
-      "OPERATIONAL"
-    ]
-  },
-  {
-    "id": "driver_reading_period",
-    "name": "BMS reading period",
-    "type": "int32"
   },
   {
     "id": "sdc_status",
@@ -180,35 +166,29 @@
     ]
   },
   {
-    "id": "minimum_soc",
-    "name": "Minimum SOC",
-    "type": "float32",
-    "displayUnits": "%"
-  },
-  {
     "id": "voltage_min",
-    "name": "Minimum cell voltage",
+    "name": "Minimum Cell Voltage",
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },
   {
     "id": "voltage_max",
-    "name": "Maximum cell voltage",
+    "name": "Maximum Cell Voltage",
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },
   {
     "id": "temp_min",
-    "name": "Minimum temperature",
+    "name": "Minimum Temperature",
     "type": "float32",
     "podUnits": "ºC",
     "displayUnits": "ºC"
   },
   {
     "id": "temp_max",
-    "name": "Maximum temperature",
+    "name": "Maximum Temperature",
     "type": "float32",
     "podUnits": "ºC",
     "displayUnits": "ºC"
@@ -283,14 +263,15 @@
     "type": "float32"
   },
     {
-    "id": "nested_sm_status",
-    "name": "Nested State Machine status",
+    "id": "sm_status",
+    "name": "State Machine Status",
     "type": "enum",
     "enumValues": [
-      "IDLE",
-      "READY TO PRECHARGE",
-      "PRECHARGING",
-      "ENERGIZED",
+      "Connecting",
+      "Idle",
+      "Ready To Precharge",
+      "Precharging",
+      "Energized",
       "FAULT"
     ]
   }
