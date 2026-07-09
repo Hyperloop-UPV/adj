@@ -1,0 +1,120 @@
+[
+    {
+        "type": "order",
+        "name": "Stop",
+        "variables": [],
+        "id": 9000
+    },
+    {
+        "type": "order",
+        "name": "Set Fixed VBAT",
+        "variables": ["fixed_vbat"],
+        "id": 9001
+    },
+    {
+        "type": "order",
+        "name": "Unset Fixed VBAT",
+        "variables": [],
+        "id": 9002
+    },
+    {
+        "type": "order",
+        "name": "Levitate",
+        "variables": ["desired_distance"],
+        "id": 9010
+    },
+    {
+        "type": "order",
+        "name": "Levitate Ramp",
+        "variables": ["desired_distance"],
+        "id": 9011
+    },
+    {
+        "type": "order",
+        "name": "Set Desired Distance",
+        "variables": ["desired_distance"],
+        "id": 9012
+    },
+    {
+        "type": "order",
+        "name": "Set Desired Distance Ramp",
+        "variables": ["desired_distance"],
+        "id": 9013
+    },
+    {
+        "type": "order",
+        "name": "Stop Ramp",
+        "variables": [],
+        "id": 9014
+    },
+    {
+        "type": "order",
+        "name": "Current Control",
+        "variables": [
+            "lpu_id",
+            "desired_current"
+        ],
+        "id": 9020
+    },
+    {
+        "type": "order",
+        "name": "All Current Control",
+        "variables": ["desired_current"],
+        "id": 9021
+    },
+    {
+        "type": "order",
+        "name": "Stop Current Control",
+        "variables": [
+            "lpu_id"
+        ],
+        "id": 9022
+    },
+    {
+        "type": "order",
+        "name": "PWM",
+        "variables": [
+            "lpu_id",
+            "fixed_pwm_duty_cycle"
+        ],
+        "id": 9030
+    },
+    {
+        "type": "order",
+        "name": "All PWM",
+        "variables": ["fixed_pwm_duty_cycle"],
+        "id": 9031
+    },
+    {
+        "type": "order",
+        "name": "Stop PWM",
+        "variables": [
+            "lpu_id"
+        ],
+        "id": 9032
+    },
+    {
+        "type": "order",
+        "name": "Reset All",
+        "variables": [],
+        "id": 9100
+    },
+    {
+        "type": "order",
+        "name": "Reset Slave",
+        "variables": [],
+        "id": 9101
+    },
+    {
+        "type": "order",
+        "name": "Cinema",
+        "variables": ["cinema_current"],
+        "id": 9200
+    },
+    {
+        "type": "order",
+        "name": "Stop Cinema",
+        "variables": [],
+        "id": 9201
+    }
+]

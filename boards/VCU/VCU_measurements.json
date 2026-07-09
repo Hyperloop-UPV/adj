@@ -1,68 +1,25 @@
 [
     {
-        "id": "general_state",
-        "name": "General State",
-        "type": "enum",
-        "enumValues": [
-            "Connecting",
-            "Operational",
-            "Fault"
-        ]
-    },
-    {
-        "id": "operational_state",
-        "name": "Operational State",
+        "id": "state",
+        "name": "State",
         "type": "enum",
         "enumValues": [
             "Idle",
             "Connected",
-            "Manteinance",
+            "Maintenance",
             "Precharging",
             "HVActive",
             "Ready",
             "Propulsion",
-            "StaticLevitation",
-            "DynamicLevitation",
+            "Static Levitation",
+            "Dynamic Levitation",
             "Fault"
         ]
     },
     {
-        "id": "recovery_status",
-        "name": "Recovery Status",
-        "type": "uint8"
-    },
-    {
-        "id": "demonstration_bitfield",
-        "name": "Demonstration Bitfield",
-        "type": "uint32"
-    },
-    {
-        "id": "flow_1",
-        "name": "Flow 1",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "flow_2",
-        "name": "Flow 2",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "ntc_temperature_1",
-        "name": "NTC Temperature 1",
-        "type": "float32",
-        "podUnits": "ºC",
-        "displayUnits": "ºC"
-    },
-    {
-        "id": "ntc_temperature_2",
-        "name": "NTC Temperature 2",
-        "type": "float32",
-        "podUnits": "ºC",
-        "displayUnits": "ºC"
+        "id": "sdc_closed",
+        "name": "SDC Closed",
+        "type": "bool"
     },
     {
         "id": "high_pressure",
@@ -96,42 +53,8 @@
         "type": "bool"
     },
     {
-        "id": "cooling_pump_1_command",
-        "name": "Cooling Pump 1 Command",
-        "type": "uint8",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
-        "id": "cooling_pump_2_command",
-        "name": "Cooling Pump 2 Command",
-        "type": "uint8",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
         "id": "electrovalve_enabled",
         "name": "Electrovalve Enabled",
-        "type": "bool"
-    },
-    {
-        "id": "sdc_closed",
-        "name": "SDC Closed",
-        "type": "bool"
-    },
-    {
-        "id": "tapes_reached",
-        "name": "Tapes Reached",
-        "type": "bool"
-    },
-    {
-        "id": "contactors_closed",
-        "name": "Contactors Closed",
-        "type": "bool"
-    },
-    {
-        "id": "control_station_connected",
-        "name": "Control Station Connected",
         "type": "bool"
     },
     {
@@ -150,164 +73,24 @@
         "type": "bool"
     },
     {
-        "id": "required_peers_connected",
-        "name": "Required Peers Connected",
-        "type": "bool"
-    },
-    {
-        "id": "cooling_pump_duty",
-        "name": "Cooling Pump Duty",
-        "type": "uint8",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
-        "id": "cooling_pump_selection",
-        "name": "Cooling Pump Selection",
-        "type": "uint8"
-    },
-    {
-        "id": "run_id",
-        "name": "Run ID",
-        "type": "uint8"
-    },
-    {
-        "id": "modulation_frequency_1",
-        "name": "Modulation Frequency 1",
+        "id": "propulsion_target_speed",
+        "name": "Propulsion Target Speed",
         "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
+        "podUnits": "km/h",
+        "displayUnits": "km/h"
     },
     {
-        "id": "commutation_frequency_1",
-        "name": "Commutation Frequency 1",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "reference_voltage_1",
-        "name": "Reference Voltage 1",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "max_voltage_1",
-        "name": "Max Voltage 1",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "motor_direction_1",
-        "name": "Motor Direction 1",
-        "type": "uint8"
-    },
-    {
-        "id": "modulation_frequency_2",
-        "name": "Modulation Frequency 2",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "commutation_frequency_2",
-        "name": "Commutation Frequency 2",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "reference_current_2",
-        "name": "Reference Current 2",
+        "id": "propulsion_max_current",
+        "name": "Propulsion Max Current",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A"
     },
     {
-        "id": "max_voltage_2",
-        "name": "Max Voltage 2",
+        "id": "levitation_target_height",
+        "name": "Levitation Target Height",
         "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "motor_direction_2",
-        "name": "Motor Direction 2",
-        "type": "uint8"
-    },
-    {
-        "id": "reference_speed_3",
-        "name": "Reference Speed 3",
-        "type": "float32",
-        "podUnits": "m/s",
-        "displayUnits": "m/s"
-    },
-    {
-        "id": "commutation_frequency_3",
-        "name": "Commutation Frequency 3",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "max_voltage_3",
-        "name": "Max Voltage 3",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "motor_direction_3",
-        "name": "Motor Direction 3",
-        "type": "uint8"
-    },
-    {
-        "id": "levitation_distance",
-        "name": "Levitation Distance",
-        "type": "float32",
-        "podUnits": "mm",
+        "podUnits": "m",
         "displayUnits": "mm"
-    },
-    {
-        "id": "hvbms_state",
-        "name": "HVBMS State",
-        "type": "enum",
-        "enumValues": [
-            "Opened",
-            "gap_1",
-            "Closed"
-        ]
-    },
-    {
-        "id": "pcu_state",
-        "name": "PCU State",
-        "type": "enum",
-        "enumValues": [
-            "Stopped",
-            "gap_1",
-            "Propulsion"
-        ]
-    },
-    {
-        "id": "lcu_vertical_state",
-        "name": "LCU Vertical State",
-        "type": "enum",
-        "enumValues": [
-            "Stopped",
-            "gap_1",
-            "gap_2",
-            "Levitation"
-        ]
-    },
-    {
-        "id": "lcu_horizontal_state",
-        "name": "LCU Horizontal State",
-        "type": "enum",
-        "enumValues": [
-            "Disabled",
-            "Enabled"
-        ]
     }
 ]

@@ -1,0 +1,52 @@
+[
+    {
+        "type": "data",
+        "name": "LPU PWM Duties",
+        "variables": ["pwm_duty_cycle_1", "pwm_duty_cycle_2", "pwm_duty_cycle_3", "pwm_duty_cycle_4", "pwm_duty_cycle_5", "pwm_duty_cycle_6", "pwm_duty_cycle_7", "pwm_duty_cycle_8", "pwm_duty_cycle_9", "pwm_duty_cycle_10"],
+        "id": 9500,
+        "period_type": "us",
+        "period": 500.0,
+        "socket": "vcu_udp"
+    },
+    {
+        "type": "data",
+        "name": "LPU Coil Currents",
+        "variables": ["coil_current_1", "coil_current_2", "coil_current_3", "coil_current_4", "coil_current_5", "coil_current_6", "coil_current_7", "coil_current_8", "coil_current_9", "coil_current_10"],
+        "id": 9501,
+        "period_type": "us",
+        "period": 500.0,
+        "socket": "vcu_udp"
+    },
+    {
+        "type": "data",
+        "name": "Airgaps",
+        "variables": ["airgap_1", "airgap_2", "airgap_3", "airgap_4", "airgap_5", "airgap_6", "airgap_7", "airgap_8"],
+        "id": 9502,
+        "period_type": "us",
+        "period": 500.0,
+        "socket": "vcu_udp"
+    },
+    {
+        "type": "data",
+        "name": "State Machine",
+        "variables": [
+            "master_state_machine",
+            "slave_state_machine"
+        ],
+        "id": 9520,
+        "period_type": "us",
+        "period": 500.0,
+        "socket": "vcu_udp"
+    },
+    {
+        "type": "data",
+        "name": "General State",
+        "variables": [
+            
+        ],
+        "id": 9521,
+        "period_type": "us",
+        "period": 500.0,
+        "socket": "vcu_udp"
+    }
+]
