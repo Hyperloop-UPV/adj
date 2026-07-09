@@ -152,6 +152,27 @@
     "displayUnits": "A"
   },
   {
+    "id": "slip_motor",
+    "name": "Slip Motor",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "imu_speed_km_h",
+    "name": "Speed IMU",
+    "type": "float64",
+    "podUnits": "km/h",
+    "displayUnits": "km/h"
+  },
+  {
+    "id": "imu_position_m",
+    "name": "IMU Position",
+    "type": "float32",
+    "podUnits": "m",
+    "displayUnits": "m"
+  },
+  {
     "id": "target_voltage",
     "name": "Target Voltage",
     "type": "float64",

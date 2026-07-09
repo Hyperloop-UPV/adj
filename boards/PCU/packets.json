@@ -68,7 +68,9 @@
     "variables": [
       "target_speed",
       "speed_error",
-      "actual_current_ref"
+      "actual_current_ref",
+      "imu_speed_km_h",
+      "imu_position_m"
     ],
     "id": 555,
     "period_type": "ms",
