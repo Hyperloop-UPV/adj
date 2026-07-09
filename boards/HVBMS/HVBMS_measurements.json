@@ -157,11 +157,6 @@
     ]
   },
   {
-    "id": "driver_reading_period",
-    "name": "BMS reading period",
-    "type": "int32"
-  },
-  {
     "id": "sdc_status",
     "name": "SDC Status",
     "type": "enum",
@@ -169,12 +164,6 @@
       "ENGAGED",
       "DISENGAGED"
     ]
-  },
-  {
-    "id": "minimum_soc",
-    "name": "Minimum SOC",
-    "type": "float32",
-    "displayUnits": "%"
   },
   {
     "id": "voltage_min",
