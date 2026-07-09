@@ -92,12 +92,5 @@
         "type": "float32",
         "podUnits": "m",
         "displayUnits": "mm"
-    },
-    {
-        "id": "levitation_max_current",
-        "name": "Levitation Max Current",
-        "type": "float32",
-        "podUnits": "A",
-        "displayUnits": "A"
     }
 ]

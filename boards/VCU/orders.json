@@ -63,8 +63,7 @@
         "name": "Static Levitation Parameterized",
         "type": "order",
         "variables": [
-            "levitation_target_height",
-            "levitation_max_current"
+            "levitation_target_height"
         ]
     },
     {
@@ -74,8 +73,7 @@
         "variables": [
             "propulsion_target_speed",
             "propulsion_max_current",
-            "levitation_target_height",
-            "levitation_max_current"
+            "levitation_target_height"
         ]
     }
 ]
