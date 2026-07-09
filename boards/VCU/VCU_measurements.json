@@ -71,5 +71,33 @@
         "id": "lcu_connected",
         "name": "LCU Connected",
         "type": "bool"
+    },
+    {
+        "id": "propulsion_target_speed",
+        "name": "Propulsion Target Speed",
+        "type": "float32",
+        "podUnits": "km/h",
+        "displayUnits": "km/h"
+    },
+    {
+        "id": "propulsion_max_current",
+        "name": "Propulsion Max Current",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A"
+    },
+    {
+        "id": "levitation_target_height",
+        "name": "Levitation Target Height",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "levitation_max_current",
+        "name": "Levitation Max Current",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A"
     }
 ]

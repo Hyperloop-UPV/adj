@@ -48,5 +48,34 @@
         "id": 62,
         "name": "Dynamic Levitation",
         "type": "order"
+    },
+    {
+        "id": 100,
+        "name": "Propulsion",
+        "type": "order",
+        "variables": [
+            "propulsion_target_speed",
+            "propulsion_max_current"
+        ]
+    },
+    {
+        "id": 101,
+        "name": "Static Levitation",
+        "type": "order",
+        "variables": [
+            "levitation_target_height",
+            "levitation_max_current"
+        ]
+    },
+    {
+        "id": 102,
+        "name": "Dynamic Levitation",
+        "type": "order",
+        "variables": [
+            "propulsion_target_speed",
+            "propulsion_max_current",
+            "levitation_target_height",
+            "levitation_max_current"
+        ]
     }
 ]
