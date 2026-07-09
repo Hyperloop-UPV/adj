@@ -331,11 +331,29 @@
   },
     {
     "type": "data",
-    "name": "nested_state_machine",
+    "name": "high-voltage status",
     "variables": [
       "nested_sm_status"
     ],
     "id": 960,
+    "period": 50,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "high-voltage system",
+    "variables": [
+      "voltage_min",
+      "voltage_max",
+      "temp_min",
+      "temp_max",
+      "current_reading",
+      "batteries_voltage_reading",
+      "voltage_reading",
+      "nested_sm_status"
+    ],
+    "id": 999, 
     "period": 50,
     "period_type": "ms",
     "socket": "vcu_udp"

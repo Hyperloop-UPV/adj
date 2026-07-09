@@ -288,8 +288,9 @@
     "type": "enum",
     "enumValues": [
       "IDLE",
-      "PRECHARGE",
-      "OPERATIONAL",
+      "READY TO PRECHARGE",
+      "PRECHARGING",
+      "ENERGIZED",
       "FAULT"
     ]
   }
