@@ -12,7 +12,7 @@
     "id": 550,
     "period_type": "ms",
     "period": 16.67,
-    "socket": "vcu_udp"
+    "socket": "control_station_udp"
   },
 
   {
@@ -25,7 +25,7 @@
     "id": 551,
     "period_type": "ms",
     "period": 16.67,
-    "socket": "vcu_udp"    
+    "socket": "control_station_udp"    
   },
 
   {
@@ -47,7 +47,7 @@
     "id": 552,
     "period_type": "ms",
     "period": 16.67,
-    "socket": "vcu_udp"
+    "socket": "control_station_udp"
   },
 
   {
@@ -59,7 +59,7 @@
     "id": 553,
     "period_type": "ms",
     "period": 16.67,
-    "socket": "vcu_udp"
+    "socket": "control_station_udp"
   },
 
   {
@@ -76,7 +76,7 @@
     "id": 555,
     "period_type": "ms",
     "period": 16.67,
-    "socket": "vcu_udp"
+    "socket": "control_station_udp"
   },
 
 
@@ -92,7 +92,7 @@
     "id": 558,
     "period_type": "ms",
     "period": 16.67,
-    "socket": "vcu_udp"
+    "socket": "control_station_udp"
   }
 
 ]
