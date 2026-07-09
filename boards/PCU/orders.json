@@ -33,15 +33,6 @@
     "variables": [],
     "id": 510
   },
-
-  {
-    "type":"order",
-    "name": "Reset Bypass",
-    "variables": [
-      "reset_bypass"
-    ],
-    "id": 513
-  },
   {
     "type": "order",
     "name": "Send Reference Speed",
