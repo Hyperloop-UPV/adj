@@ -27,7 +27,7 @@
     },
     {
         "id": "desired_current",
-        "name": "Desired current",
+        "name": "Desired Current",
         "type": "float32",
         "podUnits": "A",
         "displayUnits": "A"

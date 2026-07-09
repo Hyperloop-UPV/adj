@@ -1,7 +1,7 @@
 [
     {
         "type": "data",
-        "name": "LPU PWM duties",
+        "name": "LPU PWM Duties",
         "variables": ["pwm_duty_cycle_1", "pwm_duty_cycle_2", "pwm_duty_cycle_3", "pwm_duty_cycle_4", "pwm_duty_cycle_5", "pwm_duty_cycle_6", "pwm_duty_cycle_7", "pwm_duty_cycle_8", "pwm_duty_cycle_9", "pwm_duty_cycle_10"],
         "id": 9500,
         "period_type": "us",
@@ -10,7 +10,7 @@
     },
     {
         "type": "data",
-        "name": "LPU coil currents",
+        "name": "LPU Coil Currents",
         "variables": ["coil_current_1", "coil_current_2", "coil_current_3", "coil_current_4", "coil_current_5", "coil_current_6", "coil_current_7", "coil_current_8", "coil_current_9", "coil_current_10"],
         "id": 9501,
         "period_type": "us",
