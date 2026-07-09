@@ -1,7 +1,7 @@
 [
   {
     "type": "data",
-    "name": "pwm_packet",
+    "name": "PWM",
     "variables": [
       "frequency",
       "modulation_frequency",
@@ -17,10 +17,10 @@
 
   {
     "type": "data",
-    "name": "Batteries_Voltage",
+    "name": "Batteries Voltage",
     "variables": [
-      "Voltage_Battery_A",
-      "Voltage_Battery_B"
+      "voltage_battery_a",
+      "voltage_battery_b"
     ],
     "id": 551,
     "period_type": "ms",
@@ -30,7 +30,7 @@
 
   {
     "type": "data",
-    "name": "Current_sensors",
+    "name": "Current Sensors",
     "variables": [
       "current_sensor_u_a",
       "current_sensor_v_a",
@@ -39,9 +39,9 @@
       "current_sensor_v_b",
       "current_sensor_w_b",
       "current_Peak",
-      "Error_PI",
-      "Target_Voltage",
-      "SVPWM_Time",
+      "error_pi",
+      "target_voltage",
+      "svpwm_time",
       "imod"
     ],
     "id": 552,
@@ -52,7 +52,7 @@
 
   {
     "type": "data",
-    "name": "StateMachine_states",
+    "name": "State Machine States",
     "variables": [
       "state"
     ],
@@ -64,7 +64,7 @@
 
   {
     "type": "data",
-    "name": "Speed_data",
+    "name": "Speed Data",
     "variables": [
       "target_speed",
       "speed_error",
@@ -79,7 +79,7 @@
 
   {
     "type": "data",
-    "name": "GateDriverReporting",
+    "name": "Gate Driver Reporting",
     "variables": [
       "gd_fault_a",
       "gd_fault_b",
