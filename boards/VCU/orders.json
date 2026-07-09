@@ -51,7 +51,7 @@
     },
     {
         "id": 100,
-        "name": "Propulsion",
+        "name": "Propulsion Parameterized",
         "type": "order",
         "variables": [
             "propulsion_target_speed",
@@ -60,7 +60,7 @@
     },
     {
         "id": 101,
-        "name": "Static Levitation",
+        "name": "Static Levitation Parameterized",
         "type": "order",
         "variables": [
             "levitation_target_height",
@@ -69,7 +69,7 @@
     },
     {
         "id": 102,
-        "name": "Dynamic Levitation",
+        "name": "Dynamic Levitation Parameterized",
         "type": "order",
         "variables": [
             "propulsion_target_speed",
