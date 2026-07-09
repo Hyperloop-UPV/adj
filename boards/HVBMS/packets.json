@@ -1,7 +1,7 @@
 [
   {
     "type": "data",
-    "name": "high-voltage system",
+    "name": "High Voltage System",
     "variables": [
       "voltage_min",
       "voltage_max",
@@ -28,7 +28,7 @@
   },
   {
     "type": "data",
-    "name": "sdc",
+    "name": "SDC",
     "variables": [
       "sdc_status"
     ],
@@ -39,7 +39,7 @@
   },
   {
     "type": "data",
-    "name": "high-voltage batteries",
+    "name": "High Voltage Batteries",
     "variables": [
       "battery1_cell1",
       "battery1_cell2",
@@ -177,14 +177,14 @@
         "imd_duty",
         "imd_freq"
     ],
-    "id": 955,
+    "id": 954,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
   },
   {
     "type": "data",
-    "name": "contactor_status",
+    "name": "Contactor Status",
     "variables": [
       "contactor_discharge",
       "contactor_precharge",
@@ -192,7 +192,7 @@
       "contactor_high",
       "contactor_common_high"
     ],
-    "id": 956,
+    "id": 955,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"

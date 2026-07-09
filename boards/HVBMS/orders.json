@@ -7,25 +7,25 @@
   },
   {
     "type": "order",
-    "name": "open_contactors",
+    "name": "Open Contactors",
     "variables": [],
     "id": 901
   },
   {
     "type": "order",
-    "name": "cell_balance",
+    "name": "Cell Balance",
     "variables": [],
     "id": 902
   },
     {
     "type": "order",
-    "name": "start_precharge",
+    "name": "Start Precharge",
     "variables": [],
     "id": 903
   },
   {
     "type": "order",
-    "name": "check_faults",
+    "name": "Check Faults",
     "variables": [],
     "id": 904
   }
