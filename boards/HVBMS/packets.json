@@ -10,7 +10,7 @@
       "current_reading",
       "voltage_reading",
       "batteries_voltage_reading",
-      "nested_sm_status"
+      "sm_status"
     ],
     "id": 950, 
     "period": 10,
@@ -163,17 +163,6 @@
       "battery8_min_temp"
     ],
     "id": 953,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "control_station_udp"
-  },
-  {
-    "type": "data",
-    "name": "HVBMS GSM",
-    "variables": [
-      "gsm_status"
-    ],
-    "id": 954,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
