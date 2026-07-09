@@ -11,8 +11,8 @@
             "HVActive",
             "Ready",
             "Propulsion",
-            "StaticLevitation",
-            "DynamicLevitation",
+            "Static Levitation",
+            "Dynamic Levitation",
             "Fault"
         ]
     },
