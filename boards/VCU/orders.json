@@ -26,7 +26,7 @@
     },
     {
         "id": 42,
-        "name": "Open contactors",
+        "name": "Open Contactors",
         "type": "order"
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "id": 60,
-        "name": "Static levitation",
+        "name": "Static Levitation",
         "type": "order"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
         "id": 62,
-        "name": "Dynamic levitation",
+        "name": "Dynamic Levitation",
         "type": "order"
     }
 ]
