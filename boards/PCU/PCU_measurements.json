@@ -265,13 +265,5 @@
       0.0,
       100.0
     ]
-  },
-
-  {
-    "id": "reset_bypass",
-    "name": "Reset Bypass",
-    "type": "bool",
-    "podUnits": "",
-    "displayUnits": ""
   }
 ]
