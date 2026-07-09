@@ -10,11 +10,6 @@
         "type": "order"
     },
     {
-        "id": 31,
-        "name": "Recovery",
-        "type": "order"
-    },
-    {
         "id": 40,
         "name": "Maintenance",
         "type": "order"
