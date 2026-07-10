@@ -10,6 +10,6 @@
         "type": "DatagramSocket",
         "name": "diagnosis_udp",
         "remote_ip": "backend",
-        "port": 50499
+        "port": 50400
     }
 ]
