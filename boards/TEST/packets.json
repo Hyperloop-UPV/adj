@@ -1,0 +1,29 @@
+[
+    {
+        "type": "data",
+        "name": "TCP Diagnosis",
+        "variables": [
+            "tcp_state",
+            "eth_link_up",
+            "tcp_connected",
+            "tcp_send_failures",
+            "tcp_reconnect_attempts",
+            "tcp_error_count",
+            "tcp_connection_changes",
+            "tcp_pending_reset",
+            "tcp_connect_poll_ticks",
+            "connection_uptime_ms",
+            "board_uptime_s",
+            "last_disconnect_reason",
+            "lwip_link_change_count",
+            "eth_cable_connected",
+            "tcp_keepalive_idle_ms",
+            "tcp_keepalive_interval_ms",
+            "tcp_keepalive_tries"
+        ],
+        "id": 301,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "diagnosis_udp"
+    }
+]

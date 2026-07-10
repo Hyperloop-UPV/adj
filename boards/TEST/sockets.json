@@ -1,0 +1,15 @@
+[
+    {
+        "type": "Socket",
+        "name": "control_station_tcp",
+        "local_port": 50501,
+        "remote_ip": "backend",
+        "remote_port": 50500
+    },
+    {
+        "type": "DatagramSocket",
+        "name": "diagnosis_udp",
+        "remote_ip": "backend",
+        "port": 50499
+    }
+]

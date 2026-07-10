@@ -1,0 +1,87 @@
+[
+    {
+        "id": "tcp_state",
+        "name": "TCP State",
+        "type": "uint8"
+    },
+    {
+        "id": "eth_link_up",
+        "name": "ETH Link Up",
+        "type": "bool"
+    },
+    {
+        "id": "tcp_connected",
+        "name": "TCP Connected",
+        "type": "bool"
+    },
+    {
+        "id": "tcp_send_failures",
+        "name": "TCP Send Failures",
+        "type": "uint32"
+    },
+    {
+        "id": "tcp_reconnect_attempts",
+        "name": "TCP Reconnect Attempts",
+        "type": "uint32"
+    },
+    {
+        "id": "tcp_error_count",
+        "name": "TCP Error Count",
+        "type": "uint32"
+    },
+    {
+        "id": "tcp_connection_changes",
+        "name": "TCP Connection Changes",
+        "type": "uint32"
+    },
+    {
+        "id": "tcp_pending_reset",
+        "name": "TCP Pending Reset",
+        "type": "bool"
+    },
+    {
+        "id": "tcp_connect_poll_ticks",
+        "name": "TCP Connect Poll Ticks",
+        "type": "uint16"
+    },
+    {
+        "id": "connection_uptime_ms",
+        "name": "Connection Uptime ms",
+        "type": "uint32"
+    },
+    {
+        "id": "board_uptime_s",
+        "name": "Board Uptime s",
+        "type": "uint32"
+    },
+    {
+        "id": "last_disconnect_reason",
+        "name": "Last Disconnect Reason",
+        "type": "uint8"
+    },
+    {
+        "id": "lwip_link_change_count",
+        "name": "LWIP Link Change Count",
+        "type": "uint32"
+    },
+    {
+        "id": "eth_cable_connected",
+        "name": "ETH Cable Connected",
+        "type": "bool"
+    },
+    {
+        "id": "tcp_keepalive_idle_ms",
+        "name": "TCP Keepalive Idle ms",
+        "type": "uint32"
+    },
+    {
+        "id": "tcp_keepalive_interval_ms",
+        "name": "TCP Keepalive Interval ms",
+        "type": "uint32"
+    },
+    {
+        "id": "tcp_keepalive_tries",
+        "name": "TCP Keepalive Tries",
+        "type": "uint32"
+    }
+]

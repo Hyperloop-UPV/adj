@@ -1,0 +1,13 @@
+{
+  "board_id": 99,
+  "board_ip": "192.168.1.99",
+  "measurements": [
+    "TEST_measurements.json"
+  ],
+  "packets": [
+    "packets.json"
+  ],
+  "sockets": [
+    "sockets.json"
+  ]
+}
