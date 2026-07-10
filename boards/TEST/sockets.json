@@ -1,10 +1,8 @@
 [
     {
-        "type": "Socket",
+        "type": "ServerSocket",
         "name": "control_station_tcp",
-        "local_port": 50501,
-        "remote_ip": "backend",
-        "remote_port": 50500
+        "port": 50500
     },
     {
         "type": "DatagramSocket",
