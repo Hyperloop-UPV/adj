@@ -1,6 +1,12 @@
 [
     {
         "type": "order",
+        "name": "FAULT",
+        "variables": [],
+        "id": 0
+    },
+    {
+        "type": "order",
         "name": "Stop",
         "variables": [],
         "id": 9000
