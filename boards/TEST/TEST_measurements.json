@@ -98,5 +98,10 @@
         "id": "tcp_keepalive_tries",
         "name": "TCP Keepalive Tries",
         "type": "uint32"
+    },
+    {
+        "id": "stress_test_enable",
+        "name": "Stress Test Enable",
+        "type": "bool"
     }
 ]

@@ -9,5 +9,70 @@
         "name": "diagnosis_udp",
         "remote_ip": "backend",
         "port": 50400
+    },
+    {
+        "type": "Socket",
+        "name": "stress_tcp_0",
+        "local_port": 51500,
+        "remote_ip": "backend",
+        "remote_port": 51500
+    },
+    {
+        "type": "Socket",
+        "name": "stress_tcp_1",
+        "local_port": 51501,
+        "remote_ip": "backend",
+        "remote_port": 51501
+    },
+    {
+        "type": "Socket",
+        "name": "stress_tcp_2",
+        "local_port": 51502,
+        "remote_ip": "backend",
+        "remote_port": 51502
+    },
+    {
+        "type": "Socket",
+        "name": "stress_tcp_3",
+        "local_port": 51503,
+        "remote_ip": "backend",
+        "remote_port": 51503
+    },
+    {
+        "type": "Socket",
+        "name": "stress_tcp_4",
+        "local_port": 51504,
+        "remote_ip": "backend",
+        "remote_port": 51504
+    },
+    {
+        "type": "DatagramSocket",
+        "name": "stress_udp_0",
+        "remote_ip": "backend",
+        "port": 52500
+    },
+    {
+        "type": "DatagramSocket",
+        "name": "stress_udp_1",
+        "remote_ip": "backend",
+        "port": 52501
+    },
+    {
+        "type": "DatagramSocket",
+        "name": "stress_udp_2",
+        "remote_ip": "backend",
+        "port": 52502
+    },
+    {
+        "type": "DatagramSocket",
+        "name": "stress_udp_3",
+        "remote_ip": "backend",
+        "port": 52503
+    },
+    {
+        "type": "DatagramSocket",
+        "name": "stress_udp_4",
+        "remote_ip": "backend",
+        "port": 52504
     }
 ]
