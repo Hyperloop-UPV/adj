@@ -2,7 +2,14 @@
     {
         "id": "tcp_state",
         "name": "TCP State",
-        "type": "uint8"
+        "type": "enum",
+        "enumValues": [
+            "INACTIVE",
+            "LISTENING",
+            "ACCEPTED",
+            "CLOSING",
+            "CLOSED"
+        ]
     },
     {
         "id": "eth_link_up",
@@ -57,7 +64,15 @@
     {
         "id": "last_disconnect_reason",
         "name": "Last Disconnect Reason",
-        "type": "uint8"
+        "type": "enum",
+        "enumValues": [
+            "NONE",
+            "CLIENT_CLOSED",
+            "ERROR",
+            "RESET",
+            "LINK_DOWN",
+            "TIMEOUT"
+        ]
     },
     {
         "id": "lwip_link_change_count",
