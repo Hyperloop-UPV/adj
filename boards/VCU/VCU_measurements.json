@@ -17,5 +17,10 @@
         "id": "electrovalve_enabled",
         "name": "Electrovalve Enabled",
         "type": "bool"
+    },
+    {
+        "id": "brakes_deployed",
+        "name": "Brakes Deployed",
+        "type": "bool"
     }
 ]

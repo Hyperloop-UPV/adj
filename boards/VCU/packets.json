@@ -1,6 +1,17 @@
 [
     {
         "type": "data",
+        "name": "Brakes_Deployed",
+        "variables": [
+            "brakes_deployed"
+        ],
+        "id": 248,
+        "period_type": "ms",
+        "period": 100,
+        "socket": "control_station_udp"
+    },
+    {
+        "type": "data",
         "name": "Outputs",
         "variables": [
             "cooling_pump_1_command",
