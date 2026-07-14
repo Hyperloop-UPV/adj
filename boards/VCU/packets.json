@@ -28,7 +28,7 @@
         "name": "Brake Status",
         "variables": [
             "active_brakes",
-            "brake_fault_detected"
+            "brakes_status"
         ],
         "id": 253,
         "period_type": "ms",
