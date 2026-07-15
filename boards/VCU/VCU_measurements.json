@@ -48,9 +48,13 @@
         "type": "bool"
     },
     {
-        "id": "brake_fault_detected",
-        "name": "Brake Fault Detected",
-        "type": "bool"
+        "id": "brakes_status",
+        "name": "Brakes Status",
+        "type": "enum",
+        "enumValues": [
+            "BRAKED",
+            "UNBRAKED"
+        ]
     },
     {
         "id": "electrovalve_enabled",
