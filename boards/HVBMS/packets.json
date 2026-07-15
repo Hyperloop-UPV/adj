@@ -5,8 +5,8 @@
     "variables": [
       "voltage_min"
     ],
-    "id": 950,
-    "period": 10,
+    "id": 956,
+    "period": 17,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
@@ -16,8 +16,8 @@
     "variables": [
       "voltage_max"
     ],
-    "id": 956,
-    "period": 10,
+    "id": 950,
+    "period": 18,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
@@ -28,7 +28,7 @@
       "temp_min"
     ],
     "id": 957,
-    "period": 10,
+    "period": 11,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
@@ -39,7 +39,7 @@
       "temp_max"
     ],
     "id": 958,
-    "period": 10,
+    "period": 11,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
@@ -50,7 +50,7 @@
       "current_reading"
     ],
     "id": 959,
-    "period": 10,
+    "period": 14,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
@@ -61,7 +61,7 @@
       "voltage_reading"
     ],
     "id": 960,
-    "period": 10,
+    "period": 14,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
@@ -72,7 +72,7 @@
       "batteries_voltage_reading"
     ],
     "id": 961,
-    "period": 10,
+    "period": 13,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
@@ -83,7 +83,7 @@
       "sm_status"
     ],
     "id": 962,
-    "period": 10,
+    "period": 13,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
