@@ -1,36 +1,88 @@
 [
   {
     "type": "data",
-    "name": "High Voltage System",
+    "name": "Minimum Cell Voltage",
     "variables": [
-      "voltage_min",
-      "voltage_max",
-      "temp_min",
-      "temp_max",
-      "current_reading",
-      "voltage_reading",
-      "batteries_voltage_reading",
-      "sm_status"
+      "voltage_min"
     ],
-    "id": 950, 
+    "id": 950,
     "period": 10,
     "period_type": "ms",
     "socket": "vcu_udp"
   },
-    {
+  {
     "type": "data",
-    "name": "High Voltage System 2",
+    "name": "Maximum Cell Voltage",
     "variables": [
-      "voltage_min",
-      "voltage_max",
-      "temp_min",
-      "temp_max",
-      "current_reading",
-      "voltage_reading",
-      "batteries_voltage_reading",
+      "voltage_max"
+    ],
+    "id": 956,
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "Minimum Temperature",
+    "variables": [
+      "temp_min"
+    ],
+    "id": 957,
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "Maximum Temperature",
+    "variables": [
+      "temp_max"
+    ],
+    "id": 958,
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "Current Sensor",
+    "variables": [
+      "current_reading"
+    ],
+    "id": 959,
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "Voltage Sensor",
+    "variables": [
+      "voltage_reading"
+    ],
+    "id": 960,
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "Batteries Voltage",
+    "variables": [
+      "batteries_voltage_reading"
+    ],
+    "id": 961,
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
+  {
+    "type": "data",
+    "name": "State Machine Status",
+    "variables": [
       "sm_status"
     ],
-    "id": 956, 
+    "id": 962,
     "period": 10,
     "period_type": "ms",
     "socket": "vcu_udp"
