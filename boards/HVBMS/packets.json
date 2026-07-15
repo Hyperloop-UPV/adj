@@ -17,6 +17,24 @@
     "period_type": "ms",
     "socket": "vcu_udp"
   },
+    {
+    "type": "data",
+    "name": "High Voltage System 2",
+    "variables": [
+      "voltage_min",
+      "voltage_max",
+      "temp_min",
+      "temp_max",
+      "current_reading",
+      "voltage_reading",
+      "batteries_voltage_reading",
+      "sm_status"
+    ],
+    "id": 956, 
+    "period": 10,
+    "period_type": "ms",
+    "socket": "vcu_udp"
+  },
   {
     "type": "data",
     "name": "SOC",
