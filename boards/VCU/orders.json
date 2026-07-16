@@ -54,8 +54,7 @@
         "name": "Propulsion Parameterized",
         "type": "order",
         "variables": [
-            "propulsion_target_speed",
-            "propulsion_max_current"
+            "propulsion_current_reference"
         ]
     },
     {
@@ -71,8 +70,7 @@
         "name": "Dynamic Levitation Parameterized",
         "type": "order",
         "variables": [
-            "propulsion_target_speed",
-            "propulsion_max_current",
+            "propulsion_current_reference",
             "levitation_target_height"
         ]
     }
