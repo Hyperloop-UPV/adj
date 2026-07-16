@@ -44,12 +44,20 @@
         "name": "Desired Distance",
         "type": "float32",
         "podUnits": "m",
-        "displayUnits": "mm"
+        "displayUnits": "mm",
+        "safeRange": [
+            0,
+            12
+        ]
     },
     {
         "id": "lpu_id",
         "name": "LPU ID",
-        "type": "uint32"
+        "type": "uint32",
+        "safeRange": [
+            0,
+            9
+        ]
     },
     {
         "id": "fixed_pwm_duty_cycle",
@@ -133,70 +141,110 @@
         "name": "Coil Current 1",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_2",
         "name": "Coil Current 2",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_3",
         "name": "Coil Current 3",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_4",
         "name": "Coil Current 4",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_5",
         "name": "Coil Current 5",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_6",
         "name": "Coil Current 6",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_7",
         "name": "Coil Current 7",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_8",
         "name": "Coil Current 8",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_9",
         "name": "Coil Current 9",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "coil_current_10",
         "name": "Coil Current 10",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
     },
     {
         "id": "airgap_1",
