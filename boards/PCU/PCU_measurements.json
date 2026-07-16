@@ -68,42 +68,48 @@
     "name": "Current Sensor U Connector A",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_u_b",
     "name": "Current Sensor U Connector B",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_v_a",
     "name": "Current Sensor V Connector A",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_v_b",
     "name": "Current Sensor V Connector B",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_w_a",
     "name": "Current Sensor W Connector A",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_w_b",
     "name": "Current Sensor W Connector B",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "state",
