@@ -30,8 +30,7 @@
       "freq_to_send_pwm",
       "current_ref",
       "vmax",
-      "vf_control",
-      "reverse"
+      "vf_control"
     ],
     "id": 509
   },
@@ -47,8 +46,7 @@
     "variables": [
       "speed_ref",
       "freq_to_send_pwm",
-      "vmax",
-      "reverse"
+      "vmax"
     ],
     "id": 511
   }
