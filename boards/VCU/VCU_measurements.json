@@ -43,11 +43,6 @@
         "displayUnits": "bar"
     },
     {
-        "id": "active_brakes",
-        "name": "Active Brakes",
-        "type": "bool"
-    },
-    {
         "id": "brakes_status",
         "name": "Brakes Status",
         "type": "enum",
