@@ -157,11 +157,6 @@
     "type": "bool"
   },
   {
-    "id": "reverse",
-    "name": "Reverse mode",
-    "type": "bool"
-  },
-  {
     "id": "slip_motor",
     "name": "Slip Motor",
     "type": "float32",
