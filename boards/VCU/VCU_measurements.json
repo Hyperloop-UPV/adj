@@ -81,20 +81,32 @@
         "name": "Propulsion Target Speed",
         "type": "float32",
         "podUnits": "km/h",
-        "displayUnits": "km/h"
+        "displayUnits": "km/h",
+        "safeRange": [
+            0,
+            50
+        ]
     },
     {
         "id": "propulsion_max_current",
         "name": "Propulsion Max Current",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            0,
+            120
+        ]
     },
     {
         "id": "levitation_target_height",
         "name": "Levitation Target Height",
         "type": "float32",
         "podUnits": "m",
-        "displayUnits": "mm"
+        "displayUnits": "mm",
+        "safeRange": [
+            10,
+            25
+        ]
     }
 ]
