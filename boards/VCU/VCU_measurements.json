@@ -89,7 +89,7 @@
         "podUnits": "m",
         "displayUnits": "mm",
         "safeRange": [
-            10,
+            5,
             25
         ]
     }
