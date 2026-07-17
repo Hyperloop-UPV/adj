@@ -27,7 +27,6 @@
         "type": "data",
         "name": "Brake Status",
         "variables": [
-            "active_brakes",
             "brakes_status"
         ],
         "id": 253,

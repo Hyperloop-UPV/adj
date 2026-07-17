@@ -43,11 +43,6 @@
         "displayUnits": "bar"
     },
     {
-        "id": "active_brakes",
-        "name": "Active Brakes",
-        "type": "bool"
-    },
-    {
         "id": "brakes_status",
         "name": "Brakes Status",
         "type": "enum",
@@ -77,24 +72,25 @@
         "type": "bool"
     },
     {
-        "id": "propulsion_target_speed",
-        "name": "Propulsion Target Speed",
-        "type": "float32",
-        "podUnits": "km/h",
-        "displayUnits": "km/h"
-    },
-    {
-        "id": "propulsion_max_current",
-        "name": "Propulsion Max Current",
+        "id": "propulsion_current_reference",
+        "name": "Propulsion Current Reference",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            0,
+            120
+        ]
     },
     {
         "id": "levitation_target_height",
         "name": "Levitation Target Height",
         "type": "float32",
         "podUnits": "m",
-        "displayUnits": "mm"
+        "displayUnits": "mm",
+        "safeRange": [
+            5,
+            25
+        ]
     }
 ]
