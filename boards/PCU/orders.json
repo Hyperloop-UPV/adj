@@ -1,31 +1,36 @@
 [
   {
     "type": "order",
-    "name": "Start_SVPWM",
+    "name": "FAULT",
+    "variables": [],
+    "id": 0
+  },
+  {
+    "type": "order",
+    "name": "Start SVPWM",
     "variables": [
       "frequency_to_send_svpwm",
-      "frequency_to_send_PWM",
-      "V_Ref",
-      "VMax",
-      "Direction_State"
+      "frequency_to_send_pwm",
+      "v_ref",
+      "vmax"
     ],
     "id": 507
   },
   {
     "type": "order",
-    "name": "Stop_Motor",
+    "name": "Stop Motor",
     "variables": [],
     "id": 508
   },
   {
     "type": "order",
-    "name": "Send_Reference_Current",
+    "name": "Send Reference Current",
     "variables": [
       "freq_to_send_svpwm",
-      "freq_to_send_PWM",
-      "Current_Ref",
-      "VMax",
-      "Direction_State"
+      "freq_to_send_pwm",
+      "current_ref",
+      "vmax",
+      "vf_control"
     ],
     "id": 509
   },
@@ -37,63 +42,12 @@
   },
   {
     "type": "order",
-    "name": "Send_Reference_Speed",
+    "name": "Send Reference Speed",
     "variables": [
-      "Speed_Ref",
-      "freq_to_send_PWM",
-      "VMax",
-      "Direction_State"
+      "speed_ref",
+      "freq_to_send_pwm",
+      "vmax"
     ],
     "id": 511
-  },
-  {
-    "type": "order",
-    "name": "Start_Precharge",
-    "variables": [
-      "freq_to_send_PWM"
-    ],
-    "id": 512
-  },
-  {
-    "type": "order",
-    "name": "Make_Complete_Run(Regenerative)",
-    "variables": [
-      "Speed_Ref",
-      "freq_to_send_PWM",
-      "VMax",
-      "Direction_State"
-    ],
-    "id": 513
-  },
-  {
-    "type": "order",
-    "name": "Start_Regenerative_now",
-    "variables": [],
-    "id": 514
-  },
-  {
-    "type": "order",
-    "name": "Brake using Motor",
-    "variables": [
-      "VMax"
-    ],
-    "id": 515
-  },
-  {
-    "type": "order",
-    "name": "Start Run",
-    "variables": [
-      "run_id"
-    ],
-    "id": 516
-  },
-  {
-    "type": "order",
-    "name": "Emulated Speetec",
-    "variables": [
-      "requested_speetec_emulation_mode",
-      "requested_speetec_emulation_value"
-    ],
-    "id": 517
   }
 ]

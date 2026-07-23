@@ -1,260 +1,96 @@
 [
     {
-        "id": "duty",
-        "name": "Duty",
-        "type": "uint32",
-        "podUnits": "%",
-        "displayUnits": "%"
-    },
-    {
-        "id": "pump",
-        "name": "Pump",
+        "id": "state",
+        "name": "State",
         "type": "enum",
         "enumValues": [
-            "UNIDADES",
-            "PLACAS"
+            "Idle",
+            "Connected",
+            "Maintenance",
+            "Precharging",
+            "HVActive",
+            "Ready",
+            "Propulsion",
+            "Static Levitation",
+            "Dynamic Levitation",
+            "Fault"
         ]
     },
     {
-        "id": "general_state",
-        "name": "General State",
-        "type": "enum",
-        "enumValues": [
-            "CONNECTING",
-            "OPERATIONAL",
-            "FAULT"
-        ]
+        "id": "sdc_closed",
+        "name": "SDC Closed",
+        "type": "bool"
     },
     {
-        "id": "operational_state",
-        "name": "Operational State",
-        "type": "enum",
-        "enumValues": [
-            "IDLE",
-            "END_OF_RUN",
-            "ENERGIZED",
-            "READY",
-            "DEMONSTRATION",
-            "RECOVERY"
-        ]
-    },
-    {
-        "id": "regulator_pressure",
-        "name": "Regulator Pressure",
+        "id": "high_pressure",
+        "name": "High Pressure",
         "type": "float32",
         "podUnits": "bar",
         "displayUnits": "bar"
     },
     {
-        "id": "regulator",
-        "name": "Regulator",
-        "type": "enum",
-        "enumValues": [
-            "REGULATOR 1",
-            "REGULATOR 2"
-        ]
-    },
-    {
-        "id": "reed1",
-        "name": "Reed 1",
-        "type": "enum",
-        "enumValues": [
-            "UNDEPLOYED",
-            "DEPLOYED"
-        ]
-    },
-    {
-        "id": "reed2",
-        "name": "Reed 2",
-        "type": "enum",
-        "enumValues": [
-            "UNDEPLOYED",
-            "DEPLOYED"
-        ]
-    },
-    {
-        "id": "reed3",
-        "name": "Reed 3",
-        "type": "enum",
-        "enumValues": [
-            "UNDEPLOYED",
-            "DEPLOYED"
-        ]
-    },
-    {
-        "id": "reed4",
-        "name": "Reed 4",
-        "type": "enum",
-        "enumValues": [
-            "UNDEPLOYED",
-            "DEPLOYED"
-        ]
-    },
-    {
-        "id": "all_reeds",
-        "name": "All Reeds",
-        "type": "bool",
-        "podUnits": "",
-        "displayUnits": ""
-    },
-    {
-        "id": "flow1",
-        "name": "Flow 1",
-        "type": "enum",
-        "enumValues": [
-            "OFF",
-            "ON"
-        ]
-    },
-    {
-        "id": "flow2",
-        "name": "Flow 2",
-        "type": "enum",
-        "enumValues": [
-            "OFF",
-            "ON"
-        ]
-    },
-    {
-        "id": "regulator_1_pressure",
-        "name": "Regulator 1",
+        "id": "low_pressure",
+        "name": "Low Pressure",
         "type": "float32",
         "podUnits": "bar",
         "displayUnits": "bar"
     },
     {
-        "id": "regulator_2_pressure",
-        "name": "Regulator 2",
+        "id": "pressure_regulator_feedback",
+        "name": "Pressure Regulator Feedback",
         "type": "float32",
         "podUnits": "bar",
         "displayUnits": "bar"
     },
     {
-        "id": "pressure_high",
-        "name": "Pressure High",
-        "type": "float32",
-        "podUnits": "bar",
-        "displayUnits": "bar"
-    },
-    {
-        "id": "pressure_regulator",
-        "name": "Pressure Regulator",
-        "type": "float32",
-        "podUnits": "bar",
-        "displayUnits": "bar"
-    },
-    {
-        "id": "pressure_brakes",
-        "name": "Pressure Brakes",
-        "type": "float32",
-        "podUnits": "bar",
-        "displayUnits": "bar"
-    },
-    {
-        "id": "pressure_capsule",
-        "name": "Pressure Capsule",
-        "type": "float32",
-        "podUnits": "bar",
-        "displayUnits": "bar"
-    },
-    {
-        "id": "tape_enable_output",
-        "name": "Tape Enable",
+        "id": "brakes_status",
+        "name": "Brakes Status",
         "type": "enum",
         "enumValues": [
-            "DISABLED",
-            "ENABLED"
+            "BRAKED",
+            "UNBRAKED"
         ]
     },
     {
-        "id": "emergency_tape",
-        "name": "Section Type",
-        "type": "enum",
-        "enumValues": [
-            "EMERGENCY_SECTION",
-            "NORMAL_SECTION"
-        ]
+        "id": "electrovalve_enabled",
+        "name": "Electrovalve Enabled",
+        "type": "bool"
     },
     {
-        "id": "SDC",
-        "name": "SDC",
-        "type": "enum",
-        "enumValues": [
-            "OFF",
-            "ON"
-        ]
+        "id": "hvbms_connected",
+        "name": "HVBMS Connected",
+        "type": "bool"
     },
     {
-        "id": "levitation_distance",
-        "name": "Levitation Distance (mm)",
-        "type": "float32",
-        "podUnits": "mm",
-        "displayUnits": "mm"
+        "id": "pcu_connected",
+        "name": "PCU Connected",
+        "type": "bool"
     },
     {
-        "id": "run_id",
-        "name": "Run ID",
-        "type": "enum",
-        "enumValues": [
-            "LIM"
-        ]
+        "id": "lcu_connected",
+        "name": "LCU Connected",
+        "type": "bool"
     },
     {
-        "id": "motor_direction",
-        "name": "Motor Direction",
-        "type": "enum",
-        "enumValues": [
-            "FORWARD",
-            "BACKWARDS"
-        ]
-    },
-    {
-        "id": "max_voltage",
-        "name": "Max Voltage",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "reference_voltage",
-        "name": "Reference Voltage",
-        "type": "float32",
-        "podUnits": "V",
-        "displayUnits": "V"
-    },
-    {
-        "id": "commutation_frequency",
-        "name": "Commutation Frequency",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "modulation_frequency",
-        "name": "Modulation Frequency",
-        "type": "float32",
-        "podUnits": "Hz",
-        "displayUnits": "Hz"
-    },
-    {
-        "id": "reference_current",
-        "name": "Reference Current",
+        "id": "propulsion_current_reference",
+        "name": "Propulsion Current Reference",
         "type": "float32",
         "podUnits": "A",
-        "displayUnits": "A"
+        "displayUnits": "A",
+        "safeRange": [
+            0,
+            120
+        ]
     },
     {
-        "id": "reference_speed",
-        "name": "Reference Speed",
+        "id": "levitation_target_height",
+        "name": "Levitation Target Height",
         "type": "float32",
-        "podUnits": "km/h",
-        "displayUnits": "km/h"
-    },
-    {
-        "id": "state",
-        "name": "Recovery State",
-        "type": "uint8",
-        "podUnits": "",
-        "displayUnits": ""
+        "podUnits": "m",
+        "displayUnits": "mm",
+        "safeRange": [
+            5,
+            25
+        ]
     }
 ]

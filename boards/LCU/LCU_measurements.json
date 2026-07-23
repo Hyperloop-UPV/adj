@@ -1,806 +1,715 @@
 [
-  {
-    "id": "ldu_id",
-    "name": "LDU Id",
-    "type": "uint8"
-  },
-  {
-    "id": "pwm_duty_cycle",
-    "name": "Duty Cycle",
-    "type": "float32",
-    "podUnits": "%",
-    "displayUnits": "%",
-    "safeRange": [
-      0.0,
-      100.0
-    ],
-    "warningRange": [
-      0.0,
-      100.0
-    ]
-  },
-  {
-    "id": "lcu_desired_current",
-    "name": "Desired current to set",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -40.0,
-      40.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "ldu_buffer_id",
-    "name": "LDU Buffer ID",
-    "type": "uint8"
-  },
-  {
-    "id": "lcu_coil_current_1",
-    "name": "Current on LDU 1 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_2",
-    "name": "Current on LDU 2 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_3",
-    "name": "Current on LDU 3 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_4",
-    "name": "Current on LDU 4 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_5",
-    "name": "Current on LDU 5 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_6",
-    "name": "Current on LDU 6 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_7",
-    "name": "Current on LDU 7 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_8",
-    "name": "Current on LDU 8 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_9",
-    "name": "Current on LDU 9 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "lcu_coil_current_10",
-    "name": "Current on LDU 10 coil",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A",
-    "safeRange": [
-      -55.0,
-      55.0
-    ],
-    "warningRange": [
-      -40.0,
-      40.0
-    ]
-  },
-  {
-    "id": "fixed_vbat",
-    "name": "fixed_vbat_0",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V",
-    "safeRange": [
-      250.0,
-      450.0
-    ],
-    "warningRange": [
-      300.0,
-      450.0
-    ]
-  },
-  {
-    "id": "lcu_vbat_1",
-    "name": "LPU 1 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_2",
-    "name": "LPU 2 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_3",
-    "name": "LPU 3 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_4",
-    "name": "LPU 4 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_5",
-    "name": "LPU 5 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_6",
-    "name": "LPU 6 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_7",
-    "name": "LPU 7 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_8",
-    "name": "LPU 8 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_9",
-    "name": "LPU 9 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_vbat_10",
-    "name": "LPU 10 Voltage",
-    "type": "float32",
-    "podUnits": "V",
-    "displayUnits": "V"
-  },
-  {
-    "id": "lcu_airgap_1",
-    "name": "Airgap 1",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "lcu_airgap_2",
-    "name": "Airgap 2",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "lcu_airgap_3",
-    "name": "Airgap 3",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "lcu_airgap_4",
-    "name": "Airgap 4",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "lcu_airgap_5",
-    "name": "Airgap 5",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "lcu_airgap_6",
-    "name": "Airgap 6",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "lcu_airgap_7",
-    "name": "Airgap 7",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "lcu_airgap_8",
-    "name": "Airgap 8",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "dist_control_y",
-    "name": "Dist_Control_y",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "dist_control_z",
-    "name": "Dist_Control_z",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_control_x",
-    "name": "Rot_Control_x",
-    "type": "float32",
-    "podUnits": "deg",
-    "displayUnits": "deg"
-  },
-  {
-    "id": "rot_control_y",
-    "name": "Rot_Control_y",
-    "type": "float32",
-    "podUnits": "deg",
-    "displayUnits": "deg"
-  },
-  {
-    "id": "rot_control_z",
-    "name": "Rot_Control_z",
-    "type": "float32",
-    "podUnits": "deg",
-    "displayUnits": "deg"
-  },
-  {
-    "id": "lcu_desired_distance",
-    "name": "desired distance (mm)",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "current_control_frequency",
-    "name": "current control frequency",
-    "type": "uint32",
-    "podUnits": "Hz",
-    "displayUnits": "Hz"
-  },
-  {
-    "id": "general_state",
-    "name": "master state",
-    "type": "enum",
-    "enumValues": [
-      "DEFINING",
-      "CONNECTING",
-      "OPERATIONAL",
-      "FAULT"
-    ]
-  },
-  {
-    "id": "vertical_state",
-    "name": "vertical state",
-    "type": "enum",
-    "enumValues": [
-      "IDLE",
-      "CONTROL_CURRENT",
-      "CONTROL_1DOF",
-      "CONTROL_3DOF",
-      "STICK_DOWN"
-    ]
-  },
-  {
-    "id": "horizontal_state",
-    "name": "horizontal state",
-    "type": "enum",
-    "enumValues": [
-      "NORMAL",
-      "BOOSTER"
-    ]
-  },
-  {
-    "id": "lcu_coil_current_ref_1",
-    "name": "Ref on LDU 1",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_2",
-    "name": "Ref on LDU 2",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_3",
-    "name": "Ref on LDU 3",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_4",
-    "name": "Ref on LDU 4",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_5",
-    "name": "Ref on LDU 5",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_6",
-    "name": "Ref on LDU 6",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_7",
-    "name": "Ref on LDU 7",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_8",
-    "name": "Ref on LDU 8",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_9",
-    "name": "Ref on LDU 9",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_ref_10",
-    "name": "Ref on LDU 10",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_1",
-    "name": "exit on LDU 1",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_2",
-    "name": "exit on LDU 2",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_3",
-    "name": "exit on LDU 3",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_4",
-    "name": "exit on LDU 4",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_5",
-    "name": "exit on LDU 5",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_6",
-    "name": "exit on LDU 6",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_7",
-    "name": "exit on LDU 7",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_8",
-    "name": "exit on LDU 8",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_9",
-    "name": "exit on LDU 9",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_coil_current_exit_10",
-    "name": "exit on LDU 10",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_1",
-    "name": "Ref Dis 1",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_2",
-    "name": "Ref Dis 2",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_3",
-    "name": "Ref Dis 3",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_4",
-    "name": "Ref Dis 4",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_5",
-    "name": "Ref Dis 5",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_6",
-    "name": "Ref Dis 6",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_7",
-    "name": "Ref Dis 7",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_ref_8",
-    "name": "Ref Dis 8",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_1",
-    "name": "exit Dis 1",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_2",
-    "name": "exit Dis 2",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_3",
-    "name": "exit Dis 3",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_4",
-    "name": "exit Dis 4",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_5",
-    "name": "exit Dis 5",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_6",
-    "name": "exit Dis 6",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_7",
-    "name": "exit Dis 7",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "lcu_dis_pos_exit_8",
-    "name": "exit Dis 8",
-    "type": "float32",
-    "podUnits": "A",
-    "displayUnits": "A"
-  },
-  {
-    "id": "multi_current_1",
-    "name": "multi_current_1",
-    "type": "float32",
-    "podUnits": "",
-    "displayUnits": ""
-  },
-  {
-    "id": "multi_current_2",
-    "name": "multi_current_2",
-    "type": "float32",
-    "podUnits": "",
-    "displayUnits": ""
-  },
-  {
-    "id": "multi_current_3",
-    "name": "multi_current_3",
-    "type": "float32",
-    "podUnits": "",
-    "displayUnits": ""
-  },
-  {
-    "id": "multi_current_4",
-    "name": "multi_current_4",
-    "type": "float32",
-    "podUnits": "",
-    "displayUnits": ""
-  },
-  {
-    "id": "dist_error_z",
-    "name": "Dist_error_z",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "dist_integral_error_z",
-    "name": "Dist_integral_error_z",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "dist_derivate_error_z",
-    "name": "Dist_derivate_error_z",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "dist_error_y",
-    "name": "Dist_error_y",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "dist_integral_error_y",
-    "name": "Dist_integral_error_y",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "dist_derivate_error_y",
-    "name": "Dist_derivate_error_y",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_error_z",
-    "name": "Rot_error_z",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_integral_error_z",
-    "name": "Rot_integral_error_z",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_derivate_error_z",
-    "name": "Rot_derivate_error_z",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_error_y",
-    "name": "Rot_error_y",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_integral_error_y",
-    "name": "Rot_integral_error_y",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_derivate_error_y",
-    "name": "Rot_derivate_error_y",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_error_x",
-    "name": "Rot_error_x",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_integral_error_x",
-    "name": "Rot_integral_error_x",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "rot_derivate_error_x",
-    "name": "Rot_derivate_error_x",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  },
-  {
-    "id": "distance",
-    "name": "Distance (mm)",
-    "type": "float32",
-    "podUnits": "mm",
-    "displayUnits": "mm"
-  }
+    {
+        "id": "master_state_machine",
+        "name": "Master SM",
+        "type": "enum",
+        "enumValues": [
+            "Connecting",
+            "Idle",
+            "Levitating",
+            "Current Control",
+            "Debug",
+            "Fault"
+        ]
+    },
+    {
+        "id": "slave_state_machine",
+        "name": "Slave SM",
+        "type": "enum",
+        "enumValues": [
+            "SPI Connecting",
+            "Idle",
+            "Levitating",
+            "Current Control",
+            "Debug",
+            "Fault"
+        ]
+    },
+    {
+        "id": "desired_current",
+        "name": "Desired Current",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A"
+    },
+    {
+        "id": "fixed_vbat",
+        "name": "Fixed VBAT",
+        "type": "float32",
+        "podUnits": "V",
+        "displayUnits": "V"
+    },
+    {
+        "id": "desired_distance",
+        "name": "Desired Distance",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm",
+        "safeRange": [
+            0,
+            12
+        ]
+    },
+    {
+        "id": "lpu_id",
+        "name": "LPU ID",
+        "type": "uint32",
+        "safeRange": [
+            0,
+            9
+        ]
+    },
+    {
+        "id": "fixed_pwm_duty_cycle",
+        "name": "Fixed PWM Duty Cycle",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_1",
+        "name": "Duty Cycle 1",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_2",
+        "name": "Duty Cycle 2",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_3",
+        "name": "Duty Cycle 3",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_4",
+        "name": "Duty Cycle 4",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_5",
+        "name": "Duty Cycle 5",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_6",
+        "name": "Duty Cycle 6",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_7",
+        "name": "Duty Cycle 7",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_8",
+        "name": "Duty Cycle 8",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_9",
+        "name": "Duty Cycle 9",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "pwm_duty_cycle_10",
+        "name": "Duty Cycle 10",
+        "type": "float32",
+        "podUnits": "%",
+        "displayUnits": "%"
+    },
+    {
+        "id": "coil_current_1",
+        "name": "Coil Current 1",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_2",
+        "name": "Coil Current 2",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_3",
+        "name": "Coil Current 3",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_4",
+        "name": "Coil Current 4",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_5",
+        "name": "Coil Current 5",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_6",
+        "name": "Coil Current 6",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_7",
+        "name": "Coil Current 7",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_8",
+        "name": "Coil Current 8",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_9",
+        "name": "Coil Current 9",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "coil_current_10",
+        "name": "Coil Current 10",
+        "type": "float32",
+        "podUnits": "A",
+        "displayUnits": "A",
+        "safeRange": [
+            -50,
+            50
+        ]
+    },
+    {
+        "id": "airgap_1",
+        "name": "Airgap 1",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "airgap_2",
+        "name": "Airgap 2",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "airgap_3",
+        "name": "Airgap 3",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "airgap_4",
+        "name": "Airgap 4",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "airgap_5",
+        "name": "Airgap 5",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "airgap_6",
+        "name": "Airgap 6",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "airgap_7",
+        "name": "Airgap 7",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "airgap_8",
+        "name": "Airgap 8",
+        "type": "float32",
+        "podUnits": "m",
+        "displayUnits": "mm"
+    },
+    {
+        "id": "cinema_current",
+        "name": "Cinema Current",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_1",
+        "name": "Control Voltage 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_2",
+        "name": "Control Voltage 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_3",
+        "name": "Control Voltage 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_4",
+        "name": "Control Voltage 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_5",
+        "name": "Control Voltage 5",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_6",
+        "name": "Control Voltage 6",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_7",
+        "name": "Control Voltage 7",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_8",
+        "name": "Control Voltage 8",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_9",
+        "name": "Control Voltage 9",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_voltage_10",
+        "name": "Control Voltage 10",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_gap_local_1",
+        "name": "Control Gap Local 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_gap_local_2",
+        "name": "Control Gap Local 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_gap_local_3",
+        "name": "Control Gap Local 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_gap_local_4",
+        "name": "Control Gap Local 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_state_1",
+        "name": "Control State 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_state_2",
+        "name": "Control State 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_state_3",
+        "name": "Control State 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_state_4",
+        "name": "Control State 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_state_5",
+        "name": "Control State 5",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_1",
+        "name": "Control Current Ref 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_2",
+        "name": "Control Current Ref 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_3",
+        "name": "Control Current Ref 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_4",
+        "name": "Control Current Ref 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_5",
+        "name": "Control Current Ref 5",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_6",
+        "name": "Control Current Ref 6",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_7",
+        "name": "Control Current Ref 7",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_8",
+        "name": "Control Current Ref 8",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_9",
+        "name": "Control Current Ref 9",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_current_ref_10",
+        "name": "Control Current Ref 10",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fe_1",
+        "name": "Control Fe 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fe_2",
+        "name": "Control Fe 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fe_3",
+        "name": "Control Fe 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fa_1",
+        "name": "Control Fa 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fa_2",
+        "name": "Control Fa 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fa_3",
+        "name": "Control Fa 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fa_4",
+        "name": "Control Fa 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_ef_1",
+        "name": "Control Ef 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_ef_2",
+        "name": "Control Ef 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_ef_3",
+        "name": "Control Ef 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_p_1",
+        "name": "Control P 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_p_2",
+        "name": "Control P 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_p_3",
+        "name": "Control P 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_r_1",
+        "name": "Control R 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_r_2",
+        "name": "Control R 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_r_3",
+        "name": "Control R 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_zz_1",
+        "name": "Control Zz 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_zz_2",
+        "name": "Control Zz 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_zz_3",
+        "name": "Control Zz 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fe_l_1",
+        "name": "Control Fe L 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fe_l_2",
+        "name": "Control Fe L 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_fe_l_3",
+        "name": "Control Fe L 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_referencia",
+        "name": "Control Referencia",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_i_hems_out_1",
+        "name": "Control I HEMS Out 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_i_hems_out_2",
+        "name": "Control I HEMS Out 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_i_hems_out_3",
+        "name": "Control I HEMS Out 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_i_hems_out_4",
+        "name": "Control I HEMS Out 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_1",
+        "name": "Control A 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_2",
+        "name": "Control A 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_3",
+        "name": "Control A 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_4",
+        "name": "Control A 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_5",
+        "name": "Control A 5",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_6",
+        "name": "Control A 6",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_7",
+        "name": "Control A 7",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_a_8",
+        "name": "Control A 8",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_ak_1",
+        "name": "Control Ak 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_ak_2",
+        "name": "Control Ak 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_ak_3",
+        "name": "Control Ak 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_ak_4",
+        "name": "Control Ak 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_bk_1",
+        "name": "Control Bk 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_bk_2",
+        "name": "Control Bk 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_bk_3",
+        "name": "Control Bk 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_hems_1",
+        "name": "Control PI HEMS 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_hems_2",
+        "name": "Control PI HEMS 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_hems_3",
+        "name": "Control PI HEMS 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_hems_4",
+        "name": "Control PI HEMS 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_ems_1",
+        "name": "Control PI EMS 1",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_ems_2",
+        "name": "Control PI EMS 2",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_ems_3",
+        "name": "Control PI EMS 3",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_ems_4",
+        "name": "Control PI EMS 4",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_ems_5",
+        "name": "Control PI EMS 5",
+        "type": "float32"
+    },
+    {
+        "id": "ctrl_pi_ems_6",
+        "name": "Control PI EMS 6",
+        "type": "float32"
+    }
 ]

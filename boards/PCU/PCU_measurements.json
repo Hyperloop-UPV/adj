@@ -8,7 +8,7 @@
   },
   {
     "id": "modulation_frequency",
-    "name": "Modulation frequency",
+    "name": "Modulation Frequency",
     "type": "float32",
     "podUnits": "Hz",
     "displayUnits": "Hz"
@@ -35,17 +35,17 @@
     "displayUnits": "%"
   },
   {
-    "id": "Voltage_Battery_A",
+    "id": "voltage_battery_a",
     "name": "Voltage Battery A",
     "type": "float32"
   },
   {
-    "id": "Voltage_Battery_B",
+    "id": "voltage_battery_b",
     "name": "Voltage Battery B",
     "type": "float32"
   },
   {
-    "id": "V_Ref",
+    "id": "v_ref",
     "name": "Reference Voltage",
     "type": "float32"
   },
@@ -57,77 +57,73 @@
     "displayUnits": "Hz"
   },
   {
-    "id": "frequency_to_send_PWM",
-    "name": "Frequency  Commutation hz",
+    "id": "frequency_to_send_pwm",
+    "name": "Frequency Commutation hz",
     "type": "float32",
     "podUnits": "Hz",
     "displayUnits": "Hz"
   },
   {
     "id": "current_sensor_u_a",
-    "name": "Current sensor U connector A",
+    "name": "Current Sensor U Connector A",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_u_b",
-    "name": "Current sensor U connector B",
+    "name": "Current Sensor U Connector B",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_v_a",
-    "name": "Current sensor V connector A",
+    "name": "Current Sensor V Connector A",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_v_b",
-    "name": "Current sensor V connector B",
+    "name": "Current Sensor V Connector B",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_w_a",
-    "name": "Current sensor W connector A",
+    "name": "Current Sensor W Connector A",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
     "id": "current_sensor_w_b",
-    "name": "Current sensor W connector B",
+    "name": "Current Sensor W Connector B",
     "type": "float32",
     "podUnits": "A",
-    "displayUnits": "A"
+    "displayUnits": "A",
+    "safeRange": [0, 120]
   },
   {
-    "id": "general_state_machine",
-    "name": "General State Machine",
+    "id": "state",
+    "name": "State",
     "type": "enum",
     "enumValues": [
       "Connecting",
-      "Operational",
+      "Idle",
+      "Accelerating",
       "Fault"
     ]
   },
   {
-    "id": "operational_state_machine",
-    "name": "Operational state machine",
-    "type": "enum",
-    "enumValues": [
-      "IDLE",
-      "Braking",
-      "Accelerating",
-      "Regenerative"
-    ]
-  },
-  {
-    "id": "Current_Ref",
+    "id": "current_ref",
     "name": "Current Ref",
     "type": "float32",
     "podUnits": "A",
@@ -141,8 +137,8 @@
     "displayUnits": "Hz"
   },
   {
-    "id": "freq_to_send_PWM",
-    "name": "Frequency  Commutation hz",
+    "id": "freq_to_send_pwm",
+    "name": "Frequency Commutation hz",
     "type": "float32",
     "podUnits": "Hz",
     "displayUnits": "Hz"
@@ -150,81 +146,70 @@
   {
     "id": "current_Peak",
     "name": "Max Current Peak",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
   },
   {
-    "id": "Error_PI",
+    "id": "error_pi",
     "name": "Actual Current Error",
-    "type": "float64",
+    "type": "float32",
     "podUnits": "A",
     "displayUnits": "A"
   },
   {
-    "id": "Target_Voltage",
-    "name": "Target Voltage",
+    "id": "vf_control",
+    "name": "Variable frecuency control",
+    "type": "bool"
+  },
+  {
+    "id": "slip_motor",
+    "name": "Slip Motor",
+    "type": "float32",
+    "podUnits": "%",
+    "displayUnits": "%"
+  },
+  {
+    "id": "imu_speed_km_h",
+    "name": "Speed IMU",
     "type": "float64",
+    "podUnits": "km/h",
+    "displayUnits": "km/h"
+  },
+  {
+    "id": "imu_position_m",
+    "name": "IMU Position",
+    "type": "float32",
+    "podUnits": "m",
+    "displayUnits": "m"
+  },
+  {
+    "id": "target_voltage",
+    "name": "Target Voltage",
+    "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },
   {
-    "id": "VMax",
+    "id": "vmax",
     "name": "Max Voltage",
     "type": "float32",
     "podUnits": "V",
     "displayUnits": "V"
   },
   {
-    "id": "Speed_Ref",
+    "id": "speed_ref",
     "name": "Reference Speed",
     "type": "float32",
     "podUnits": "km/h",
     "displayUnits": "km/h"
   },
   {
-    "id": "SVPWM_Time",
+    "id": "svpwm_time",
     "name": "SVPWM Time",
     "type": "float32",
     "podUnits": "s",
     "displayUnits": "s"
-  },
-  {
-    "id": "encoder_position",
-    "name": "Position Encoder",
-    "type": "float64",
-    "podUnits": "m",
-    "displayUnits": "m"
-  },
-  {
-    "id": "encoder_direction",
-    "name": "Direction Encoder",
-    "type": "enum",
-    "enumValues": [
-      "Forward",
-      "Backward"
-    ]
-  },
-  {
-    "id": "encoder_speed",
-    "name": "Speed Encoder",
-    "type": "float64",
-    "podUnits": "m/s",
-    "displayUnits": "m/s"
-  },
-  {
-    "id": "encoder_speed_km_h",
-    "name": "Speed km/h",
-    "type": "float64",
-    "podUnits": "km/h",
-    "displayUnits": "km/h"
-  },
-  {
-    "id": "encoder_acceleration",
-    "name": "Acceleration Encoder",
-    "type": "float64",
-    "podUnits": "m/ss",
-    "displayUnits": "m/ss"
   },
   {
     "id": "target_speed",
@@ -235,7 +220,7 @@
   },
   {
     "id": "speed_error",
-    "name": "Speed error",
+    "name": "Speed Error",
     "type": "float64",
     "podUnits": "km/h",
     "displayUnits": "km/h"
@@ -248,94 +233,14 @@
     "displayUnits": "A"
   },
   {
-    "id": "Speed_Control_State",
-    "name": "Control Current ref",
-    "type": "enum",
-    "enumValues": [
-      "Cruise_Mode",
-      "Regenerate_Mode"
-    ]
-  },
-  {
-    "id": "Direction_State",
-    "name": "Direction Motor",
-    "type": "enum",
-    "enumValues": [
-      "Forward",
-      "Backward"
-    ]
-  },
-  {
     "id": "imod",
-    "name": "modulation_index",
+    "name": "Modulation Index",
     "type": "float32"
   },
-  {
-    "id": "reed1",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
-  },
-  {
-    "id": "reed2",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "UNDEPLOYED",
-      "DEPLOYED"
-    ]
-  },
-  {
-    "id": "reed3",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
-  },
-  {
-    "id": "reed4",
-    "name": "reed_state",
-    "type": "enum",
-    "enumValues": [
-      "Not_Braking",
-      "Braking"
-    ]
-  },
-  {
-    "id": "space_vector_active",
-    "name": "Space Vector",
-    "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
-  },
-  {
-    "id": "current_control_active",
-    "name": "Current Control",
-    "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
-  },
-  {
-    "id": "speed_control_active",
-    "name": "Speed Control",
-    "type": "enum",
-    "enumValues": [
-      "DISABLE",
-      "ACTIVE"
-    ]
-  },
+  
   {
     "id": "gd_fault_a",
-    "name": "GateDriver_A_Fault",
+    "name": "GateDriver A Fault",
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
@@ -350,7 +255,7 @@
   },
   {
     "id": "gd_fault_b",
-    "name": "GateDriver_B_Fault",
+    "name": "GateDriver B Fault",
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
@@ -365,7 +270,7 @@
   },
   {
     "id": "gd_ready_a",
-    "name": "GateDriver_A_Ready",
+    "name": "GateDriver A Ready",
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
@@ -380,7 +285,7 @@
   },
   {
     "id": "gd_ready_b",
-    "name": "GateDriver_B_Ready",
+    "name": "GateDriver B Ready",
     "type": "bool",
     "podUnits": "",
     "displayUnits": "",
@@ -391,45 +296,6 @@
     "warningRange": [
       0.0,
       100.0
-    ]
-  },
-  {
-    "id": "requested_speetec_emulation_mode",
-    "name": "Emulation Mode",
-    "type": "enum",
-    "enumValues": [
-      "STOP",
-      "position",
-      "speed",
-      "acceleration"
-    ]
-  },
-  {
-    "id": "requested_speetec_emulation_value",
-    "name": "Value (m | m/s | m/ss)",
-    "type": "float32",
-    "podUnits": "",
-    "displayUnits": ""
-  },
-  {
-    "id": "run_id",
-    "name": "Run Mode",
-    "type": "enum",
-    "enumValues": [
-      "LIM + Booster",
-      "Booster",
-      "LIM",
-      "LIM (50KM/H)"
-    ]
-  },
-  {
-    "id": "run_state",
-    "name": "Run State",
-    "type": "enum",
-    "enumValues": [
-      "NOTHING",
-      "MOVING",
-      "BRAKING"
     ]
   }
 ]
