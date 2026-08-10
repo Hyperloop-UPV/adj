@@ -185,7 +185,7 @@ Array of packet definitions for network communication. Packets are separated by 
 ```
 
 **Field Descriptions:**
-- `id`: Optional 32-bit unsigned integer packet identifier
+- `id`: Optional 16-bit unsigned integer packet identifier. **MUST BE DIFFERENT TO 1 & 700** (BLCU uses)
 - `type`: Packet type string (e.g., "data", "order", "status")
 - `name`: Human-readable packet name
 - `variables`: Array of variable names/measurement IDs included in this packet
@@ -235,8 +235,8 @@ Array of socket definitions for network communication.
 - `name`: Socket name
 - `port`: Optional number that describes the port number used for a ServerSocket or a DatagramSocket
 - `local_port`: Optional number that describes the local port number used for a Socket
-- `remote_ip`: Optional string that describes the remote ip you want to connect to in a DatagramSocket or Socket
-- `remote_port`:  Optional number that describes the remote port number used for a Socket
+- `remote_ip`: Optional string that describes the remote ip you want to connect to in a DatagramSocket or Socket. If set to `"backend"`, the address defined under `addresses.backend` in `general_info` is used
+- `remote_port`:  Optional number that describes the remote port number used for a Socket. If set to `"backend"`, the UDP port defined under `ports.UDP` in `general_info` is used
 
 **Example:**
 ```json
