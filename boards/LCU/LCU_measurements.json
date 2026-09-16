@@ -13,7 +13,7 @@
         ]
     },
     {
-        "id": "slave_state_machine",
+        "id": "master_state_machine",
         "name": "Slave SM",
         "type": "enum",
         "enumValues": [
