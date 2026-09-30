@@ -12,6 +12,20 @@
     "backend": "192.168.0.9",
     "hypervisor": "192.168.0.13"
   },
+  "protectionTypes": {
+    "Equal": {
+      "range": false,
+      "text": "Value is equal to {} (measured: %)"
+    },
+    "Range": {
+      "range": true,
+      "text": "Value out of range {} (measured: %)"
+    },
+    "Below": {
+      "range": false,
+      "text": "Value below {} (measured: %)"
+    }
+  },
   "units": {
     "m/ss": "*1",
     "Hz": "*1",

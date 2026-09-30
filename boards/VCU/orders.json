@@ -1,56 +1,66 @@
 [
     {
-        "id": 0,
+        "id": 600,
         "name": "FAULT",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 30,
+        "id": 601,
         "name": "Stop",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 40,
+        "id": 602,
         "name": "Maintenance",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 41,
+        "id": 603,
         "name": "Precharge",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 42,
+        "id": 604,
         "name": "Open Contactors",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 50,
+        "id": 605,
         "name": "Unbrake",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 51,
+        "id": 606,
         "name": "Brake",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 60,
+        "id": 607,
         "name": "Static Levitation",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 61,
+        "id": 608,
         "name": "Propulsion",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 62,
+        "id": 609,
         "name": "Dynamic Levitation",
-        "type": "order"
+        "type": "order",
+        "variables": []
     },
     {
-        "id": 100,
+        "id": 610,
         "name": "Propulsion Parameterized",
         "type": "order",
         "variables": [
@@ -58,7 +68,7 @@
         ]
     },
     {
-        "id": 101,
+        "id": 611,
         "name": "Static Levitation Parameterized",
         "type": "order",
         "variables": [
@@ -66,7 +76,7 @@
         ]
     },
     {
-        "id": 102,
+        "id": 612,
         "name": "Dynamic Levitation Parameterized",
         "type": "order",
         "variables": [
