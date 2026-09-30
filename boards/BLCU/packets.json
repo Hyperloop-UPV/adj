@@ -1,17 +1,19 @@
 [
     {
-        "id":3,
+        "id":22,
         "type": "packet",
-        "name":"ack"
+        "name":"ack",
+        "variables": []
     },
     {
-        "id":4,
+        "id":23,
         "type": "packet",
-        "name":"nack"
+        "name":"nack",
+        "variables": []
     },
 
     {
-        "id": 1,
+        "id": 24,
         "type": "packet",
         "name": "state_machine_state",
         "variables":

@@ -1,11 +1,13 @@
 [
     {
-        "id": 701,
+        "id": 20,
+        "alias": "reset_all",
         "type": "order",
         "name": "Reset All"
     },
     {
-        "id":700,
+        "id":21,
+        "alias": "write_program",
         "type": "order",
         "name":"Write Program",
         "variables":[
