@@ -1,7 +1,6 @@
 [
   {
     "id": 1700,
-    "alias": "motor_driver",
     "type": "data",
     "name": "Motor Driver",
     "variables": [
@@ -14,28 +13,24 @@
   },
   {
     "id": 1701,
-    "alias": "state",
     "type": "data",
     "name": "State",
     "variables": ["bcu_general_state", "bcu_operational_state", "bcu_nested_state", "control_state"]
   },
   {
     "id": 1702,
-    "alias": "space_vector",
     "type": "data",
     "name": "Space Vector",
     "variables": ["space_vector_time", "output_modulation_index", "output_modulation_frequency_hz"]
   },
   {
     "id": 1703,
-    "alias": "dc_link",
     "type": "data",
     "name": "DC Link",
     "variables": ["dc_link_average_voltage", "dc_link_a_voltage", "dc_link_b_voltage"]
   },
   {
     "id": 1704,
-    "alias": "motor_currents",
     "type": "data",
     "name": "Motor Currents",
     "variables": [
@@ -52,7 +47,6 @@
   },
   {
     "id": 1705,
-    "alias": "speetec_1",
     "type": "data",
     "name": "SPEETEC 1",
     "variables": [
@@ -64,7 +58,6 @@
   },
   {
     "id": 1706,
-    "alias": "current_control",
     "type": "data",
     "name": "Current Control",
     "variables": [
@@ -84,28 +77,24 @@
   },
   {
     "id": 1707,
-    "alias": "speed_control",
     "type": "data",
     "name": "Speed Control",
     "variables": ["requested_linear_speed", "speed_speetec_1"]
   },
   {
     "id": 1790,
-    "alias": "enable_dc_poles_bcu",
     "type": "data",
     "name": "Enable DC Poles (BCU)",
     "variables": []
   },
   {
     "id": 1789,
-    "alias": "disable_dc_poles_bcu",
     "type": "data",
     "name": "Disable DC Poles (BCU)",
     "variables": []
   },
   {
     "id": 1692,
-    "alias": "bcu_bus_voltage",
     "type": "data",
     "name": "BCU Bus Voltage",
     "variables": ["bcu_bus_voltage"]
