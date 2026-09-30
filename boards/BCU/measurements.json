@@ -1,9 +1,9 @@
 [
   {
-    "id": "bcu_general_state",
+    "id": 562,
+    "alias": "bcu_general_state",
     "name": "General State",
     "type": "enum",
-    "podUnits": "",
     "displayUnits": "",
     "enumValues": [
       "Connecting",
@@ -12,10 +12,10 @@
     ]
   },
   {
-    "id": "bcu_operational_state",
+    "id": 563,
+    "alias": "bcu_operational_state",
     "name": "Operational State",
     "type": "enum",
-    "podUnits": "",
     "displayUnits": "",
     "enumValues": [
       "Idle",
@@ -26,10 +26,10 @@
     ]
   },
   {
-    "id": "bcu_nested_state",
+    "id": 564,
+    "alias": "bcu_nested_state",
     "name": "Nested State",
     "type": "enum",
-    "podUnits": "",
     "displayUnits": "",
     "enumValues": [
       "Idle",
@@ -40,10 +40,10 @@
     ]
   },
   {
-    "id": "control_state",
+    "id": 565,
+    "alias": "control_state",
     "name": "Control State",
     "type": "enum",
-    "podUnits": "",
     "displayUnits": "",
     "enumValues": [
       "Idle",
@@ -54,305 +54,332 @@
     ]
   },
   {
-    "id": "space_vector_time",
+    "id": 566,
+    "alias": "space_vector_time",
     "name": "Space Vector Time",
     "type": "float32",
-    "podUnits": "s",
     "displayUnits": "s"
   },
   {
-    "id": "output_modulation_index",
+    "id": 567,
+    "alias": "output_modulation_index",
     "name": "Output Modulation Index",
     "type": "float32",
-    "podUnits": "",
     "displayUnits": ""
   },
   {
-    "id": "output_modulation_frequency_hz",
+    "id": 568,
+    "alias": "output_modulation_frequency_hz",
     "name": "Output Modulation Frequency",
     "type": "float32",
-    "podUnits": "Hz",
     "displayUnits": "Hz"
   },
   {
-    "id": "dc_link_average_voltage",
+    "id": 569,
+    "alias": "dc_link_average_voltage",
     "name": "DC Link Average Voltage",
     "type": "float32",
-    "podUnits": "V",
     "displayUnits": "V",
-    "below": {
-      "safe": 400.0,
-      "warning": 446.4
-    }
+    "protections": [
+      {
+        "type": "Below",
+        "value": [
+          446.4
+        ],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "bcu_bus_voltage",
+    "id": 570,
+    "alias": "bcu_bus_voltage",
     "name": "Bus Voltage",
     "type": "float32",
-    "podUnits": "V",
     "displayUnits": "V",
-    "below": {
-      "safe": 400.0,
-      "warning": 446.4
-    }
+    "protections": [
+      {
+        "type": "Below",
+        "value": [
+          446.4
+        ],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "dc_link_a_voltage",
+    "id": 571,
+    "alias": "dc_link_a_voltage",
     "name": "DC Link A Voltage",
     "type": "float32",
-    "podUnits": "V",
     "displayUnits": "V",
-    "below": {
-      "safe": 400.0,
-      "warning": 446.4
-    }
+    "protections": [
+      {
+        "type": "Below",
+        "value": [
+          446.4
+        ],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "dc_link_b_voltage",
+    "id": 572,
+    "alias": "dc_link_b_voltage",
     "name": "DC Link B Voltage",
     "type": "float32",
-    "podUnits": "V",
     "displayUnits": "V",
-    "below": {
-      "safe": 400.0,
-      "warning": 446.4
-    }
+    "protections": [
+      {
+        "type": "Below",
+        "value": [
+          446.4
+        ],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "average_current_u",
+    "id": 573,
+    "alias": "average_current_u",
     "name": "Average Current U",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "average_current_v",
+    "id": 574,
+    "alias": "average_current_v",
     "name": "Average Current V",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "average_current_w",
+    "id": 575,
+    "alias": "average_current_w",
     "name": "Average Current W",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "current_u_motor_a",
+    "id": 576,
+    "alias": "current_u_motor_a",
     "name": "Current U Motor A",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "current_v_motor_a",
+    "id": 577,
+    "alias": "current_v_motor_a",
     "name": "Current V Motor A",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "current_w_motor_a",
+    "id": 578,
+    "alias": "current_w_motor_a",
     "name": "Current W Motor A",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "current_u_motor_b",
+    "id": 579,
+    "alias": "current_u_motor_b",
     "name": "Current U Motor B",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "current_v_motor_b",
+    "id": 580,
+    "alias": "current_v_motor_b",
     "name": "Current V Motor B",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "current_w_motor_b",
+    "id": 581,
+    "alias": "current_w_motor_b",
     "name": "Current W Motor B",
     "type": "float32",
-    "podUnits": "A",
     "displayUnits": "A",
-    "out_of_range": {
-      "warning": [
-        -100.0,
-        100.0
-      ]
-    }
+    "protections": [
+      {
+        "type": "Range",
+        "value": [-100.0,100.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "position_speetec_1",
+    "id": 582,
+    "alias": "position_speetec_1",
     "name": "Position Speetec 1",
     "type": "float64",
-    "podUnits": "m",
     "displayUnits": "m",
-    "below": {
-      "safe": 3.0,
-      "warning": 4.0
-    }
+    "protections": [
+      {
+        "type": "Below",
+        "value": [4.0],
+        "fault": false
+      }
+    ]
   },
   {
-    "id": "speed_speetec_1",
+    "id": 583,
+    "alias": "speed_speetec_1",
     "name": "Speed Speetec 1",
     "type": "float64",
-    "podUnits": "m/s",
-    "displayUnits": "m/s",
-    "below": {
-      "safe": 10.0
-    }
+    "displayUnits": "m/s"
   },
   {
-    "id": "acceleration_speetec_1",
+    "id": 584,
+    "alias": "acceleration_speetec_1",
     "name": "Acceleration Speetec 1",
     "type": "float64",
-    "podUnits": "m/ss",
-    "displayUnits": "m/ss",
-    "below": {
-      "safe": 30.0
-    }
+    "displayUnits": "m/ss"
   },
   {
-    "id": "direction_speetec_1",
+    "id": 585,
+    "alias": "direction_speetec_1",
     "name": "Direction Speetec 1",
     "type": "bool"
   },
   {
-    "id": "d_current_reference",
+    "id": 586,
+    "alias": "d_current_reference",
     "name": "D Current Reference",
     "type": "float64",
-    "podUnits": "A",
     "displayUnits": "A"
   },
   {
-    "id": "measured_d_current",
+    "id": 587,
+    "alias": "measured_d_current",
     "name": "Measured D Current",
     "type": "float64",
-    "podUnits": "A",
     "displayUnits": "A"
   },
   {
-    "id": "d_current_error",
+    "id": 588,
+    "alias": "d_current_error",
     "name": "D Current Error",
     "type": "float64",
-    "podUnits": "A",
     "displayUnits": "A"
   },
   {
-    "id": "q_current_reference",
+    "id": 589,
+    "alias": "q_current_reference",
     "name": "Q Current Reference",
     "type": "float64",
-    "podUnits": "A",
     "displayUnits": "A"
   },
   {
-    "id": "measured_q_current",
+    "id": 590,
+    "alias": "measured_q_current",
     "name": "Measured Q Current",
     "type": "float64",
-    "podUnits": "A",
     "displayUnits": "A"
   },
   {
-    "id": "q_current_error",
+    "id": 591,
+    "alias": "q_current_error",
     "name": "Q Current Error",
     "type": "float64",
-    "podUnits": "",
     "displayUnits": ""
   },
   {
-    "id": "pi_id_output",
+    "id": 592,
+    "alias": "pi_id_output",
     "name": "PI ID Output",
     "type": "float64",
-    "podUnits": "",
     "displayUnits": ""
   },
   {
-    "id": "pi_iq_output",
+    "id": 593,
+    "alias": "pi_iq_output",
     "name": "PI IQ Output",
     "type": "float64",
-    "podUnits": "",
     "displayUnits": ""
   },
   {
-    "id": "target_u_voltage",
+    "id": 594,
+    "alias": "target_u_voltage",
     "name": "Target U Voltage",
     "type": "float64",
-    "podUnits": "V",
     "displayUnits": "V"
   },
   {
-    "id": "target_v_voltage",
+    "id": 595,
+    "alias": "target_v_voltage",
     "name": "Target V Voltage",
     "type": "float64",
-    "podUnits": "V",
     "displayUnits": "V"
   },
   {
-    "id": "target_w_voltage",
+    "id": 596,
+    "alias": "target_w_voltage",
     "name": "Target W Voltage",
     "type": "float64",
-    "podUnits": "V",
     "displayUnits": "V"
   },
   {
-    "id": "electrical_angle",
+    "id": 597,
+    "alias": "electrical_angle",
     "name": "Electrical Angle",
     "type": "float64",
-    "podUnits": "rad",
     "displayUnits": "rad"
   }
 ]

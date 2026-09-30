@@ -1,101 +1,105 @@
 [
     {
-        "id": "duty_cycle_u",
+        "id": 598,
+        "alias": "duty_cycle_u",
         "name": "Duty Cycle U (%)",
         "type": "float32",
-        "podUnits": "%",
         "displayUnits": "%",
-        "out_of_range": {
-            "warning": [
-                0.0,
-                100.0
-            ]
-        }
+        "protections": [
+            {
+                "type": "Range",
+                "value": [0.0,100.0],
+                "fault": false
+            }
+        ]
     },
     {
-        "id": "duty_cycle_v",
+        "id": 599,
+        "alias": "duty_cycle_v",
         "name": "Duty Cycle V (%)",
         "type": "float32",
-        "podUnits": "%",
         "displayUnits": "%",
-        "out_of_range": {
-            "warning": [
-                0.0,
-                100.0
-            ]
-        }
+        "protections": [
+            {
+                "type": "Range",
+                "value": [0.0,100.0],
+                "fault": false
+            }
+        ]
     },
     {
-        "id": "duty_cycle_w",
+        "id": 600,
+        "alias": "duty_cycle_w",
         "name": "Duty Cycle W (%)",
         "type": "float32",
-        "podUnits": "%",
         "displayUnits": "%",
-        "out_of_range": {
-            "warning": [
-                0.0,
-                100.0
-            ]
-        }
+        "protections": [
+            {
+                "type": "Range",
+                "value": [0.0,100.0],
+                "fault": false
+            }
+        ]
     },
     {
-        "id": "commutation_frequency_hz",
+        "id": 601,
+        "alias": "commutation_frequency_hz",
         "name": "Commutation Frequency (Hz)",
         "type": "uint32",
-        "podUnits": "Hz",
         "displayUnits": "Hz"
     },
     {
-        "id": "dead_time_ns",
+        "id": 602,
+        "alias": "dead_time_ns",
         "name": "Dead Time (ns)",
         "type": "uint32",
-        "podUnits": "ns",
         "displayUnits": "ns"
     },
     {
-        "id": "modulation_index",
+        "id": 603,
+        "alias": "modulation_index",
         "name": "Modulation Index",
         "type": "float32",
-        "podUnits": "",
         "displayUnits": ""
     },
     {
-        "id": "modulation_frequency_hz",
+        "id": 604,
+        "alias": "modulation_frequency_hz",
         "name": "Modulation Frequency (Hz)",
         "type": "float32",
-        "podUnits": "Hz",
         "displayUnits": "Hz"
     },
     {
-        "id": "requested_dc_link_voltage",
+        "id": 605,
+        "alias": "requested_dc_link_voltage",
         "name": "Requested DC Link Voltage (V)",
         "type": "float32",
-        "podUnits": "V",
         "displayUnits": "V"
     },
     {
-        "id": "requested_linear_speed",
+        "id": 606,
+        "alias": "requested_linear_speed",
         "name": "Target Linear Speed (m/s)",
         "type": "float32",
-        "podUnits": "m/s",
         "displayUnits": "m/s"
     },
     {
-        "id": "requested_d_current_reference_2",
+        "id": 607,
+        "alias": "requested_d_current_reference_2",
         "name": "D Current Reference(A)",
         "type": "float32",
-        "podUnits": "A",
         "displayUnits": "A"
     },
     {
-        "id": "requested_q_current_reference_2",
+        "id": 608,
+        "alias": "requested_q_current_reference_2",
         "name": "Q Current Reference (A)",
         "type": "float32",
-        "podUnits": "A",
         "displayUnits": "A"
     },
     {
-        "id": "requested_speetec_emulation_mode",
+        "id": 609,
+        "alias": "requested_speetec_emulation_mode",
         "name": "Emulation Mode",
         "type": "enum",
         "enumValues": [
@@ -105,10 +109,10 @@
         ]
     },
     {
-        "id": "requested_speetec_emulation_value",
+        "id": 610,
+        "alias": "requested_speetec_emulation_value",
         "name": "Value (m | m/s | m/s^2)",
         "type": "float32",
-        "podUnits": "",
         "displayUnits": ""
     }
 ]

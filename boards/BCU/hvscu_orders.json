@@ -1,42 +1,49 @@
 [
   {
     "id": 1694,
+    "alias": "sdc_enable",
     "type": "order",
     "name": "SDC Enable",
     "variables": ["HVSCU-Cabinet_sdc_enable"]
   },
   {
     "id": 1695,
+    "alias": "imd_bypass",
     "type": "order",
     "name": "IMD Bypass",
     "variables": ["HVSCU-Cabinet_imd_bypass"]
   },
   {
     "id": 1696,
+    "alias": "reset_supercaps",
     "type": "order",
     "name": "Reset Supercaps",
     "variables": []
   },
   {
     "id": 1697,
+    "alias": "charge_supercaps",
     "type": "order",
     "name": "Charge Supercaps",
     "variables": ["HVSCU-Cabinet_target_charge_voltage"]
   },
   {
     "id": 1698,
+    "alias": "open_contactors",
     "type": "order",
     "name": "Open Contactors",
     "variables": []
   },
   {
     "id": 1693,
+    "alias": "hold_supercaps_charge",
     "type": "order",
     "name": "Hold Supercaps Charge",
     "variables": []
   },
   {
     "id": 1699,
+    "alias": "close_contactors",
     "type": "order",
     "name": "Close Contactors",
     "variables": []
