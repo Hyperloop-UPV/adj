@@ -12,7 +12,7 @@
       "batteries_voltage_reading",
       "sm_status"
     ],
-    "id": 950, 
+    "id": 2161,
     "period": 10,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -20,8 +20,10 @@
   {
     "type": "data",
     "name": "SOC",
-    "variables": ["soc"],
-    "id": 951,
+    "variables": [
+      "soc"
+    ],
+    "id": 2162,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -32,7 +34,7 @@
     "variables": [
       "sdc_status"
     ],
-    "id": 952,
+    "id": 2163,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -178,7 +180,7 @@
       "battery8_temp3",
       "battery8_temp4"
     ],
-    "id": 953,
+    "id": 2164,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -187,13 +189,13 @@
     "type": "data",
     "name": "IMD",
     "variables": [
-        "imd_status",
-        "imd_resistance",
-        "imd_is_ok",
-        "imd_duty",
-        "imd_freq"
+      "imd_status",
+      "imd_resistance",
+      "imd_is_ok",
+      "imd_duty",
+      "imd_freq"
     ],
-    "id": 954,
+    "id": 2165,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
@@ -208,7 +210,7 @@
       "contactor_high",
       "contactor_common_high"
     ],
-    "id": 955,
+    "id": 2166,
     "period": 50,
     "period_type": "ms",
     "socket": "control_station_udp"
