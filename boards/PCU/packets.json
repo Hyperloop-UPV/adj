@@ -14,7 +14,6 @@
     "period": 16.67,
     "socket": "control_station_udp"
   },
-
   {
     "type": "data",
     "name": "Batteries Voltage",
@@ -25,9 +24,8 @@
     "id": 551,
     "period_type": "ms",
     "period": 16.67,
-    "socket": "control_station_udp"    
+    "socket": "control_station_udp"
   },
-
   {
     "type": "data",
     "name": "Current Sensors",
@@ -49,7 +47,6 @@
     "period": 16.67,
     "socket": "control_station_udp"
   },
-
   {
     "type": "data",
     "name": "State Machine States",
@@ -61,7 +58,6 @@
     "period": 16.67,
     "socket": "control_station_udp"
   },
-
   {
     "type": "data",
     "name": "Speed Data",
@@ -78,8 +74,6 @@
     "period": 16.67,
     "socket": "control_station_udp"
   },
-
-
   {
     "type": "data",
     "name": "Gate Driver Reporting",
@@ -94,5 +88,4 @@
     "period": 16.67,
     "socket": "control_station_udp"
   }
-
 ]
