@@ -1,3 +1,0 @@
-{
-  "*.{json,jsonc}": ["npm run format"]
-}
