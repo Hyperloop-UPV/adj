@@ -1,0 +1,8 @@
+[
+  {
+    "id": "state_machine_state",
+    "name": "State Machine State",
+    "type": "enum",
+    "enumValues":["CONNECTING", "CONNECTED","FAULT","HV_ENGAGED"]
+  }
+]
