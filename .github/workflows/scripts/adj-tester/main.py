@@ -22,6 +22,8 @@ from utils import (
     log_message,
     load_json,
     is_valid_ipv4,
+    is_valid_mac,
+    is_valid_protection,
     print_results,
     logError,
     set_color_enabled,
@@ -80,8 +82,11 @@ def open_schema(relative_path: str):
 
 unique_board_ids = set()
 unique_board_ip = set()
+unique_mac = set()
 unique_packet_ids = set()
 units = set()
+address_names = set()
+protection_types = {}
 
 # =========================
 # VALIDATORS
@@ -145,7 +150,7 @@ def check_boards_json():
 
     print_results("boards.json", is_valid, error_list)
 
-    return boards
+    return boards if is_valid else None
 
 
 def check_general_info_json():
@@ -156,9 +161,11 @@ def check_general_info_json():
     accumulation/uniqueness checks for measurement units.
     Returns True on success, False otherwise.
     """
-
+    
+    global protection_types
     error_list = []
     is_valid = True
+
     try:
         general_info = open_json("general_info.json")
         schema = open_schema("general_info.schema.json")
@@ -172,49 +179,76 @@ def check_general_info_json():
         # Additional custom validations
 
         # IPv4 validation (schema already checks format, this is defensive)
-        for name, address in general_info["addresses"].items():
-            if not is_valid_ipv4(address):
-                error_list.append(
-                    logError(
-                        "general_info.json",
-                        f"addresses.{name}",
-                        f"Invalid IPv4 address: {address}",
+        if general_info.get("addresses"):
+            for name, address in general_info.get("addresses").items():
+                if not is_valid_ipv4(address):
+                    error_list.append(
+                        logError(
+                            "general_info.json",
+                            f"addresses.{name}",
+                            f"Invalid IPv4 address: {address}",
+                        )
                     )
-                )
-                is_valid = False
+                    is_valid = False
+        else:
+            is_valid = False
 
         # Message IDs must be unique
         ids_seen = set()
-        for message, msg_id in general_info["message_ids"].items():
-            if msg_id in ids_seen:
-                error_list.append(
-                    logError(
-                        "general_info.json",
-                        f"message_ids.{message}",
-                        f"Duplicate message ID {msg_id}",
+        if general_info.get("message_ids"):
+            for message, msg_id in general_info.get("message_ids").items():
+                if msg_id in ids_seen:
+                    error_list.append(
+                        logError(
+                            "general_info.json",
+                            f"message_ids.{message}",
+                            f"Duplicate message ID {msg_id}",
+                        )
                     )
-                )
-                is_valid = False
-            ids_seen.add(msg_id)
+                    is_valid = False
+                ids_seen.add(msg_id)
 
-        # measurement must be unique
-        for measurement, _ in general_info["units"].items():
-            if measurement in units:
-                error_list.append(
-                    logError(
-                        "general_info.json",
-                        f"units.{measurement}",
-                        f"Duplicate measurement {measurement}",
+        # Measurements must be unique
+        if general_info.get("units"):
+            for measurement, _ in general_info.get("units").items():
+                if measurement in units:
+                    error_list.append(
+                        logError(
+                            "general_info.json",
+                            f"units.{measurement}",
+                            f"Duplicate measurement {measurement}",
+                        )
                     )
-                )
+                    is_valid = False
+                units.add(measurement)
+        else:
+            is_valid = False
+
+        for name, definition in general_info.get("protectionTypes", {}).items():
+            if "%" not in definition.get("text", ""):
+                error_list.append(logError("general_info.json",
+                    f"protectionTypes.{name}.text",
+                    "'text' must contain '%' (measured value)"))
                 is_valid = False
-            units.add(measurement)
+
+            if "textTime" in definition and "%" not in definition["textTime"]:
+                error_list.append(logError("general_info.json",
+                    f"protectionTypes.{name}.textTime",
+                    "'textTime' must contain '%' (time)"))
+                is_valid = False
+
+        # Load protectionTypes
+        protection_types = general_info.get("protectionTypes", {})
+
+        # Load address_names
+        address_names.update(general_info.get("addresses", {}).keys())
+
     except RuntimeError as e:
         error_list.append(logError("general_info.json", "<load>", str(e)))
         is_valid = False
 
-    print_results("general_info.json", is_valid, error_list)
-
+    print_results("general_info.json", is_valid, error_list) 
+    
     return is_valid
 
 
@@ -222,13 +256,14 @@ def check_board_json(path: str):
     """Validate a single board JSON file.
 
     Ensures schema conformance and enforces global uniqueness for
-    `board_id` and `board_ip`. Also verifies the IPv4 format of
-    the board IP address.
+    `board_id`, `board_ip` and, if exists, `mac`. Also verifies the IPv4 format of
+    the board IP address and MAC.
     Returns the parsed board dict on success, otherwise None.
     """
 
     error_list = []
     is_valid = True
+    board = None
 
     try:
         board = open_json(path)
@@ -238,43 +273,76 @@ def check_board_json(path: str):
         if not is_valid:
             error_list.extend(schema_errors)
 
-        # check if ip and id are unique
-        board_id = board["board_id"]
-        board_ip = board["board_ip"]
-        if board_id in unique_board_ids:
-            error_list.append(
-                logError(
-                    path,
-                    "board_id",
-                    f"Duplicate board_id {board_id}",
+        # check if id, ip and mac are unique
+        board_id = board.get("board_id")
+        board_ip = board.get("board_ip")
+        mac = board.get("mac")
+        
+        if board_id is not None:
+            if board_id in unique_board_ids:
+                error_list.append(
+                    logError(
+                        path,
+                        "board_id",
+                        f"Duplicate board_id {board_id}",
+                    )
                 )
-            )
-            is_valid = False
+                is_valid = False
+            else:
+                unique_board_ids.add(board_id)
         else:
-            unique_board_ids.add(board_id)
-
-        if board_ip in unique_board_ip:
-            error_list.append(
-                logError(
-                    path,
-                    "ip_address",
-                    f"Duplicate ip_address {board_ip}",
-                )
-            )
             is_valid = False
+
+        if board_ip:
+            if board_ip in unique_board_ip:
+                error_list.append(
+                    logError(
+                        path,
+                        "ip_address",
+                        f"Duplicate ip_address {board_ip}",
+                    )
+                )
+                is_valid = False
+            else:
+                unique_board_ip.add(board_ip)
+
+            # Check if board_ip is a valid IPv4 address
+            if not is_valid_ipv4(board_ip):
+                error_list.append(
+                    logError(
+                        path,
+                        "board_ip",
+                        f"Invalid IPv4 address: {board_ip}",
+                    )
+                )
+                is_valid = False
         else:
-            unique_board_ip.add(board_ip)
-
-        # Check if board_ip is a valid IPv4 address
-        if not is_valid_ipv4(board_ip):
-            error_list.append(
-                logError(
-                    path,
-                    "board_ip",
-                    f"Invalid IPv4 address: {board_ip}",
-                )
-            )
             is_valid = False
+
+        if mac:
+            if mac in unique_mac:
+                error_list.append(
+                    logError(
+                        path,
+                        "mac_address",
+                        f"Duplicate mac_address {mac}",
+                    )
+                )
+                is_valid = False
+            else:
+                unique_mac.add(mac)
+
+            # Check if board_mac is a valid MAC address
+            if not is_valid_mac(mac):
+                error_list.append(
+                        logError(
+                            path,
+                            "mac",
+                            f"Invalid MAC address: {mac}"
+                        )
+                    )
+                is_valid = False
+
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
         is_valid = False
@@ -286,16 +354,18 @@ def check_board_json(path: str):
         return None
 
 
-def check_measurement_json(path: str, previous_ids=None):
+def check_measurement_json(path: str, previous_aliases= None):
     """Validate a measurements JSON file.
 
-    Checks include schema validation, uniqueness of measurement IDs
-    within the current board (`previous_ids`), verification that any
+    Checks include schema validation, uniqueness of measurement IDs globally
+    and aliases within the current board (`previous_aliases`), verification that any
     referenced units exist in `general_info.json`, and validation of
     enum-related constraints.
 
     Returns True if valid, False otherwise.
     """
+    if previous_aliases is None:
+        previous_aliases = set()
 
     error_list = []
     is_valid = True
@@ -309,71 +379,106 @@ def check_measurement_json(path: str, previous_ids=None):
         if not is_valid:
             error_list.extend(schema_errors)
 
-        # Check that all mesuraments ids are unique within the measurement and if  type="enum" there is a enumValues field with unique values
-
+        # Check that all measuraments ids are unique within the measurement and if type="enum" there is a enumValues field with unique values
         for measure in measurement:
-            mesurament_id = measure["id"]
-            # id
-            if mesurament_id in previous_ids:
+            measurament_id = measure.get("id")
+            measurament_alias = measure.get("alias")
 
-                error_list.append(
-                    logError(
-                        path,
-                        "id",
-                        f"Duplicate id {mesurament_id} within the measurement",
+            # id
+            if measurament_id is not None:
+                if measurament_id in unique_packet_ids:
+
+                    error_list.append(
+                        logError(
+                            path,
+                            "id",
+                            f"Duplicate id {measurament_id}",
+                        )
                     )
-                )
-                is_valid = False
+                    is_valid = False
+                else:
+                    unique_packet_ids.add(measurament_id)
             else:
-                previous_ids.add(mesurament_id)
+                is_valid = False
+                continue
+
+            # alias
+            if measurament_alias is not None:
+                if measurament_alias in previous_aliases:
+
+                    error_list.append(
+                        logError(
+                            path,
+                            "alias",
+                            f"Duplicate alias {measurament_alias} within the measurement",
+                        )
+                    )
+                    is_valid = False
+                else:
+                    previous_aliases.add(measurament_alias)
+            else:
+                is_valid = False
+                continue
+
 
             # units
             # Check that the podUnits and DisplayUnits are in units
-            podUnit = measure.get("podUnits", "")
-            if podUnit != "" and podUnit not in units:
-                error_list.append(
-                    logError(
-                        path,
-                        f"id {mesurament_id}",
-                        f"podUnit '{podUnit}' for id {mesurament_id} is not defined in general_info.json",
+            podUnit = measure.get("podUnits")
+            if podUnit:
+                if podUnit not in units:
+                    error_list.append(
+                        logError(
+                            path,
+                            f"id {measurament_id}",
+                            f"podUnit '{podUnit}' for id {measurament_id} is not defined in general_info.json",
+                        )
                     )
-                )
-                is_valid = False
+                    is_valid = False
 
-            displayUnit = measure.get("displayUnits", "")
-            if displayUnit != "" and displayUnit not in units:
-                error_list.append(
-                    logError(
-                        path,
-                        f"id {mesurament_id}",
-                        f"displayUnit '{displayUnit}' for id {mesurament_id} is not defined in general_info.json",
+            displayUnit = measure.get("displayUnits")
+            if displayUnit:
+                if displayUnit not in units:
+                    error_list.append(
+                        logError(
+                            path,
+                            f"id {measurament_id}",
+                            f"displayUnit '{displayUnit}' for id {measurament_id} is not defined in general_info.json",
+                        )
                     )
-                )
-                is_valid = False
+                    is_valid = False
 
             # type enum
-            if measure["type"] == "enum":
+            if measure.get("type") == "enum":
                 if "enumValues" not in measure:
                     error_list.append(
                         logError(
                             path,
-                            f"id {mesurament_id}",
-                            f"id {mesurament_id} is of type 'enum' but 'enumValues' field is missing",
+                            f"id {measurament_id}",
+                            f"id {measurament_id} is of type 'enum' but 'enumValues' field is missing",
                         )
                     )
                     is_valid = False
                 else:
                     # check unique enum values
-                    enum_values = measure["enumValues"]
+                    enum_values = measure.get("enumValues")
                     if len(enum_values) != len(set(enum_values)):
                         error_list.append(
                             logError(
                                 path,
-                                f"id {mesurament_id}",
-                                f"'enumValues' for id {mesurament_id} contains duplicate values",
+                                f"id {measurament_id}",
+                                f"'enumValues' for id {measurament_id} contains duplicate values",
                             )
                         )
                         is_valid = False
+
+            for prot in measure.get("protections", []):
+                prot_valid, prot_errors = is_valid_protection(
+                        prot, protection_types, path, measurament_id, measure
+                )
+                if not prot_valid:
+                    error_list.extend(prot_errors)
+                    is_valid = False
+
 
     except RuntimeError as e:
         error_list.append(logError(path, "<load>", str(e)))
@@ -408,8 +513,10 @@ def check_packet_json(
 
         # Ensure packet id is unique across all packets
         for pkt in packet:
-            pkt_id = pkt["id"]
-            if pkt_id in unique_packet_ids and pkt_id != 0:
+            pkt_id = pkt.get("id", -1)
+            if pkt_id == -1:
+                continue
+            if pkt_id in unique_packet_ids:
                 error_list.append(
                     logError(
                         path,
@@ -438,8 +545,8 @@ def check_packet_json(
                         used_measurement_ids.add(meas_id)
 
             # Ensure that socket is defined in the sockets
-            socket_name = pkt.get("socket", "")
-            if socket_name != "" and socket_name not in sockets:
+            socket_name = pkt.get("socket")
+            if socket_name and socket_name not in sockets:
                 error_list.append(
                     logError(
                         path,
@@ -492,7 +599,10 @@ def check_socket_json(path: str, sockets_name: set):
 
         for socket in sockets:
             # ensure socket name is unique across all sockets
-            socket_name = socket["name"]
+            socket_name = socket.get("name")
+            if not socket_name:
+                is_valid = False
+                continue
             if socket_name in sockets_name:
                 error_list.append(
                     logError(
@@ -507,26 +617,26 @@ def check_socket_json(path: str, sockets_name: set):
 
             # check that remote_ip is valid (remote_ip is optional) and it is defined only for type=="DatagramSocket" || type=="Socket"
             if (
-                socket["type"] not in ["DatagramSocket", "Socket"]
+                socket.get("type") not in ["DatagramSocket", "Socket"]
                 and "remote_ip" in socket
             ):
                 error_list.append(
                     logError(
                         path,
                         f"name {socket_name}",
-                        f"remote_ip is only allowed for type 'DatagramSocket' or 'Socket', but socket '{socket_name}' has type '{socket['type']}'",
+                        f"remote_ip is only allowed for type 'DatagramSocket' or 'Socket', but socket '{socket_name}' has type '{socket.get('type')}'",
                     )
                 )
                 is_valid = False
 
             else:
-                socket_ip = socket.get("remote_ip", "")
+                socket_ip = socket.get("remote_ip")
 
-                # Remote ip might also be backend
+                # Remote ip might also be one of address_names
                 if (
-                    socket_ip != ""
+                    socket_ip
                     and not is_valid_ipv4(socket_ip)
-                    and socket_ip.lower() != "backend"
+                    and socket_ip not in address_names
                 ):
                     error_list.append(
                         logError(
@@ -538,8 +648,7 @@ def check_socket_json(path: str, sockets_name: set):
                     is_valid = False
 
             # check that port is only definied if type=="ServerSocket" || type=="DatagramSocket"
-
-            if socket.get("port", None) is not None and socket["type"] not in [
+            if socket.get("port") is not None and socket.get("type") not in [
                 "ServerSocket",
                 "DatagramSocket",
             ]:
@@ -547,35 +656,35 @@ def check_socket_json(path: str, sockets_name: set):
                     logError(
                         path,
                         f"name {socket_name}",
-                        f"Port is only allowed for type 'ServerSocket' or 'DatagramSocket', but socket '{socket_name}' has type '{socket['type']}'",
+                        f"Port is only allowed for type 'ServerSocket' or 'DatagramSocket', but socket '{socket_name}' has type '{socket.get('type')}'",
                     )
                 )
                 is_valid = False
 
             # check that local_port is only used for type=="Socket"
             if (
-                socket.get("local_port", None) is not None
-                and socket["type"] != "Socket"
+                socket.get("local_port") is not None
+                and socket.get("type") != "Socket"
             ):
                 error_list.append(
                     logError(
                         path,
                         f"name {socket_name}",
-                        f"local_port is only allowed for type 'Socket', but socket '{socket_name}' has type '{socket['type']}'",
+                        f"local_port is only allowed for type 'Socket', but socket '{socket_name}' has type '{socket.get('type')}'",
                     )
                 )
                 is_valid = False
 
             # checck thath remote_port is only used for type=="Socket"
             if (
-                socket.get("remote_port", None) is not None
-                and socket["type"] != "Socket"
+                socket.get("remote_port") is not None
+                and socket.get("type") != "Socket"
             ):
                 error_list.append(
                     logError(
                         path,
                         f"name {socket_name}",
-                        f"remote_port is only allowed for type 'Socket', but socket '{socket_name}' has type '{socket['type']}'",
+                        f"remote_port is only allowed for type 'Socket', but socket '{socket_name}' has type '{socket.get('type')}'",
                     )
                 )
                 is_valid = False

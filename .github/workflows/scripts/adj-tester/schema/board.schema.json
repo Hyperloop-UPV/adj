@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Board configuration schema",
-    "description": "Main board configuration including ID, IP address, and references to measurements and packets files.",
+    "description": "Main board configuration including ID, IP address, MAC and references to measurements and packets files.",
     "type": "object",
     "additionalProperties": true,
     "required": [
@@ -19,6 +19,11 @@
             "type": "string",
             "format": "ipv4",
             "description": "IP address string for network communication"
+        },
+        "mac": {
+            "type": "string",
+            "pattern": "^([0-9A-F]{2}:){5}([0-9A-F]{2})$",
+            "description": "EUI-48 MAC address of the network interface (e.g. 00:1A:2B:3C:4D:5E)"
         },
         "measurements": {
             "type": "array",

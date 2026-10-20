@@ -9,14 +9,21 @@
         "additionalProperties": true,
         "required": [
             "id",
+            "alias",
             "name",
             "type"
         ],
         "properties": {
             "id": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 8191,
+                "description": "Unique int identifier for the measurement"
+            },
+            "alias": {
                 "type": "string",
                 "minLength": 1,
-                "description": "Unique string identifier for the measurement"
+                "description": "Unique string identifier for the measurement. Before: id"
             },
             "name": {
                 "type": "string",
@@ -56,6 +63,29 @@
                     "type": "string"
                 },
                 "description": "Enumeration values for discrete measurements"
+            },
+            "protections": {
+                "type": "array",
+                "maxItems": 7,
+                "items": {
+                    "type": "object",
+                    "required": ["type", "value"],
+                    "properties": {
+                        "type": { "type": "string" },
+                        "value": {
+                            "type": "array",
+                            "items": { "type": "number" },
+                            "minItems": 1,
+                            "maxItems": 2
+                        },
+                        "fault": { "type": "boolean" },
+                        "time": {
+                            "type": "string",
+                            "pattern": "^[0-9]+(us|ms|s|m|h)$"
+                        }
+                    },
+                    "description": "Optional array to alert if the measurement is out of secure range"
+                }
             }
         }
     }

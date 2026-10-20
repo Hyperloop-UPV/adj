@@ -8,15 +8,16 @@
         "type": "object",
         "additionalProperties": true,
         "required": [
+            "id",
             "type",
             "name"
         ],
         "properties": {
             "id": {
                 "type": "integer",
-                "minimum": 0,
-                "maximum": 4294967295,
-                "description": " 32-bit unsigned integer packet identifier"
+                "minimum": 1,
+                "maximum": 8191,
+                "description": " 13-bit unsigned integer packet identifier"
             },
             "type": {
                 "type": "string",
@@ -38,10 +39,8 @@
                 "description": "Measurement IDs included in this packet"
             },
             "period": {
-                "type": [
-                    "integer",
-                    "number"
-                ],
+                "type": "number",
+                "exclusiveMinimum": 0,
                 "description": "Packet transmission period in milliseconds"
             },
             "period_type": {
