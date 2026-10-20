@@ -142,7 +142,7 @@ def is_valid_ipv4(address: str) -> bool:
     try:
         ipaddress.IPv4Address(address)
         return True
-    except ipaddress.AddressValueError, ValueError:
+    except (ipaddress.AddressValueError, ValueError):
         return False
 
 def is_valid_mac(address: str) -> bool:
