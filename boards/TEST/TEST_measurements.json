@@ -3,6 +3,13 @@
     "id": "state_machine_state",
     "name": "State Machine State",
     "type": "enum",
-    "enumValues":["CONNECTING", "CONNECTED","FAULT","HV_ENGAGED"]
+    "enumValues": ["CONNECTING", "CONNECTED", "FAULT", "HV_ENGAGED"]
+  },
+  {
+    "id": "sensor_test_val",
+    "name": "Sensor Test Value",
+    "type": "float32",
+    "safeRange": [0.0, 10.0],
+    "warningRange": [0.0, 8.0]
   }
 ]

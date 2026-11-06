@@ -2,8 +2,15 @@
   {
     "type": "order",
     "name": "CloseContactors",
-    "variables": [
-    ],
+    "variables": [],
     "id": 1000
+  },
+  {
+    "type": "order",
+    "name": "SendSensorValue",
+    "variables": [
+      "sensor_test_val"
+    ],
+    "id": 1001
   }
 ]
