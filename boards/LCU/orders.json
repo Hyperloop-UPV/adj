@@ -1,129 +1,142 @@
 [
   {
     "type": "order",
-    "name": "set_LDU_pwm_params",
-    "variables": [
-      "ldu_id",
-      "pwm_duty_cycle",
-      "current_control_frequency"
-    ],
-    "id": 9999
-  },
-  {
-    "type": "order",
-    "name": "send_LDU_en",
-    "variables": [
-      "ldu_buffer_id"
-    ],
-    "id": 9998
-  },
-  {
-    "type": "order",
-    "name": "send_LDU_dis",
-    "variables": [
-      "ldu_buffer_id"
-    ],
-    "id": 9996
-  },
-  {
-    "type": "order",
-    "name": "set_current_desired",
-    "variables": [
-      "ldu_id",
-      "lcu_desired_current"
-    ],
-    "id": 9995
-  },
-  {
-    "type": "order",
-    "name": "start_control",
-    "variables": [
-      "ldu_id",
-      "lcu_desired_distance"
-    ],
-    "id": 9994
-  },
-  {
-    "type": "order",
-    "name": "stop_control",
+    "name": "FAULT",
     "variables": [],
-    "id": 9993
+    "id": 800
   },
   {
     "type": "order",
-    "name": "stop_pwm",
-    "variables": [
-      "ldu_id"
-    ],
-    "id": 9991
+    "name": "Stop",
+    "variables": [],
+    "id": 801
   },
   {
     "type": "order",
-    "name": "start_pwm",
-    "variables": [
-      "ldu_id"
-    ],
-    "id": 9992
-  },
-  {
-    "type": "order",
-    "name": "set_fixed_vbat",
+    "name": "Set Fixed VBAT",
     "variables": [
       "fixed_vbat"
     ],
-    "id": 9990
+    "id": 802
   },
   {
     "type": "order",
-    "name": "start_3dof",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9989
-  },
-  {
-    "type": "order",
-    "name": "start_booster",
+    "name": "Unset Fixed VBAT",
     "variables": [],
-    "id": 1751
+    "id": 803
   },
   {
     "type": "order",
-    "name": "exit_booster",
+    "name": "Levitate",
+    "variables": [
+      "desired_distance"
+    ],
+    "id": 804
+  },
+  {
+    "type": "order",
+    "name": "Levitate Ramp",
+    "variables": [
+      "desired_distance"
+    ],
+    "id": 805
+  },
+  {
+    "type": "order",
+    "name": "Set Desired Distance",
+    "variables": [
+      "desired_distance"
+    ],
+    "id": 806
+  },
+  {
+    "type": "order",
+    "name": "Set Desired Distance Ramp",
+    "variables": [
+      "desired_distance"
+    ],
+    "id": 807
+  },
+  {
+    "type": "order",
+    "name": "Stop Ramp",
     "variables": [],
-    "id": 1750
+    "id": 808
   },
   {
     "type": "order",
-    "name": "stick_down",
+    "name": "Current Control",
+    "variables": [
+      "lpu_id",
+      "desired_current"
+    ],
+    "id": 809
+  },
+  {
+    "type": "order",
+    "name": "All Current Control",
+    "variables": [
+      "desired_current"
+    ],
+    "id": 810
+  },
+  {
+    "type": "order",
+    "name": "Stop Current Control",
+    "variables": [
+      "lpu_id"
+    ],
+    "id": 811
+  },
+  {
+    "type": "order",
+    "name": "PWM",
+    "variables": [
+      "lpu_id",
+      "fixed_pwm_duty_cycle"
+    ],
+    "id": 812
+  },
+  {
+    "type": "order",
+    "name": "All PWM",
+    "variables": [
+      "fixed_pwm_duty_cycle"
+    ],
+    "id": 813
+  },
+  {
+    "type": "order",
+    "name": "Stop PWM",
+    "variables": [
+      "lpu_id"
+    ],
+    "id": 814
+  },
+  {
+    "type": "order",
+    "name": "Reset All",
     "variables": [],
-    "id": 9987
+    "id": 815
   },
   {
     "type": "order",
-    "name": "start_5dof",
-    "variables": [
-      "lcu_desired_distance"
-    ],
-    "id": 9988
+    "name": "Reset Slave",
+    "variables": [],
+    "id": 816
   },
   {
     "type": "order",
-    "name": "multi_current_order",
+    "name": "Cinema",
     "variables": [
-      "multi_current_1",
-      "multi_current_2",
-      "multi_current_3",
-      "multi_current_4"
+      "cinema_current"
     ],
-    "id": 9986
+    "id": 817
   },
   {
     "type": "order",
-    "name": "levitation_vcu",
-    "variables": [
-      "distance"
-    ],
-    "id": 9998
+    "name": "Stop Cinema",
+    "variables": [],
+    "id": 818
   }
 ]

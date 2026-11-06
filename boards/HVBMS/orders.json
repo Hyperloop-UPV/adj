@@ -3,36 +3,30 @@
     "type": "order",
     "name": "FAULT",
     "variables": [],
-    "id": 0
+    "id": 2000
   },
   {
     "type": "order",
-    "name": "close_contactors",
+    "name": "Open Contactors",
     "variables": [],
-    "id": 900
+    "id": 2001
   },
   {
     "type": "order",
-    "name": "open_contactors",
+    "name": "Cell Balance",
     "variables": [],
-    "id": 901
+    "id": 2002
   },
   {
     "type": "order",
-    "name": "sdc_obccu",
+    "name": "Start Precharge",
     "variables": [],
-    "id": 902
+    "id": 2003
   },
   {
     "type": "order",
-    "name": "imd_bypass",
+    "name": "Check Faults",
     "variables": [],
-    "id": 903
-  },
-  {
-    "type": "order",
-    "name": "zeroing",
-    "variables": [],
-    "id": 904
+    "id": 2004
   }
 ]

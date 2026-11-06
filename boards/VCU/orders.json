@@ -1,129 +1,87 @@
 [
     {
+        "id": 600,
+        "name": "FAULT",
         "type": "order",
-        "name": "Brake",
-        "id": 43
+        "variables": []
     },
     {
+        "id": 601,
+        "name": "Stop",
         "type": "order",
-        "name": "Unbrake",
-        "id": 52
+        "variables": []
     },
     {
+        "id": 602,
+        "name": "Maintenance",
         "type": "order",
-        "name": "Potencia Refri",
-        "variables": [
-            "duty",
-            "pump"
-        ],
-        "id": 33
+        "variables": []
     },
     {
+        "id": 603,
+        "name": "Precharge",
         "type": "order",
-        "name": "Set Regulator",
-        "variables": [
-            "regulator_pressure",
-            "regulator"
-        ],
-        "id": 34
+        "variables": []
     },
     {
-        "type": "order",
-        "name": "Enable Tapes",
-        "id": 35
-    },
-    {
-        "type": "order",
-        "name": "Disbable Tapes",
-        "id": 36
-    },
-    {
-        "type": "order",
-        "name": "Close Contactors",
-        "id": 44
-    },
-    {
-        "type": "order",
+        "id": 604,
         "name": "Open Contactors",
-        "id": 53
-    },
-    {
         "type": "order",
-        "name": "Levitation",
-        "variables" : [
-            "levitation_distance"
-        ],
-        "id": 37
+        "variables": []
     },
     {
+        "id": 605,
+        "name": "Unbrake",
         "type": "order",
-        "name": "Stop Levitation",
-        "id": 46
+        "variables": []
     },
     {
-        "type" : "order",
-        "name": "Emergency Stop",
-        "id": 55
-    },
-    {
+        "id": 606,
+        "name": "Brake",
         "type": "order",
+        "variables": []
+    },
+    {
+        "id": 607,
+        "name": "Static Levitation",
+        "type": "order",
+        "variables": []
+    },
+    {
+        "id": 608,
         "name": "Propulsion",
-        "variables" : [
-            "run_id"
-        ],
-        "id": 56
+        "type": "order",
+        "variables": []
     },
     {
+        "id": 609,
+        "name": "Dynamic Levitation",
         "type": "order",
-        "name": "SVPWM",
-        "variables" : [
-            "modulation_frequency",
-            "commutation_frequency",
-            "max_voltage",
-            "reference_voltage",
-            "motor_direction"
-        ],
-        "id": 57
+        "variables": []
     },
     {
+        "id": 610,
+        "name": "Propulsion Parameterized",
         "type": "order",
-        "name": "Stop Motor",
-        "id": 58
+        "variables": [
+            "propulsion_current_reference"
+        ]
     },
     {
+        "id": 611,
+        "name": "Static Levitation Parameterized",
         "type": "order",
-        "name": "Current Control",
-        "variables" : [
-
-            "modulation_frequency",
-            "commutation_frequency",
-            "reference_current",
-            "max_voltage",
-            "motor_direction"
-
-
-        ],
-        "id": 59
+        "variables": [
+            "levitation_target_height"
+        ]
     },
     {
+        "id": 612,
+        "name": "Dynamic Levitation Parameterized",
         "type": "order",
-        "name": "Speed Control",
-        "variables" : [
-            "reference_speed",
-            "commutation_frequency",
-            "max_voltage",
-            "motor_direction"
-        ],
-        "id": 60
-    },
-    {
-        "type": "order",
-        "name": "Motor Brake",
-        "id": 61
-    },
-    {
-        "type": "order",
-        "name": "Recovery",
-        "id": 32
+        "variables": [
+            "propulsion_current_reference",
+            "levitation_target_height"
+        ]
     }
 ]

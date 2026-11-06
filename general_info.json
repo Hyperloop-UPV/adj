@@ -4,10 +4,27 @@
     "TCP_SERVER": 50500,
     "UDP": 50400,
     "SNTP": 123,
-    "TFTP": 69
+    "TFTP": 69,
+    "BLCU_UDP": 50420,
+    "BLCU_TCP_CLIENT": 50421
   },
   "addresses": {
-    "backend": "192.168.0.9"
+    "backend": "192.168.0.9",
+    "hypervisor": "192.168.0.13"
+  },
+  "protectionTypes": {
+    "Equal": {
+      "range": false,
+      "text": "Value is equal to {} (measured: %)"
+    },
+    "Range": {
+      "range": true,
+      "text": "Value out of range {} (measured: %)"
+    },
+    "Below": {
+      "range": false,
+      "text": "Value below {} (measured: %)"
+    }
   },
   "units": {
     "m/ss": "*1",
@@ -25,10 +42,12 @@
     "mrad": "/1000",
     "KOhm": "*1000",
     "V": "*1",
+    "mV": "/1000",
     "Ohm": "*1",
     "mm": "/1000",
     "G": "*9.8",
-    "bar": "*1"
+    "bar": "*1",
+    "s": "*1"
   },
   "message_ids": {
     "state_space": 7,

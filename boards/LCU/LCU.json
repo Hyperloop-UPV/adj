@@ -1,5 +1,6 @@
 {
   "board_id": 4,
+  "mac": "0:0:0:0:0:0",
   "board_ip": "192.168.1.4",
   "measurements": [
     "LCU_measurements.json"
@@ -7,5 +8,8 @@
   "packets": [
     "packets.json",
     "orders.json"
+  ],
+  "sockets": [
+    "sockets.json"
   ]
 }
