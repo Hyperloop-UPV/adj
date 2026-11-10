@@ -26,5 +26,51 @@
         "fault": true
       }
     ]
+  },
+  {
+    "id": 1004,
+    "alias": "emergency_stop",
+    "name": "Emergency Stop Button",
+    "type": "bool",
+    "protections": [
+      {
+        "type": "Equal",
+        "value": [
+          1
+        ],
+        "fault": true
+      }
+    ]
+  },
+  {
+    "id": 1005,
+    "alias": "bus_voltage",
+    "name": "Bus Voltage",
+    "type": "float32",
+    "protections": [
+      {
+        "type": "Below",
+        "value": [
+          12.0
+        ],
+        "fault": true
+      }
+    ]
+  },
+  {
+    "id": 1006,
+    "alias": "motor_temp",
+    "name": "Motor Temperature",
+    "type": "float32",
+    "protections": [
+      {
+        "type": "TimeAccumulation",
+        "value": [
+          80.0
+        ],
+        "time": "1500ms",
+        "fault": true
+      }
+    ]
   }
 ]

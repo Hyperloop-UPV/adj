@@ -12,5 +12,29 @@
       "sensor_test_val"
     ],
     "id": 1001
+  },
+  {
+    "type": "order",
+    "name": "SetEmergencyStop",
+    "variables": [
+      "emergency_stop"
+    ],
+    "id": 1010
+  },
+  {
+    "type": "order",
+    "name": "SetBusVoltage",
+    "variables": [
+      "bus_voltage"
+    ],
+    "id": 1011
+  },
+  {
+    "type": "order",
+    "name": "SetMotorTemp",
+    "variables": [
+      "motor_temp"
+    ],
+    "id": 1012
   }
 ]

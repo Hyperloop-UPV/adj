@@ -24,6 +24,15 @@
         "Below": {
             "range": false,
             "text": "Value below {} (measured: %)"
+        },
+        "Above": {
+            "range": false,
+            "text": "Value above {} (measured: %)"
+        },
+        "TimeAccumulation": {
+            "range": false,
+            "text": "Value out of range for too long {} (measured: %)",
+            "textTime": "Active for %s"
         }
     },
     "units": {
