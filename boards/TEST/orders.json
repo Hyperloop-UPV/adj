@@ -3,7 +3,7 @@
     "type": "order",
     "name": "CloseContactors",
     "variables": [],
-    "id": 1002
+    "id": 1000
   },
   {
     "type": "order",
@@ -11,7 +11,7 @@
     "variables": [
       "sensor_test_val"
     ],
-    "id": 1003
+    "id": 1001
   },
   {
     "type": "order",
@@ -19,7 +19,7 @@
     "variables": [
       "emergency_stop"
     ],
-    "id": 1004
+    "id": 1010
   },
   {
     "type": "order",
@@ -27,7 +27,7 @@
     "variables": [
       "bus_voltage"
     ],
-    "id": 1005
+    "id": 1011
   },
   {
     "type": "order",
@@ -35,6 +35,6 @@
     "variables": [
       "motor_temp"
     ],
-    "id": 1006
+    "id": 1012
   }
 ]
