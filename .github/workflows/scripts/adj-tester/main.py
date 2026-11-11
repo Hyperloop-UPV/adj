@@ -256,7 +256,7 @@ def check_board_json(path: str):
     """Validate a single board JSON file.
 
     Ensures schema conformance and enforces global uniqueness for
-    `board_id`, `board_ip` and, if exists, `mac`. Also verifies the IPv4 format of
+    `board_id`, `board_ip` and `mac`. Also verifies the IPv4 format of
     the board IP address and MAC.
     Returns the parsed board dict on success, otherwise None.
     """

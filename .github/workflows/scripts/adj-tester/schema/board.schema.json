@@ -6,7 +6,8 @@
     "additionalProperties": true,
     "required": [
         "board_id",
-        "board_ip"
+        "board_ip",
+        "mac"
     ],
     "properties": {
         "board_id": {
