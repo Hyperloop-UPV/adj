@@ -56,21 +56,5 @@
         "fault": true
       }
     ]
-  },
-  {
-    "id": 1006,
-    "alias": "motor_temp",
-    "name": "Motor Temperature",
-    "type": "float32",
-    "protections": [
-      {
-        "type": "TimeAccumulation",
-        "value": [
-          80.0
-        ],
-        "time": "1500ms",
-        "fault": true
-      }
-    ]
   }
 ]

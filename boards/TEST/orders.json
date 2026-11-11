@@ -28,13 +28,5 @@
       "bus_voltage"
     ],
     "id": 1011
-  },
-  {
-    "type": "order",
-    "name": "SetMotorTemp",
-    "variables": [
-      "motor_temp"
-    ],
-    "id": 1012
   }
 ]
