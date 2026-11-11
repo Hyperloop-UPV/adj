@@ -2,6 +2,7 @@
 
 {
   "board_id": 1,
+  "mac": "68:68:68:68:68:68",
   "board_ip": "192.168.1.8",
   "measurements": [
     "TEST_measurements.json"
