@@ -5,7 +5,6 @@
     "VCU_measurements.json"
   ],
   "packets": [
-    "orders.json",
-    "packets.json"
+    "orders.json"
   ]
 }
