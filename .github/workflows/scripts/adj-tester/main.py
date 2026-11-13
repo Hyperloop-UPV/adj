@@ -84,8 +84,8 @@ unique_board_ids = set()
 unique_board_ip = set()
 unique_mac = set()
 unique_packet_ids = set()
-order_variables = set()
-packet_variables = set()
+orders_variables = set()
+packets_variables = set()
 units = set()
 address_names = set()
 protection_types = {}
@@ -548,10 +548,24 @@ def check_packet_json(
                     if used_measurement_ids is not None:
                         used_measurement_ids.add(meas_id)
 
-                    # Ensure this measurement is not being used in both packet types
+                    # Ensure this measurement is not in the same packet twice
+                    local_packet_variables = set()
+                    if meas_id in local_packet_variables:
+                        error_list.append(
+                                logError(
+                                    path,
+                                    f"id {pkt_id}",
+                                    f"measurement_id {meas_id} in id {pkt_id} is duplicated in the same packet"
+                                    )
+                                )
+                        is_valid = False
+                    else:
+                        local_packet_variables.add(meas_id)
+
                     if pkt_type is not None:
                         if pkt_type == "data":
-                            if meas_id in order_variables:
+                            # Ensure this measurement is not being used in both packet types
+                            if meas_id in orders_variables:
                                 error_list.append(
                                         logError(
                                             path,
@@ -561,20 +575,30 @@ def check_packet_json(
                                         )
                                 is_valid = False
                             else:
-                                packet_variables.add(meas_id)
+                                packets_variables.add(meas_id)
 
                         elif pkt_type == "order":
-                            if meas_id in packet_variables:
+                            if meas_id in packets_variables:
                                 error_list.append(
                                         logError(
                                             path,
                                             f"id {pkt_id}",
-                                            f"measurament_id {meas_id} in id {pkt_id} is duplicated as a data packet"
+                                            f"measurament_id {meas_id} in id {pkt_id} is duplicated as a packet"
+                                            )
+                                        )
+                                is_valid = False
+
+                            if meas_id in orders_variables:
+                                error_list.append(
+                                        logError(
+                                            path,
+                                            f"id {pkt_id}",
+                                            f"measurament_id {meas_id} in id {pkt_id} is an order duplicated as a order"
                                             )
                                         )
                                 is_valid = False
                             else:
-                                order_variables.add(meas_id)
+                                orders_variables.add(meas_id)
 
             # Ensure that socket is defined in the sockets
             socket_name = pkt.get("socket")
