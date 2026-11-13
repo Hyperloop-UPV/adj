@@ -84,6 +84,8 @@ unique_board_ids = set()
 unique_board_ip = set()
 unique_mac = set()
 unique_packet_ids = set()
+order_variables = set()
+packet_variables = set()
 units = set()
 address_names = set()
 protection_types = {}
@@ -528,6 +530,8 @@ def check_packet_json(
             else:
                 unique_packet_ids.add(pkt_id)
 
+            pkt_type = pkt.get("type", None)
+
             # Ensure all measurement ids in the packet are defined in the measurements
             for meas_id in pkt.get("variables", []):
                 if meas_id not in measurement_ids:
@@ -543,6 +547,34 @@ def check_packet_json(
                     # Track that this measurement is being used
                     if used_measurement_ids is not None:
                         used_measurement_ids.add(meas_id)
+
+                    # Ensure this measurement is not being used in both packet types
+                    if pkt_type is not None:
+                        if pkt_type == "data":
+                            if meas_id in order_variables:
+                                error_list.append(
+                                        logError(
+                                            path,
+                                            f"id {pkt_id}",
+                                            f"measurament_id {meas_id} in id {pkt_id} is duplicated as a order"
+                                            )
+                                        )
+                                is_valid = False
+                            else:
+                                packet_variables.add(meas_id)
+
+                        elif pkt_type == "order":
+                            if meas_id in packet_variables:
+                                error_list.append(
+                                        logError(
+                                            path,
+                                            f"id {pkt_id}",
+                                            f"measurament_id {meas_id} in id {pkt_id} is duplicated as a data packet"
+                                            )
+                                        )
+                                is_valid = False
+                            else:
+                                order_variables.add(meas_id)
 
             # Ensure that socket is defined in the sockets
             socket_name = pkt.get("socket")

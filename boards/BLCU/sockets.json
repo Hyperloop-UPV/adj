@@ -4,11 +4,10 @@
         "name": "control_station_tcp",
         "port": 50500
     },
-
     {
         "type": "DatagramSocket",
         "name": "control_station_udp",
-        "remote_ip":"backend",
+        "remote_ip": "backend",
         "port": 50420
     }
 ]
