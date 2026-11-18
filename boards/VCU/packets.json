@@ -5,7 +5,7 @@
         "variables": [
             "state"
         ],
-        "id": 249,
+        "id": 625,
         "period_type": "ms",
         "period": 10,
         "socket": "control_station_udp"
@@ -18,7 +18,7 @@
             "low_pressure",
             "pressure_regulator_feedback"
         ],
-        "id": 252,
+        "id": 626,
         "period_type": "ms",
         "period": 10,
         "socket": "control_station_udp"
@@ -29,7 +29,7 @@
         "variables": [
             "brakes_status"
         ],
-        "id": 253,
+        "id": 627,
         "period_type": "ms",
         "period": 10,
         "socket": "control_station_udp"
@@ -40,7 +40,7 @@
         "variables": [
             "electrovalve_enabled"
         ],
-        "id": 254,
+        "id": 628,
         "period_type": "ms",
         "period": 10,
         "socket": "control_station_udp"
@@ -54,7 +54,7 @@
             "pcu_connected",
             "lcu_connected"
         ],
-        "id": 255,
+        "id": 629,
         "period_type": "ms",
         "period": 10,
         "socket": "control_station_udp"
