@@ -1,0 +1,50 @@
+[
+  {
+    "id": 241,
+    "type": "order",
+    "name": "SDC Enable",
+    "variables": [
+      "bcu_HVSCU-Cabinet_sdc_enable"
+    ]
+  },
+  {
+    "id": 242,
+    "type": "order",
+    "name": "IMD Bypass",
+    "variables": [
+      "bcu_HVSCU-Cabinet_imd_bypass"
+    ]
+  },
+  {
+    "id": 243,
+    "type": "order",
+    "name": "Reset Supercaps",
+    "variables": []
+  },
+  {
+    "id": 244,
+    "type": "order",
+    "name": "Charge Supercaps",
+    "variables": [
+      "bcu_HVSCU-Cabinet_target_charge_voltage"
+    ]
+  },
+  {
+    "id": 245,
+    "type": "order",
+    "name": "Open Contactors",
+    "variables": []
+  },
+  {
+    "id": 246,
+    "type": "order",
+    "name": "Hold Supercaps Charge",
+    "variables": []
+  },
+  {
+    "id": 247,
+    "type": "order",
+    "name": "Close Contactors",
+    "variables": []
+  }
+]

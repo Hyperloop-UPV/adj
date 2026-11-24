@@ -1,0 +1,50 @@
+[
+  {
+    "type": "data",
+    "name": "Battery Data",
+    "variables": [
+      "bmsl_cell_1",
+      "bmsl_cell_2",
+      "bmsl_cell_3",
+      "bmsl_cell_4",
+      "bmsl_cell_5",
+      "bmsl_cell_6",
+      "bmsl_voltage_min",
+      "bmsl_voltage_max",
+      "bmsl_total_voltage",
+      "bmsl_SOC",
+      "bmsl_temperature_1",
+      "bmsl_temperature_2",
+      "bmsl_temperature_3",
+      "bmsl_temperature_4",
+      "bmsl_temp_min",
+      "bmsl_temp_max",
+      "bmsl_current"
+    ],
+    "id": 728
+  },
+  {
+    "type": "data",
+    "name": "Current State",
+    "variables": [
+      "bmsl_state"
+    ],
+    "id": 729
+  },
+  {
+    "type": "data",
+    "name": "DCLV Data",
+    "variables": [
+      "bmsl_pfm_state",
+      "bmsl_buffer_state",
+      "bmsl_reset_state",
+      "bmsl_frequency",
+      "bmsl_dead_time",
+      "bmsl_output_current",
+      "bmsl_input_current",
+      "bmsl_output_voltage",
+      "bmsl_input_voltage"
+    ],
+    "id": 730
+  }
+]

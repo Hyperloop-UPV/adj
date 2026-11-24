@@ -1,0 +1,1994 @@
+[
+  {
+    "id": 1,
+    "name": "Total Supercaps Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 400,
+      "warning": 446.4
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_total_supercaps_voltage"
+  },
+  {
+    "id": 2,
+    "name": "Module 1 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 133.33,
+      "warning": 148.8
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_voltage"
+  },
+  {
+    "id": 3,
+    "name": "Module 1 Max Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_max_cell"
+  },
+  {
+    "id": 4,
+    "name": "Module 1 Min Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_min_cell"
+  },
+  {
+    "id": 5,
+    "name": "Module 1 Average Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_average_cell"
+  },
+  {
+    "id": 6,
+    "name": "Module 1 Max Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "out_of_range": {
+      "safe": [
+        10.5,
+        30.5
+      ],
+      "warning": [
+        5.5,
+        60
+      ]
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_max_temp"
+  },
+  {
+    "id": 7,
+    "name": "Module 1 Min Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "out_of_range": {
+      "safe": [
+        10.5,
+        30.5
+      ],
+      "warning": [
+        5.5,
+        60
+      ]
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_min_temp"
+  },
+  {
+    "id": 8,
+    "name": "Module 2 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 133.33,
+      "warning": 148.8
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_voltage"
+  },
+  {
+    "id": 9,
+    "name": "Module 2 Max Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_max_cell"
+  },
+  {
+    "id": 10,
+    "name": "Module 2 Min Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_min_cell"
+  },
+  {
+    "id": 11,
+    "name": "Module 2 Average Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_average_cell"
+  },
+  {
+    "id": 12,
+    "name": "Module 2 Max Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "out_of_range": {
+      "safe": [
+        10.5,
+        30.5
+      ],
+      "warning": [
+        5.5,
+        60
+      ]
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_max_temp"
+  },
+  {
+    "id": 13,
+    "name": "Module 2 Min Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "out_of_range": {
+      "safe": [
+        10.5,
+        30.5
+      ],
+      "warning": [
+        5.5,
+        60
+      ]
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_min_temp"
+  },
+  {
+    "id": 14,
+    "name": "Module 3 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 133.33,
+      "warning": 148.8
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_voltage"
+  },
+  {
+    "id": 15,
+    "name": "Module 3 Max Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_max_cell"
+  },
+  {
+    "id": 16,
+    "name": "Module 3 Min Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_min_cell"
+  },
+  {
+    "id": 17,
+    "name": "Module 3 Average Cell Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_average_cell"
+  },
+  {
+    "id": 18,
+    "name": "Module 3 Max Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "out_of_range": {
+      "safe": [
+        10.5,
+        30.5
+      ],
+      "warning": [
+        5.5,
+        60
+      ]
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_max_temp"
+  },
+  {
+    "id": 19,
+    "name": "Module 3 Min Temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "out_of_range": {
+      "safe": [
+        10.5,
+        30.5
+      ],
+      "warning": [
+        5.5,
+        60
+      ]
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_min_temp"
+  },
+  {
+    "id": 20,
+    "name": "Module 1 Cell 1 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_1_voltage"
+  },
+  {
+    "id": 21,
+    "name": "Module 1 Cell 2 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_2_voltage"
+  },
+  {
+    "id": 22,
+    "name": "Module 1 Cell 3 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_3_voltage"
+  },
+  {
+    "id": 23,
+    "name": "Module 1 Cell 4 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_4_voltage"
+  },
+  {
+    "id": 24,
+    "name": "Module 1 Cell 5 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_5_voltage"
+  },
+  {
+    "id": 25,
+    "name": "Module 1 Cell 6 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_6_voltage"
+  },
+  {
+    "id": 26,
+    "name": "Module 1 Cell 7 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_7_voltage"
+  },
+  {
+    "id": 27,
+    "name": "Module 1 Cell 8 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_8_voltage"
+  },
+  {
+    "id": 28,
+    "name": "Module 1 Cell 9 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_9_voltage"
+  },
+  {
+    "id": 29,
+    "name": "Module 1 Cell 10 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_10_voltage"
+  },
+  {
+    "id": 30,
+    "name": "Module 1 Cell 11 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_11_voltage"
+  },
+  {
+    "id": 31,
+    "name": "Module 1 Cell 12 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_12_voltage"
+  },
+  {
+    "id": 32,
+    "name": "Module 1 Cell 13 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_13_voltage"
+  },
+  {
+    "id": 33,
+    "name": "Module 1 Cell 14 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_14_voltage"
+  },
+  {
+    "id": 34,
+    "name": "Module 1 Cell 15 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_15_voltage"
+  },
+  {
+    "id": 35,
+    "name": "Module 1 Cell 16 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_16_voltage"
+  },
+  {
+    "id": 36,
+    "name": "Module 1 Cell 17 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_17_voltage"
+  },
+  {
+    "id": 37,
+    "name": "Module 1 Cell 18 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_18_voltage"
+  },
+  {
+    "id": 38,
+    "name": "Module 1 Cell 19 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_19_voltage"
+  },
+  {
+    "id": 39,
+    "name": "Module 1 Cell 20 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_20_voltage"
+  },
+  {
+    "id": 40,
+    "name": "Module 1 Cell 21 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_21_voltage"
+  },
+  {
+    "id": 41,
+    "name": "Module 1 Cell 22 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_22_voltage"
+  },
+  {
+    "id": 42,
+    "name": "Module 1 Cell 23 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_23_voltage"
+  },
+  {
+    "id": 43,
+    "name": "Module 1 Cell 24 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_24_voltage"
+  },
+  {
+    "id": 44,
+    "name": "Module 1 Cell 25 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_25_voltage"
+  },
+  {
+    "id": 45,
+    "name": "Module 1 Cell 26 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_26_voltage"
+  },
+  {
+    "id": 46,
+    "name": "Module 1 Cell 27 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_27_voltage"
+  },
+  {
+    "id": 47,
+    "name": "Module 1 Cell 28 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_28_voltage"
+  },
+  {
+    "id": 48,
+    "name": "Module 1 Cell 29 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_29_voltage"
+  },
+  {
+    "id": 49,
+    "name": "Module 1 Cell 30 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_30_voltage"
+  },
+  {
+    "id": 50,
+    "name": "Module 1 Cell 31 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_31_voltage"
+  },
+  {
+    "id": 51,
+    "name": "Module 1 Cell 32 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_32_voltage"
+  },
+  {
+    "id": 52,
+    "name": "Module 1 Cell 33 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_33_voltage"
+  },
+  {
+    "id": 53,
+    "name": "Module 1 Cell 34 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_34_voltage"
+  },
+  {
+    "id": 54,
+    "name": "Module 1 Cell 35 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_35_voltage"
+  },
+  {
+    "id": 55,
+    "name": "Module 1 Cell 36 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_36_voltage"
+  },
+  {
+    "id": 56,
+    "name": "Module 1 Cell 37 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_37_voltage"
+  },
+  {
+    "id": 57,
+    "name": "Module 1 Cell 38 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_38_voltage"
+  },
+  {
+    "id": 58,
+    "name": "Module 1 Cell 39 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_39_voltage"
+  },
+  {
+    "id": 59,
+    "name": "Module 1 Cell 40 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_40_voltage"
+  },
+  {
+    "id": 60,
+    "name": "Module 1 Cell 41 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_41_voltage"
+  },
+  {
+    "id": 61,
+    "name": "Module 1 Cell 42 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_42_voltage"
+  },
+  {
+    "id": 62,
+    "name": "Module 1 Cell 43 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_43_voltage"
+  },
+  {
+    "id": 63,
+    "name": "Module 1 Cell 44 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_44_voltage"
+  },
+  {
+    "id": 64,
+    "name": "Module 1 Cell 45 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_45_voltage"
+  },
+  {
+    "id": 65,
+    "name": "Module 1 Cell 46 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_46_voltage"
+  },
+  {
+    "id": 66,
+    "name": "Module 1 Cell 47 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_47_voltage"
+  },
+  {
+    "id": 67,
+    "name": "Module 1 Cell 48 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_1_cell_48_voltage"
+  },
+  {
+    "id": 68,
+    "name": "Module 2 Cell 1 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_1_voltage"
+  },
+  {
+    "id": 69,
+    "name": "Module 2 Cell 2 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_2_voltage"
+  },
+  {
+    "id": 70,
+    "name": "Module 2 Cell 3 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_3_voltage"
+  },
+  {
+    "id": 71,
+    "name": "Module 2 Cell 4 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_4_voltage"
+  },
+  {
+    "id": 72,
+    "name": "Module 2 Cell 5 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_5_voltage"
+  },
+  {
+    "id": 73,
+    "name": "Module 2 Cell 6 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_6_voltage"
+  },
+  {
+    "id": 74,
+    "name": "Module 2 Cell 7 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_7_voltage"
+  },
+  {
+    "id": 75,
+    "name": "Module 2 Cell 8 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_8_voltage"
+  },
+  {
+    "id": 76,
+    "name": "Module 2 Cell 9 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_9_voltage"
+  },
+  {
+    "id": 77,
+    "name": "Module 2 Cell 10 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_10_voltage"
+  },
+  {
+    "id": 78,
+    "name": "Module 2 Cell 11 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_11_voltage"
+  },
+  {
+    "id": 79,
+    "name": "Module 2 Cell 12 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_12_voltage"
+  },
+  {
+    "id": 80,
+    "name": "Module 2 Cell 13 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_13_voltage"
+  },
+  {
+    "id": 81,
+    "name": "Module 2 Cell 14 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_14_voltage"
+  },
+  {
+    "id": 82,
+    "name": "Module 2 Cell 15 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_15_voltage"
+  },
+  {
+    "id": 83,
+    "name": "Module 2 Cell 16 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_16_voltage"
+  },
+  {
+    "id": 84,
+    "name": "Module 2 Cell 17 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_17_voltage"
+  },
+  {
+    "id": 85,
+    "name": "Module 2 Cell 18 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_18_voltage"
+  },
+  {
+    "id": 86,
+    "name": "Module 2 Cell 19 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_19_voltage"
+  },
+  {
+    "id": 87,
+    "name": "Module 2 Cell 20 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_20_voltage"
+  },
+  {
+    "id": 88,
+    "name": "Module 2 Cell 21 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_21_voltage"
+  },
+  {
+    "id": 89,
+    "name": "Module 2 Cell 22 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_22_voltage"
+  },
+  {
+    "id": 90,
+    "name": "Module 2 Cell 23 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_23_voltage"
+  },
+  {
+    "id": 91,
+    "name": "Module 2 Cell 24 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_24_voltage"
+  },
+  {
+    "id": 92,
+    "name": "Module 2 Cell 25 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_25_voltage"
+  },
+  {
+    "id": 93,
+    "name": "Module 2 Cell 26 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_26_voltage"
+  },
+  {
+    "id": 94,
+    "name": "Module 2 Cell 27 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_27_voltage"
+  },
+  {
+    "id": 95,
+    "name": "Module 2 Cell 28 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_28_voltage"
+  },
+  {
+    "id": 96,
+    "name": "Module 2 Cell 29 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_29_voltage"
+  },
+  {
+    "id": 97,
+    "name": "Module 2 Cell 30 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_30_voltage"
+  },
+  {
+    "id": 98,
+    "name": "Module 2 Cell 31 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_31_voltage"
+  },
+  {
+    "id": 99,
+    "name": "Module 2 Cell 32 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_32_voltage"
+  },
+  {
+    "id": 100,
+    "name": "Module 2 Cell 33 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_33_voltage"
+  },
+  {
+    "id": 101,
+    "name": "Module 2 Cell 34 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_34_voltage"
+  },
+  {
+    "id": 102,
+    "name": "Module 2 Cell 35 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_35_voltage"
+  },
+  {
+    "id": 103,
+    "name": "Module 2 Cell 36 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_36_voltage"
+  },
+  {
+    "id": 104,
+    "name": "Module 2 Cell 37 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_37_voltage"
+  },
+  {
+    "id": 105,
+    "name": "Module 2 Cell 38 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_38_voltage"
+  },
+  {
+    "id": 106,
+    "name": "Module 2 Cell 39 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_39_voltage"
+  },
+  {
+    "id": 107,
+    "name": "Module 2 Cell 40 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_40_voltage"
+  },
+  {
+    "id": 108,
+    "name": "Module 2 Cell 41 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_41_voltage"
+  },
+  {
+    "id": 109,
+    "name": "Module 2 Cell 42 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_42_voltage"
+  },
+  {
+    "id": 110,
+    "name": "Module 2 Cell 43 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_43_voltage"
+  },
+  {
+    "id": 111,
+    "name": "Module 2 Cell 44 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_44_voltage"
+  },
+  {
+    "id": 112,
+    "name": "Module 2 Cell 45 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_45_voltage"
+  },
+  {
+    "id": 113,
+    "name": "Module 2 Cell 46 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_46_voltage"
+  },
+  {
+    "id": 114,
+    "name": "Module 2 Cell 47 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_47_voltage"
+  },
+  {
+    "id": 115,
+    "name": "Module 2 Cell 48 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_2_cell_48_voltage"
+  },
+  {
+    "id": 116,
+    "name": "Module 3 Cell 1 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_1_voltage"
+  },
+  {
+    "id": 117,
+    "name": "Module 3 Cell 2 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_2_voltage"
+  },
+  {
+    "id": 118,
+    "name": "Module 3 Cell 3 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_3_voltage"
+  },
+  {
+    "id": 119,
+    "name": "Module 3 Cell 4 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_4_voltage"
+  },
+  {
+    "id": 120,
+    "name": "Module 3 Cell 5 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_5_voltage"
+  },
+  {
+    "id": 121,
+    "name": "Module 3 Cell 6 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_6_voltage"
+  },
+  {
+    "id": 122,
+    "name": "Module 3 Cell 7 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_7_voltage"
+  },
+  {
+    "id": 123,
+    "name": "Module 3 Cell 8 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_8_voltage"
+  },
+  {
+    "id": 124,
+    "name": "Module 3 Cell 9 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_9_voltage"
+  },
+  {
+    "id": 125,
+    "name": "Module 3 Cell 10 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_10_voltage"
+  },
+  {
+    "id": 126,
+    "name": "Module 3 Cell 11 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_11_voltage"
+  },
+  {
+    "id": 127,
+    "name": "Module 3 Cell 12 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_12_voltage"
+  },
+  {
+    "id": 128,
+    "name": "Module 3 Cell 13 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_13_voltage"
+  },
+  {
+    "id": 129,
+    "name": "Module 3 Cell 14 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_14_voltage"
+  },
+  {
+    "id": 130,
+    "name": "Module 3 Cell 15 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_15_voltage"
+  },
+  {
+    "id": 131,
+    "name": "Module 3 Cell 16 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_16_voltage"
+  },
+  {
+    "id": 132,
+    "name": "Module 3 Cell 17 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_17_voltage"
+  },
+  {
+    "id": 133,
+    "name": "Module 3 Cell 18 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_18_voltage"
+  },
+  {
+    "id": 134,
+    "name": "Module 3 Cell 19 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_19_voltage"
+  },
+  {
+    "id": 135,
+    "name": "Module 3 Cell 20 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_20_voltage"
+  },
+  {
+    "id": 136,
+    "name": "Module 3 Cell 21 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_21_voltage"
+  },
+  {
+    "id": 137,
+    "name": "Module 3 Cell 22 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_22_voltage"
+  },
+  {
+    "id": 138,
+    "name": "Module 3 Cell 23 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_23_voltage"
+  },
+  {
+    "id": 139,
+    "name": "Module 3 Cell 24 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_24_voltage"
+  },
+  {
+    "id": 140,
+    "name": "Module 3 Cell 25 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_25_voltage"
+  },
+  {
+    "id": 141,
+    "name": "Module 3 Cell 26 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_26_voltage"
+  },
+  {
+    "id": 142,
+    "name": "Module 3 Cell 27 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_27_voltage"
+  },
+  {
+    "id": 143,
+    "name": "Module 3 Cell 28 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_28_voltage"
+  },
+  {
+    "id": 144,
+    "name": "Module 3 Cell 29 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_29_voltage"
+  },
+  {
+    "id": 145,
+    "name": "Module 3 Cell 30 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_30_voltage"
+  },
+  {
+    "id": 146,
+    "name": "Module 3 Cell 31 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_31_voltage"
+  },
+  {
+    "id": 147,
+    "name": "Module 3 Cell 32 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_32_voltage"
+  },
+  {
+    "id": 148,
+    "name": "Module 3 Cell 33 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_33_voltage"
+  },
+  {
+    "id": 149,
+    "name": "Module 3 Cell 34 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_34_voltage"
+  },
+  {
+    "id": 150,
+    "name": "Module 3 Cell 35 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_35_voltage"
+  },
+  {
+    "id": 151,
+    "name": "Module 3 Cell 36 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_36_voltage"
+  },
+  {
+    "id": 152,
+    "name": "Module 3 Cell 37 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_37_voltage"
+  },
+  {
+    "id": 153,
+    "name": "Module 3 Cell 38 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_38_voltage"
+  },
+  {
+    "id": 154,
+    "name": "Module 3 Cell 39 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_39_voltage"
+  },
+  {
+    "id": 155,
+    "name": "Module 3 Cell 40 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_40_voltage"
+  },
+  {
+    "id": 156,
+    "name": "Module 3 Cell 41 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_41_voltage"
+  },
+  {
+    "id": 157,
+    "name": "Module 3 Cell 42 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_42_voltage"
+  },
+  {
+    "id": 158,
+    "name": "Module 3 Cell 43 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_43_voltage"
+  },
+  {
+    "id": 159,
+    "name": "Module 3 Cell 44 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_44_voltage"
+  },
+  {
+    "id": 160,
+    "name": "Module 3 Cell 45 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_45_voltage"
+  },
+  {
+    "id": 161,
+    "name": "Module 3 Cell 46 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_46_voltage"
+  },
+  {
+    "id": 162,
+    "name": "Module 3 Cell 47 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_47_voltage"
+  },
+  {
+    "id": 163,
+    "name": "Module 3 Cell 48 Voltage",
+    "type": "float32",
+    "podUnits": "mV",
+    "displayUnits": "V",
+    "below": {
+      "safe": 2.78,
+      "warning": 3.1
+    },
+    "alias": "hvscu-cabinet_HVSCU-Cabinet_module_3_cell_48_voltage"
+  }
+]

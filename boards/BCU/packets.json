@@ -1,0 +1,118 @@
+[
+  {
+    "id": 248,
+    "type": "data",
+    "name": "Motor Driver",
+    "variables": [
+      "bcu_duty_cycle_u__data_1",
+      "bcu_duty_cycle_v__data_2",
+      "bcu_duty_cycle_w__data_3",
+      "bcu_commutation_frequency_hz__data_4",
+      "bcu_dead_time_ns__data_5"
+    ]
+  },
+  {
+    "id": 249,
+    "type": "data",
+    "name": "State",
+    "variables": [
+      "bcu_bcu_general_state",
+      "bcu_bcu_operational_state",
+      "bcu_bcu_nested_state",
+      "bcu_control_state"
+    ]
+  },
+  {
+    "id": 250,
+    "type": "data",
+    "name": "Space Vector",
+    "variables": [
+      "bcu_space_vector_time",
+      "bcu_output_modulation_index",
+      "bcu_output_modulation_frequency_hz"
+    ]
+  },
+  {
+    "id": 251,
+    "type": "data",
+    "name": "DC Link",
+    "variables": [
+      "bcu_dc_link_average_voltage",
+      "bcu_dc_link_a_voltage",
+      "bcu_dc_link_b_voltage"
+    ]
+  },
+  {
+    "id": 252,
+    "type": "data",
+    "name": "Motor Currents",
+    "variables": [
+      "bcu_average_current_u",
+      "bcu_average_current_v",
+      "bcu_average_current_w",
+      "bcu_current_u_motor_a",
+      "bcu_current_v_motor_a",
+      "bcu_current_w_motor_a",
+      "bcu_current_u_motor_b",
+      "bcu_current_v_motor_b",
+      "bcu_current_w_motor_b"
+    ]
+  },
+  {
+    "id": 253,
+    "type": "data",
+    "name": "SPEETEC 1",
+    "variables": [
+      "bcu_position_speetec_1",
+      "bcu_direction_speetec_1",
+      "bcu_speed_speetec_1",
+      "bcu_acceleration_speetec_1"
+    ]
+  },
+  {
+    "id": 254,
+    "type": "data",
+    "name": "Current Control",
+    "variables": [
+      "bcu_d_current_reference",
+      "bcu_measured_d_current",
+      "bcu_d_current_error",
+      "bcu_q_current_reference",
+      "bcu_measured_q_current",
+      "bcu_q_current_error",
+      "bcu_target_u_voltage",
+      "bcu_target_v_voltage",
+      "bcu_target_w_voltage",
+      "bcu_electrical_angle",
+      "bcu_pi_id_output",
+      "bcu_pi_iq_output"
+    ]
+  },
+  {
+    "id": 255,
+    "type": "data",
+    "name": "Speed Control",
+    "variables": [
+      "bcu_requested_linear_speed__data_6",
+      "bcu_speed_speetec_1"
+    ]
+  },
+  {
+    "id": 256,
+    "type": "data",
+    "name": "Enable DC Poles (BCU)"
+  },
+  {
+    "id": 257,
+    "type": "data",
+    "name": "Disable DC Poles (BCU)"
+  },
+  {
+    "id": 258,
+    "type": "data",
+    "name": "BCU Bus Voltage",
+    "variables": [
+      "bcu_bcu_bus_voltage"
+    ]
+  }
+]

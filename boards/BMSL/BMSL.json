@@ -1,0 +1,12 @@
+{
+  "board_id": 2,
+  "board_ip": "127.0.0.8",
+  "measurements": [
+    "BMSL_measurements.json"
+  ],
+  "packets": [
+    "packets.json",
+    "orders.json"
+  ],
+  "mac": "02:AD:03:00:00:06"
+}

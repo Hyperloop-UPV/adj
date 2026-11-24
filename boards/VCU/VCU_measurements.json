@@ -1,95 +1,342 @@
 [
-    {
-        "id": 613,
-        "alias": "state",
-        "name": "State",
-        "type": "enum",
-        "enumValues": [
-            "Idle",
-            "Connected",
-            "Maintenance",
-            "Precharging",
-            "HVActive",
-            "Ready",
-            "Propulsion",
-            "Static Levitation",
-            "Dynamic Levitation",
-            "Fault"
-        ]
-    },
-    {
-        "id": 614,
-        "alias": "sdc_closed",
-        "name": "SDC Closed",
-        "type": "bool"
-    },
-    {
-        "id": 615,
-        "alias": "high_pressure",
-        "name": "High Pressure",
-        "type": "float32",
-        "displayUnits": "bar"
-    },
-    {
-        "id": 616,
-        "alias": "low_pressure",
-        "name": "Low Pressure",
-        "type": "float32",
-        "displayUnits": "bar"
-    },
-    {
-        "id": 617,
-        "alias": "pressure_regulator_feedback",
-        "name": "Pressure Regulator Feedback",
-        "type": "float32",
-        "displayUnits": "bar"
-    },
-    {
-        "id": 618,
-        "alias": "brakes_status",
-        "name": "Brakes Status",
-        "type": "enum",
-        "enumValues": [
-            "BRAKED",
-            "UNBRAKED"
-        ]
-    },
-    {
-        "id": 619,
-        "alias": "electrovalve_enabled",
-        "name": "Electrovalve Enabled",
-        "type": "bool"
-    },
-    {
-        "id": 620,
-        "alias": "hvbms_connected",
-        "name": "HVBMS Connected",
-        "type": "bool"
-    },
-    {
-        "id": 621,
-        "alias": "pcu_connected",
-        "name": "PCU Connected",
-        "type": "bool"
-    },
-    {
-        "id": 622,
-        "alias": "lcu_connected",
-        "name": "LCU Connected",
-        "type": "bool"
-    },
-    {
-        "id": 623,
-        "alias": "propulsion_current_reference",
-        "name": "Propulsion Current Reference",
-        "type": "float32",
-        "displayUnits": "A"
-    },
-    {
-        "id": 624,
-        "alias": "levitation_target_height",
-        "name": "Levitation Target Height",
-        "type": "float32",
-        "displayUnits": "mm"
-    }
+  {
+    "id": 735,
+    "name": "Duty",
+    "type": "uint32",
+    "podUnits": "Percentage",
+    "displayUnits": "Percentage",
+    "alias": "vcu_duty"
+  },
+  {
+    "id": 736,
+    "name": "Pump",
+    "type": "enum",
+    "enumValues": [
+      "UNIDADES",
+      "PLACAS"
+    ],
+    "alias": "vcu_pump"
+  },
+  {
+    "id": 737,
+    "name": "General State",
+    "type": "enum",
+    "enumValues": [
+      "CONNECTING",
+      "OPERATIONAL",
+      "FAULT"
+    ],
+    "alias": "vcu_general_state"
+  },
+  {
+    "id": 738,
+    "name": "Operational State",
+    "type": "enum",
+    "enumValues": [
+      "IDLE",
+      "END_OF_RUN",
+      "ENERGIZED",
+      "READY",
+      "DEMONSTRATION"
+    ],
+    "alias": "vcu_operational_state"
+  },
+  {
+    "id": 739,
+    "name": "Regulator Pressure",
+    "type": "float32",
+    "podUnits": "bar",
+    "displayUnits": "bar",
+    "alias": "vcu_regulator_pressure"
+  },
+  {
+    "id": 740,
+    "name": "Regulator",
+    "type": "enum",
+    "enumValues": [
+      "REGULATOR 1",
+      "REGULATOR 2"
+    ],
+    "alias": "vcu_regulator"
+  },
+  {
+    "id": 741,
+    "name": "Reed 1",
+    "type": "enum",
+    "enumValues": [
+      "UNDEPLOYED",
+      "DEPLOYED"
+    ],
+    "alias": "vcu_reed1"
+  },
+  {
+    "id": 742,
+    "name": "Reed 2",
+    "type": "enum",
+    "enumValues": [
+      "UNDEPLOYED",
+      "DEPLOYED"
+    ],
+    "alias": "vcu_reed2"
+  },
+  {
+    "id": 743,
+    "name": "Reed 3",
+    "type": "enum",
+    "enumValues": [
+      "UNDEPLOYED",
+      "DEPLOYED"
+    ],
+    "alias": "vcu_reed3"
+  },
+  {
+    "id": 744,
+    "name": "Reed 4",
+    "type": "enum",
+    "enumValues": [
+      "UNDEPLOYED",
+      "DEPLOYED"
+    ],
+    "alias": "vcu_reed4"
+  },
+  {
+    "id": 745,
+    "name": "All Reeds",
+    "type": "bool",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "vcu_all_reeds"
+  },
+  {
+    "id": 746,
+    "name": "Flow 1",
+    "type": "enum",
+    "enumValues": [
+      "OFF",
+      "ON"
+    ],
+    "alias": "vcu_flow1"
+  },
+  {
+    "id": 747,
+    "name": "Flow 2",
+    "type": "enum",
+    "enumValues": [
+      "OFF",
+      "ON"
+    ],
+    "alias": "vcu_flow2"
+  },
+  {
+    "id": 748,
+    "name": "Regulator 1",
+    "type": "float32",
+    "podUnits": "bar",
+    "displayUnits": "bar",
+    "alias": "vcu_regulator_1_pressure"
+  },
+  {
+    "id": 749,
+    "name": "Regulator 2",
+    "type": "float32",
+    "podUnits": "bar",
+    "displayUnits": "bar",
+    "alias": "vcu_regulator_2_pressure"
+  },
+  {
+    "id": 750,
+    "name": "Pressure High",
+    "type": "float32",
+    "podUnits": "bar",
+    "displayUnits": "bar",
+    "alias": "vcu_pressure_high"
+  },
+  {
+    "id": 751,
+    "name": "Pressure Regulator",
+    "type": "float32",
+    "podUnits": "bar",
+    "displayUnits": "bar",
+    "alias": "vcu_pressure_regulator"
+  },
+  {
+    "id": 752,
+    "name": "Pressure Brakes",
+    "type": "float32",
+    "podUnits": "bar",
+    "displayUnits": "bar",
+    "alias": "vcu_pressure_brakes"
+  },
+  {
+    "id": 753,
+    "name": "Pressure Capsule",
+    "type": "float32",
+    "podUnits": "bar",
+    "displayUnits": "bar",
+    "alias": "vcu_pressure_capsule"
+  },
+  {
+    "id": 754,
+    "name": "Tape Enable",
+    "type": "enum",
+    "enumValues": [
+      "DISABLED",
+      "ENABLED"
+    ],
+    "alias": "vcu_tape_enable_output"
+  },
+  {
+    "id": 755,
+    "name": "Section Type",
+    "type": "enum",
+    "enumValues": [
+      "EMERGENCY_SECTION",
+      "NORMAL_SECTION"
+    ],
+    "alias": "vcu_emergency_tape"
+  },
+  {
+    "id": 756,
+    "name": "SDC",
+    "type": "enum",
+    "enumValues": [
+      "OFF",
+      "ON"
+    ],
+    "alias": "vcu_SDC"
+  },
+  {
+    "id": 757,
+    "name": "Levitation Distance (mm)",
+    "type": "float32",
+    "podUnits": "mm",
+    "displayUnits": "mm",
+    "alias": "vcu_levitation_distance"
+  },
+  {
+    "id": 758,
+    "name": "Run ID",
+    "type": "uint8",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "vcu_run_id"
+  },
+  {
+    "id": 759,
+    "name": "Motor Direction",
+    "type": "enum",
+    "enumValues": [
+      "FORWARD",
+      "BACKWARDS"
+    ],
+    "alias": "vcu_motor_direction"
+  },
+  {
+    "id": 760,
+    "name": "Max Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "vcu_max_voltage"
+  },
+  {
+    "id": 761,
+    "name": "Reference Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "vcu_reference_voltage"
+  },
+  {
+    "id": 762,
+    "name": "Commutation Frequency",
+    "type": "float32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz",
+    "alias": "vcu_commutation_frequency"
+  },
+  {
+    "id": 763,
+    "name": "Modulation Frequency",
+    "type": "float32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz",
+    "alias": "vcu_modulation_frequency"
+  },
+  {
+    "id": 764,
+    "name": "Reference Current",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "alias": "vcu_reference_current"
+  },
+  {
+    "id": 765,
+    "name": "Reference Speed",
+    "type": "float32",
+    "podUnits": "km/h",
+    "displayUnits": "km/h",
+    "alias": "vcu_reference_speed"
+  },
+  {
+    "id": 817,
+    "name": "Modulation Frequency",
+    "type": "float32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz",
+    "alias": "vcu_modulation_frequency__order_28"
+  },
+  {
+    "id": 818,
+    "name": "Commutation Frequency",
+    "type": "float32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz",
+    "alias": "vcu_commutation_frequency__order_29"
+  },
+  {
+    "id": 819,
+    "name": "Max Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "vcu_max_voltage__order_30"
+  },
+  {
+    "id": 820,
+    "name": "Motor Direction",
+    "type": "enum",
+    "enumValues": [
+      "FORWARD",
+      "BACKWARDS"
+    ],
+    "alias": "vcu_motor_direction__order_31"
+  },
+  {
+    "id": 821,
+    "name": "Commutation Frequency",
+    "type": "float32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz",
+    "alias": "vcu_commutation_frequency__order_32"
+  },
+  {
+    "id": 822,
+    "name": "Max Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "vcu_max_voltage__order_33"
+  },
+  {
+    "id": 823,
+    "name": "Motor Direction",
+    "type": "enum",
+    "enumValues": [
+      "FORWARD",
+      "BACKWARDS"
+    ],
+    "alias": "vcu_motor_direction__order_34"
+  }
 ]

@@ -1,0 +1,1718 @@
+[
+  {
+    "id": 451,
+    "name": "Battery 1 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery1_SOC"
+  },
+  {
+    "id": 452,
+    "name": "Battery 1 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery1_cell1"
+  },
+  {
+    "id": 453,
+    "name": "Battery 1 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery1_cell2"
+  },
+  {
+    "id": 454,
+    "name": "Battery 1 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery1_cell3"
+  },
+  {
+    "id": 455,
+    "name": "Battery 1 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery1_cell4"
+  },
+  {
+    "id": 456,
+    "name": "Battery 1 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery1_cell5"
+  },
+  {
+    "id": 457,
+    "name": "Battery 1 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery1_cell6"
+  },
+  {
+    "id": 458,
+    "name": "Battery 1 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery1_temperature1"
+  },
+  {
+    "id": 459,
+    "name": "Battery 1 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery1_temperature2"
+  },
+  {
+    "id": 460,
+    "name": "Battery 1 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery1_total_voltage"
+  },
+  {
+    "id": 461,
+    "name": "Battery 1 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery1_conv_rate"
+  },
+  {
+    "id": 462,
+    "name": "Battery 2 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery2_SOC"
+  },
+  {
+    "id": 463,
+    "name": "Battery 2 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery2_cell1"
+  },
+  {
+    "id": 464,
+    "name": "Battery 2 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery2_cell2"
+  },
+  {
+    "id": 465,
+    "name": "Battery 2 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery2_cell3"
+  },
+  {
+    "id": 466,
+    "name": "Battery 2 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery2_cell4"
+  },
+  {
+    "id": 467,
+    "name": "Battery 2 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery2_cell5"
+  },
+  {
+    "id": 468,
+    "name": "Battery 2 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery2_cell6"
+  },
+  {
+    "id": 469,
+    "name": "Battery 2 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery2_temperature1"
+  },
+  {
+    "id": 470,
+    "name": "Battery 2 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery2_temperature2"
+  },
+  {
+    "id": 471,
+    "name": "Battery 2 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery2_total_voltage"
+  },
+  {
+    "id": 472,
+    "name": "Battery 2 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery2_conv_rate"
+  },
+  {
+    "id": 473,
+    "name": "Battery 3 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery3_SOC"
+  },
+  {
+    "id": 474,
+    "name": "Battery 3 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery3_cell1"
+  },
+  {
+    "id": 475,
+    "name": "Battery 3 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery3_cell2"
+  },
+  {
+    "id": 476,
+    "name": "Battery 3 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery3_cell3"
+  },
+  {
+    "id": 477,
+    "name": "Battery 3 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery3_cell4"
+  },
+  {
+    "id": 478,
+    "name": "Battery 3 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery3_cell5"
+  },
+  {
+    "id": 479,
+    "name": "Battery 3 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery3_cell6"
+  },
+  {
+    "id": 480,
+    "name": "Battery 3 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery3_temperature1"
+  },
+  {
+    "id": 481,
+    "name": "Battery 3 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery3_temperature2"
+  },
+  {
+    "id": 482,
+    "name": "Battery 3 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery3_total_voltage"
+  },
+  {
+    "id": 483,
+    "name": "Battery 3 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery3_conv_rate"
+  },
+  {
+    "id": 484,
+    "name": "Battery 4 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery4_SOC"
+  },
+  {
+    "id": 485,
+    "name": "Battery 4 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery4_cell1"
+  },
+  {
+    "id": 486,
+    "name": "Battery 4 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery4_cell2"
+  },
+  {
+    "id": 487,
+    "name": "Battery 4 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery4_cell3"
+  },
+  {
+    "id": 488,
+    "name": "Battery 4 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery4_cell4"
+  },
+  {
+    "id": 489,
+    "name": "Battery 4 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery4_cell5"
+  },
+  {
+    "id": 490,
+    "name": "Battery 4 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery4_cell6"
+  },
+  {
+    "id": 491,
+    "name": "Battery 4 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery4_temperature1"
+  },
+  {
+    "id": 492,
+    "name": "Battery 4 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery4_temperature2"
+  },
+  {
+    "id": 493,
+    "name": "Battery 4 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery4_total_voltage"
+  },
+  {
+    "id": 494,
+    "name": "Battery 4 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery4_conv_rate"
+  },
+  {
+    "id": 495,
+    "name": "Battery 5 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery5_SOC"
+  },
+  {
+    "id": 496,
+    "name": "Battery 5 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery5_cell1"
+  },
+  {
+    "id": 497,
+    "name": "Battery 5 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery5_cell2"
+  },
+  {
+    "id": 498,
+    "name": "Battery 5 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery5_cell3"
+  },
+  {
+    "id": 499,
+    "name": "Battery 5 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery5_cell4"
+  },
+  {
+    "id": 500,
+    "name": "Battery 5 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery5_cell5"
+  },
+  {
+    "id": 501,
+    "name": "Battery 5 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery5_cell6"
+  },
+  {
+    "id": 502,
+    "name": "Battery 5 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery5_temperature1"
+  },
+  {
+    "id": 503,
+    "name": "Battery 5 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery5_temperature2"
+  },
+  {
+    "id": 504,
+    "name": "Battery 5 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery5_total_voltage"
+  },
+  {
+    "id": 505,
+    "name": "Battery 5 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery5_conv_rate"
+  },
+  {
+    "id": 506,
+    "name": "Battery 6 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery6_SOC"
+  },
+  {
+    "id": 507,
+    "name": "Battery 6 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery6_cell1"
+  },
+  {
+    "id": 508,
+    "name": "Battery 6 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery6_cell2"
+  },
+  {
+    "id": 509,
+    "name": "Battery 6 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery6_cell3"
+  },
+  {
+    "id": 510,
+    "name": "Battery 6 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery6_cell4"
+  },
+  {
+    "id": 511,
+    "name": "Battery 6 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery6_cell5"
+  },
+  {
+    "id": 512,
+    "name": "Battery 6 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery6_cell6"
+  },
+  {
+    "id": 513,
+    "name": "Battery 6 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery6_temperature1"
+  },
+  {
+    "id": 514,
+    "name": "Battery 6 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery6_temperature2"
+  },
+  {
+    "id": 515,
+    "name": "Battery 6 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery6_total_voltage"
+  },
+  {
+    "id": 516,
+    "name": "Battery 6 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery6_conv_rate"
+  },
+  {
+    "id": 517,
+    "name": "Battery 7 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery7_SOC"
+  },
+  {
+    "id": 518,
+    "name": "Battery 7 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery7_cell1"
+  },
+  {
+    "id": 519,
+    "name": "Battery 7 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery7_cell2"
+  },
+  {
+    "id": 520,
+    "name": "Battery 7 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery7_cell3"
+  },
+  {
+    "id": 521,
+    "name": "Battery 7 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery7_cell4"
+  },
+  {
+    "id": 522,
+    "name": "Battery 7 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery7_cell5"
+  },
+  {
+    "id": 523,
+    "name": "Battery 7 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery7_cell6"
+  },
+  {
+    "id": 524,
+    "name": "Battery 7 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery7_temperature1"
+  },
+  {
+    "id": 525,
+    "name": "Battery 7 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery7_temperature2"
+  },
+  {
+    "id": 526,
+    "name": "Battery 7 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery7_total_voltage"
+  },
+  {
+    "id": 527,
+    "name": "Battery 7 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery7_conv_rate"
+  },
+  {
+    "id": 528,
+    "name": "Battery 8 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery8_SOC"
+  },
+  {
+    "id": 529,
+    "name": "Battery 8 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery8_cell1"
+  },
+  {
+    "id": 530,
+    "name": "Battery 8 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery8_cell2"
+  },
+  {
+    "id": 531,
+    "name": "Battery 8 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery8_cell3"
+  },
+  {
+    "id": 532,
+    "name": "Battery 8 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery8_cell4"
+  },
+  {
+    "id": 533,
+    "name": "Battery 8 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery8_cell5"
+  },
+  {
+    "id": 534,
+    "name": "Battery 8 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery8_cell6"
+  },
+  {
+    "id": 535,
+    "name": "Battery 8 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery8_temperature1"
+  },
+  {
+    "id": 536,
+    "name": "Battery 8 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery8_temperature2"
+  },
+  {
+    "id": 537,
+    "name": "Battery 8 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery8_total_voltage"
+  },
+  {
+    "id": 538,
+    "name": "Battery 8 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery8_conv_rate"
+  },
+  {
+    "id": 539,
+    "name": "Battery 9 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery9_SOC"
+  },
+  {
+    "id": 540,
+    "name": "Battery 9 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery9_cell1"
+  },
+  {
+    "id": 541,
+    "name": "Battery 9 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery9_cell2"
+  },
+  {
+    "id": 542,
+    "name": "Battery 9 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery9_cell3"
+  },
+  {
+    "id": 543,
+    "name": "Battery 9 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery9_cell4"
+  },
+  {
+    "id": 544,
+    "name": "Battery 9 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery9_cell5"
+  },
+  {
+    "id": 545,
+    "name": "Battery 9 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery9_cell6"
+  },
+  {
+    "id": 546,
+    "name": "Battery 9 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery9_temperature1"
+  },
+  {
+    "id": 547,
+    "name": "Battery 9 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery9_temperature2"
+  },
+  {
+    "id": 548,
+    "name": "Battery 9 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery9_total_voltage"
+  },
+  {
+    "id": 549,
+    "name": "Battery 9 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery9_conv_rate"
+  },
+  {
+    "id": 550,
+    "name": "Battery 10 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery10_SOC"
+  },
+  {
+    "id": 551,
+    "name": "Battery 10 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery10_cell1"
+  },
+  {
+    "id": 552,
+    "name": "Battery 10 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery10_cell2"
+  },
+  {
+    "id": 553,
+    "name": "Battery 10 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery10_cell3"
+  },
+  {
+    "id": 554,
+    "name": "Battery 10 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery10_cell4"
+  },
+  {
+    "id": 555,
+    "name": "Battery 10 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery10_cell5"
+  },
+  {
+    "id": 556,
+    "name": "Battery 10 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery10_cell6"
+  },
+  {
+    "id": 557,
+    "name": "Battery 10 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery10_temperature1"
+  },
+  {
+    "id": 558,
+    "name": "Battery 10 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery10_temperature2"
+  },
+  {
+    "id": 559,
+    "name": "Battery 10 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery10_total_voltage"
+  },
+  {
+    "id": 560,
+    "name": "Battery 10 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery10_conv_rate"
+  },
+  {
+    "id": 561,
+    "name": "Battery 11 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery11_SOC"
+  },
+  {
+    "id": 562,
+    "name": "Battery 11 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery11_cell1"
+  },
+  {
+    "id": 563,
+    "name": "Battery 11 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery11_cell2"
+  },
+  {
+    "id": 564,
+    "name": "Battery 11 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery11_cell3"
+  },
+  {
+    "id": 565,
+    "name": "Battery 11 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery11_cell4"
+  },
+  {
+    "id": 566,
+    "name": "Battery 11 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery11_cell5"
+  },
+  {
+    "id": 567,
+    "name": "Battery 11 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery11_cell6"
+  },
+  {
+    "id": 568,
+    "name": "Battery 11 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery11_temperature1"
+  },
+  {
+    "id": 569,
+    "name": "Battery 11 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery11_temperature2"
+  },
+  {
+    "id": 570,
+    "name": "Battery 11 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery11_total_voltage"
+  },
+  {
+    "id": 571,
+    "name": "Battery 11 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery11_conv_rate"
+  },
+  {
+    "id": 572,
+    "name": "Battery 12 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery12_SOC"
+  },
+  {
+    "id": 573,
+    "name": "Battery 12 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery12_cell1"
+  },
+  {
+    "id": 574,
+    "name": "Battery 12 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery12_cell2"
+  },
+  {
+    "id": 575,
+    "name": "Battery 12 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery12_cell3"
+  },
+  {
+    "id": 576,
+    "name": "Battery 12 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery12_cell4"
+  },
+  {
+    "id": 577,
+    "name": "Battery 12 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery12_cell5"
+  },
+  {
+    "id": 578,
+    "name": "Battery 12 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery12_cell6"
+  },
+  {
+    "id": 579,
+    "name": "Battery 12 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery12_temperature1"
+  },
+  {
+    "id": 580,
+    "name": "Battery 12 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery12_temperature2"
+  },
+  {
+    "id": 581,
+    "name": "Battery 12 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery12_total_voltage"
+  },
+  {
+    "id": 582,
+    "name": "Battery 12 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery12_conv_rate"
+  },
+  {
+    "id": 583,
+    "name": "Battery 13 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery13_SOC"
+  },
+  {
+    "id": 584,
+    "name": "Battery 13 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery13_cell1"
+  },
+  {
+    "id": 585,
+    "name": "Battery 13 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery13_cell2"
+  },
+  {
+    "id": 586,
+    "name": "Battery 13 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery13_cell3"
+  },
+  {
+    "id": 587,
+    "name": "Battery 13 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery13_cell4"
+  },
+  {
+    "id": 588,
+    "name": "Battery 13 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery13_cell5"
+  },
+  {
+    "id": 589,
+    "name": "Battery 13 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery13_cell6"
+  },
+  {
+    "id": 590,
+    "name": "Battery 13 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery13_temperature1"
+  },
+  {
+    "id": 591,
+    "name": "Battery 13 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery13_temperature2"
+  },
+  {
+    "id": 592,
+    "name": "Battery 13 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery13_total_voltage"
+  },
+  {
+    "id": 593,
+    "name": "Battery 13 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery13_conv_rate"
+  },
+  {
+    "id": 594,
+    "name": "Battery 14 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery14_SOC"
+  },
+  {
+    "id": 595,
+    "name": "Battery 14 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery14_cell1"
+  },
+  {
+    "id": 596,
+    "name": "Battery 14 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery14_cell2"
+  },
+  {
+    "id": 597,
+    "name": "Battery 14 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery14_cell3"
+  },
+  {
+    "id": 598,
+    "name": "Battery 14 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery14_cell4"
+  },
+  {
+    "id": 599,
+    "name": "Battery 14 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery14_cell5"
+  },
+  {
+    "id": 600,
+    "name": "Battery 14 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery14_cell6"
+  },
+  {
+    "id": 601,
+    "name": "Battery 14 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery14_temperature1"
+  },
+  {
+    "id": 602,
+    "name": "Battery 14 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery14_temperature2"
+  },
+  {
+    "id": 603,
+    "name": "Battery 14 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery14_total_voltage"
+  },
+  {
+    "id": 604,
+    "name": "Battery 14 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery14_conv_rate"
+  },
+  {
+    "id": 605,
+    "name": "Battery 15 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery15_SOC"
+  },
+  {
+    "id": 606,
+    "name": "Battery 15 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery15_cell1"
+  },
+  {
+    "id": 607,
+    "name": "Battery 15 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery15_cell2"
+  },
+  {
+    "id": 608,
+    "name": "Battery 15 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery15_cell3"
+  },
+  {
+    "id": 609,
+    "name": "Battery 15 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery15_cell4"
+  },
+  {
+    "id": 610,
+    "name": "Battery 15 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery15_cell5"
+  },
+  {
+    "id": 611,
+    "name": "Battery 15 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery15_cell6"
+  },
+  {
+    "id": 612,
+    "name": "Battery 15 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery15_temperature1"
+  },
+  {
+    "id": 613,
+    "name": "Battery 15 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery15_temperature2"
+  },
+  {
+    "id": 614,
+    "name": "Battery 15 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery15_total_voltage"
+  },
+  {
+    "id": 615,
+    "name": "Battery 15 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery15_conv_rate"
+  },
+  {
+    "id": 616,
+    "name": "Battery 16 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery16_SOC"
+  },
+  {
+    "id": 617,
+    "name": "Battery 16 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery16_cell1"
+  },
+  {
+    "id": 618,
+    "name": "Battery 16 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery16_cell2"
+  },
+  {
+    "id": 619,
+    "name": "Battery 16 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery16_cell3"
+  },
+  {
+    "id": 620,
+    "name": "Battery 16 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery16_cell4"
+  },
+  {
+    "id": 621,
+    "name": "Battery 16 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery16_cell5"
+  },
+  {
+    "id": 622,
+    "name": "Battery 16 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery16_cell6"
+  },
+  {
+    "id": 623,
+    "name": "Battery 16 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery16_temperature1"
+  },
+  {
+    "id": 624,
+    "name": "Battery 16 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery16_temperature2"
+  },
+  {
+    "id": 625,
+    "name": "Battery 16 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery16_total_voltage"
+  },
+  {
+    "id": 626,
+    "name": "Battery 16 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery16_conv_rate"
+  },
+  {
+    "id": 627,
+    "name": "Battery 17 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery17_SOC"
+  },
+  {
+    "id": 628,
+    "name": "Battery 17 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery17_cell1"
+  },
+  {
+    "id": 629,
+    "name": "Battery 17 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery17_cell2"
+  },
+  {
+    "id": 630,
+    "name": "Battery 17 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery17_cell3"
+  },
+  {
+    "id": 631,
+    "name": "Battery 17 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery17_cell4"
+  },
+  {
+    "id": 632,
+    "name": "Battery 17 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery17_cell5"
+  },
+  {
+    "id": 633,
+    "name": "Battery 17 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery17_cell6"
+  },
+  {
+    "id": 634,
+    "name": "Battery 17 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery17_temperature1"
+  },
+  {
+    "id": 635,
+    "name": "Battery 17 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery17_temperature2"
+  },
+  {
+    "id": 636,
+    "name": "Battery 17 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery17_total_voltage"
+  },
+  {
+    "id": 637,
+    "name": "Battery 17 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery17_conv_rate"
+  },
+  {
+    "id": 638,
+    "name": "Battery 18 SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_battery18_SOC"
+  },
+  {
+    "id": 639,
+    "name": "Battery 18 Cell 1",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery18_cell1"
+  },
+  {
+    "id": 640,
+    "name": "Battery 18 Cell 2",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery18_cell2"
+  },
+  {
+    "id": 641,
+    "name": "Battery 18 Cell 3",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery18_cell3"
+  },
+  {
+    "id": 642,
+    "name": "Battery 18 Cell 4",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery18_cell4"
+  },
+  {
+    "id": 643,
+    "name": "Battery 18 Cell 5",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery18_cell5"
+  },
+  {
+    "id": 644,
+    "name": "Battery 18 Cell 6",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery18_cell6"
+  },
+  {
+    "id": 645,
+    "name": "Battery 18 Temperature 1",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery18_temperature1"
+  },
+  {
+    "id": 646,
+    "name": "Battery 18 Temperature 2",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_battery18_temperature2"
+  },
+  {
+    "id": 647,
+    "name": "Battery 18 Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_battery18_total_voltage"
+  },
+  {
+    "id": 648,
+    "name": "Battery 18 Conversion rate",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "hvscu_battery18_conv_rate"
+  },
+  {
+    "id": 649,
+    "name": "Batteries voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "hvscu_batteries_voltage_reading"
+  },
+  {
+    "id": 650,
+    "name": "Voltage sensor",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "safeRange": [
+      0,
+      430
+    ],
+    "alias": "hvscu_voltage_reading"
+  },
+  {
+    "id": 651,
+    "name": "Current sensor",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "safeRange": [
+      -15,
+      85
+    ],
+    "alias": "hvscu_current_reading"
+  },
+  {
+    "id": 652,
+    "name": "General State Machine status",
+    "type": "enum",
+    "enumValues": [
+      "CONNECTING",
+      "OPERATIONAL",
+      "FAULT"
+    ],
+    "alias": "hvscu_general_state_machine_status"
+  },
+  {
+    "id": 653,
+    "name": "Operational State Machine status",
+    "type": "enum",
+    "enumValues": [
+      "HV OPEN",
+      "PRECHARGE",
+      "HV CLOSED",
+      "CHARGING"
+    ],
+    "alias": "hvscu_operational_state_machine_status"
+  },
+  {
+    "id": 654,
+    "name": "BMS reading period",
+    "type": "int32",
+    "alias": "hvscu_driver_reading_period"
+  },
+  {
+    "id": 655,
+    "name": "IMD Status",
+    "type": "enum",
+    "enumValues": [
+      "SHORTCIRCUIT",
+      "NORMAL",
+      "UNDERVOLTAGE",
+      "FAST_EVAL",
+      "EQUIPMENT_FAULT",
+      "GROUNDING_FAULT"
+    ],
+    "alias": "hvscu_imd_status"
+  },
+  {
+    "id": 656,
+    "name": "IMD Resistance",
+    "type": "float32",
+    "podUnits": "Ohm",
+    "displayUnits": "MOhm",
+    "warningRange": [
+      0,
+      0.1
+    ],
+    "alias": "hvscu_imd_resistance"
+  },
+  {
+    "id": 657,
+    "name": "IMD OK",
+    "type": "bool",
+    "alias": "hvscu_imd_is_ok"
+  },
+  {
+    "id": 658,
+    "name": "SDC Status",
+    "type": "enum",
+    "enumValues": [
+      "ENGAGED",
+      "DISENGAGED"
+    ],
+    "alias": "hvscu_sdc_status"
+  },
+  {
+    "id": 659,
+    "name": "Minimum SOC",
+    "type": "float32",
+    "displayUnits": "%",
+    "alias": "hvscu_minimum_soc"
+  },
+  {
+    "id": 660,
+    "name": "BMS Status",
+    "type": "enum",
+    "enumValues": [
+      "OK",
+      "FAULT"
+    ],
+    "alias": "hvscu_bms_status"
+  },
+  {
+    "id": 661,
+    "name": "Minimum cell voltage",
+    "type": "float32",
+    "displayUnits": "V",
+    "alias": "hvscu_voltage_min"
+  },
+  {
+    "id": 662,
+    "name": "Maximum cell voltage",
+    "type": "float32",
+    "displayUnits": "V",
+    "alias": "hvscu_voltage_max"
+  },
+  {
+    "id": 663,
+    "name": "Minimum temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_temp_min"
+  },
+  {
+    "id": 664,
+    "name": "Maximum temperature",
+    "type": "float32",
+    "podUnits": "ºC",
+    "displayUnits": "ºC",
+    "alias": "hvscu_temp_max"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "id": 231,
+    "type": "order",
+    "name": "Stop Control",
+    "variables": []
+  },
+  {
+    "id": 232,
+    "type": "order",
+    "name": "Start Test PWM",
+    "variables": [
+      "bcu_duty_cycle_u",
+      "bcu_duty_cycle_v",
+      "bcu_duty_cycle_w"
+    ]
+  },
+  {
+    "id": 233,
+    "type": "order",
+    "name": "Configure Commutation Parameters",
+    "variables": [
+      "bcu_commutation_frequency_hz",
+      "bcu_dead_time_ns"
+    ]
+  },
+  {
+    "id": 234,
+    "type": "order",
+    "name": "Start Space Vector",
+    "variables": [
+      "bcu_modulation_index",
+      "bcu_modulation_frequency_hz"
+    ]
+  },
+  {
+    "id": 235,
+    "type": "order",
+    "name": "Fix DC Link Voltage",
+    "variables": [
+      "bcu_requested_dc_link_voltage"
+    ]
+  },
+  {
+    "id": 236,
+    "type": "order",
+    "name": "Unfix DC Link Voltage",
+    "variables": []
+  },
+  {
+    "id": 237,
+    "type": "order",
+    "name": "Start Current Control",
+    "variables": [
+      "bcu_requested_d_current_reference_2",
+      "bcu_requested_q_current_reference_2"
+    ]
+  },
+  {
+    "id": 238,
+    "type": "order",
+    "name": "Start Speed Control",
+    "variables": [
+      "bcu_requested_linear_speed"
+    ]
+  },
+  {
+    "id": 239,
+    "type": "order",
+    "name": "DC Poles Ready (BCU)"
+  },
+  {
+    "id": 240,
+    "type": "order",
+    "name": "Start Speetec emulation",
+    "variables": [
+      "bcu_requested_speetec_emulation_mode",
+      "bcu_requested_speetec_emulation_value"
+    ]
+  }
+]

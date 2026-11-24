@@ -1,0 +1,394 @@
+[
+  {
+    "id": 195,
+    "name": "General State",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": [
+      "Connecting",
+      "Operational",
+      "Fault"
+    ],
+    "alias": "bcu_bcu_general_state"
+  },
+  {
+    "id": 196,
+    "name": "Operational State",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": [
+      "Idle",
+      "Charging",
+      "Charged",
+      "Precharge",
+      "Engaged"
+    ],
+    "alias": "bcu_bcu_operational_state"
+  },
+  {
+    "id": 197,
+    "name": "Nested State",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": [
+      "Idle",
+      "Testing",
+      "Ready",
+      "Boosting",
+      "Precharging"
+    ],
+    "alias": "bcu_bcu_nested_state"
+  },
+  {
+    "id": 198,
+    "name": "Control State",
+    "type": "enum",
+    "podUnits": "",
+    "displayUnits": "",
+    "enumValues": [
+      "Idle",
+      "Test PWM",
+      "Space Vector",
+      "Current Control",
+      "Speed Control"
+    ],
+    "alias": "bcu_control_state"
+  },
+  {
+    "id": 199,
+    "name": "Space Vector Time",
+    "type": "float32",
+    "podUnits": "s",
+    "displayUnits": "s",
+    "alias": "bcu_space_vector_time"
+  },
+  {
+    "id": 200,
+    "name": "Output Modulation Index",
+    "type": "float32",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "bcu_output_modulation_index"
+  },
+  {
+    "id": 201,
+    "name": "Output Modulation Frequency",
+    "type": "float32",
+    "podUnits": "Hz",
+    "displayUnits": "Hz",
+    "alias": "bcu_output_modulation_frequency_hz"
+  },
+  {
+    "id": 202,
+    "name": "DC Link Average Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 400,
+      "warning": 446.4
+    },
+    "alias": "bcu_dc_link_average_voltage"
+  },
+  {
+    "id": 203,
+    "name": "Bus Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 400,
+      "warning": 446.4
+    },
+    "alias": "bcu_bcu_bus_voltage"
+  },
+  {
+    "id": 204,
+    "name": "DC Link A Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 400,
+      "warning": 446.4
+    },
+    "alias": "bcu_dc_link_a_voltage"
+  },
+  {
+    "id": 205,
+    "name": "DC Link B Voltage",
+    "type": "float32",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "below": {
+      "safe": 400,
+      "warning": 446.4
+    },
+    "alias": "bcu_dc_link_b_voltage"
+  },
+  {
+    "id": 206,
+    "name": "Average Current U",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_average_current_u"
+  },
+  {
+    "id": 207,
+    "name": "Average Current V",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_average_current_v"
+  },
+  {
+    "id": 208,
+    "name": "Average Current W",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_average_current_w"
+  },
+  {
+    "id": 209,
+    "name": "Current U Motor A",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_current_u_motor_a"
+  },
+  {
+    "id": 210,
+    "name": "Current V Motor A",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_current_v_motor_a"
+  },
+  {
+    "id": 211,
+    "name": "Current W Motor A",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_current_w_motor_a"
+  },
+  {
+    "id": 212,
+    "name": "Current U Motor B",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_current_u_motor_b"
+  },
+  {
+    "id": 213,
+    "name": "Current V Motor B",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_current_v_motor_b"
+  },
+  {
+    "id": 214,
+    "name": "Current W Motor B",
+    "type": "float32",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "out_of_range": {
+      "warning": [
+        -100,
+        100
+      ]
+    },
+    "alias": "bcu_current_w_motor_b"
+  },
+  {
+    "id": 215,
+    "name": "Position Speetec 1",
+    "type": "float64",
+    "podUnits": "m",
+    "displayUnits": "m",
+    "below": {
+      "safe": 3,
+      "warning": 4
+    },
+    "alias": "bcu_position_speetec_1"
+  },
+  {
+    "id": 216,
+    "name": "Speed Speetec 1",
+    "type": "float64",
+    "podUnits": "m/s",
+    "displayUnits": "m/s",
+    "below": {
+      "safe": 10
+    },
+    "alias": "bcu_speed_speetec_1"
+  },
+  {
+    "id": 217,
+    "name": "Acceleration Speetec 1",
+    "type": "float64",
+    "podUnits": "m/ss",
+    "displayUnits": "m/ss",
+    "below": {
+      "safe": 30
+    },
+    "alias": "bcu_acceleration_speetec_1"
+  },
+  {
+    "id": 218,
+    "name": "Direction Speetec 1",
+    "type": "bool",
+    "alias": "bcu_direction_speetec_1"
+  },
+  {
+    "id": 219,
+    "name": "D Current Reference",
+    "type": "float64",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "alias": "bcu_d_current_reference"
+  },
+  {
+    "id": 220,
+    "name": "Measured D Current",
+    "type": "float64",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "alias": "bcu_measured_d_current"
+  },
+  {
+    "id": 221,
+    "name": "D Current Error",
+    "type": "float64",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "alias": "bcu_d_current_error"
+  },
+  {
+    "id": 222,
+    "name": "Q Current Reference",
+    "type": "float64",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "alias": "bcu_q_current_reference"
+  },
+  {
+    "id": 223,
+    "name": "Measured Q Current",
+    "type": "float64",
+    "podUnits": "A",
+    "displayUnits": "A",
+    "alias": "bcu_measured_q_current"
+  },
+  {
+    "id": 224,
+    "name": "Q Current Error",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "bcu_q_current_error"
+  },
+  {
+    "id": 225,
+    "name": "PI ID Output",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "bcu_pi_id_output"
+  },
+  {
+    "id": 226,
+    "name": "PI IQ Output",
+    "type": "float64",
+    "podUnits": "",
+    "displayUnits": "",
+    "alias": "bcu_pi_iq_output"
+  },
+  {
+    "id": 227,
+    "name": "Target U Voltage",
+    "type": "float64",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "bcu_target_u_voltage"
+  },
+  {
+    "id": 228,
+    "name": "Target V Voltage",
+    "type": "float64",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "bcu_target_v_voltage"
+  },
+  {
+    "id": 229,
+    "name": "Target W Voltage",
+    "type": "float64",
+    "podUnits": "V",
+    "displayUnits": "V",
+    "alias": "bcu_target_w_voltage"
+  },
+  {
+    "id": 230,
+    "name": "Electrical Angle",
+    "type": "float64",
+    "podUnits": "rad",
+    "displayUnits": "rad",
+    "alias": "bcu_electrical_angle"
+  }
+]

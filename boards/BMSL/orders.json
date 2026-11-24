@@ -1,0 +1,30 @@
+[
+  {
+    "type": "order",
+    "name": "Turn on PFM",
+    "variables": [],
+    "id": 731
+  },
+  {
+    "type": "order",
+    "name": "Turn off PFM",
+    "variables": [],
+    "id": 732
+  },
+  {
+    "type": "order",
+    "name": "Set PFM Frequency",
+    "variables": [
+      "bmsl_frequency__order_26"
+    ],
+    "id": 733
+  },
+  {
+    "type": "order",
+    "name": "Set PFM Dead Time",
+    "variables": [
+      "bmsl_dead_time__order_27"
+    ],
+    "id": 734
+  }
+]

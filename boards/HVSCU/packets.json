@@ -1,0 +1,424 @@
+[
+  {
+    "id": 665,
+    "type": "data",
+    "name": "FAULT"
+  },
+  {
+    "id": 666,
+    "type": "data",
+    "name": "battery_1",
+    "variables": [
+      "hvscu_battery1_SOC",
+      "hvscu_battery1_cell1",
+      "hvscu_battery1_cell2",
+      "hvscu_battery1_cell3",
+      "hvscu_battery1_cell4",
+      "hvscu_battery1_cell5",
+      "hvscu_battery1_cell6",
+      "hvscu_battery1_temperature1",
+      "hvscu_battery1_temperature2",
+      "hvscu_battery1_total_voltage",
+      "hvscu_battery1_conv_rate"
+    ]
+  },
+  {
+    "id": 667,
+    "type": "data",
+    "name": "battery_2",
+    "variables": [
+      "hvscu_battery2_SOC",
+      "hvscu_battery2_cell1",
+      "hvscu_battery2_cell2",
+      "hvscu_battery2_cell3",
+      "hvscu_battery2_cell4",
+      "hvscu_battery2_cell5",
+      "hvscu_battery2_cell6",
+      "hvscu_battery2_temperature1",
+      "hvscu_battery2_temperature2",
+      "hvscu_battery2_total_voltage",
+      "hvscu_battery2_conv_rate"
+    ]
+  },
+  {
+    "id": 668,
+    "type": "data",
+    "name": "battery_3",
+    "variables": [
+      "hvscu_battery3_SOC",
+      "hvscu_battery3_cell1",
+      "hvscu_battery3_cell2",
+      "hvscu_battery3_cell3",
+      "hvscu_battery3_cell4",
+      "hvscu_battery3_cell5",
+      "hvscu_battery3_cell6",
+      "hvscu_battery3_temperature1",
+      "hvscu_battery3_temperature2",
+      "hvscu_battery3_total_voltage",
+      "hvscu_battery3_conv_rate"
+    ]
+  },
+  {
+    "id": 669,
+    "type": "data",
+    "name": "battery_4",
+    "variables": [
+      "hvscu_battery4_SOC",
+      "hvscu_battery4_cell1",
+      "hvscu_battery4_cell2",
+      "hvscu_battery4_cell3",
+      "hvscu_battery4_cell4",
+      "hvscu_battery4_cell5",
+      "hvscu_battery4_cell6",
+      "hvscu_battery4_temperature1",
+      "hvscu_battery4_temperature2",
+      "hvscu_battery4_total_voltage",
+      "hvscu_battery4_conv_rate"
+    ]
+  },
+  {
+    "id": 670,
+    "type": "data",
+    "name": "battery_5",
+    "variables": [
+      "hvscu_battery5_SOC",
+      "hvscu_battery5_cell1",
+      "hvscu_battery5_cell2",
+      "hvscu_battery5_cell3",
+      "hvscu_battery5_cell4",
+      "hvscu_battery5_cell5",
+      "hvscu_battery5_cell6",
+      "hvscu_battery5_temperature1",
+      "hvscu_battery5_temperature2",
+      "hvscu_battery5_total_voltage",
+      "hvscu_battery5_conv_rate"
+    ]
+  },
+  {
+    "id": 671,
+    "type": "data",
+    "name": "battery_6",
+    "variables": [
+      "hvscu_battery6_SOC",
+      "hvscu_battery6_cell1",
+      "hvscu_battery6_cell2",
+      "hvscu_battery6_cell3",
+      "hvscu_battery6_cell4",
+      "hvscu_battery6_cell5",
+      "hvscu_battery6_cell6",
+      "hvscu_battery6_temperature1",
+      "hvscu_battery6_temperature2",
+      "hvscu_battery6_total_voltage",
+      "hvscu_battery6_conv_rate"
+    ]
+  },
+  {
+    "id": 672,
+    "type": "data",
+    "name": "battery_7",
+    "variables": [
+      "hvscu_battery7_SOC",
+      "hvscu_battery7_cell1",
+      "hvscu_battery7_cell2",
+      "hvscu_battery7_cell3",
+      "hvscu_battery7_cell4",
+      "hvscu_battery7_cell5",
+      "hvscu_battery7_cell6",
+      "hvscu_battery7_temperature1",
+      "hvscu_battery7_temperature2",
+      "hvscu_battery7_total_voltage",
+      "hvscu_battery7_conv_rate"
+    ]
+  },
+  {
+    "id": 673,
+    "type": "data",
+    "name": "battery_8",
+    "variables": [
+      "hvscu_battery8_SOC",
+      "hvscu_battery8_cell1",
+      "hvscu_battery8_cell2",
+      "hvscu_battery8_cell3",
+      "hvscu_battery8_cell4",
+      "hvscu_battery8_cell5",
+      "hvscu_battery8_cell6",
+      "hvscu_battery8_temperature1",
+      "hvscu_battery8_temperature2",
+      "hvscu_battery8_total_voltage",
+      "hvscu_battery8_conv_rate"
+    ]
+  },
+  {
+    "id": 674,
+    "type": "data",
+    "name": "battery_9",
+    "variables": [
+      "hvscu_battery9_SOC",
+      "hvscu_battery9_cell1",
+      "hvscu_battery9_cell2",
+      "hvscu_battery9_cell3",
+      "hvscu_battery9_cell4",
+      "hvscu_battery9_cell5",
+      "hvscu_battery9_cell6",
+      "hvscu_battery9_temperature1",
+      "hvscu_battery9_temperature2",
+      "hvscu_battery9_total_voltage",
+      "hvscu_battery9_conv_rate"
+    ]
+  },
+  {
+    "id": 675,
+    "type": "data",
+    "name": "battery_10",
+    "variables": [
+      "hvscu_battery10_SOC",
+      "hvscu_battery10_cell1",
+      "hvscu_battery10_cell2",
+      "hvscu_battery10_cell3",
+      "hvscu_battery10_cell4",
+      "hvscu_battery10_cell5",
+      "hvscu_battery10_cell6",
+      "hvscu_battery10_temperature1",
+      "hvscu_battery10_temperature2",
+      "hvscu_battery10_total_voltage",
+      "hvscu_battery10_conv_rate"
+    ]
+  },
+  {
+    "id": 676,
+    "type": "data",
+    "name": "battery_11",
+    "variables": [
+      "hvscu_battery11_SOC",
+      "hvscu_battery11_cell1",
+      "hvscu_battery11_cell2",
+      "hvscu_battery11_cell3",
+      "hvscu_battery11_cell4",
+      "hvscu_battery11_cell5",
+      "hvscu_battery11_cell6",
+      "hvscu_battery11_temperature1",
+      "hvscu_battery11_temperature2",
+      "hvscu_battery11_total_voltage",
+      "hvscu_battery11_conv_rate"
+    ]
+  },
+  {
+    "id": 677,
+    "type": "data",
+    "name": "battery_12",
+    "variables": [
+      "hvscu_battery12_SOC",
+      "hvscu_battery12_cell1",
+      "hvscu_battery12_cell2",
+      "hvscu_battery12_cell3",
+      "hvscu_battery12_cell4",
+      "hvscu_battery12_cell5",
+      "hvscu_battery12_cell6",
+      "hvscu_battery12_temperature1",
+      "hvscu_battery12_temperature2",
+      "hvscu_battery12_total_voltage",
+      "hvscu_battery12_conv_rate"
+    ]
+  },
+  {
+    "id": 678,
+    "type": "data",
+    "name": "battery_13",
+    "variables": [
+      "hvscu_battery13_SOC",
+      "hvscu_battery13_cell1",
+      "hvscu_battery13_cell2",
+      "hvscu_battery13_cell3",
+      "hvscu_battery13_cell4",
+      "hvscu_battery13_cell5",
+      "hvscu_battery13_cell6",
+      "hvscu_battery13_temperature1",
+      "hvscu_battery13_temperature2",
+      "hvscu_battery13_total_voltage",
+      "hvscu_battery13_conv_rate"
+    ]
+  },
+  {
+    "id": 679,
+    "type": "data",
+    "name": "battery_14",
+    "variables": [
+      "hvscu_battery14_SOC",
+      "hvscu_battery14_cell1",
+      "hvscu_battery14_cell2",
+      "hvscu_battery14_cell3",
+      "hvscu_battery14_cell4",
+      "hvscu_battery14_cell5",
+      "hvscu_battery14_cell6",
+      "hvscu_battery14_temperature1",
+      "hvscu_battery14_temperature2",
+      "hvscu_battery14_total_voltage",
+      "hvscu_battery14_conv_rate"
+    ]
+  },
+  {
+    "id": 680,
+    "type": "data",
+    "name": "battery_15",
+    "variables": [
+      "hvscu_battery15_SOC",
+      "hvscu_battery15_cell1",
+      "hvscu_battery15_cell2",
+      "hvscu_battery15_cell3",
+      "hvscu_battery15_cell4",
+      "hvscu_battery15_cell5",
+      "hvscu_battery15_cell6",
+      "hvscu_battery15_temperature1",
+      "hvscu_battery15_temperature2",
+      "hvscu_battery15_total_voltage",
+      "hvscu_battery15_conv_rate"
+    ]
+  },
+  {
+    "id": 681,
+    "type": "data",
+    "name": "battery_16",
+    "variables": [
+      "hvscu_battery16_SOC",
+      "hvscu_battery16_cell1",
+      "hvscu_battery16_cell2",
+      "hvscu_battery16_cell3",
+      "hvscu_battery16_cell4",
+      "hvscu_battery16_cell5",
+      "hvscu_battery16_cell6",
+      "hvscu_battery16_temperature1",
+      "hvscu_battery16_temperature2",
+      "hvscu_battery16_total_voltage",
+      "hvscu_battery16_conv_rate"
+    ]
+  },
+  {
+    "id": 682,
+    "type": "data",
+    "name": "battery_17",
+    "variables": [
+      "hvscu_battery17_SOC",
+      "hvscu_battery17_cell1",
+      "hvscu_battery17_cell2",
+      "hvscu_battery17_cell3",
+      "hvscu_battery17_cell4",
+      "hvscu_battery17_cell5",
+      "hvscu_battery17_cell6",
+      "hvscu_battery17_temperature1",
+      "hvscu_battery17_temperature2",
+      "hvscu_battery17_total_voltage",
+      "hvscu_battery17_conv_rate"
+    ]
+  },
+  {
+    "id": 683,
+    "type": "data",
+    "name": "battery_18",
+    "variables": [
+      "hvscu_battery18_SOC",
+      "hvscu_battery18_cell1",
+      "hvscu_battery18_cell2",
+      "hvscu_battery18_cell3",
+      "hvscu_battery18_cell4",
+      "hvscu_battery18_cell5",
+      "hvscu_battery18_cell6",
+      "hvscu_battery18_temperature1",
+      "hvscu_battery18_temperature2",
+      "hvscu_battery18_total_voltage",
+      "hvscu_battery18_conv_rate"
+    ]
+  },
+  {
+    "id": 684,
+    "type": "data",
+    "name": "batteries_voltage",
+    "variables": [
+      "hvscu_batteries_voltage_reading"
+    ]
+  },
+  {
+    "id": 685,
+    "type": "data",
+    "name": "voltage_sensor",
+    "variables": [
+      "hvscu_voltage_reading"
+    ]
+  },
+  {
+    "id": 686,
+    "name": "current_sensor",
+    "type": "data",
+    "variables": [
+      "hvscu_current_reading"
+    ]
+  },
+  {
+    "id": 687,
+    "name": "general_state_machine",
+    "type": "data",
+    "variables": [
+      "hvscu_general_state_machine_status"
+    ]
+  },
+  {
+    "id": 688,
+    "name": "operational_state_machine",
+    "type": "data",
+    "variables": [
+      "hvscu_operational_state_machine_status"
+    ]
+  },
+  {
+    "id": 689,
+    "name": "driver_diagnosis",
+    "type": "data",
+    "variables": [
+      "hvscu_driver_reading_period"
+    ]
+  },
+  {
+    "id": 690,
+    "name": "imd",
+    "type": "data",
+    "variables": [
+      "hvscu_imd_status",
+      "hvscu_imd_resistance",
+      "hvscu_imd_is_ok"
+    ]
+  },
+  {
+    "id": 691,
+    "name": "sdc",
+    "type": "data",
+    "variables": [
+      "hvscu_sdc_status"
+    ]
+  },
+  {
+    "id": 692,
+    "name": "minimum_soc",
+    "type": "data",
+    "variables": [
+      "hvscu_minimum_soc"
+    ]
+  },
+  {
+    "id": 693,
+    "name": "bms",
+    "type": "data",
+    "variables": [
+      "hvscu_bms_status"
+    ]
+  },
+  {
+    "id": 694,
+    "name": "batteries_data",
+    "type": "data",
+    "variables": [
+      "hvscu_voltage_min",
+      "hvscu_voltage_max",
+      "hvscu_temp_min",
+      "hvscu_temp_max"
+    ]
+  }
+]

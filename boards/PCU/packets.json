@@ -1,91 +1,115 @@
 [
-    {
-        "type": "data",
-        "name": "PWM",
-        "variables": [
-            "frequency",
-            "modulation_frequency",
-            "duty_u",
-            "duty_v",
-            "duty_w"
-        ],
-        "id": 550,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "Batteries Voltage",
-        "variables": [
-            "voltage_battery_a",
-            "voltage_battery_b"
-        ],
-        "id": 551,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "Current Sensors",
-        "variables": [
-            "current_sensor_u_a",
-            "current_sensor_v_a",
-            "current_sensor_w_a",
-            "current_sensor_u_b",
-            "current_sensor_v_b",
-            "current_sensor_w_b",
-            "current_Peak",
-            "error_pi",
-            "target_voltage",
-            "svpwm_time",
-            "imod"
-        ],
-        "id": 552,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "State Machine States",
-        "variables": [
-            "state"
-        ],
-        "id": 553,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "Speed Data",
-        "variables": [
-            "target_speed",
-            "speed_error",
-            "actual_current_ref",
-            "slip_motor",
-            "imu_speed_km_h",
-            "imu_position_m"
-        ],
-        "id": 555,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    },
-    {
-        "type": "data",
-        "name": "Gate Driver Reporting",
-        "variables": [
-            "gd_fault_a",
-            "gd_fault_b",
-            "gd_ready_a",
-            "gd_ready_b"
-        ],
-        "id": 558,
-        "period_type": "ms",
-        "period": 16.67,
-        "socket": "control_station_udp"
-    }
+  {
+    "type": "data",
+    "name": "pwm_packet",
+    "variables": [
+      "pcu_frequency",
+      "pcu_modulation_frequency",
+      "pcu_duty_u",
+      "pcu_duty_v",
+      "pcu_duty_w"
+    ],
+    "id": 312
+  },
+  {
+    "type": "data",
+    "name": "Batteries_Voltage",
+    "variables": [
+      "pcu_Voltage_Battery_A",
+      "pcu_Voltage_Battery_B"
+    ],
+    "id": 313
+  },
+  {
+    "type": "data",
+    "name": "Current_sensors",
+    "variables": [
+      "pcu_current_sensor_u_a",
+      "pcu_current_sensor_v_a",
+      "pcu_current_sensor_w_a",
+      "pcu_current_sensor_u_b",
+      "pcu_current_sensor_v_b",
+      "pcu_current_sensor_w_b",
+      "pcu_current_Peak",
+      "pcu_Error_PI",
+      "pcu_Target_Voltage",
+      "pcu_SVPWM_Time",
+      "pcu_imod"
+    ],
+    "id": 314
+  },
+  {
+    "type": "data",
+    "name": "StateMachine_states",
+    "variables": [
+      "pcu_general_state_machine",
+      "pcu_operational_state_machine",
+      "pcu_run_state",
+      "pcu_space_vector_active",
+      "pcu_current_control_active",
+      "pcu_speed_control_active"
+    ],
+    "id": 315
+  },
+  {
+    "type": "data",
+    "name": "Encoder_data",
+    "variables": [
+      "pcu_encoder_position",
+      "pcu_encoder_direction",
+      "pcu_encoder_speed",
+      "pcu_encoder_speed_km_h",
+      "pcu_encoder_acceleration"
+    ],
+    "id": 316
+  },
+  {
+    "type": "data",
+    "name": "Encoder_data",
+    "variables": [
+      "pcu_target_speed",
+      "pcu_speed_error",
+      "pcu_actual_current_ref"
+    ],
+    "id": 317
+  },
+  {
+    "type": "data",
+    "name": "Control_State",
+    "variables": [
+      "pcu_Direction_State",
+      "pcu_Speed_Control_State"
+    ],
+    "id": 318
+  },
+  {
+    "type": "data",
+    "name": "Reeds_State",
+    "variables": [
+      "pcu_reed1",
+      "pcu_reed2",
+      "pcu_reed3",
+      "pcu_reed4"
+    ],
+    "id": 319
+  },
+  {
+    "type": "data",
+    "name": "GateDriverReporting",
+    "variables": [
+      "pcu_gd_fault_a",
+      "pcu_gd_fault_b",
+      "pcu_gd_ready_a",
+      "pcu_gd_ready_b"
+    ],
+    "id": 320
+  },
+  {
+    "type": "data",
+    "name": "OperationalState",
+    "variables": [
+      "pcu_operational_state_machine"
+    ],
+    "id": 321
+  }
 ]

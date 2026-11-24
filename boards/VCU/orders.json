@@ -1,87 +1,121 @@
 [
-    {
-        "id": 600,
-        "name": "FAULT",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 601,
-        "name": "Stop",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 602,
-        "name": "Maintenance",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 603,
-        "name": "Precharge",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 604,
-        "name": "Open Contactors",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 605,
-        "name": "Unbrake",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 606,
-        "name": "Brake",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 607,
-        "name": "Static Levitation",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 608,
-        "name": "Propulsion",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 609,
-        "name": "Dynamic Levitation",
-        "type": "order",
-        "variables": []
-    },
-    {
-        "id": 610,
-        "name": "Propulsion Parameterized",
-        "type": "order",
-        "variables": [
-            "propulsion_current_reference"
-        ]
-    },
-    {
-        "id": 611,
-        "name": "Static Levitation Parameterized",
-        "type": "order",
-        "variables": [
-            "levitation_target_height"
-        ]
-    },
-    {
-        "id": 612,
-        "name": "Dynamic Levitation Parameterized",
-        "type": "order",
-        "variables": [
-            "propulsion_current_reference",
-            "levitation_target_height"
-        ]
-    }
+  {
+    "type": "order",
+    "name": "Brake",
+    "id": 766
+  },
+  {
+    "type": "order",
+    "name": "Unbrake",
+    "id": 767
+  },
+  {
+    "type": "order",
+    "name": "Potencia Refri",
+    "variables": [
+      "vcu_duty",
+      "vcu_pump"
+    ],
+    "id": 768
+  },
+  {
+    "type": "order",
+    "name": "Set Regulator",
+    "variables": [
+      "vcu_regulator_pressure",
+      "vcu_regulator"
+    ],
+    "id": 769
+  },
+  {
+    "type": "order",
+    "name": "Enable Tapes",
+    "id": 770
+  },
+  {
+    "type": "order",
+    "name": "Disbable Tapes",
+    "id": 771
+  },
+  {
+    "type": "order",
+    "name": "Close Contactors",
+    "id": 772
+  },
+  {
+    "type": "order",
+    "name": "Open Contactors",
+    "id": 773
+  },
+  {
+    "type": "order",
+    "name": "Levitation",
+    "variables": [
+      "vcu_levitation_distance"
+    ],
+    "id": 774
+  },
+  {
+    "type": "order",
+    "name": "Stop Levitation",
+    "id": 775
+  },
+  {
+    "type": "order",
+    "name": "Emergency Stop",
+    "id": 776
+  },
+  {
+    "type": "order",
+    "name": "Runs",
+    "variables": [
+      "vcu_run_id"
+    ],
+    "id": 777
+  },
+  {
+    "type": "order",
+    "name": "SVPWM",
+    "variables": [
+      "vcu_modulation_frequency",
+      "vcu_commutation_frequency",
+      "vcu_max_voltage",
+      "vcu_reference_voltage",
+      "vcu_motor_direction"
+    ],
+    "id": 778
+  },
+  {
+    "type": "order",
+    "name": "Stop Motor",
+    "id": 779
+  },
+  {
+    "type": "order",
+    "name": "Current Control",
+    "variables": [
+      "vcu_modulation_frequency__order_28",
+      "vcu_commutation_frequency__order_29",
+      "vcu_reference_current",
+      "vcu_max_voltage__order_30",
+      "vcu_motor_direction__order_31"
+    ],
+    "id": 780
+  },
+  {
+    "type": "order",
+    "name": "Speed Control",
+    "variables": [
+      "vcu_reference_speed",
+      "vcu_commutation_frequency__order_32",
+      "vcu_max_voltage__order_33",
+      "vcu_motor_direction__order_34"
+    ],
+    "id": 781
+  },
+  {
+    "type": "order",
+    "name": "Motor Brake",
+    "id": 782
+  }
 ]

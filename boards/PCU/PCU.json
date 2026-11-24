@@ -1,15 +1,12 @@
 {
-    "board_id": 5,
-    "mac": "00:10:20:10:20:30",
-    "board_ip": "192.168.1.5",
-    "measurements": [
-        "PCU_measurements.json"
-    ],
-    "packets": [
-        "packets.json",
-        "orders.json"
-    ],
-    "sockets": [
-        "sockets.json"
-    ]
+  "board_id": 0,
+  "board_ip": "127.0.0.5",
+  "measurements": [
+    "PCU_measurements.json"
+  ],
+  "packets": [
+    "packets.json",
+    "orders.json"
+  ],
+  "mac": "02:AD:03:00:00:03"
 }
