@@ -1,6 +1,6 @@
 [
   {
-    "id": 195,
+    "id": 2183,
     "name": "General State",
     "type": "enum",
     "podUnits": "",
@@ -13,7 +13,7 @@
     "alias": "bcu_bcu_general_state"
   },
   {
-    "id": 196,
+    "id": 2184,
     "name": "Operational State",
     "type": "enum",
     "podUnits": "",
@@ -28,7 +28,7 @@
     "alias": "bcu_bcu_operational_state"
   },
   {
-    "id": 197,
+    "id": 2185,
     "name": "Nested State",
     "type": "enum",
     "podUnits": "",
@@ -43,7 +43,7 @@
     "alias": "bcu_bcu_nested_state"
   },
   {
-    "id": 198,
+    "id": 2186,
     "name": "Control State",
     "type": "enum",
     "podUnits": "",
@@ -58,7 +58,7 @@
     "alias": "bcu_control_state"
   },
   {
-    "id": 199,
+    "id": 2187,
     "name": "Space Vector Time",
     "type": "float32",
     "podUnits": "s",
@@ -66,7 +66,7 @@
     "alias": "bcu_space_vector_time"
   },
   {
-    "id": 200,
+    "id": 2188,
     "name": "Output Modulation Index",
     "type": "float32",
     "podUnits": "",
@@ -74,7 +74,7 @@
     "alias": "bcu_output_modulation_index"
   },
   {
-    "id": 201,
+    "id": 2189,
     "name": "Output Modulation Frequency",
     "type": "float32",
     "podUnits": "Hz",
@@ -82,7 +82,7 @@
     "alias": "bcu_output_modulation_frequency_hz"
   },
   {
-    "id": 202,
+    "id": 2190,
     "name": "DC Link Average Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -94,7 +94,7 @@
     "alias": "bcu_dc_link_average_voltage"
   },
   {
-    "id": 203,
+    "id": 2191,
     "name": "Bus Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -106,7 +106,7 @@
     "alias": "bcu_bcu_bus_voltage"
   },
   {
-    "id": 204,
+    "id": 2192,
     "name": "DC Link A Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -118,7 +118,7 @@
     "alias": "bcu_dc_link_a_voltage"
   },
   {
-    "id": 205,
+    "id": 2193,
     "name": "DC Link B Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -130,7 +130,7 @@
     "alias": "bcu_dc_link_b_voltage"
   },
   {
-    "id": 206,
+    "id": 2194,
     "name": "Average Current U",
     "type": "float32",
     "podUnits": "A",
@@ -144,7 +144,7 @@
     "alias": "bcu_average_current_u"
   },
   {
-    "id": 207,
+    "id": 2195,
     "name": "Average Current V",
     "type": "float32",
     "podUnits": "A",
@@ -158,7 +158,7 @@
     "alias": "bcu_average_current_v"
   },
   {
-    "id": 208,
+    "id": 2196,
     "name": "Average Current W",
     "type": "float32",
     "podUnits": "A",
@@ -172,7 +172,7 @@
     "alias": "bcu_average_current_w"
   },
   {
-    "id": 209,
+    "id": 2197,
     "name": "Current U Motor A",
     "type": "float32",
     "podUnits": "A",
@@ -186,7 +186,7 @@
     "alias": "bcu_current_u_motor_a"
   },
   {
-    "id": 210,
+    "id": 2198,
     "name": "Current V Motor A",
     "type": "float32",
     "podUnits": "A",
@@ -200,7 +200,7 @@
     "alias": "bcu_current_v_motor_a"
   },
   {
-    "id": 211,
+    "id": 2199,
     "name": "Current W Motor A",
     "type": "float32",
     "podUnits": "A",
@@ -214,7 +214,7 @@
     "alias": "bcu_current_w_motor_a"
   },
   {
-    "id": 212,
+    "id": 2200,
     "name": "Current U Motor B",
     "type": "float32",
     "podUnits": "A",
@@ -228,7 +228,7 @@
     "alias": "bcu_current_u_motor_b"
   },
   {
-    "id": 213,
+    "id": 2201,
     "name": "Current V Motor B",
     "type": "float32",
     "podUnits": "A",
@@ -242,7 +242,7 @@
     "alias": "bcu_current_v_motor_b"
   },
   {
-    "id": 214,
+    "id": 2202,
     "name": "Current W Motor B",
     "type": "float32",
     "podUnits": "A",
@@ -256,7 +256,7 @@
     "alias": "bcu_current_w_motor_b"
   },
   {
-    "id": 215,
+    "id": 2203,
     "name": "Position Speetec 1",
     "type": "float64",
     "podUnits": "m",
@@ -268,7 +268,7 @@
     "alias": "bcu_position_speetec_1"
   },
   {
-    "id": 216,
+    "id": 2204,
     "name": "Speed Speetec 1",
     "type": "float64",
     "podUnits": "m/s",
@@ -279,7 +279,7 @@
     "alias": "bcu_speed_speetec_1"
   },
   {
-    "id": 217,
+    "id": 2205,
     "name": "Acceleration Speetec 1",
     "type": "float64",
     "podUnits": "m/ss",
@@ -290,13 +290,13 @@
     "alias": "bcu_acceleration_speetec_1"
   },
   {
-    "id": 218,
+    "id": 2206,
     "name": "Direction Speetec 1",
     "type": "bool",
     "alias": "bcu_direction_speetec_1"
   },
   {
-    "id": 219,
+    "id": 2207,
     "name": "D Current Reference",
     "type": "float64",
     "podUnits": "A",
@@ -304,7 +304,7 @@
     "alias": "bcu_d_current_reference"
   },
   {
-    "id": 220,
+    "id": 2208,
     "name": "Measured D Current",
     "type": "float64",
     "podUnits": "A",
@@ -312,7 +312,7 @@
     "alias": "bcu_measured_d_current"
   },
   {
-    "id": 221,
+    "id": 2209,
     "name": "D Current Error",
     "type": "float64",
     "podUnits": "A",
@@ -320,7 +320,7 @@
     "alias": "bcu_d_current_error"
   },
   {
-    "id": 222,
+    "id": 2210,
     "name": "Q Current Reference",
     "type": "float64",
     "podUnits": "A",
@@ -328,7 +328,7 @@
     "alias": "bcu_q_current_reference"
   },
   {
-    "id": 223,
+    "id": 2211,
     "name": "Measured Q Current",
     "type": "float64",
     "podUnits": "A",
@@ -336,7 +336,7 @@
     "alias": "bcu_measured_q_current"
   },
   {
-    "id": 224,
+    "id": 2212,
     "name": "Q Current Error",
     "type": "float64",
     "podUnits": "",
@@ -344,7 +344,7 @@
     "alias": "bcu_q_current_error"
   },
   {
-    "id": 225,
+    "id": 2213,
     "name": "PI ID Output",
     "type": "float64",
     "podUnits": "",
@@ -352,7 +352,7 @@
     "alias": "bcu_pi_id_output"
   },
   {
-    "id": 226,
+    "id": 2214,
     "name": "PI IQ Output",
     "type": "float64",
     "podUnits": "",
@@ -360,7 +360,7 @@
     "alias": "bcu_pi_iq_output"
   },
   {
-    "id": 227,
+    "id": 2215,
     "name": "Target U Voltage",
     "type": "float64",
     "podUnits": "V",
@@ -368,7 +368,7 @@
     "alias": "bcu_target_u_voltage"
   },
   {
-    "id": 228,
+    "id": 2216,
     "name": "Target V Voltage",
     "type": "float64",
     "podUnits": "V",
@@ -376,7 +376,7 @@
     "alias": "bcu_target_v_voltage"
   },
   {
-    "id": 229,
+    "id": 2217,
     "name": "Target W Voltage",
     "type": "float64",
     "podUnits": "V",
@@ -384,7 +384,7 @@
     "alias": "bcu_target_w_voltage"
   },
   {
-    "id": 230,
+    "id": 2218,
     "name": "Electrical Angle",
     "type": "float64",
     "podUnits": "rad",

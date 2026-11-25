@@ -1,11 +1,11 @@
 [
   {
-    "id": 665,
+    "id": 1814,
     "type": "data",
     "name": "FAULT"
   },
   {
-    "id": 666,
+    "id": 910,
     "type": "data",
     "name": "battery_1",
     "variables": [
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "id": 667,
+    "id": 911,
     "type": "data",
     "name": "battery_2",
     "variables": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "id": 668,
+    "id": 912,
     "type": "data",
     "name": "battery_3",
     "variables": [
@@ -59,7 +59,7 @@
     ]
   },
   {
-    "id": 669,
+    "id": 913,
     "type": "data",
     "name": "battery_4",
     "variables": [
@@ -77,7 +77,7 @@
     ]
   },
   {
-    "id": 670,
+    "id": 914,
     "type": "data",
     "name": "battery_5",
     "variables": [
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "id": 671,
+    "id": 915,
     "type": "data",
     "name": "battery_6",
     "variables": [
@@ -113,7 +113,7 @@
     ]
   },
   {
-    "id": 672,
+    "id": 916,
     "type": "data",
     "name": "battery_7",
     "variables": [
@@ -131,7 +131,7 @@
     ]
   },
   {
-    "id": 673,
+    "id": 917,
     "type": "data",
     "name": "battery_8",
     "variables": [
@@ -149,7 +149,7 @@
     ]
   },
   {
-    "id": 674,
+    "id": 918,
     "type": "data",
     "name": "battery_9",
     "variables": [
@@ -167,7 +167,7 @@
     ]
   },
   {
-    "id": 675,
+    "id": 919,
     "type": "data",
     "name": "battery_10",
     "variables": [
@@ -185,7 +185,7 @@
     ]
   },
   {
-    "id": 676,
+    "id": 920,
     "type": "data",
     "name": "battery_11",
     "variables": [
@@ -203,7 +203,7 @@
     ]
   },
   {
-    "id": 677,
+    "id": 921,
     "type": "data",
     "name": "battery_12",
     "variables": [
@@ -221,7 +221,7 @@
     ]
   },
   {
-    "id": 678,
+    "id": 922,
     "type": "data",
     "name": "battery_13",
     "variables": [
@@ -239,7 +239,7 @@
     ]
   },
   {
-    "id": 679,
+    "id": 923,
     "type": "data",
     "name": "battery_14",
     "variables": [
@@ -257,7 +257,7 @@
     ]
   },
   {
-    "id": 680,
+    "id": 924,
     "type": "data",
     "name": "battery_15",
     "variables": [
@@ -275,7 +275,7 @@
     ]
   },
   {
-    "id": 681,
+    "id": 925,
     "type": "data",
     "name": "battery_16",
     "variables": [
@@ -293,7 +293,7 @@
     ]
   },
   {
-    "id": 682,
+    "id": 926,
     "type": "data",
     "name": "battery_17",
     "variables": [
@@ -311,7 +311,7 @@
     ]
   },
   {
-    "id": 683,
+    "id": 927,
     "type": "data",
     "name": "battery_18",
     "variables": [
@@ -329,7 +329,7 @@
     ]
   },
   {
-    "id": 684,
+    "id": 928,
     "type": "data",
     "name": "batteries_voltage",
     "variables": [
@@ -337,7 +337,7 @@
     ]
   },
   {
-    "id": 685,
+    "id": 930,
     "type": "data",
     "name": "voltage_sensor",
     "variables": [
@@ -345,7 +345,7 @@
     ]
   },
   {
-    "id": 686,
+    "id": 931,
     "name": "current_sensor",
     "type": "data",
     "variables": [
@@ -353,7 +353,7 @@
     ]
   },
   {
-    "id": 687,
+    "id": 940,
     "name": "general_state_machine",
     "type": "data",
     "variables": [
@@ -361,7 +361,7 @@
     ]
   },
   {
-    "id": 688,
+    "id": 941,
     "name": "operational_state_machine",
     "type": "data",
     "variables": [
@@ -369,7 +369,7 @@
     ]
   },
   {
-    "id": 689,
+    "id": 942,
     "name": "driver_diagnosis",
     "type": "data",
     "variables": [
@@ -377,7 +377,7 @@
     ]
   },
   {
-    "id": 690,
+    "id": 943,
     "name": "imd",
     "type": "data",
     "variables": [
@@ -387,7 +387,7 @@
     ]
   },
   {
-    "id": 691,
+    "id": 944,
     "name": "sdc",
     "type": "data",
     "variables": [
@@ -395,7 +395,7 @@
     ]
   },
   {
-    "id": 692,
+    "id": 945,
     "name": "minimum_soc",
     "type": "data",
     "variables": [
@@ -403,7 +403,7 @@
     ]
   },
   {
-    "id": 693,
+    "id": 946,
     "name": "bms",
     "type": "data",
     "variables": [
@@ -411,7 +411,7 @@
     ]
   },
   {
-    "id": 694,
+    "id": 947,
     "name": "batteries_data",
     "type": "data",
     "variables": [

@@ -2,12 +2,12 @@
   {
     "type": "order",
     "name": "Brake",
-    "id": 766
+    "id": 43
   },
   {
     "type": "order",
     "name": "Unbrake",
-    "id": 767
+    "id": 52
   },
   {
     "type": "order",
@@ -16,7 +16,7 @@
       "vcu_duty",
       "vcu_pump"
     ],
-    "id": 768
+    "id": 33
   },
   {
     "type": "order",
@@ -25,27 +25,27 @@
       "vcu_regulator_pressure",
       "vcu_regulator"
     ],
-    "id": 769
+    "id": 34
   },
   {
     "type": "order",
     "name": "Enable Tapes",
-    "id": 770
+    "id": 35
   },
   {
     "type": "order",
     "name": "Disbable Tapes",
-    "id": 771
+    "id": 36
   },
   {
     "type": "order",
     "name": "Close Contactors",
-    "id": 772
+    "id": 44
   },
   {
     "type": "order",
     "name": "Open Contactors",
-    "id": 773
+    "id": 53
   },
   {
     "type": "order",
@@ -53,17 +53,17 @@
     "variables": [
       "vcu_levitation_distance"
     ],
-    "id": 774
+    "id": 37
   },
   {
     "type": "order",
     "name": "Stop Levitation",
-    "id": 775
+    "id": 46
   },
   {
     "type": "order",
     "name": "Emergency Stop",
-    "id": 776
+    "id": 55
   },
   {
     "type": "order",
@@ -71,7 +71,7 @@
     "variables": [
       "vcu_run_id"
     ],
-    "id": 777
+    "id": 56
   },
   {
     "type": "order",
@@ -83,39 +83,39 @@
       "vcu_reference_voltage",
       "vcu_motor_direction"
     ],
-    "id": 778
+    "id": 57
   },
   {
     "type": "order",
     "name": "Stop Motor",
-    "id": 779
+    "id": 58
   },
   {
     "type": "order",
     "name": "Current Control",
     "variables": [
-      "vcu_modulation_frequency__order_28",
-      "vcu_commutation_frequency__order_29",
+      "vcu_modulation_frequency__order_3027",
+      "vcu_commutation_frequency__order_3028",
       "vcu_reference_current",
-      "vcu_max_voltage__order_30",
-      "vcu_motor_direction__order_31"
+      "vcu_max_voltage__order_3029",
+      "vcu_motor_direction__order_3030"
     ],
-    "id": 780
+    "id": 59
   },
   {
     "type": "order",
     "name": "Speed Control",
     "variables": [
       "vcu_reference_speed",
-      "vcu_commutation_frequency__order_32",
-      "vcu_max_voltage__order_33",
-      "vcu_motor_direction__order_34"
+      "vcu_commutation_frequency__order_3031",
+      "vcu_max_voltage__order_3032",
+      "vcu_motor_direction__order_3033"
     ],
-    "id": 781
+    "id": 60
   },
   {
     "type": "order",
     "name": "Motor Brake",
-    "id": 782
+    "id": 61
   }
 ]

@@ -1,18 +1,18 @@
 [
   {
-    "id": 248,
+    "id": 1700,
     "type": "data",
     "name": "Motor Driver",
     "variables": [
-      "bcu_duty_cycle_u__data_1",
-      "bcu_duty_cycle_v__data_2",
-      "bcu_duty_cycle_w__data_3",
-      "bcu_commutation_frequency_hz__data_4",
-      "bcu_dead_time_ns__data_5"
+      "bcu_duty_cycle_u__data_3000",
+      "bcu_duty_cycle_v__data_3001",
+      "bcu_duty_cycle_w__data_3002",
+      "bcu_commutation_frequency_hz__data_3003",
+      "bcu_dead_time_ns__data_3004"
     ]
   },
   {
-    "id": 249,
+    "id": 1701,
     "type": "data",
     "name": "State",
     "variables": [
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "id": 250,
+    "id": 1702,
     "type": "data",
     "name": "Space Vector",
     "variables": [
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "id": 251,
+    "id": 1703,
     "type": "data",
     "name": "DC Link",
     "variables": [
@@ -43,7 +43,7 @@
     ]
   },
   {
-    "id": 252,
+    "id": 1704,
     "type": "data",
     "name": "Motor Currents",
     "variables": [
@@ -59,7 +59,7 @@
     ]
   },
   {
-    "id": 253,
+    "id": 1705,
     "type": "data",
     "name": "SPEETEC 1",
     "variables": [
@@ -70,7 +70,7 @@
     ]
   },
   {
-    "id": 254,
+    "id": 1706,
     "type": "data",
     "name": "Current Control",
     "variables": [
@@ -89,26 +89,26 @@
     ]
   },
   {
-    "id": 255,
+    "id": 1707,
     "type": "data",
     "name": "Speed Control",
     "variables": [
-      "bcu_requested_linear_speed__data_6",
+      "bcu_requested_linear_speed__data_3005",
       "bcu_speed_speetec_1"
     ]
   },
   {
-    "id": 256,
+    "id": 1790,
     "type": "data",
     "name": "Enable DC Poles (BCU)"
   },
   {
-    "id": 257,
+    "id": 1789,
     "type": "data",
     "name": "Disable DC Poles (BCU)"
   },
   {
-    "id": 258,
+    "id": 1692,
     "type": "data",
     "name": "BCU Bus Voltage",
     "variables": [

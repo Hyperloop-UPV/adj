@@ -21,7 +21,7 @@
       "bmsl_temp_max",
       "bmsl_current"
     ],
-    "id": 728
+    "id": 777
   },
   {
     "type": "data",
@@ -29,7 +29,7 @@
     "variables": [
       "bmsl_state"
     ],
-    "id": 729
+    "id": 778
   },
   {
     "type": "data",
@@ -45,6 +45,6 @@
       "bmsl_output_voltage",
       "bmsl_input_voltage"
     ],
-    "id": 730
+    "id": 779
   }
 ]

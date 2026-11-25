@@ -1,6 +1,6 @@
 [
   {
-    "id": 701,
+    "id": 2585,
     "name": "Cell 1",
     "type": "float32",
     "podUnits": "V",
@@ -8,7 +8,7 @@
     "alias": "bmsl_cell_1"
   },
   {
-    "id": 702,
+    "id": 2586,
     "name": "Cell 2",
     "type": "float32",
     "podUnits": "V",
@@ -16,7 +16,7 @@
     "alias": "bmsl_cell_2"
   },
   {
-    "id": 703,
+    "id": 2587,
     "name": "Cell 3",
     "type": "float32",
     "podUnits": "V",
@@ -24,7 +24,7 @@
     "alias": "bmsl_cell_3"
   },
   {
-    "id": 704,
+    "id": 2588,
     "name": "Cell 4",
     "type": "float32",
     "podUnits": "V",
@@ -32,7 +32,7 @@
     "alias": "bmsl_cell_4"
   },
   {
-    "id": 705,
+    "id": 2589,
     "name": "Cell 5",
     "type": "float32",
     "podUnits": "V",
@@ -40,7 +40,7 @@
     "alias": "bmsl_cell_5"
   },
   {
-    "id": 706,
+    "id": 2590,
     "name": "Cell 6",
     "type": "float32",
     "podUnits": "V",
@@ -48,7 +48,7 @@
     "alias": "bmsl_cell_6"
   },
   {
-    "id": 707,
+    "id": 2591,
     "name": "Min Cell",
     "type": "float32",
     "podUnits": "V",
@@ -56,7 +56,7 @@
     "alias": "bmsl_voltage_min"
   },
   {
-    "id": 708,
+    "id": 2592,
     "name": "Max Cell",
     "type": "float32",
     "podUnits": "V",
@@ -64,7 +64,7 @@
     "alias": "bmsl_voltage_max"
   },
   {
-    "id": 709,
+    "id": 2593,
     "name": "Total Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -72,7 +72,7 @@
     "alias": "bmsl_total_voltage"
   },
   {
-    "id": 710,
+    "id": 2594,
     "name": "SOC",
     "type": "float32",
     "podUnits": "Percentage",
@@ -80,7 +80,7 @@
     "alias": "bmsl_SOC"
   },
   {
-    "id": 711,
+    "id": 2595,
     "name": "Temperature 1",
     "type": "float32",
     "podUnits": "ºC",
@@ -88,7 +88,7 @@
     "alias": "bmsl_temperature_1"
   },
   {
-    "id": 712,
+    "id": 2596,
     "name": "Temperature 2",
     "type": "float32",
     "podUnits": "ºC",
@@ -96,7 +96,7 @@
     "alias": "bmsl_temperature_2"
   },
   {
-    "id": 713,
+    "id": 2597,
     "name": "Temperature 3",
     "type": "float32",
     "podUnits": "ºC",
@@ -104,7 +104,7 @@
     "alias": "bmsl_temperature_3"
   },
   {
-    "id": 714,
+    "id": 2598,
     "name": "Temperature 4",
     "type": "float32",
     "podUnits": "ºC",
@@ -112,7 +112,7 @@
     "alias": "bmsl_temperature_4"
   },
   {
-    "id": 715,
+    "id": 2599,
     "name": "Min. Temperature",
     "type": "float32",
     "podUnits": "ºC",
@@ -120,7 +120,7 @@
     "alias": "bmsl_temp_min"
   },
   {
-    "id": 716,
+    "id": 2600,
     "name": "Max. Temperature",
     "type": "float32",
     "podUnits": "ºC",
@@ -128,7 +128,7 @@
     "alias": "bmsl_temp_max"
   },
   {
-    "id": 717,
+    "id": 2601,
     "name": "Current",
     "type": "float32",
     "podUnits": "A",
@@ -136,7 +136,7 @@
     "alias": "bmsl_current"
   },
   {
-    "id": 718,
+    "id": 2602,
     "name": "State",
     "type": "enum",
     "enumValues": [
@@ -147,7 +147,7 @@
     "alias": "bmsl_state"
   },
   {
-    "id": 719,
+    "id": 2603,
     "name": "PFM State",
     "type": "enum",
     "enumValues": [
@@ -157,7 +157,7 @@
     "alias": "bmsl_pfm_state"
   },
   {
-    "id": 720,
+    "id": 2604,
     "name": "BUFFER State",
     "type": "enum",
     "enumValues": [
@@ -167,7 +167,7 @@
     "alias": "bmsl_buffer_state"
   },
   {
-    "id": 721,
+    "id": 2605,
     "name": "RESET State",
     "type": "enum",
     "enumValues": [
@@ -177,7 +177,7 @@
     "alias": "bmsl_reset_state"
   },
   {
-    "id": 722,
+    "id": 2606,
     "name": "Frequency",
     "type": "uint32",
     "podUnits": "Hz",
@@ -185,7 +185,7 @@
     "alias": "bmsl_frequency"
   },
   {
-    "id": 723,
+    "id": 2607,
     "name": "Dead time",
     "type": "uint32",
     "podUnits": "ns",
@@ -193,7 +193,7 @@
     "alias": "bmsl_dead_time"
   },
   {
-    "id": 724,
+    "id": 2608,
     "name": "Output Current",
     "type": "float32",
     "podUnits": "A",
@@ -201,7 +201,7 @@
     "alias": "bmsl_output_current"
   },
   {
-    "id": 725,
+    "id": 2609,
     "name": "Input Current",
     "type": "float32",
     "podUnits": "A",
@@ -209,7 +209,7 @@
     "alias": "bmsl_input_current"
   },
   {
-    "id": 726,
+    "id": 2610,
     "name": "Output Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -217,7 +217,7 @@
     "alias": "bmsl_output_voltage"
   },
   {
-    "id": 727,
+    "id": 2611,
     "name": "Input Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -225,19 +225,19 @@
     "alias": "bmsl_input_voltage"
   },
   {
-    "id": 815,
+    "id": 3025,
     "name": "Frequency",
     "type": "uint32",
     "podUnits": "Hz",
     "displayUnits": "Hz",
-    "alias": "bmsl_frequency__order_26"
+    "alias": "bmsl_frequency__order_3025"
   },
   {
-    "id": 816,
+    "id": 3026,
     "name": "Dead time",
     "type": "uint32",
     "podUnits": "ns",
     "displayUnits": "ns",
-    "alias": "bmsl_dead_time__order_27"
+    "alias": "bmsl_dead_time__order_3026"
   }
 ]

@@ -1,6 +1,6 @@
 [
   {
-    "id": 179,
+    "id": 2167,
     "name": "Duty Cycle U (%)",
     "type": "float32",
     "podUnits": "%",
@@ -14,7 +14,7 @@
     "alias": "bcu_duty_cycle_u"
   },
   {
-    "id": 180,
+    "id": 2168,
     "name": "Duty Cycle V (%)",
     "type": "float32",
     "podUnits": "%",
@@ -28,7 +28,7 @@
     "alias": "bcu_duty_cycle_v"
   },
   {
-    "id": 181,
+    "id": 2169,
     "name": "Duty Cycle W (%)",
     "type": "float32",
     "podUnits": "%",
@@ -42,7 +42,7 @@
     "alias": "bcu_duty_cycle_w"
   },
   {
-    "id": 182,
+    "id": 2170,
     "name": "Commutation Frequency (Hz)",
     "type": "uint32",
     "podUnits": "Hz",
@@ -50,7 +50,7 @@
     "alias": "bcu_commutation_frequency_hz"
   },
   {
-    "id": 183,
+    "id": 2171,
     "name": "Dead Time (ns)",
     "type": "uint32",
     "podUnits": "ns",
@@ -58,7 +58,7 @@
     "alias": "bcu_dead_time_ns"
   },
   {
-    "id": 184,
+    "id": 2172,
     "name": "Modulation Index",
     "type": "float32",
     "podUnits": "",
@@ -66,7 +66,7 @@
     "alias": "bcu_modulation_index"
   },
   {
-    "id": 185,
+    "id": 2173,
     "name": "Modulation Frequency (Hz)",
     "type": "float32",
     "podUnits": "Hz",
@@ -74,7 +74,7 @@
     "alias": "bcu_modulation_frequency_hz"
   },
   {
-    "id": 186,
+    "id": 2174,
     "name": "Requested DC Link Voltage (V)",
     "type": "float32",
     "podUnits": "V",
@@ -82,7 +82,7 @@
     "alias": "bcu_requested_dc_link_voltage"
   },
   {
-    "id": 187,
+    "id": 2175,
     "name": "Target Linear Speed (m/s)",
     "type": "float32",
     "podUnits": "m/s",
@@ -90,7 +90,7 @@
     "alias": "bcu_requested_linear_speed"
   },
   {
-    "id": 188,
+    "id": 2176,
     "name": "D Current Reference(A)",
     "type": "float32",
     "podUnits": "A",
@@ -98,7 +98,7 @@
     "alias": "bcu_requested_d_current_reference_2"
   },
   {
-    "id": 189,
+    "id": 2177,
     "name": "Q Current Reference (A)",
     "type": "float32",
     "podUnits": "A",
@@ -106,7 +106,7 @@
     "alias": "bcu_requested_q_current_reference_2"
   },
   {
-    "id": 190,
+    "id": 2178,
     "name": "Emulation Mode",
     "type": "enum",
     "enumValues": [
@@ -117,7 +117,7 @@
     "alias": "bcu_requested_speetec_emulation_mode"
   },
   {
-    "id": 191,
+    "id": 2179,
     "name": "Value (m | m/s | m/s^2)",
     "type": "float32",
     "podUnits": "",
@@ -125,7 +125,7 @@
     "alias": "bcu_requested_speetec_emulation_value"
   },
   {
-    "id": 790,
+    "id": 3000,
     "name": "Duty Cycle U (%)",
     "type": "float32",
     "podUnits": "%",
@@ -136,10 +136,10 @@
         100
       ]
     },
-    "alias": "bcu_duty_cycle_u__data_1"
+    "alias": "bcu_duty_cycle_u__data_3000"
   },
   {
-    "id": 791,
+    "id": 3001,
     "name": "Duty Cycle V (%)",
     "type": "float32",
     "podUnits": "%",
@@ -150,10 +150,10 @@
         100
       ]
     },
-    "alias": "bcu_duty_cycle_v__data_2"
+    "alias": "bcu_duty_cycle_v__data_3001"
   },
   {
-    "id": 792,
+    "id": 3002,
     "name": "Duty Cycle W (%)",
     "type": "float32",
     "podUnits": "%",
@@ -164,30 +164,30 @@
         100
       ]
     },
-    "alias": "bcu_duty_cycle_w__data_3"
+    "alias": "bcu_duty_cycle_w__data_3002"
   },
   {
-    "id": 793,
+    "id": 3003,
     "name": "Commutation Frequency (Hz)",
     "type": "uint32",
     "podUnits": "Hz",
     "displayUnits": "Hz",
-    "alias": "bcu_commutation_frequency_hz__data_4"
+    "alias": "bcu_commutation_frequency_hz__data_3003"
   },
   {
-    "id": 794,
+    "id": 3004,
     "name": "Dead Time (ns)",
     "type": "uint32",
     "podUnits": "ns",
     "displayUnits": "ns",
-    "alias": "bcu_dead_time_ns__data_5"
+    "alias": "bcu_dead_time_ns__data_3004"
   },
   {
-    "id": 795,
+    "id": 3005,
     "name": "Target Linear Speed (m/s)",
     "type": "float32",
     "podUnits": "m/s",
     "displayUnits": "m/s",
-    "alias": "bcu_requested_linear_speed__data_6"
+    "alias": "bcu_requested_linear_speed__data_3005"
   }
 ]

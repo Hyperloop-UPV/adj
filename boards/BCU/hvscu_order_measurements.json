@@ -1,6 +1,6 @@
 [
   {
-    "id": 192,
+    "id": 2180,
     "name": "Target Charge Voltage",
     "type": "float32",
     "podUnits": "V",
@@ -11,7 +11,7 @@
     "alias": "bcu_HVSCU-Cabinet_target_charge_voltage"
   },
   {
-    "id": 193,
+    "id": 2181,
     "name": "Bypass IMD?",
     "type": "enum",
     "podUnits": "",
@@ -23,7 +23,7 @@
     "alias": "bcu_HVSCU-Cabinet_imd_bypass"
   },
   {
-    "id": 194,
+    "id": 2182,
     "name": "Enable SDC?",
     "type": "enum",
     "podUnits": "",
