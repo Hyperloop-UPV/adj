@@ -50,12 +50,8 @@
       "battery1_SOC",
       "battery1_cell1",
       "battery1_cell2",
-      "battery1_cell3",
-      "battery1_cell4",
-      "battery1_cell5",
-      "battery1_cell6",
-      "battery1_total_voltage",
-      "battery1_conv_rate"
+      
+
     ],
     "id": 910,
     "period": 50,
@@ -63,19 +59,7 @@
     "socket": "control_station_udp"
   },
   {
-    "type": "data",
-    "name": "battery_2",
-    "variables": [
-      "battery2_SOC",
-      "battery2_cell1",
-      "battery2_cell2",
-      "battery2_cell3",
-      "battery2_cell4",
-      "battery2_cell5",
-      "battery2_cell6",
-      "battery2_total_voltage",
-      "battery2_conv_rate"
-    ],
+
     "id": 911,
     "period": 50,
     "period_type": "ms",
