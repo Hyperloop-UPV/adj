@@ -49,9 +49,7 @@
     "variables": [
       "battery1_SOC",
       "battery1_cell1",
-      "battery1_cell2",
-      
-
+      "battery1_cell2"
     ],
     "id": 910,
     "period": 50,
