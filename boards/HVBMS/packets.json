@@ -56,13 +56,7 @@
     "period_type": "ms",
     "socket": "control_station_udp"
   },
-  {
 
-    "id": 911,
-    "period": 50,
-    "period_type": "ms",
-    "socket": "control_station_udp"
-  },
  
   {
     "type": "data",
