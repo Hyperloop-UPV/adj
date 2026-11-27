@@ -10,8 +10,8 @@
       "duty_w"
     ],
     "id": 550,
-    "period_type": "ms",
-    "period": 16.67,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "vcu_udp"
   },
 
@@ -45,8 +45,8 @@
       "imod"
     ],
     "id": 552,
-    "period_type": "ms",
-    "period": 16.67,
+    "period_type": "us",
+    "period": 500.0,
     "socket": "vcu_udp"
   },
 
